@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="AES_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="AES_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject db_ref_id="1" fp_name="/AES_TB/k0" type="array">
+      <obj_property name="ElementShortName">k0[127:0]</obj_property>
+      <obj_property name="ObjectShortName">k0[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/AES_TB/en_KE" type="logic">
+      <obj_property name="ElementShortName">en_KE</obj_property>
+      <obj_property name="ObjectShortName">en_KE</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/AES_TB/rdy_KE" type="logic">
+      <obj_property name="ElementShortName">rdy_KE</obj_property>
+      <obj_property name="ObjectShortName">rdy_KE</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/AES_TB/en_e" type="logic">
+      <obj_property name="ElementShortName">en_e</obj_property>
+      <obj_property name="ObjectShortName">en_e</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/AES_TB/bi_e" type="array">
+      <obj_property name="ElementShortName">bi_e[127:0]</obj_property>
+      <obj_property name="ObjectShortName">bi_e[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/AES_TB/bo_e" type="array">
+      <obj_property name="ElementShortName">bo_e[127:0]</obj_property>
+      <obj_property name="ObjectShortName">bo_e[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/AES_TB/rdy_e" type="logic">
+      <obj_property name="ElementShortName">rdy_e</obj_property>
+      <obj_property name="ObjectShortName">rdy_e</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/AES_TB/en_d" type="logic">
+      <obj_property name="ElementShortName">en_d</obj_property>
+      <obj_property name="ObjectShortName">en_d</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/AES_TB/bi_d" type="array">
+      <obj_property name="ElementShortName">bi_d[127:0]</obj_property>
+      <obj_property name="ObjectShortName">bi_d[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/AES_TB/bo_d" type="array">
+      <obj_property name="ElementShortName">bo_d[127:0]</obj_property>
+      <obj_property name="ObjectShortName">bo_d[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/AES_TB/rdy_d" type="logic">
+      <obj_property name="ElementShortName">rdy_d</obj_property>
+      <obj_property name="ObjectShortName">rdy_d</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/AES_TB/clk_SB" type="logic">
+      <obj_property name="ElementShortName">clk_SB</obj_property>
+      <obj_property name="ObjectShortName">clk_SB</obj_property>
+   </wvobject>
+</wave_config>

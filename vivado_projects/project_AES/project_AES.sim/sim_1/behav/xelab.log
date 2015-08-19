@@ -1,0 +1,51 @@
+Vivado Simulator 2014.1
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.1/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot AES_BT_TB_behav --prj C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.sim/sim_1/behav/AES_BT_TB.prj xil_defaultlib.AES_BT_TB 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.1/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.srcs/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.srcs/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.srcs/sources_1/new/Control_Decryption.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.srcs/sources_1/new/Control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.srcs/sources_1/new/Clock_div32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.srcs/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.srcs/sources_1/imports/project_TCC_v1.srcs/sources_1/new/ShiftRows.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.srcs/sources_1/imports/project_TCC_v1.srcs/sources_1/new/MixColumns.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.srcs/sources_1/imports/project_TCC_v1.srcs/sources_1/new/KeyExpansion.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.srcs/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.srcs/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvShiftRows.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.srcs/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvMixColumns.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.srcs/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.srcs/sources_1/new/AES_Crypto.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.srcs/sources_1/new/AES_Crypto_BT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.srcs/sim_1/new/AES_BT_TB.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_unsigned
+Compiling architecture rtl of entity xil_defaultlib.Clock_div32 [clock_div32_default]
+Compiling architecture behavioral of entity xil_defaultlib.KeyExpansion [keyexpansion_default]
+Compiling architecture rtl of entity xil_defaultlib.AddKey [addkey_default]
+Compiling architecture rtl of entity xil_defaultlib.SubBytes [subbytes_default]
+Compiling architecture rtl of entity xil_defaultlib.ShiftRows [shiftrows_default]
+Compiling architecture rtl of entity xil_defaultlib.MixColumns [mixcolumns_default]
+Compiling architecture rtl of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture rtl of entity xil_defaultlib.Mux_10x1 [mux_10x1_default]
+Compiling architecture rtl_structural of entity xil_defaultlib.Control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.InvSubBytes [invsubbytes_default]
+Compiling architecture behavioral of entity xil_defaultlib.InvShiftRows [invshiftrows_default]
+Compiling architecture behavioral of entity xil_defaultlib.InvMixColumns [invmixcolumns_default]
+Compiling architecture rtl_structural of entity xil_defaultlib.Control_Decryption [control_decryption_default]
+Compiling architecture structural of entity xil_defaultlib.AES_Crypto [aes_crypto_default]
+Compiling architecture boardtest of entity xil_defaultlib.AES_Crypto_BT [aes_crypto_bt_default]
+Compiling architecture simulation of entity xil_defaultlib.aes_bt_tb
+Waiting for 3 sub-compilation(s) to finish...
+Built simulation snapshot AES_BT_TB_behav

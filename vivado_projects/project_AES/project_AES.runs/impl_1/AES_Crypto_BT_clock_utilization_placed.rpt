@@ -1,0 +1,486 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
+| Date         : Thu Mar 19 09:35:22 2015
+| Host         : LAPAR01-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_clock_utilization -file AES_Crypto_BT_clock_utilization_placed.rpt
+| Design       : AES_Crypto_BT
+| Device       : xc7k325t
+-------------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Details of Global Clocks
+3. Details of Regional Clocks
+4. Details of Multi-Regional Clocks
+5. Details of I/O Clocks
+6. Details of Local Clocks
+7. Clock Regions : Key Resource Utilization
+8. Net wise resources used in clock region X0Y2
+9. Net wise resources used in clock region X0Y3
+
+1. Clock Primitive Utilization
+------------------------------
+
++-------+------+-----------+------------+
+| Type  | Used | Available | Num Locked |
++-------+------+-----------+------------+
+| BUFG  |    6 |        32 |          0 |
+| BUFH  |    0 |       168 |          0 |
+| BUFIO |    0 |        40 |          0 |
+| MMCM  |    0 |        10 |          0 |
+| PLL   |    0 |        10 |          0 |
+| BUFR  |    0 |        40 |          0 |
+| BUFMR |    0 |        20 |          0 |
++-------+------+-----------+------------+
+
+
+2. Details of Global Clocks
+---------------------------
+
++-------+----------------------+-----------------+--------------+--------+---------------+-----------+
+|       |                      |                 |   Num Loads  |        |               |           |
++-------+----------------------+-----------------+------+-------+--------+---------------+-----------+
+| Index | BUFG Cell            | Net Name        | BELs | Sites | Locked | MaxDelay (ns) | Skew (ns) |
++-------+----------------------+-----------------+------+-------+--------+---------------+-----------+
+|     1 | en_KE_IBUF_BUFG_inst | en_KE_IBUF_BUFG |    3 |     2 |     no |         1.362 |     0.080 |
+|     2 | clk_SB_BUFG_inst     | clk_SB_BUFG     |   58 |    34 |     no |         1.612 |     0.438 |
+|     3 | n_4_279_BUFG_inst    | n_4_279_BUFG    |  128 |    47 |     no |         1.557 |     0.277 |
+|     4 | n_6_856_BUFG_inst    | n_6_856_BUFG    |  128 |    92 |     no |         1.787 |     0.358 |
+|     5 | n_0_900_BUFG_inst    | n_0_900_BUFG    |  137 |    46 |     no |         1.557 |     0.279 |
+|     6 | n_2_901_BUFG_inst    | n_2_901_BUFG    |  137 |    47 |     no |         1.614 |     0.280 |
++-------+----------------------+-----------------+------+-------+--------+---------------+-----------+
+
+
+3. Details of Regional Clocks
+-----------------------------
+
+4. Details of Multi-Regional Clocks
+-----------------------------------
+
+5. Details of I/O Clocks
+------------------------
+
+6. Details of Local Clocks
+--------------------------
+
++-------+---------------------------------------------------+-------------------------------------------------------+--------------+--------+---------------+-----------+
+|       |                                                   |                                                       |   Num Loads  |        |               |           |
++-------+---------------------------------------------------+-------------------------------------------------------+------+-------+--------+---------------+-----------+
+| Index | Local Clk Src                                     | Net Name                                              | BELs | Sites | Locked | MaxDelay (ns) | Skew (ns) |
++-------+---------------------------------------------------+-------------------------------------------------------+------+-------+--------+---------------+-----------+
+|     1 | AES_Crypto_0/Clock_div32_0/clk_div2_reg           | AES_Crypto_0/Clock_div32_0/clk_div2                   |    2 |     2 |     no |         0.300 |     0.051 |
+|     2 | AES_Crypto_0/Clock_div32_0/clk_div16_reg          | AES_Crypto_0/Clock_div32_0/clk_div16                  |    2 |     2 |     no |         0.392 |     0.107 |
+|     3 | AES_Crypto_0/Clock_div32_0/clk_div4_reg           | AES_Crypto_0/Clock_div32_0/clk_div4                   |    2 |     2 |     no |         0.402 |     0.227 |
+|     4 | AES_Crypto_0/Clock_div32_0/clk_div8_reg           | AES_Crypto_0/Clock_div32_0/clk_div8                   |    2 |     2 |     no |         0.392 |     0.107 |
+|     5 | AES_Crypto_0/SubBytes_round/Bo_reg[47]_i_1        | AES_Crypto_0/SubBytes_round/n_8_Bo_reg[47]_i_1        |    8 |     3 |     no |         0.664 |     0.153 |
+|     6 | AES_Crypto_0/SubBytes_round/Bo_reg[39]_i_1        | AES_Crypto_0/SubBytes_round/n_8_Bo_reg[39]_i_1        |    8 |     2 |     no |         0.400 |     0.158 |
+|     7 | AES_Crypto_0/SubBytes_round/Bo_reg[15]_i_1        | AES_Crypto_0/SubBytes_round/n_8_Bo_reg[15]_i_1        |    8 |     6 |     no |         0.554 |     0.185 |
+|     8 | AES_Crypto_0/SubBytes_round/Bo_reg[103]_i_1       | AES_Crypto_0/SubBytes_round/n_8_Bo_reg[103]_i_1       |    8 |     3 |     no |         0.500 |     0.124 |
+|     9 | AES_Crypto_0/SubBytes_round/Bo_reg[7]_i_1         | AES_Crypto_0/SubBytes_round/n_8_Bo_reg[7]_i_1         |    8 |     2 |     no |         0.483 |     0.072 |
+|    10 | AES_Crypto_0/InvSubBytes_round/Bo_reg[87]_i_1__0  | AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[87]_i_1__0  |    8 |     4 |     no |         0.621 |     0.175 |
+|    11 | AES_Crypto_0/InvSubBytes_round/Bo_reg[63]_i_1__0  | AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[63]_i_1__0  |    8 |     4 |     no |         0.569 |     0.138 |
+|    12 | AES_Crypto_0/InvSubBytes_round/Bo_reg[31]_i_1__0  | AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[31]_i_1__0  |    8 |     4 |     no |         0.544 |     0.281 |
+|    13 | AES_Crypto_0/InvSubBytes_round/Bo_reg[119]_i_1__0 | AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[119]_i_1__0 |    8 |     3 |     no |         0.374 |     0.127 |
+|    14 | AES_Crypto_0/SubBytes_round/Bo_reg[55]_i_1        | AES_Crypto_0/SubBytes_round/n_8_Bo_reg[55]_i_1        |    8 |     4 |     no |         0.572 |     0.142 |
+|    15 | AES_Crypto_0/SubBytes_round/Bo_reg[31]_i_1        | AES_Crypto_0/SubBytes_round/n_8_Bo_reg[31]_i_1        |    8 |     3 |     no |         0.459 |     0.120 |
+|    16 | AES_Crypto_0/SubBytes_round/Bo_reg[23]_i_1        | AES_Crypto_0/SubBytes_round/n_8_Bo_reg[23]_i_1        |    8 |     3 |     no |         0.446 |     0.183 |
+|    17 | AES_Crypto_0/SubBytes_round/Bo_reg[127]_i_2       | AES_Crypto_0/SubBytes_round/n_8_Bo_reg[127]_i_2       |    8 |     2 |     no |         0.551 |     0.108 |
+|    18 | AES_Crypto_0/SubBytes_round/Bo_reg[111]_i_1       | AES_Crypto_0/SubBytes_round/n_8_Bo_reg[111]_i_1       |    8 |     2 |     no |         0.628 |     0.155 |
+|    19 | AES_Crypto_0/SubBytes_round/Bo_reg[71]_i_1        | AES_Crypto_0/SubBytes_round/n_8_Bo_reg[71]_i_1        |    8 |     2 |     no |         0.371 |     0.129 |
+|    20 | AES_Crypto_0/InvSubBytes_round/Bo_reg[71]_i_1__0  | AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[71]_i_1__0  |    8 |     5 |     no |         0.438 |     0.175 |
+|    21 | AES_Crypto_0/InvSubBytes_round/Bo_reg[39]_i_1__0  | AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[39]_i_1__0  |    8 |     6 |     no |         0.499 |     0.180 |
+|    22 | AES_Crypto_0/SubBytes_round/Bo_reg[95]_i_1        | AES_Crypto_0/SubBytes_round/n_8_Bo_reg[95]_i_1        |    8 |     3 |     no |         0.586 |     0.112 |
+|    23 | AES_Crypto_0/SubBytes_round/Bo_reg[87]_i_1        | AES_Crypto_0/SubBytes_round/n_8_Bo_reg[87]_i_1        |    8 |     3 |     no |         0.473 |     0.123 |
+|    24 | AES_Crypto_0/SubBytes_round/Bo_reg[119]_i_1       | AES_Crypto_0/SubBytes_round/n_8_Bo_reg[119]_i_1       |    8 |     3 |     no |         0.632 |     0.211 |
+|    25 | AES_Crypto_0/InvSubBytes_round/Bo_reg[79]_i_1__0  | AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[79]_i_1__0  |    8 |     5 |     no |         0.474 |     0.128 |
+|    26 | AES_Crypto_0/InvSubBytes_round/Bo_reg[47]_i_1__0  | AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[47]_i_1__0  |    8 |     3 |     no |         0.469 |     0.059 |
+|    27 | AES_Crypto_0/InvSubBytes_round/Bo_reg[15]_i_1__0  | AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[15]_i_1__0  |    8 |     4 |     no |         0.565 |     0.219 |
+|    28 | AES_Crypto_0/InvSubBytes_round/Bo_reg[103]_i_1__0 | AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[103]_i_1__0 |    8 |     3 |     no |         0.543 |     0.106 |
+|    29 | AES_Crypto_0/SubBytes_round/Bo_reg[79]_i_1        | AES_Crypto_0/SubBytes_round/n_8_Bo_reg[79]_i_1        |    8 |     3 |     no |         0.616 |     0.193 |
+|    30 | AES_Crypto_0/InvSubBytes_round/Bo_reg[55]_i_1__0  | AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[55]_i_1__0  |    8 |     3 |     no |         0.506 |     0.087 |
+|    31 | AES_Crypto_0/InvSubBytes_round/Bo_reg[23]_i_1__0  | AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[23]_i_1__0  |    8 |     3 |     no |         0.390 |     0.122 |
+|    32 | AES_Crypto_0/InvSubBytes_round/Bo_reg[127]_i_2__0 | AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[127]_i_2__0 |    8 |     2 |     no |         0.467 |     0.126 |
+|    33 | AES_Crypto_0/InvSubBytes_round/Bo_reg[111]_i_1__0 | AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[111]_i_1__0 |    8 |     3 |     no |         0.605 |     0.173 |
+|    34 | AES_Crypto_0/InvSubBytes_round/Bo_reg[7]_i_1__0   | AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[7]_i_1__0   |    8 |     4 |     no |         0.565 |     0.224 |
+|    35 | AES_Crypto_0/SubBytes_round/Bo_reg[63]_i_1        | AES_Crypto_0/SubBytes_round/n_8_Bo_reg[63]_i_1        |    8 |     3 |     no |         0.550 |     0.153 |
+|    36 | AES_Crypto_0/InvSubBytes_round/Bo_reg[95]_i_1__0  | AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[95]_i_1__0  |    8 |     3 |     no |         0.560 |     0.141 |
+|    37 | AES_Crypto_0/Clock_div32_0/clk_i_reg              | AES_Crypto_0/Clock_div32_0/clk_div32                  |    9 |     5 |     no |         0.573 |     0.288 |
++-------+---------------------------------------------------+-------------------------------------------------------+------+-------+--------+---------------+-----------+
+
+
+7. Clock Regions : Key Resource Utilization
+-------------------------------------------
+
++-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |      FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E1   |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 32000 |    0 |  4600 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X1Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 29600 |    0 |  4800 |    0 |    80 |    0 |    40 |    0 |    60 |
+| X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   19 | 32000 |    0 |  4600 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 29600 |    0 |  4800 |    0 |    80 |    0 |    40 |    0 |    60 |
+| X0Y2              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  397 | 27200 |    0 |  4600 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X1Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 29600 |    0 |  4800 |    0 |    80 |    0 |    40 |    0 |    60 |
+| X0Y3              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  402 | 27200 |    0 |  4600 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X1Y3              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     1 |    0 |     0 |    0 |     0 |    0 | 25200 |    0 |  4200 |    0 |    50 |    0 |    25 |    0 |    60 |
+| X0Y4              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 32000 |    0 |  4600 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X1Y4              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     0 |    0 |     0 |    0 |     0 |    0 | 26400 |    0 |  4400 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X0Y5              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 32000 |    0 |  4600 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X1Y5              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     0 |    0 |     0 |    0 |     0 |    0 | 26400 |    0 |  4400 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X0Y6              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 32000 |    0 |  4600 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X1Y6              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     0 |    0 |     0 |    0 |     0 |    0 | 26400 |    0 |  4400 |    0 |    60 |    0 |    30 |    0 |    60 |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+* RAMB36 site can be used as two RAMB18/FIFO18 sites
+
+
+8. Net wise resources used in clock region X0Y2
+-----------------------------------------------
+
++-------------+-------------+--------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| Source Type | BUFHCE Site | Locked | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | Clock Net Name |
++-------------+-------------+--------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| BUFG        |     ---     |   no   |         0 |        0 |       0 |         0 |       0 |       0 |   1 |     0 |        0 | clk_SB_BUFG    |
++-------------+-------------+--------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+
+
+9. Net wise resources used in clock region X0Y3
+-----------------------------------------------
+
++-------------+-------------+--------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------+
+| Source Type | BUFHCE Site | Locked | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |  Clock Net Name |
++-------------+-------------+--------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------+
+| BUFG        |     ---     |   no   |         0 |        0 |       0 |         0 |       0 |       0 |   1 |     0 |        0 | en_KE_IBUF_BUFG |
++-------------+-------------+--------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------+
+
+
+
+# Location of BUFG Primitives 
+set_property LOC BUFGCTRL_X0Y5 [get_cells en_KE_IBUF_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y4 [get_cells clk_SB_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y2 [get_cells n_4_279_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y3 [get_cells n_6_856_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y0 [get_cells n_0_900_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y1 [get_cells n_2_901_BUFG_inst]
+
+# Location of IO Clock Primitives
+
+# Location of MMCM Clock Primitives
+
+# Location of BUFH Clock Primitives
+
+# Location of BUFR Clock Primitives
+
+# Location of BUFMR Clock Primitives
+
+# Location of PLL Clock Primitives
+
+# Location of IO Primitives which is load of clock spine
+
+# Location of clock ports
+set_property LOC IOB_X0Y28 [get_ports en_KE]
+
+# Clock net "clk_SB_BUFG" driven by instance "clk_SB_BUFG_inst" located at site "BUFGCTRL_X0Y4"
+#startgroup
+create_pblock CLKAG_clk_SB_BUFG
+add_cells_to_pblock [get_pblocks  CLKAG_clk_SB_BUFG] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="clk_SB_BUFG"}]]]
+resize_pblock [get_pblocks CLKAG_clk_SB_BUFG] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "en_KE_IBUF_BUFG" driven by instance "en_KE_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y5"
+#startgroup
+create_pblock CLKAG_en_KE_IBUF_BUFG
+add_cells_to_pblock [get_pblocks  CLKAG_en_KE_IBUF_BUFG] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="en_KE_IBUF_BUFG"}]]]
+resize_pblock [get_pblocks CLKAG_en_KE_IBUF_BUFG] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "n_0_900_BUFG" driven by instance "n_0_900_BUFG_inst" located at site "BUFGCTRL_X0Y0"
+#startgroup
+create_pblock CLKAG_n_0_900_BUFG
+add_cells_to_pblock [get_pblocks  CLKAG_n_0_900_BUFG] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="n_0_900_BUFG"}]]]
+resize_pblock [get_pblocks CLKAG_n_0_900_BUFG] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "n_2_901_BUFG" driven by instance "n_2_901_BUFG_inst" located at site "BUFGCTRL_X0Y1"
+#startgroup
+create_pblock CLKAG_n_2_901_BUFG
+add_cells_to_pblock [get_pblocks  CLKAG_n_2_901_BUFG] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="n_2_901_BUFG"}]]]
+resize_pblock [get_pblocks CLKAG_n_2_901_BUFG] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "n_4_279_BUFG" driven by instance "n_4_279_BUFG_inst" located at site "BUFGCTRL_X0Y2"
+#startgroup
+create_pblock CLKAG_n_4_279_BUFG
+add_cells_to_pblock [get_pblocks  CLKAG_n_4_279_BUFG] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="n_4_279_BUFG"}]]]
+resize_pblock [get_pblocks CLKAG_n_4_279_BUFG] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "n_6_856_BUFG" driven by instance "n_6_856_BUFG_inst" located at site "BUFGCTRL_X0Y3"
+#startgroup
+create_pblock CLKAG_n_6_856_BUFG
+add_cells_to_pblock [get_pblocks  CLKAG_n_6_856_BUFG] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="n_6_856_BUFG"}]]]
+resize_pblock [get_pblocks CLKAG_n_6_856_BUFG] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/SubBytes_round/n_8_Bo_reg[71]_i_1" driven by instance "AES_Crypto_0/SubBytes_round/Bo_reg[71]_i_1" located at site "SLICE_X14Y158"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[71]_i_1
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[71]_i_1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/SubBytes_round/n_8_Bo_reg[71]_i_1"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[71]_i_1] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/SubBytes_round/n_8_Bo_reg[63]_i_1" driven by instance "AES_Crypto_0/SubBytes_round/Bo_reg[63]_i_1" located at site "SLICE_X13Y158"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[63]_i_1
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[63]_i_1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/SubBytes_round/n_8_Bo_reg[63]_i_1"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[63]_i_1] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/SubBytes_round/n_8_Bo_reg[47]_i_1" driven by instance "AES_Crypto_0/SubBytes_round/Bo_reg[47]_i_1" located at site "SLICE_X11Y156"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[47]_i_1
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[47]_i_1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/SubBytes_round/n_8_Bo_reg[47]_i_1"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[47]_i_1] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/SubBytes_round/n_8_Bo_reg[39]_i_1" driven by instance "AES_Crypto_0/SubBytes_round/Bo_reg[39]_i_1" located at site "SLICE_X14Y154"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[39]_i_1
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[39]_i_1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/SubBytes_round/n_8_Bo_reg[39]_i_1"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[39]_i_1] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/SubBytes_round/n_8_Bo_reg[15]_i_1" driven by instance "AES_Crypto_0/SubBytes_round/Bo_reg[15]_i_1" located at site "SLICE_X11Y156"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[15]_i_1
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[15]_i_1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/SubBytes_round/n_8_Bo_reg[15]_i_1"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[15]_i_1] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/SubBytes_round/n_8_Bo_reg[103]_i_1" driven by instance "AES_Crypto_0/SubBytes_round/Bo_reg[103]_i_1" located at site "SLICE_X14Y153"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[103]_i_1
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[103]_i_1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/SubBytes_round/n_8_Bo_reg[103]_i_1"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[103]_i_1] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/SubBytes_round/n_8_Bo_reg[7]_i_1" driven by instance "AES_Crypto_0/SubBytes_round/Bo_reg[7]_i_1" located at site "SLICE_X13Y158"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[7]_i_1
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[7]_i_1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/SubBytes_round/n_8_Bo_reg[7]_i_1"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[7]_i_1] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[87]_i_1__0" driven by instance "AES_Crypto_0/InvSubBytes_round/Bo_reg[87]_i_1__0" located at site "SLICE_X12Y141"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[87]_i_1__0
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[87]_i_1__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[87]_i_1__0"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[87]_i_1__0] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[63]_i_1__0" driven by instance "AES_Crypto_0/InvSubBytes_round/Bo_reg[63]_i_1__0" located at site "SLICE_X7Y141"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[63]_i_1__0
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[63]_i_1__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[63]_i_1__0"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[63]_i_1__0] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[31]_i_1__0" driven by instance "AES_Crypto_0/InvSubBytes_round/Bo_reg[31]_i_1__0" located at site "SLICE_X5Y141"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[31]_i_1__0
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[31]_i_1__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[31]_i_1__0"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[31]_i_1__0] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[119]_i_1__0" driven by instance "AES_Crypto_0/InvSubBytes_round/Bo_reg[119]_i_1__0" located at site "SLICE_X5Y145"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[119]_i_1__0
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[119]_i_1__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[119]_i_1__0"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[119]_i_1__0] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/Clock_div32_0/clk_div16" driven by instance "AES_Crypto_0/Clock_div32_0/clk_div16_reg" located at site "SLICE_X20Y144"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/Clock_div32_0/clk_div16
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/Clock_div32_0/clk_div16] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/Clock_div32_0/clk_div16"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/Clock_div32_0/clk_div16] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/SubBytes_round/n_8_Bo_reg[55]_i_1" driven by instance "AES_Crypto_0/SubBytes_round/Bo_reg[55]_i_1" located at site "SLICE_X14Y154"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[55]_i_1
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[55]_i_1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/SubBytes_round/n_8_Bo_reg[55]_i_1"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[55]_i_1] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/SubBytes_round/n_8_Bo_reg[31]_i_1" driven by instance "AES_Crypto_0/SubBytes_round/Bo_reg[31]_i_1" located at site "SLICE_X11Y151"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[31]_i_1
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[31]_i_1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/SubBytes_round/n_8_Bo_reg[31]_i_1"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[31]_i_1] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/SubBytes_round/n_8_Bo_reg[23]_i_1" driven by instance "AES_Crypto_0/SubBytes_round/Bo_reg[23]_i_1" located at site "SLICE_X13Y155"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[23]_i_1
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[23]_i_1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/SubBytes_round/n_8_Bo_reg[23]_i_1"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[23]_i_1] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/SubBytes_round/n_8_Bo_reg[127]_i_2" driven by instance "AES_Crypto_0/SubBytes_round/Bo_reg[127]_i_2" located at site "SLICE_X14Y158"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[127]_i_2
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[127]_i_2] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/SubBytes_round/n_8_Bo_reg[127]_i_2"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[127]_i_2] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/SubBytes_round/n_8_Bo_reg[111]_i_1" driven by instance "AES_Crypto_0/SubBytes_round/Bo_reg[111]_i_1" located at site "SLICE_X12Y158"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[111]_i_1
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[111]_i_1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/SubBytes_round/n_8_Bo_reg[111]_i_1"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[111]_i_1] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/Clock_div32_0/clk_div32" driven by instance "AES_Crypto_0/Clock_div32_0/clk_i_reg" located at site "SLICE_X20Y145"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/Clock_div32_0/clk_div32
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/Clock_div32_0/clk_div32] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/Clock_div32_0/clk_div32"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/Clock_div32_0/clk_div32] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[95]_i_1__0" driven by instance "AES_Crypto_0/InvSubBytes_round/Bo_reg[95]_i_1__0" located at site "SLICE_X13Y141"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[95]_i_1__0
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[95]_i_1__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[95]_i_1__0"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[95]_i_1__0] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[71]_i_1__0" driven by instance "AES_Crypto_0/InvSubBytes_round/Bo_reg[71]_i_1__0" located at site "SLICE_X13Y141"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[71]_i_1__0
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[71]_i_1__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[71]_i_1__0"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[71]_i_1__0] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[39]_i_1__0" driven by instance "AES_Crypto_0/InvSubBytes_round/Bo_reg[39]_i_1__0" located at site "SLICE_X4Y143"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[39]_i_1__0
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[39]_i_1__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[39]_i_1__0"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[39]_i_1__0] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/SubBytes_round/n_8_Bo_reg[95]_i_1" driven by instance "AES_Crypto_0/SubBytes_round/Bo_reg[95]_i_1" located at site "SLICE_X13Y155"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[95]_i_1
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[95]_i_1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/SubBytes_round/n_8_Bo_reg[95]_i_1"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[95]_i_1] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/SubBytes_round/n_8_Bo_reg[87]_i_1" driven by instance "AES_Crypto_0/SubBytes_round/Bo_reg[87]_i_1" located at site "SLICE_X12Y158"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[87]_i_1
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[87]_i_1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/SubBytes_round/n_8_Bo_reg[87]_i_1"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[87]_i_1] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/SubBytes_round/n_8_Bo_reg[119]_i_1" driven by instance "AES_Crypto_0/SubBytes_round/Bo_reg[119]_i_1" located at site "SLICE_X14Y153"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[119]_i_1
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[119]_i_1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/SubBytes_round/n_8_Bo_reg[119]_i_1"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[119]_i_1] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[79]_i_1__0" driven by instance "AES_Crypto_0/InvSubBytes_round/Bo_reg[79]_i_1__0" located at site "SLICE_X12Y141"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[79]_i_1__0
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[79]_i_1__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[79]_i_1__0"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[79]_i_1__0] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[47]_i_1__0" driven by instance "AES_Crypto_0/InvSubBytes_round/Bo_reg[47]_i_1__0" located at site "SLICE_X4Y143"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[47]_i_1__0
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[47]_i_1__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[47]_i_1__0"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[47]_i_1__0] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[15]_i_1__0" driven by instance "AES_Crypto_0/InvSubBytes_round/Bo_reg[15]_i_1__0" located at site "SLICE_X7Y141"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[15]_i_1__0
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[15]_i_1__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[15]_i_1__0"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[15]_i_1__0] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[103]_i_1__0" driven by instance "AES_Crypto_0/InvSubBytes_round/Bo_reg[103]_i_1__0" located at site "SLICE_X4Y143"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[103]_i_1__0
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[103]_i_1__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[103]_i_1__0"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[103]_i_1__0] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/Clock_div32_0/clk_div4" driven by instance "AES_Crypto_0/Clock_div32_0/clk_div4_reg" located at site "SLICE_X21Y143"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/Clock_div32_0/clk_div4
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/Clock_div32_0/clk_div4] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/Clock_div32_0/clk_div4"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/Clock_div32_0/clk_div4] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/SubBytes_round/n_8_Bo_reg[79]_i_1" driven by instance "AES_Crypto_0/SubBytes_round/Bo_reg[79]_i_1" located at site "SLICE_X11Y151"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[79]_i_1
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[79]_i_1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/SubBytes_round/n_8_Bo_reg[79]_i_1"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/SubBytes_round/n_8_Bo_reg[79]_i_1] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
+#endgroup
+
+# Clock net "AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[55]_i_1__0" driven by instance "AES_Crypto_0/InvSubBytes_round/Bo_reg[55]_i_1__0" located at site "SLICE_X5Y141"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[55]_i_1__0
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[55]_i_1__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[55]_i_1__0"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[55]_i_1__0] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[23]_i_1__0" driven by instance "AES_Crypto_0/InvSubBytes_round/Bo_reg[23]_i_1__0" located at site "SLICE_X9Y141"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[23]_i_1__0
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[23]_i_1__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[23]_i_1__0"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[23]_i_1__0] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[127]_i_2__0" driven by instance "AES_Crypto_0/InvSubBytes_round/Bo_reg[127]_i_2__0" located at site "SLICE_X5Y145"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[127]_i_2__0
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[127]_i_2__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[127]_i_2__0"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[127]_i_2__0] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[111]_i_1__0" driven by instance "AES_Crypto_0/InvSubBytes_round/Bo_reg[111]_i_1__0" located at site "SLICE_X4Y143"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[111]_i_1__0
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[111]_i_1__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[111]_i_1__0"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[111]_i_1__0] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[7]_i_1__0" driven by instance "AES_Crypto_0/InvSubBytes_round/Bo_reg[7]_i_1__0" located at site "SLICE_X9Y141"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[7]_i_1__0
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[7]_i_1__0] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[7]_i_1__0"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/InvSubBytes_round/n_8_Bo_reg[7]_i_1__0] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/Clock_div32_0/clk_div8" driven by instance "AES_Crypto_0/Clock_div32_0/clk_div8_reg" located at site "SLICE_X20Y143"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/Clock_div32_0/clk_div8
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/Clock_div32_0/clk_div8] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/Clock_div32_0/clk_div8"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/Clock_div32_0/clk_div8] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "AES_Crypto_0/Clock_div32_0/clk_div2" driven by instance "AES_Crypto_0/Clock_div32_0/clk_div2_reg" located at site "SLICE_X22Y143"
+#startgroup
+create_pblock CLKAG_AES_Crypto_0/Clock_div32_0/clk_div2
+add_cells_to_pblock [get_pblocks  CLKAG_AES_Crypto_0/Clock_div32_0/clk_div2] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="AES_Crypto_0/Clock_div32_0/clk_div2"}]]]
+resize_pblock [get_pblocks CLKAG_AES_Crypto_0/Clock_div32_0/clk_div2] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup

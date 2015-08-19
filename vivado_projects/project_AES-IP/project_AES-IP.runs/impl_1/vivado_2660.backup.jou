@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.1 (64-bit)
+# SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+# IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+# Start of session at: Sun Jul 26 11:23:04 2015
+# Process ID: 5164
+# Log file: C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES-IP/project_AES-IP.runs/impl_1/myip_lite_v1_0.vdi
+# Journal file: C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES-IP/project_AES-IP.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source myip_lite_v1_0.tcl -notrace

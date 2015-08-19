@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.1 (64-bit)
+# SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+# IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+# Start of session at: Mon Aug 10 18:03:59 2015
+# Process ID: 5908
+# Log file: C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/tutorial_ug940 - com AES_Crypto/tutorial_ug940.runs/impl_1/mb_subsystem_wrapper.vdi
+# Journal file: C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/tutorial_ug940 - com AES_Crypto/tutorial_ug940.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source mb_subsystem_wrapper.tcl -notrace

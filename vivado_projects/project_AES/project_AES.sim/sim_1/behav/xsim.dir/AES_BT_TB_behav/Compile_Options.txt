@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "secureip" --snapshot "AES_BT_TB_behav" --prj "C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES/project_AES.sim/sim_1/behav/AES_BT_TB.prj" "xil_defaultlib.AES_BT_TB" 

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.1 (64-bit)
+# SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+# IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+# Start of session at: Thu Mar 19 09:17:11 2015
+# Process ID: 6016
+# Log file: C:/Users/Janier Arias Garcia/Documents/Projeto Caio/project_AES/project_AES.runs/synth_1/AES_Crypto_BT.vds
+# Journal file: C:/Users/Janier Arias Garcia/Documents/Projeto Caio/project_AES/project_AES.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source AES_Crypto_BT.tcl

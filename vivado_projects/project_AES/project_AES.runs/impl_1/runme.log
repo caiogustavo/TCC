@@ -1,0 +1,619 @@
+
+*** Running vivado
+    with args -log AES_Crypto_BT.vdi -applog -m64 -messageDb vivado.pb -mode batch -source AES_Crypto_BT.tcl -notrace
+
+
+****** Vivado v2014.1 (64-bit)
+  **** SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+  **** IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source AES_Crypto_BT.tcl -notrace
+Command: open_checkpoint {C:/Users/Janier Arias Garcia/Documents/Projeto Caio/project_AES/project_AES.runs/impl_1/AES_Crypto_BT.dcp}
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.1
+Loading clock regions from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.1/data/parts/xilinx/kintex7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/kintex7/xc7k325t/ffg900/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.1/data\./parts/xilinx/kintex7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/ConfigModes.xml
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-484] Checkpoint was created with build 881834
+open_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 478.770 ; gain = 305.504
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.258 . Memory (MB): peak = 483.750 ; gain = 1.035
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1 Retarget
+
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1fac5c455
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 938.363 ; gain = 454.613
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: 1fac5c455
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 938.363 ; gain = 454.613
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 1fac5c455
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 938.363 ; gain = 454.613
+Ending Logic Optimization Task | Checksum: 1fac5c455
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 938.363 ; gain = 454.613
+Implement Debug Cores | Checksum: 1fac5c455
+Logic Optimization | Checksum: 1fac5c455
+
+Starting Power Optimization Task
+Ending Power Optimization Task | Checksum: 1fac5c455
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 938.363 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 938.363 ; gain = 459.594
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 945.895 ; gain = 0.000
+
+Phase 1.1.1 Mandatory Logic Optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 945.895 ; gain = 0.000
+Phase 1.1.1 Mandatory Logic Optimization | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.187 . Memory (MB): peak = 945.895 ; gain = 0.000
+
+Phase 1.1.2 Build Super Logic Region (SLR) Database
+Phase 1.1.2 Build Super Logic Region (SLR) Database | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.280 . Memory (MB): peak = 945.895 ; gain = 0.000
+
+Phase 1.1.3 Add Constraints
+Phase 1.1.3 Add Constraints | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.281 . Memory (MB): peak = 945.895 ; gain = 0.000
+
+Phase 1.1.4 Build Shapes/ HD Config
+
+Phase 1.1.4.1 Build Macros
+Phase 1.1.4.1 Build Macros | Checksum: b375a385
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.490 . Memory (MB): peak = 945.895 ; gain = 0.000
+Phase 1.1.4 Build Shapes/ HD Config | Checksum: b375a385
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.491 . Memory (MB): peak = 945.895 ; gain = 0.000
+
+Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.5.1 Pre-Place Cells
+Phase 1.1.5.1 Pre-Place Cells | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.506 . Memory (MB): peak = 945.895 ; gain = 0.000
+
+Phase 1.1.5.2 Implementation Feasibility check
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/SubBytes_round/Bo_reg[103]_i_1' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/SubBytes_round/Bo_reg[100] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[101] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[102] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[103] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[96] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/SubBytes_round/Bo_reg[111]_i_1' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/SubBytes_round/Bo_reg[104] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[105] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[106] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[107] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[108] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/SubBytes_round/Bo_reg[119]_i_1' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/SubBytes_round/Bo_reg[112] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[113] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[114] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[115] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[116] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/SubBytes_round/Bo_reg[127]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/SubBytes_round/Bo_reg[120] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[121] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[122] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[123] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[124] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/SubBytes_round/Bo_reg[15]_i_1' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/SubBytes_round/Bo_reg[10] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[11] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[12] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[13] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[14] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/SubBytes_round/Bo_reg[23]_i_1' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/SubBytes_round/Bo_reg[16] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[17] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[18] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[19] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[20] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/SubBytes_round/Bo_reg[31]_i_1' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/SubBytes_round/Bo_reg[24] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[25] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[26] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[27] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[28] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/SubBytes_round/Bo_reg[39]_i_1' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/SubBytes_round/Bo_reg[32] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[33] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[34] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[35] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[36] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/SubBytes_round/Bo_reg[47]_i_1' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/SubBytes_round/Bo_reg[40] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[41] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[42] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[43] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[44] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/SubBytes_round/Bo_reg[55]_i_1' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/SubBytes_round/Bo_reg[48] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[49] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[50] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[51] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[52] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/SubBytes_round/Bo_reg[63]_i_1' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/SubBytes_round/Bo_reg[56] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[57] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[58] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[59] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[60] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/SubBytes_round/Bo_reg[71]_i_1' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/SubBytes_round/Bo_reg[64] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[65] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[66] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[67] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[68] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/SubBytes_round/Bo_reg[79]_i_1' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/SubBytes_round/Bo_reg[72] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[73] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[74] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[75] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[76] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/SubBytes_round/Bo_reg[7]_i_1' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/SubBytes_round/Bo_reg[0] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[1] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[2] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[3] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[4] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/SubBytes_round/Bo_reg[87]_i_1' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/SubBytes_round/Bo_reg[80] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[81] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[82] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[83] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[84] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/SubBytes_round/Bo_reg[95]_i_1' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/SubBytes_round/Bo_reg[88] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[89] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[90] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[91] {LDCE}
+	AES_Crypto_0/SubBytes_round/Bo_reg[92] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/Control_0/n_0_900_BUFG_inst_i_1' is driving clock pin of 137 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/Control_0/e_mux_1_reg {LDCE}
+	AES_Crypto_0/Control_0/e_mux_2_reg[0] {LDCE}
+	AES_Crypto_0/Control_0/e_mux_2_reg[1] {LDCE}
+	AES_Crypto_0/Control_0/e_mux_2_reg[2] {LDCE}
+	AES_Crypto_0/Control_0/e_mux_2_reg[3] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/Control_0/n_4_279_BUFG_inst_i_1' is driving clock pin of 128 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/Control_0/bo_reg[0] {LDCE}
+	AES_Crypto_0/Control_0/bo_reg[100] {LDCE}
+	AES_Crypto_0/Control_0/bo_reg[101] {LDCE}
+	AES_Crypto_0/Control_0/bo_reg[102] {LDCE}
+	AES_Crypto_0/Control_0/bo_reg[103] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/Control_Decryption_0/n_2_901_BUFG_inst_i_1' is driving clock pin of 137 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/Control_Decryption_0/e_mux_1_reg {LDCE}
+	AES_Crypto_0/Control_Decryption_0/e_mux_2_reg[0] {LDCE}
+	AES_Crypto_0/Control_Decryption_0/e_mux_2_reg[1] {LDCE}
+	AES_Crypto_0/Control_Decryption_0/e_mux_2_reg[2] {LDCE}
+	AES_Crypto_0/Control_Decryption_0/e_mux_2_reg[3] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/Control_Decryption_0/n_6_856_BUFG_inst_i_1' is driving clock pin of 128 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/Control_Decryption_0/bo_reg[0] {LDCE}
+	AES_Crypto_0/Control_Decryption_0/bo_reg[100] {LDCE}
+	AES_Crypto_0/Control_Decryption_0/bo_reg[101] {LDCE}
+	AES_Crypto_0/Control_Decryption_0/bo_reg[102] {LDCE}
+	AES_Crypto_0/Control_Decryption_0/bo_reg[103] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/InvSubBytes_round/Bo_reg[103]_i_1__0' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[100] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[101] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[102] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[103] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[96] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/InvSubBytes_round/Bo_reg[111]_i_1__0' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[104] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[105] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[106] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[107] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[108] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/InvSubBytes_round/Bo_reg[119]_i_1__0' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[112] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[113] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[114] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[115] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[116] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/InvSubBytes_round/Bo_reg[127]_i_2__0' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[120] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[121] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[122] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[123] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[124] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/InvSubBytes_round/Bo_reg[15]_i_1__0' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[10] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[11] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[12] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[13] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[14] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/InvSubBytes_round/Bo_reg[23]_i_1__0' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[16] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[17] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[18] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[19] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[20] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/InvSubBytes_round/Bo_reg[31]_i_1__0' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[24] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[25] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[26] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[27] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[28] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/InvSubBytes_round/Bo_reg[39]_i_1__0' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[32] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[33] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[34] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[35] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[36] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/InvSubBytes_round/Bo_reg[47]_i_1__0' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[40] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[41] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[42] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[43] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[44] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/InvSubBytes_round/Bo_reg[55]_i_1__0' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[48] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[49] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[50] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[51] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[52] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/InvSubBytes_round/Bo_reg[63]_i_1__0' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[56] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[57] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[58] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[59] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[60] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/InvSubBytes_round/Bo_reg[71]_i_1__0' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[64] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[65] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[66] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[67] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[68] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/InvSubBytes_round/Bo_reg[79]_i_1__0' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[72] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[73] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[74] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[75] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[76] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/InvSubBytes_round/Bo_reg[7]_i_1__0' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[0] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[1] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[2] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[3] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[4] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/InvSubBytes_round/Bo_reg[87]_i_1__0' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[80] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[81] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[82] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[83] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[84] {LDCE}
+WARNING: [Place 30-568] A LUT 'AES_Crypto_0/InvSubBytes_round/Bo_reg[95]_i_1__0' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[88] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[89] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[90] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[91] {LDCE}
+	AES_Crypto_0/InvSubBytes_round/Bo_reg[92] {LDCE}
+WARNING: [Place 30-568] A LUT 'clk_SB_BUFG_inst_i_1' is driving clock pin of 25 registers. This could lead to large hold time violations. First few involved registers are:
+	AES_Crypto_0/InvSubBytes_round/x0_reg {LDCE}
+	AES_Crypto_0/InvSubBytes_round/x1_reg {LDCE}
+	AES_Crypto_0/InvSubBytes_round/x2_reg {LDCE}
+	AES_Crypto_0/InvSubBytes_round/x3_reg {LDCE}
+	AES_Crypto_0/InvSubBytes_round/x4_reg {LDCE}
+Phase 1.1.5.2 Implementation Feasibility check | Checksum: 00000000
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.749 . Memory (MB): peak = 947.641 ; gain = 1.746
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1.1.5.3 Implementation Feasibility check On IDelay
+Phase 1.1.5.3 Implementation Feasibility check On IDelay | Checksum: 00000000
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 966.102 ; gain = 20.207
+Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17ae8ca0c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 966.102 ; gain = 20.207
+
+Phase 1.1.6 Build Placer Netlist Model
+
+Phase 1.1.6.1 Place Init Design
+Phase 1.1.6.1 Place Init Design | Checksum: 1bc366f58
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 966.102 ; gain = 20.207
+Phase 1.1.6 Build Placer Netlist Model | Checksum: 1bc366f58
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 966.102 ; gain = 20.207
+
+Phase 1.1.7 Constrain Clocks/Macros
+
+Phase 1.1.7.1 Constrain Global/Regional Clocks
+Phase 1.1.7.1 Constrain Global/Regional Clocks | Checksum: 1bc366f58
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 966.102 ; gain = 20.207
+Phase 1.1.7 Constrain Clocks/Macros | Checksum: 1bc366f58
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 966.102 ; gain = 20.207
+Phase 1.1 Placer Initialization Core | Checksum: 1bc366f58
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 966.102 ; gain = 20.207
+Phase 1 Placer Initialization | Checksum: 1bc366f58
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 966.102 ; gain = 20.207
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1bafb196d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 974.914 ; gain = 29.020
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1bafb196d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 974.914 ; gain = 29.020
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1c21f21b8
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 975.352 ; gain = 29.457
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 213330e0b
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 975.945 ; gain = 30.051
+
+Phase 3.4 Commit Small Macros & Core Logic
+Phase 3.4 Commit Small Macros & Core Logic | Checksum: 1cc6ada4f
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 995.234 ; gain = 49.340
+
+Phase 3.5 Re-assign LUT pins
+Phase 3.5 Re-assign LUT pins | Checksum: 1cc6ada4f
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 995.730 ; gain = 49.836
+Phase 3 Detail Placement | Checksum: 1cc6ada4f
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 995.730 ; gain = 49.836
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 PCOPT Shape updates
+Phase 4.1 PCOPT Shape updates | Checksum: 1b943599e
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 995.730 ; gain = 49.836
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1b943599e
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 995.730 ; gain = 49.836
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1b943599e
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 995.730 ; gain = 49.836
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 17441e05d
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 995.730 ; gain = 49.836
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 17441e05d
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 995.730 ; gain = 49.836
+Ending Placer Task | Checksum: be8991ca
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 995.730 ; gain = 49.836
+INFO: [Common 17-83] Releasing license: Implementation
+28 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 995.730 ; gain = 57.367
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.572 . Memory (MB): peak = 995.730 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 995.730 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Starting Route Task
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 12ee14895
+
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:46 . Memory (MB): peak = 1255.863 ; gain = 206.551
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: bdc08592
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:49 . Memory (MB): peak = 1286.188 ; gain = 236.875
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 153fdf8af
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:49 . Memory (MB): peak = 1286.188 ; gain = 236.875
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 204
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 1b0ab69f5
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:50 . Memory (MB): peak = 1286.188 ; gain = 236.875
+Phase 4 Rip-up And Reroute | Checksum: 1b0ab69f5
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:50 . Memory (MB): peak = 1286.188 ; gain = 236.875
+
+Phase 5 Post Hold Fix
+Phase 5 Post Hold Fix | Checksum: 1b0ab69f5
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:50 . Memory (MB): peak = 1286.188 ; gain = 236.875
+
+Phase 6 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.371285 %
+  Global Horizontal Routing Utilization  = 0.141755 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 46.8468%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 44.1441%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 35.2941%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 45.5882%, No Congested Regions.
+Phase 6 Route finalize | Checksum: 1b0ab69f5
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:50 . Memory (MB): peak = 1286.188 ; gain = 236.875
+
+Phase 7 Verifying routed nets
+
+ Verification completed successfully
+Phase 7 Verifying routed nets | Checksum: 1b0ab69f5
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:50 . Memory (MB): peak = 1286.188 ; gain = 236.875
+
+Phase 8 Depositing Routes
+Phase 8 Depositing Routes | Checksum: 1b3f508ce
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:50 . Memory (MB): peak = 1286.188 ; gain = 236.875
+INFO: [Route 35-16] Router Completed Successfully
+Ending Route Task | Checksum: 1b3f508ce
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:01:50 . Memory (MB): peak = 1286.188 ; gain = 236.875
+
+Routing Is Done.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:01:50 . Memory (MB): peak = 1286.188 ; gain = 236.875
+INFO: [Common 17-83] Releasing license: Implementation
+36 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:10 ; elapsed = 00:01:53 . Memory (MB): peak = 1286.188 ; gain = 290.457
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.510 . Memory (MB): peak = 1286.188 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Janier Arias Garcia/Documents/Projeto Caio/project_AES/project_AES.runs/impl_1/AES_Crypto_BT_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max, Constraints type: SDC.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Power 33-232] No user defined clocks was found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 19 09:37:23 2015...
+
+*** Running vivado
+    with args -log AES_Crypto_BT.vdi -applog -m64 -messageDb vivado.pb -mode batch -source AES_Crypto_BT.tcl -notrace
+
+
+****** Vivado v2014.1 (64-bit)
+  **** SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+  **** IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source AES_Crypto_BT.tcl -notrace
+Command: open_checkpoint AES_Crypto_BT_routed.dcp
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.1
+Loading clock regions from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.1/data/parts/xilinx/kintex7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/kintex7/xc7k325t/ffg900/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.1/data\./parts/xilinx/kintex7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/ConfigModes.xml
+Reading XDEF placement.
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.243 . Memory (MB): peak = 483.164 ; gain = 0.629
+Restoring placement.
+Restored 668 out of 668 XDEF sites from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-484] Checkpoint was created with build 881834
+open_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 483.164 ; gain = 309.398
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
+Running DRC as a precondition to command write_bitstream
+INFO: [Drc 23-27] Running DRC with 2 threads
+ERROR: [Drc 23-20] Rule violation (NSTD-1) Unspecified I/O Standard - 262 out of 262 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: bo_encrypt[127:0], bo_decrypt[127:0], en_encrypt, en_decrypt, en_KE, rdy_encrypt, rdy_decrypt, rdy_KE.
+ERROR: [Drc 23-20] Rule violation (UCIO-1) Unconstrained Logical Port - 262 out of 262 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: bo_encrypt[127:0], bo_decrypt[127:0], en_encrypt, en_decrypt, en_KE, rdy_encrypt, rdy_decrypt, rdy_KE.
+INFO: [Vivado 12-3199] DRC finished with 2 Errors, 75 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 654.254 ; gain = 171.090
+ERROR: [Common 17-39] 'write_bitstream' failed due to earlier errors.
+
+    while executing
+"write_bitstream -force AES_Crypto_BT.bit "
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 19 09:38:55 2015...

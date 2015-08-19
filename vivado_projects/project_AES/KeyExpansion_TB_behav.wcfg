@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="KeyExpansion_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="KeyExpansion_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="24" />
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/k0" type="array">
+      <obj_property name="ElementShortName">k0[127:0]</obj_property>
+      <obj_property name="ObjectShortName">k0[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/K1" type="array">
+      <obj_property name="ElementShortName">K1[127:0]</obj_property>
+      <obj_property name="ObjectShortName">K1[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/K2" type="array">
+      <obj_property name="ElementShortName">K2[127:0]</obj_property>
+      <obj_property name="ObjectShortName">K2[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/K3" type="array">
+      <obj_property name="ElementShortName">K3[127:0]</obj_property>
+      <obj_property name="ObjectShortName">K3[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/K4" type="array">
+      <obj_property name="ElementShortName">K4[127:0]</obj_property>
+      <obj_property name="ObjectShortName">K4[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/K5" type="array">
+      <obj_property name="ElementShortName">K5[127:0]</obj_property>
+      <obj_property name="ObjectShortName">K5[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/K6" type="array">
+      <obj_property name="ElementShortName">K6[127:0]</obj_property>
+      <obj_property name="ObjectShortName">K6[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/K7" type="array">
+      <obj_property name="ElementShortName">K7[127:0]</obj_property>
+      <obj_property name="ObjectShortName">K7[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/K8" type="array">
+      <obj_property name="ElementShortName">K8[127:0]</obj_property>
+      <obj_property name="ObjectShortName">K8[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/K9" type="array">
+      <obj_property name="ElementShortName">K9[127:0]</obj_property>
+      <obj_property name="ObjectShortName">K9[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/K10" type="array">
+      <obj_property name="ElementShortName">K10[127:0]</obj_property>
+      <obj_property name="ObjectShortName">K10[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/clkSB" type="logic">
+      <obj_property name="ElementShortName">clkSB</obj_property>
+      <obj_property name="ObjectShortName">clkSB</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/wsub" type="array">
+      <obj_property name="ElementShortName">wsub[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wsub[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/wtosub" type="array">
+      <obj_property name="ElementShortName">wtosub[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wtosub[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/bo" type="array">
+      <obj_property name="ElementShortName">bo[127:0]</obj_property>
+      <obj_property name="ObjectShortName">bo[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/mode" type="logic">
+      <obj_property name="ElementShortName">mode</obj_property>
+      <obj_property name="ObjectShortName">mode</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/w0next" type="array">
+      <obj_property name="ElementShortName">w0next[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w0next[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/w1next" type="array">
+      <obj_property name="ElementShortName">w1next[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w1next[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/w2next" type="array">
+      <obj_property name="ElementShortName">w2next[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w2next[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/w3next" type="array">
+      <obj_property name="ElementShortName">w3next[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w3next[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/sel_init" type="logic">
+      <obj_property name="ElementShortName">sel_init</obj_property>
+      <obj_property name="ObjectShortName">sel_init</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/KeyExpansion_TB/rdy" type="logic">
+      <obj_property name="ElementShortName">rdy</obj_property>
+      <obj_property name="ObjectShortName">rdy</obj_property>
+   </wvobject>
+</wave_config>
