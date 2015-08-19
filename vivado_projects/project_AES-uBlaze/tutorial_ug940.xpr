@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright (c) 2001-2013 Xilinx Inc, All rights reserved -->
 
-<Project Version="7" Minor="0" Path="C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/tutorial_ug940 - com AES_Crypto/tutorial_ug940.xpr">
+<Project Version="7" Minor="0" Path="C:/Projetos_git/repo/vivado_projects/project_AES-uBlaze/tutorial_ug940.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="00a93ce480c641739f8377a5e9d12986"/>
@@ -35,6 +35,7 @@
           <Attr Name="UsedIn" Val="synthesis"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/bd/mb_subsystem/ip/mb_subsystem_AES_AXI_0_0/mb_subsystem_AES_AXI_0_0.upgrade_log"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="mb_subsystem_wrapper"/>
