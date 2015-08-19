@@ -13,8 +13,7 @@ SET_PREFERENCE outputdirectory c:/Projetos_git/repo/vivado_projects/project_uBla
 SET_PREFERENCE subworkingdirectory c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/_tmp/
 SET_PREFERENCE flowvendor Other
 SET_PREFERENCE tool vivado
-SET_PARAMETER component_name mb_system_mig_7series_0_0
-SET_PREFERENCE compnamestatus 1
+SET_PREFERENCE compnamestatus 0
 SET_PARAMETER component_name mb_system_mig_7series_0_0
 SET_PARAMETER xml_input_file C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/board.prj
 SET_PARAMETER data_dir_path c:/Xilinx/Vivado/2014.1/data/ip/xilinx/mig_7series_v2_0

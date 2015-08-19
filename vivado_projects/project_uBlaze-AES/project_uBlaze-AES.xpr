@@ -24,6 +24,12 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/bd/mb_system/hdl/mb_system_wrapper.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/board.prj">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -31,6 +37,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="mb_system_wrapper"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="IPRepoPath" Val="$PPRDIR/../project_AES-IP"/>
       </Config>
@@ -44,6 +51,8 @@
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="mb_system_wrapper"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
