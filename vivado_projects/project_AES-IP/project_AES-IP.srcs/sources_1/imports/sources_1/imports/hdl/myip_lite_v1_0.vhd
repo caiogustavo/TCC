@@ -17,7 +17,7 @@ entity myip_lite_v1_0 is
 	);
 	port (
 		-- Users to add ports here
-        aes_clk : in std_logic;
+        aes_clk : in std_logic; -- clk of SubBytes block
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
