@@ -61,34 +61,6 @@
           </spirit:parameter>
         </spirit:parameters>
       </spirit:busInterface>
-      <spirit:busInterface>
-        <spirit:name>CLK.CLOCK_RTL</spirit:name>
-        <spirit:displayName>Clk</spirit:displayName>
-        <spirit:description>Clock</spirit:description>
-        <spirit:busType spirit:library="signal" spirit:name="clock" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:abstractionType spirit:library="signal" spirit:name="clock_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:slave/>
-        <spirit:portMaps>
-          <spirit:portMap>
-            <spirit:logicalPort>
-              <spirit:name>CLK</spirit:name>
-            </spirit:logicalPort>
-            <spirit:physicalPort>
-              <spirit:name>clock_rtl</spirit:name>
-            </spirit:physicalPort>
-          </spirit:portMap>
-        </spirit:portMaps>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>FREQ_HZ</spirit:name>
-            <spirit:value>100000000</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>PHASE</spirit:name>
-            <spirit:value>0.000</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:busInterface>
     </spirit:busInterfaces>
     <spirit:model>
       <spirit:views>
@@ -101,12 +73,6 @@
       <spirit:ports>
         <spirit:port>
           <spirit:name>reset</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>clock_rtl</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
           </spirit:wire>
@@ -367,6 +333,7 @@
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M01_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="AES_AXI_0" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M03_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_in1"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>mig_7series_0_mmcm_locked</spirit:name>
@@ -434,11 +401,6 @@
         <spirit:name>axi_uartlite_0_interrupt</spirit:name>
         <spirit:internalPortReference spirit:componentRef="axi_uartlite_0" spirit:portRef="interrupt"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_xlconcat" spirit:portRef="In1"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>clock_rtl_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="clock_rtl"/>
-        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_in1"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>clk_wiz_0_clk_out1</spirit:name>
@@ -3259,7 +3221,7 @@
             <spirit:name>SEG_AES_AXI_0_reg0</spirit:name>
             <spirit:displayName>/AES_AXI_0/s00_axi/reg0</spirit:displayName>
             <spirit:addressOffset>0x44A00000</spirit:addressOffset>
-            <spirit:range>64K</spirit:range>
+            <spirit:range>4K</spirit:range>
           </spirit:segment>
         </spirit:segments>
       </spirit:addressSpace>

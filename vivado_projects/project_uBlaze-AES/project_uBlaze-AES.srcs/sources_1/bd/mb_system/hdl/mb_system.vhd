@@ -1,7 +1,7 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
---Date        : Wed Aug 19 20:04:19 2015
+--Date        : Wed Aug 19 21:00:19 2015
 --Host        : LAPAR01-PC running 64-bit Service Pack 1  (build 7601)
 --Command     : generate_target mb_system.bd
 --Design      : mb_system
@@ -3869,7 +3869,6 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity mb_system is
   port (
-    clock_rtl : in STD_LOGIC;
     ddr3_sdram_addr : out STD_LOGIC_VECTOR ( 13 downto 0 );
     ddr3_sdram_ba : out STD_LOGIC_VECTOR ( 2 downto 0 );
     ddr3_sdram_cas_n : out STD_LOGIC;
@@ -4407,7 +4406,6 @@ architecture STRUCTURE of mb_system is
   signal axi_uartlite_0_UART_TxD : STD_LOGIC;
   signal axi_uartlite_0_interrupt : STD_LOGIC;
   signal clk_wiz_0_clk_out1 : STD_LOGIC;
-  signal clock_rtl_1 : STD_LOGIC;
   signal mdm_1_debug_sys_rst : STD_LOGIC;
   signal microblaze_0_Clk : STD_LOGIC;
   signal microblaze_0_M_AXI_DC_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -4644,7 +4642,6 @@ architecture STRUCTURE of mb_system is
   attribute KEEP_HIERARCHY of microblaze_0 : label is "yes";
 begin
   axi_uartlite_0_UART_RxD <= rs232_uart_rxd;
-  clock_rtl_1 <= clock_rtl;
   ddr3_sdram_addr(13 downto 0) <= mig_7series_0_DDR3_ADDR(13 downto 0);
   ddr3_sdram_ba(2 downto 0) <= mig_7series_0_DDR3_BA(2 downto 0);
   ddr3_sdram_cas_n <= mig_7series_0_DDR3_CAS_N;
@@ -4982,7 +4979,7 @@ axi_uartlite_0: component mb_system_axi_uartlite_0_0
     );
 clk_wiz_0: component mb_system_clk_wiz_0_0
     port map (
-      clk_in1 => clock_rtl_1,
+      clk_in1 => microblaze_0_Clk,
       clk_out1 => clk_wiz_0_clk_out1,
       reset => reset_1
     );

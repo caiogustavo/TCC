@@ -114,6 +114,7 @@
           <spirit:configurableElementValue spirit:referenceId="C_DCACHE_ALWAYS_USED">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_USE_BRANCH_TARGET_CACHE">1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
+        <bd:hdl_attributes/>
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>mig_7series_0</spirit:instanceName>
@@ -188,6 +189,7 @@
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">mb_subsystem_axi_bram_ctrl_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
+        <bd:hdl_attributes/>
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>axi_mem_intercon</spirit:instanceName>
@@ -212,6 +214,14 @@
         <spirit:componentRef spirit:library="user" spirit:name="AES_AXI" spirit:vendor="CGMA" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">mb_subsystem_AES_AXI_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>clk_wiz_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="clk_wiz" spirit:vendor="xilinx.com" spirit:version="5.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">mb_subsystem_clk_wiz_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_OUT_FREQ">10.000</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -286,12 +296,42 @@
         <spirit:activeInterface spirit:busRef="BRAM_PORTB" spirit:componentRef="axi_bram_ctrl_0_bram"/>
         <spirit:activeInterface spirit:busRef="BRAM_PORTB" spirit:componentRef="axi_bram_ctrl_0"/>
       </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>microblaze_0_axi_periph_M03_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="M03_AXI" spirit:componentRef="microblaze_0_axi_periph"/>
+        <spirit:activeInterface spirit:busRef="s00_axi" spirit:componentRef="AES_AXI_0"/>
+      </spirit:interconnection>
     </spirit:interconnections>
     <spirit:adHocConnections>
       <spirit:adHocConnection>
         <spirit:name>microblaze_0_intr</spirit:name>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_xlconcat" spirit:portRef="dout"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_intc" spirit:portRef="intr"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>microblaze_0_Clk</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="mig_7series_0" spirit:portRef="ui_clk"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0" spirit:portRef="Clk"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S00_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M00_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_intc" spirit:portRef="s_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_intc" spirit:portRef="processor_clk"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_local_memory" spirit:portRef="LMB_Clk"/>
+        <spirit:internalPortReference spirit:componentRef="rst_mig_7series_0_100M" spirit:portRef="slowest_sync_clk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S00_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S01_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M00_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_uartlite_0" spirit:portRef="s_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M01_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_timer_0" spirit:portRef="s_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M02_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_0" spirit:portRef="s_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M01_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="AES_AXI_0" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M03_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_in1"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>mig_7series_0_mmcm_locked</spirit:name>
@@ -321,6 +361,25 @@
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="ARESETN"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
+        <spirit:name>rst_mig_7series_0_100M_peripheral_aresetn</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="rst_mig_7series_0_100M" spirit:portRef="peripheral_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S00_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M00_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_intc" spirit:portRef="s_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S00_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S01_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="mig_7series_0" spirit:portRef="aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M00_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_uartlite_0" spirit:portRef="s_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M01_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_timer_0" spirit:portRef="s_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M02_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_0" spirit:portRef="s_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M01_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="AES_AXI_0" spirit:portRef="s00_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M03_ARESETN"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
         <spirit:name>mdm_1_debug_sys_rst</spirit:name>
         <spirit:internalPortReference spirit:componentRef="mdm_1" spirit:portRef="Debug_SYS_Rst"/>
         <spirit:internalPortReference spirit:componentRef="rst_mig_7series_0_100M" spirit:portRef="mb_debug_sys_rst"/>
@@ -329,6 +388,7 @@
         <spirit:name>reset_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="reset"/>
         <spirit:internalPortReference spirit:componentRef="mig_7series_0" spirit:portRef="sys_rst"/>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="reset"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>axi_timer_0_interrupt</spirit:name>
@@ -339,6 +399,11 @@
         <spirit:name>axi_uartlite_0_interrupt</spirit:name>
         <spirit:internalPortReference spirit:componentRef="axi_uartlite_0" spirit:portRef="interrupt"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_xlconcat" spirit:portRef="In1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_wiz_0_clk_out1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_out1"/>
+        <spirit:internalPortReference spirit:componentRef="AES_AXI_0" spirit:portRef="aes_clk"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
@@ -3033,6 +3098,7 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">mb_subsystem_dlmb_bram_if_cntlr_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_ECC">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
+        <bd:hdl_attributes/>
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>ilmb_bram_if_cntlr</spirit:instanceName>
@@ -3148,6 +3214,12 @@
             <spirit:displayName>/axi_bram_ctrl_0/S_AXI/Mem0</spirit:displayName>
             <spirit:addressOffset>0xC0000000</spirit:addressOffset>
             <spirit:range>4K</spirit:range>
+          </spirit:segment>
+          <spirit:segment>
+            <spirit:name>SEG_AES_AXI_0_reg0</spirit:name>
+            <spirit:displayName>/AES_AXI_0/s00_axi/reg0</spirit:displayName>
+            <spirit:addressOffset>0x44A00000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
           </spirit:segment>
         </spirit:segments>
       </spirit:addressSpace>

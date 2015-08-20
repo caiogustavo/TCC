@@ -8,7 +8,6 @@
 ################################################################################
 #create_clock -name clock_name -period 10 [get_ports clock_name]
 ################################################################################
-create_clock -name clock_rtl -period 10 [get_ports clock_rtl]
 create_clock -name sys_diff_clock_clk_p -period 10 [get_ports sys_diff_clock_clk_p]
 create_clock -name sys_diff_clock_clk_n -period 10 [get_ports sys_diff_clock_clk_n]
 

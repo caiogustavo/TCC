@@ -1,7 +1,7 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
---Date        : Wed Aug 19 20:04:19 2015
+--Date        : Wed Aug 19 21:00:20 2015
 --Host        : LAPAR01-PC running 64-bit Service Pack 1  (build 7601)
 --Command     : generate_target mb_system_wrapper.bd
 --Design      : mb_system_wrapper
@@ -13,7 +13,6 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity mb_system_wrapper is
   port (
-    clock_rtl : in STD_LOGIC;
     ddr3_sdram_addr : out STD_LOGIC_VECTOR ( 13 downto 0 );
     ddr3_sdram_ba : out STD_LOGIC_VECTOR ( 2 downto 0 );
     ddr3_sdram_cas_n : out STD_LOGIC;
@@ -59,14 +58,12 @@ architecture STRUCTURE of mb_system_wrapper is
     ddr3_sdram_odt : out STD_LOGIC_VECTOR ( 0 to 0 );
     rs232_uart_rxd : in STD_LOGIC;
     rs232_uart_txd : out STD_LOGIC;
-    reset : in STD_LOGIC;
-    clock_rtl : in STD_LOGIC
+    reset : in STD_LOGIC
   );
   end component mb_system;
 begin
 mb_system_i: component mb_system
     port map (
-      clock_rtl => clock_rtl,
       ddr3_sdram_addr(13 downto 0) => ddr3_sdram_addr(13 downto 0),
       ddr3_sdram_ba(2 downto 0) => ddr3_sdram_ba(2 downto 0),
       ddr3_sdram_cas_n => ddr3_sdram_cas_n,
