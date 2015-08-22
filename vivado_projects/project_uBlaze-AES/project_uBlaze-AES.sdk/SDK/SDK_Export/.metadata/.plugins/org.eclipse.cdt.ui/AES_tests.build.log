@@ -1,21 +1,6 @@
-12:01:43 **** Auto Build of configuration Debug for project AES_tests ****
+15:26:16 **** Auto Build of configuration Debug for project AES_tests ****
 make all 
-'Building file: ../src/aestests.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/aestests.d" -MT"src/aestests.d" -o "src/aestests.o" "../src/aestests.c"
-'Finished building: ../src/aestests.c'
-' '
-'Building target: AES_tests.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/aestests.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: AES_tests.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size AES_tests.elf  |tee "AES_tests.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  76724	   1484	   2168	  80376	  139f8	AES_tests.elf
-'Finished building: AES_tests.elf.size'
-' '
+make: Nothing to be done for `all'.
 
-12:01:44 Build Finished (took 894ms)
+15:26:16 Build Finished (took 196ms)
 

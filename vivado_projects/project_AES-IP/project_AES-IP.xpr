@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright (c) 2001-2013 Xilinx Inc, All rights reserved -->
 
-<Project Version="7" Minor="0" Path="C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES-IP/project_AES-IP.xpr">
+<Project Version="7" Minor="0" Path="C:/Projetos_git/repo/vivado_projects/project_AES-IP/project_AES-IP.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="7e03e5d863db4aaaa8622e82a95c0185"/>

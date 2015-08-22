@@ -1,7 +1,7 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
---Date        : Wed Aug 19 21:00:19 2015
+--Date        : Sat Aug 22 14:47:42 2015
 --Host        : LAPAR01-PC running 64-bit Service Pack 1  (build 7601)
 --Command     : generate_target mb_system.bd
 --Design      : mb_system
@@ -1028,10 +1028,10 @@ architecture STRUCTURE of microblaze_0_local_memory_imp_Z0DGSF is
   signal microblaze_0_ilmb_cntlr_WE : STD_LOGIC_VECTOR ( 0 to 3 );
   signal NLW_dlmb_v10_LMB_Rst_UNCONNECTED : STD_LOGIC;
   signal NLW_ilmb_v10_LMB_Rst_UNCONNECTED : STD_LOGIC;
-  attribute BMM_INFO_ADDRESS_SPACE : string;
-  attribute BMM_INFO_ADDRESS_SPACE of dlmb_bram_if_cntlr : label is "byte  0x0 32 >  mb_system microblaze_0_local_memory/lmb_bram";
   attribute KEEP_HIERARCHY : string;
   attribute KEEP_HIERARCHY of dlmb_bram_if_cntlr : label is "yes";
+  attribute bmm_info_address_space : string;
+  attribute bmm_info_address_space of dlmb_bram_if_cntlr : label is "byte  0x0 32 >  mb_system microblaze_0_local_memory/lmb_bram";
 begin
   DLMB_ce <= microblaze_0_dlmb_CE;
   DLMB_readdbus(0 to 31) <= microblaze_0_dlmb_READDBUS(0 to 31);
@@ -3890,8 +3890,8 @@ entity mb_system is
     sys_diff_clock_clk_n : in STD_LOGIC;
     sys_diff_clock_clk_p : in STD_LOGIC
   );
-  attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of mb_system : entity is "mb_system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLanguage=VHDL,numBlks=31,numReposBlks=19,numNonXlnxBlks=1,numHierBlks=12,maxHierDepth=1,da_axi4_cnt=5,da_board_cnt=5,da_bram_cntlr_cnt=2,da_mb_cnt=1}";
+  attribute core_generation_info : string;
+  attribute core_generation_info of mb_system : entity is "mb_system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLanguage=VHDL,numBlks=31,numReposBlks=19,numNonXlnxBlks=1,numHierBlks=12,maxHierDepth=1,da_axi4_cnt=5,da_board_cnt=5,da_bram_cntlr_cnt=2,da_mb_cnt=1}";
 end mb_system;
 
 architecture STRUCTURE of mb_system is
@@ -4633,13 +4633,13 @@ architecture STRUCTURE of mb_system is
   signal NLW_axi_timer_0_pwm0_UNCONNECTED : STD_LOGIC;
   signal NLW_mig_7series_0_init_calib_complete_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_mig_7series_0_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  attribute BMM_INFO_ADDRESS_SPACE : string;
-  attribute BMM_INFO_ADDRESS_SPACE of axi_bram_ctrl_0 : label is "byte  0xC0000000 32 >  mb_system axi_bram_ctrl_0_bram";
   attribute KEEP_HIERARCHY : string;
   attribute KEEP_HIERARCHY of axi_bram_ctrl_0 : label is "yes";
-  attribute BMM_INFO_PROCESSOR : string;
-  attribute BMM_INFO_PROCESSOR of microblaze_0 : label is "microblaze-le > mb_system microblaze_0_local_memory/dlmb_bram_if_cntlr mb_system axi_bram_ctrl_0";
+  attribute bmm_info_address_space : string;
+  attribute bmm_info_address_space of axi_bram_ctrl_0 : label is "byte  0xC0000000 32 >  mb_system axi_bram_ctrl_0_bram";
   attribute KEEP_HIERARCHY of microblaze_0 : label is "yes";
+  attribute bmm_info_processor : string;
+  attribute bmm_info_processor of microblaze_0 : label is "microblaze-le > mb_system microblaze_0_local_memory/dlmb_bram_if_cntlr mb_system axi_bram_ctrl_0";
 begin
   axi_uartlite_0_UART_RxD <= rs232_uart_rxd;
   ddr3_sdram_addr(13 downto 0) <= mig_7series_0_DDR3_ADDR(13 downto 0);

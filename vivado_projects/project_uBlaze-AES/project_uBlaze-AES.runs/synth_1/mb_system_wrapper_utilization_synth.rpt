@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
-| Date         : Wed Aug 19 21:11:10 2015
+| Date         : Sat Aug 22 15:01:02 2015
 | Host         : LAPAR01-PC running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file mb_system_wrapper_utilization_synth.rpt -pb mb_system_wrapper_utilization_synth.pb
 | Design       : mb_system_wrapper
@@ -29,8 +29,8 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Loced | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 18703 |     0 |    203800 |  9.17 |
-|   LUT as Logic             | 16015 |     0 |    203800 |  7.85 |
+| Slice LUTs*                | 18699 |     0 |    203800 |  9.17 |
+|   LUT as Logic             | 16011 |     0 |    203800 |  7.85 |
 |   LUT as Memory            |  2688 |     0 |     64000 |  4.20 |
 |     LUT as Distributed RAM |  1848 |     0 |           |       |
 |     LUT as Shift Register  |   840 |     0 |           |       |
@@ -141,9 +141,9 @@ Table of Contents
 |        Ref Name        |  Used | Functional Category |
 +------------------------+-------+---------------------+
 | FDRE                   | 18604 |        Flop & Latch |
-| LUT6                   |  5526 |                 LUT |
-| LUT3                   |  4163 |                 LUT |
-| LUT5                   |  4036 |                 LUT |
+| LUT6                   |  5521 |                 LUT |
+| LUT3                   |  4161 |                 LUT |
+| LUT5                   |  4039 |                 LUT |
 | LUT4                   |  2932 |                 LUT |
 | RAMD32                 |  2740 |  Distributed Memory |
 | LUT2                   |  1965 |                 LUT |

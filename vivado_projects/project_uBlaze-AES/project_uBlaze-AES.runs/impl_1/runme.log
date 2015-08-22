@@ -80,7 +80,7 @@ Finished Parsing XDC File [c:/Projetos_git/repo/vivado_projects/project_uBlaze-A
 Parsing XDC File [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mdm_1_0/mb_system_mdm_1_0.xdc] for cell 'mb_system_i/mdm_1/U0'
 INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mdm_1_0/mb_system_mdm_1_0.xdc:50]
 INFO: [Timing 38-2] Deriving generated clocks [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mdm_1_0/mb_system_mdm_1_0.xdc:50]
-get_clocks: Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1160.621 ; gain = 526.023
+get_clocks: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1161.711 ; gain = 526.164
 Finished Parsing XDC File [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mdm_1_0/mb_system_mdm_1_0.xdc] for cell 'mb_system_i/mdm_1/U0'
 Parsing XDC File [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_rst_mig_7series_0_100M_0/mb_system_rst_mig_7series_0_100M_0.xdc] for cell 'mb_system_i/rst_mig_7series_0_100M'
 Finished Parsing XDC File [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_rst_mig_7series_0_100M_0/mb_system_rst_mig_7series_0_100M_0.xdc] for cell 'mb_system_i/rst_mig_7series_0_100M'
@@ -110,7 +110,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 446 instances
 
-link_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:03 . Memory (MB): peak = 1176.762 ; gain = 992.793
+link_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 1177.434 ; gain = 992.797
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
@@ -121,7 +121,7 @@ INFO: [Drc 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1176.762 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1177.434 ; gain = 0.000
 
 Starting Logic Optimization Task
 
@@ -129,28 +129,28 @@ Phase 1 Retarget
 
 INFO: [Opt 31-138] Pushed 1 inverter(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1b1ee24ea
+Phase 1 Retarget | Checksum: 1a774cb91
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1179.176 ; gain = 2.414
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1179.828 ; gain = 2.395
 
 Phase 2 Constant Propagation
 INFO: [Opt 31-138] Pushed 51 inverter(s).
 INFO: [Opt 31-10] Eliminated 519 cells.
-Phase 2 Constant Propagation | Checksum: e4040e18
+Phase 2 Constant Propagation | Checksum: 1334e7c02
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1179.176 ; gain = 2.414
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1179.828 ; gain = 2.395
 
 Phase 3 Sweep
 INFO: [Opt 31-12] Eliminated 2893 unconnected nets.
-INFO: [Opt 31-11] Eliminated 5488 unconnected cells.
-Phase 3 Sweep | Checksum: 1a9db46d4
+INFO: [Opt 31-11] Eliminated 5492 unconnected cells.
+Phase 3 Sweep | Checksum: aff4534b
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1179.176 ; gain = 2.414
-Ending Logic Optimization Task | Checksum: 1a9db46d4
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1179.828 ; gain = 2.395
+Ending Logic Optimization Task | Checksum: aff4534b
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 1179.176 ; gain = 2.414
-Implement Debug Cores | Checksum: 1a03603fe
-Logic Optimization | Checksum: 1a03603fe
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:26 . Memory (MB): peak = 1179.828 ; gain = 2.395
+Implement Debug Cores | Checksum: 1672e7564
+Logic Optimization | Checksum: 1672e7564
 
 Starting Power Optimization Task
 
@@ -194,9 +194,9 @@ Resolution: A valid start point is a main or generated clock pin or port, a cloc
 WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.sample_timer_en_i_1' is not a valid startpoint. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
 Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending PowerOpt TimerUpdates Task | Checksum: 1a9db46d4
+Ending PowerOpt TimerUpdates Task | Checksum: aff4534b
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1179.176 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1179.828 ; gain = 0.000
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
 
@@ -243,18 +243,18 @@ Resolution: A valid start point is a main or generated clock pin or port, a cloc
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Pwropt 34-201] Structural ODC has moved 8 WE to EN ports
 Number of BRAM Ports augmented: 0 newly gated: 16 Total Ports: 72
-Ending Power Optimization Task | Checksum: 11c8c117d
+Ending Power Optimization Task | Checksum: 10bb2a241
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:30 . Memory (MB): peak = 1347.383 ; gain = 168.207
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:34 . Memory (MB): peak = 1348.227 ; gain = 168.398
 INFO: [Common 17-83] Releasing license: Implementation
 28 Infos, 57 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:58 ; elapsed = 00:00:56 . Memory (MB): peak = 1347.383 ; gain = 170.621
+opt_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1348.227 ; gain = 170.793
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.697 . Memory (MB): peak = 1347.383 ; gain = 0.000
-write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.673 . Memory (MB): peak = 1348.227 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1348.227 ; gain = 0.000
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
@@ -269,48 +269,48 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Core
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.164 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.179 . Memory (MB): peak = 1348.227 ; gain = 0.000
 
 Phase 1.1.1 Mandatory Logic Optimization
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.159 . Memory (MB): peak = 1348.227 ; gain = 0.000
 Phase 1.1.1 Mandatory Logic Optimization | Checksum: 402335a7
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1348.227 ; gain = 0.000
 
 Phase 1.1.2 Build Super Logic Region (SLR) Database
 Phase 1.1.2 Build Super Logic Region (SLR) Database | Checksum: 402335a7
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1348.227 ; gain = 0.000
 
 Phase 1.1.3 Add Constraints
 Phase 1.1.3 Add Constraints | Checksum: 402335a7
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1348.227 ; gain = 0.000
 
 Phase 1.1.4 Build Shapes/ HD Config
 
 Phase 1.1.4.1 Build Macros
-Phase 1.1.4.1 Build Macros | Checksum: 5453c2da
+Phase 1.1.4.1 Build Macros | Checksum: d9cee6d8
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1347.383 ; gain = 0.000
-Phase 1.1.4 Build Shapes/ HD Config | Checksum: 5453c2da
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1348.227 ; gain = 0.000
+Phase 1.1.4 Build Shapes/ HD Config | Checksum: d9cee6d8
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1348.227 ; gain = 0.000
 
 Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device
 
 Phase 1.1.5.1 Pre-Place Cells
 Phase 1.1.5.1 Pre-Place Cells | Checksum: a1212ad7
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1348.227 ; gain = 0.000
 
 Phase 1.1.5.2 Implementation Feasibility check
 Phase 1.1.5.2 Implementation Feasibility check | Checksum: a1212ad7
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1348.227 ; gain = 0.000
 WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[0]_i_1' is not a valid startpoint. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
 Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
 WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[10]_i_1' is not a valid startpoint. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
@@ -354,135 +354,135 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Phase 1.1.5.3 Implementation Feasibility check On IDelay
 Phase 1.1.5.3 Implementation Feasibility check On IDelay | Checksum: a1212ad7
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:31 . Memory (MB): peak = 1347.383 ; gain = 0.000
-Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device | Checksum: f15bc5b5
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:34 . Memory (MB): peak = 1348.227 ; gain = 0.000
+Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 176d6e9b3
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:32 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:34 . Memory (MB): peak = 1348.227 ; gain = 0.000
 
 Phase 1.1.6 Build Placer Netlist Model
 
 Phase 1.1.6.1 Place Init Design
 
 Phase 1.1.6.1.1 Build Clock Data
-Phase 1.1.6.1.1 Build Clock Data | Checksum: 15317ab1b
+Phase 1.1.6.1.1 Build Clock Data | Checksum: 223302edd
 
-Time (s): cpu = 00:01:57 ; elapsed = 00:01:14 . Memory (MB): peak = 1347.383 ; gain = 0.000
-Phase 1.1.6.1 Place Init Design | Checksum: 1e2105f0a
+Time (s): cpu = 00:02:00 ; elapsed = 00:01:20 . Memory (MB): peak = 1348.227 ; gain = 0.000
+Phase 1.1.6.1 Place Init Design | Checksum: 1f3aac0f5
 
-Time (s): cpu = 00:02:00 ; elapsed = 00:01:17 . Memory (MB): peak = 1347.383 ; gain = 0.000
-Phase 1.1.6 Build Placer Netlist Model | Checksum: 1e2105f0a
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:23 . Memory (MB): peak = 1348.227 ; gain = 0.000
+Phase 1.1.6 Build Placer Netlist Model | Checksum: 1f3aac0f5
 
-Time (s): cpu = 00:02:00 ; elapsed = 00:01:17 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:23 . Memory (MB): peak = 1348.227 ; gain = 0.000
 
 Phase 1.1.7 Constrain Clocks/Macros
 
 Phase 1.1.7.1 Constrain Global/Regional Clocks
-Phase 1.1.7.1 Constrain Global/Regional Clocks | Checksum: 1e2105f0a
+Phase 1.1.7.1 Constrain Global/Regional Clocks | Checksum: 1f3aac0f5
 
-Time (s): cpu = 00:02:00 ; elapsed = 00:01:18 . Memory (MB): peak = 1347.383 ; gain = 0.000
-Phase 1.1.7 Constrain Clocks/Macros | Checksum: 1e2105f0a
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:23 . Memory (MB): peak = 1348.227 ; gain = 0.000
+Phase 1.1.7 Constrain Clocks/Macros | Checksum: 1f3aac0f5
 
-Time (s): cpu = 00:02:00 ; elapsed = 00:01:18 . Memory (MB): peak = 1347.383 ; gain = 0.000
-Phase 1.1 Placer Initialization Core | Checksum: 1e2105f0a
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:23 . Memory (MB): peak = 1348.227 ; gain = 0.000
+Phase 1.1 Placer Initialization Core | Checksum: 1f3aac0f5
 
-Time (s): cpu = 00:02:00 ; elapsed = 00:01:18 . Memory (MB): peak = 1347.383 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 1e2105f0a
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:23 . Memory (MB): peak = 1348.227 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1f3aac0f5
 
-Time (s): cpu = 00:02:00 ; elapsed = 00:01:18 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:23 . Memory (MB): peak = 1348.227 ; gain = 0.000
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: b21d490e
+Phase 2 Global Placement | Checksum: 168f0bd56
 
-Time (s): cpu = 00:03:23 ; elapsed = 00:02:17 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Time (s): cpu = 00:03:29 ; elapsed = 00:02:27 . Memory (MB): peak = 1348.227 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: b21d490e
+Phase 3.1 Commit Multi Column Macros | Checksum: 168f0bd56
 
-Time (s): cpu = 00:03:23 ; elapsed = 00:02:17 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Time (s): cpu = 00:03:29 ; elapsed = 00:02:27 . Memory (MB): peak = 1348.227 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 146b8b650
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 11d75312f
 
-Time (s): cpu = 00:03:48 ; elapsed = 00:02:35 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Time (s): cpu = 00:03:56 ; elapsed = 00:02:46 . Memory (MB): peak = 1348.227 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: a2345f23
+Phase 3.3 Area Swap Optimization | Checksum: 17571210d
 
-Time (s): cpu = 00:03:49 ; elapsed = 00:02:35 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Time (s): cpu = 00:03:57 ; elapsed = 00:02:47 . Memory (MB): peak = 1348.227 ; gain = 0.000
 
 Phase 3.4 Timing Path Optimizer
-Phase 3.4 Timing Path Optimizer | Checksum: 12b40a68c
+Phase 3.4 Timing Path Optimizer | Checksum: 1f4a8ba44
 
-Time (s): cpu = 00:03:57 ; elapsed = 00:02:40 . Memory (MB): peak = 1347.383 ; gain = 0.000
+Time (s): cpu = 00:04:05 ; elapsed = 00:02:52 . Memory (MB): peak = 1348.227 ; gain = 0.000
 
 Phase 3.5 Commit Small Macros & Core Logic
-Phase 3.5 Commit Small Macros & Core Logic | Checksum: 130d524ee
+Phase 3.5 Commit Small Macros & Core Logic | Checksum: 1d2553051
 
-Time (s): cpu = 00:04:11 ; elapsed = 00:02:54 . Memory (MB): peak = 1359.711 ; gain = 12.328
+Time (s): cpu = 00:04:23 ; elapsed = 00:03:11 . Memory (MB): peak = 1356.059 ; gain = 7.832
 
 Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 130d524ee
+Phase 3.6 Re-assign LUT pins | Checksum: 1d2553051
 
-Time (s): cpu = 00:04:14 ; elapsed = 00:02:57 . Memory (MB): peak = 1361.988 ; gain = 14.605
-Phase 3 Detail Placement | Checksum: 130d524ee
+Time (s): cpu = 00:04:26 ; elapsed = 00:03:14 . Memory (MB): peak = 1360.105 ; gain = 11.879
+Phase 3 Detail Placement | Checksum: 1d2553051
 
-Time (s): cpu = 00:04:14 ; elapsed = 00:02:57 . Memory (MB): peak = 1361.988 ; gain = 14.605
+Time (s): cpu = 00:04:26 ; elapsed = 00:03:14 . Memory (MB): peak = 1360.105 ; gain = 11.879
 
 Phase 4 Post Placement Optimization and Clean-Up
 
 Phase 4.1 PCOPT Shape updates
-Phase 4.1 PCOPT Shape updates | Checksum: 14f63f632
+Phase 4.1 PCOPT Shape updates | Checksum: 1a5c2a4d7
 
-Time (s): cpu = 00:04:15 ; elapsed = 00:02:58 . Memory (MB): peak = 1361.988 ; gain = 14.605
+Time (s): cpu = 00:04:27 ; elapsed = 00:03:15 . Memory (MB): peak = 1360.105 ; gain = 11.879
 
 Phase 4.2 Post Placement Optimization
 
 Phase 4.2.1 Post Placement Timing Optimization
 INFO: [Place 30-746] Post Placement Timing Summary WNS=0.975. For the most accurate timing information please run report_timing.
-Phase 4.2.1 Post Placement Timing Optimization | Checksum: 19c204ebe
+Phase 4.2.1 Post Placement Timing Optimization | Checksum: 18b74308e
 
-Time (s): cpu = 00:04:31 ; elapsed = 00:03:07 . Memory (MB): peak = 1370.281 ; gain = 22.898
-Phase 4.2 Post Placement Optimization | Checksum: 19c204ebe
+Time (s): cpu = 00:04:45 ; elapsed = 00:03:26 . Memory (MB): peak = 1369.059 ; gain = 20.832
+Phase 4.2 Post Placement Optimization | Checksum: 18b74308e
 
-Time (s): cpu = 00:04:31 ; elapsed = 00:03:07 . Memory (MB): peak = 1370.281 ; gain = 22.898
+Time (s): cpu = 00:04:46 ; elapsed = 00:03:26 . Memory (MB): peak = 1369.059 ; gain = 20.832
 
 Phase 4.3 Post Placement Cleanup
-Phase 4.3 Post Placement Cleanup | Checksum: 19c204ebe
+Phase 4.3 Post Placement Cleanup | Checksum: 18b74308e
 
-Time (s): cpu = 00:04:31 ; elapsed = 00:03:07 . Memory (MB): peak = 1370.281 ; gain = 22.898
+Time (s): cpu = 00:04:46 ; elapsed = 00:03:26 . Memory (MB): peak = 1369.059 ; gain = 20.832
 
 Phase 4.4 Placer Reporting
 
 Phase 4.4.1 Restore STA
-Phase 4.4.1 Restore STA | Checksum: 19c204ebe
+Phase 4.4.1 Restore STA | Checksum: 18b74308e
 
-Time (s): cpu = 00:04:31 ; elapsed = 00:03:08 . Memory (MB): peak = 1370.281 ; gain = 22.898
-Phase 4.4 Placer Reporting | Checksum: 19c204ebe
+Time (s): cpu = 00:04:46 ; elapsed = 00:03:27 . Memory (MB): peak = 1369.059 ; gain = 20.832
+Phase 4.4 Placer Reporting | Checksum: 18b74308e
 
-Time (s): cpu = 00:04:35 ; elapsed = 00:03:10 . Memory (MB): peak = 1370.281 ; gain = 22.898
+Time (s): cpu = 00:04:51 ; elapsed = 00:03:30 . Memory (MB): peak = 1369.059 ; gain = 20.832
 
 Phase 4.5 Final Placement Cleanup
-Phase 4.5 Final Placement Cleanup | Checksum: 1634be841
+Phase 4.5 Final Placement Cleanup | Checksum: 10ae56913
 
-Time (s): cpu = 00:04:35 ; elapsed = 00:03:10 . Memory (MB): peak = 1370.281 ; gain = 22.898
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1634be841
+Time (s): cpu = 00:04:51 ; elapsed = 00:03:30 . Memory (MB): peak = 1369.059 ; gain = 20.832
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 10ae56913
 
-Time (s): cpu = 00:04:35 ; elapsed = 00:03:10 . Memory (MB): peak = 1370.281 ; gain = 22.898
-Ending Placer Task | Checksum: d2f0c750
+Time (s): cpu = 00:04:51 ; elapsed = 00:03:30 . Memory (MB): peak = 1369.059 ; gain = 20.832
+Ending Placer Task | Checksum: fed4be9a
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:03:10 . Memory (MB): peak = 1370.281 ; gain = 22.898
+Time (s): cpu = 00:00:00 ; elapsed = 00:03:30 . Memory (MB): peak = 1369.059 ; gain = 20.832
 INFO: [Common 17-83] Releasing license: Implementation
 39 Infos, 76 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:04:43 ; elapsed = 00:03:16 . Memory (MB): peak = 1370.281 ; gain = 22.898
+place_design: Time (s): cpu = 00:04:59 ; elapsed = 00:03:38 . Memory (MB): peak = 1369.059 ; gain = 20.832
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1370.281 ; gain = 0.000
-write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1370.281 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.711 . Memory (MB): peak = 1370.281 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1369.059 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1369.059 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.845 . Memory (MB): peak = 1369.059 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
@@ -498,88 +498,88 @@ INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 
 Starting Route Task
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 4c21dfd1
+Phase 1 Build RT Design | Checksum: f4d0c8f6
 
-Time (s): cpu = 00:02:12 ; elapsed = 00:01:45 . Memory (MB): peak = 1601.969 ; gain = 149.938
+Time (s): cpu = 00:02:37 ; elapsed = 00:02:14 . Memory (MB): peak = 1594.066 ; gain = 148.090
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 4c21dfd1
+Phase 2.1 Create Timer | Checksum: f4d0c8f6
 
-Time (s): cpu = 00:02:14 ; elapsed = 00:01:46 . Memory (MB): peak = 1601.969 ; gain = 149.938
+Time (s): cpu = 00:02:38 ; elapsed = 00:02:15 . Memory (MB): peak = 1594.066 ; gain = 148.090
  Number of Nodes with overlaps = 0
 
 Phase 2.2 Update Timing
-Phase 2.2 Update Timing | Checksum: 1cdf6764
+Phase 2.2 Update Timing | Checksum: 162478091
 
-Time (s): cpu = 00:02:47 ; elapsed = 00:02:08 . Memory (MB): peak = 1656.254 ; gain = 204.223
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.904  | TNS=0      | WHS=-0.473 | THS=-1.99e+003|
+Time (s): cpu = 00:03:15 ; elapsed = 00:02:40 . Memory (MB): peak = 1641.320 ; gain = 195.344
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.904  | TNS=0      | WHS=-0.473 | THS=-2.13e+003|
 
-Phase 2 Router Initialization | Checksum: 1cdf6764
+Phase 2 Router Initialization | Checksum: 162478091
 
-Time (s): cpu = 00:03:08 ; elapsed = 00:02:23 . Memory (MB): peak = 1656.254 ; gain = 204.223
+Time (s): cpu = 00:03:36 ; elapsed = 00:02:57 . Memory (MB): peak = 1641.320 ; gain = 195.344
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: d283023a
+Phase 3 Initial Routing | Checksum: 645cdbfc
 
-Time (s): cpu = 00:03:32 ; elapsed = 00:02:35 . Memory (MB): peak = 1671.258 ; gain = 219.227
+Time (s): cpu = 00:04:03 ; elapsed = 00:03:10 . Memory (MB): peak = 1659.563 ; gain = 213.586
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 2618
- Number of Nodes with overlaps = 86
+ Number of Nodes with overlaps = 2645
+ Number of Nodes with overlaps = 104
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
 
 Phase 4.1.1 Update Timing
-Phase 4.1.1 Update Timing | Checksum: 1d8fbfa3a
+Phase 4.1.1 Update Timing | Checksum: 17bc37041
 
-Time (s): cpu = 00:04:03 ; elapsed = 00:02:52 . Memory (MB): peak = 1671.258 ; gain = 219.227
+Time (s): cpu = 00:04:44 ; elapsed = 00:03:35 . Memory (MB): peak = 1659.563 ; gain = 213.586
 INFO: [Route 35-57] Estimated Timing Summary | WNS=0.904  | TNS=0      | WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 1a6b6bb5b
+Phase 4.1 Global Iteration 0 | Checksum: 17bc37041
 
-Time (s): cpu = 00:04:04 ; elapsed = 00:02:53 . Memory (MB): peak = 1671.258 ; gain = 219.227
-Phase 4 Rip-up And Reroute | Checksum: 1a6b6bb5b
+Time (s): cpu = 00:04:45 ; elapsed = 00:03:35 . Memory (MB): peak = 1659.563 ; gain = 213.586
+Phase 4 Rip-up And Reroute | Checksum: 17bc37041
 
-Time (s): cpu = 00:04:04 ; elapsed = 00:02:53 . Memory (MB): peak = 1671.258 ; gain = 219.227
+Time (s): cpu = 00:04:45 ; elapsed = 00:03:36 . Memory (MB): peak = 1659.563 ; gain = 213.586
 
 Phase 5 Delay CleanUp
 
 Phase 5.1 Update Timing
-Phase 5.1 Update Timing | Checksum: 1a6b6bb5b
+Phase 5.1 Update Timing | Checksum: 17bc37041
 
-Time (s): cpu = 00:04:09 ; elapsed = 00:02:56 . Memory (MB): peak = 1671.258 ; gain = 219.227
+Time (s): cpu = 00:04:51 ; elapsed = 00:03:39 . Memory (MB): peak = 1659.563 ; gain = 213.586
 INFO: [Route 35-57] Estimated Timing Summary | WNS=0.904  | TNS=0      | WHS=N/A    | THS=N/A    |
 
-Phase 5 Delay CleanUp | Checksum: 1a6b6bb5b
+Phase 5 Delay CleanUp | Checksum: 17bc37041
 
-Time (s): cpu = 00:04:09 ; elapsed = 00:02:56 . Memory (MB): peak = 1671.258 ; gain = 219.227
+Time (s): cpu = 00:04:51 ; elapsed = 00:03:39 . Memory (MB): peak = 1659.563 ; gain = 213.586
 
 Phase 6 Clock Skew Optimization
-Phase 6 Clock Skew Optimization | Checksum: 1a6b6bb5b
+Phase 6 Clock Skew Optimization | Checksum: 17bc37041
 
-Time (s): cpu = 00:04:09 ; elapsed = 00:02:56 . Memory (MB): peak = 1671.258 ; gain = 219.227
+Time (s): cpu = 00:04:51 ; elapsed = 00:03:39 . Memory (MB): peak = 1659.563 ; gain = 213.586
 
 Phase 7 Post Hold Fix
 
 Phase 7.1 Update Timing
-Phase 7.1 Update Timing | Checksum: 1a6b6bb5b
+Phase 7.1 Update Timing | Checksum: 17bc37041
 
-Time (s): cpu = 00:04:16 ; elapsed = 00:03:01 . Memory (MB): peak = 1671.258 ; gain = 219.227
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.904  | TNS=0      | WHS=0.037  | THS=0      |
+Time (s): cpu = 00:04:59 ; elapsed = 00:03:44 . Memory (MB): peak = 1659.563 ; gain = 213.586
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.904  | TNS=0      | WHS=0.051  | THS=0      |
 
-Phase 7 Post Hold Fix | Checksum: 1a6b6bb5b
+Phase 7 Post Hold Fix | Checksum: 17bc37041
 
-Time (s): cpu = 00:04:16 ; elapsed = 00:03:01 . Memory (MB): peak = 1671.258 ; gain = 219.227
+Time (s): cpu = 00:04:59 ; elapsed = 00:03:44 . Memory (MB): peak = 1659.563 ; gain = 213.586
 
 Phase 8 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 2.66006 %
-  Global Horizontal Routing Utilization  = 2.92747 %
+  Global Vertical Routing Utilization    = 2.87075 %
+  Global Horizontal Routing Utilization  = 2.82314 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -588,56 +588,56 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 8 Route finalize | Checksum: 1a6b6bb5b
+Phase 8 Route finalize | Checksum: 17bc37041
 
-Time (s): cpu = 00:04:17 ; elapsed = 00:03:01 . Memory (MB): peak = 1671.258 ; gain = 219.227
+Time (s): cpu = 00:04:59 ; elapsed = 00:03:44 . Memory (MB): peak = 1659.563 ; gain = 213.586
 
 Phase 9 Verifying routed nets
 
  Verification completed successfully
-Phase 9 Verifying routed nets | Checksum: 1a6b6bb5b
+Phase 9 Verifying routed nets | Checksum: 17bc37041
 
-Time (s): cpu = 00:04:17 ; elapsed = 00:03:02 . Memory (MB): peak = 1671.258 ; gain = 219.227
+Time (s): cpu = 00:04:59 ; elapsed = 00:03:45 . Memory (MB): peak = 1659.563 ; gain = 213.586
 
 Phase 10 Depositing Routes
-Phase 10 Depositing Routes | Checksum: ef34ae43
+Phase 10 Depositing Routes | Checksum: 179963284
 
-Time (s): cpu = 00:04:21 ; elapsed = 00:03:05 . Memory (MB): peak = 1671.258 ; gain = 219.227
+Time (s): cpu = 00:05:03 ; elapsed = 00:03:48 . Memory (MB): peak = 1659.563 ; gain = 213.586
 
 Phase 11 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.904  | TNS=0      | WHS=0.037  | THS=0      |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.904  | TNS=0      | WHS=0.051  | THS=0      |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 11 Post Router Timing | Checksum: ef34ae43
+Phase 11 Post Router Timing | Checksum: 179963284
 
-Time (s): cpu = 00:04:27 ; elapsed = 00:03:09 . Memory (MB): peak = 1671.258 ; gain = 219.227
+Time (s): cpu = 00:05:10 ; elapsed = 00:03:52 . Memory (MB): peak = 1659.563 ; gain = 213.586
 INFO: [Route 35-16] Router Completed Successfully
-Ending Route Task | Checksum: ef34ae43
+Ending Route Task | Checksum: 179963284
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:03:09 . Memory (MB): peak = 1671.258 ; gain = 219.227
+Time (s): cpu = 00:00:00 ; elapsed = 00:03:53 . Memory (MB): peak = 1659.563 ; gain = 213.586
 
 Routing Is Done.
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:03:09 . Memory (MB): peak = 1671.258 ; gain = 219.227
+Time (s): cpu = 00:00:00 ; elapsed = 00:03:53 . Memory (MB): peak = 1659.563 ; gain = 213.586
 INFO: [Common 17-83] Releasing license: Implementation
 52 Infos, 76 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:04:42 ; elapsed = 00:03:17 . Memory (MB): peak = 1671.258 ; gain = 300.977
+route_design: Time (s): cpu = 00:05:27 ; elapsed = 00:04:03 . Memory (MB): peak = 1659.563 ; gain = 290.504
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1671.258 ; gain = 0.000
-write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1671.258 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1659.563 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1659.563 ; gain = 0.000
 INFO: [Drc 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/impl_1/mb_system_wrapper_drc_routed.rpt.
-report_drc: Time (s): cpu = 00:00:23 ; elapsed = 00:00:14 . Memory (MB): peak = 1758.996 ; gain = 87.738
+report_drc: Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1750.801 ; gain = 91.238
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max, Constraints type: SDC.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-report_timing_summary: Time (s): cpu = 00:00:42 ; elapsed = 00:00:26 . Memory (MB): peak = 1776.168 ; gain = 17.172
+report_timing_summary: Time (s): cpu = 00:00:46 ; elapsed = 00:00:29 . Memory (MB): peak = 1765.262 ; gain = 14.461
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-report_power: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1832.496 ; gain = 56.328
+report_power: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1820.871 ; gain = 55.609
 
 Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
@@ -659,113 +659,5 @@ INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
 INFO: [Common 17-185] WebTalk report has not been sent to Xilinx. Please check your network and proxy settings.
 INFO: [Common 17-83] Releasing license: Implementation
-write_bitstream: Time (s): cpu = 00:02:06 ; elapsed = 00:02:04 . Memory (MB): peak = 2228.508 ; gain = 396.012
-INFO: [Common 17-206] Exiting Vivado at Wed Aug 19 21:23:26 2015...
-
-*** Running vivado
-    with args -log mb_system_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source mb_system_wrapper.tcl -notrace
-
-
-****** Vivado v2014.1 (64-bit)
-  **** SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
-  **** IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
-    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
-
-source mb_system_wrapper.tcl -notrace
-Command: open_checkpoint mb_system_wrapper_routed.dcp
-INFO: [Netlist 29-17] Analyzing 826 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2014.1
-Loading clock regions from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockRegion.xml
-Loading clock buffers from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockBuffers.xml
-Loading clock placement rules from C:/Xilinx/Vivado/2014.1/data/parts/xilinx/kintex7/ClockPlacerRules.xml
-Loading package pin functions from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/PinFunctions.xml...
-Loading package from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/kintex7/xc7k325t/ffg900/Package.xml
-Loading io standards from C:/Xilinx/Vivado/2014.1/data\./parts/xilinx/kintex7/IOStandards.xml
-Loading device configuration modes from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/ConfigModes.xml
-Parsing XDC File [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/impl_1/.Xil/Vivado-5664-LAPAR01-PC/dcp/mb_system_wrapper_early.xdc]
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[0]_i_1' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[10]_i_1' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[11]_i_1' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[1]_i_1' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[2]_i_1' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[3]_i_1' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[4]_i_1' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[5]_i_1' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[6]_i_1' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[7]_i_1' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[8]_i_1' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[9]_i_1' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_2' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_3' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_4' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_5' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_reg_i_1' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.sample_timer_clr_i_1' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-WARNING: [Constraints 18-402] set_max_delay: 'mb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.sample_timer_en_i_1' is not a valid startpoint. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc:817]
-Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
-INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mdm_1_0/mb_system_mdm_1_0.xdc:50]
-INFO: [Timing 38-2] Deriving generated clocks [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mdm_1_0/mb_system_mdm_1_0.xdc:50]
-get_clocks: Time (s): cpu = 00:00:24 ; elapsed = 00:01:34 . Memory (MB): peak = 1124.227 ; gain = 505.438
-INFO: [Timing 38-2] Deriving generated clocks [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0.xdc:56]
-Finished Parsing XDC File [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/impl_1/.Xil/Vivado-5664-LAPAR01-PC/dcp/mb_system_wrapper_early.xdc]
-Parsing XDC File [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/impl_1/.Xil/Vivado-5664-LAPAR01-PC/dcp/mb_system_wrapper.xdc]
-Finished Parsing XDC File [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/impl_1/.Xil/Vivado-5664-LAPAR01-PC/dcp/mb_system_wrapper.xdc]
-Parsing XDC File [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/impl_1/.Xil/Vivado-5664-LAPAR01-PC/dcp/mb_system_wrapper_late.xdc]
-Finished Parsing XDC File [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/impl_1/.Xil/Vivado-5664-LAPAR01-PC/dcp/mb_system_wrapper_late.xdc]
-Reading XDEF placement.
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1153.770 ; gain = 20.313
-Restoring placement.
-Restored 7041 out of 7041 XDEF sites from archive | CPU: 9.000000 secs | Memory: 0.000000 MB |
-INFO: [Opt 31-138] Pushed 0 inverter(s).
-
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 633 instances were transformed.
-  IOBUFDS_DCIEN => IOBUFDS_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, INV, OBUFTDS_DCIEN, OBUFTDS_DCIEN): 8 instances
-  IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 64 instances
-  LUT6_2 => LUT6_2 (LUT5, LUT6): 82 instances
-  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
-  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 446 instances
-
-INFO: [Project 1-484] Checkpoint was created with build 881834
-open_checkpoint: Time (s): cpu = 00:00:59 ; elapsed = 00:04:56 . Memory (MB): peak = 1180.660 ; gain = 1006.207
-
-Attempting to get a license for feature 'Implementation' and/or device 'xc7k325t'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k325t'
-Running DRC as a precondition to command write_bitstream
-INFO: [Drc 23-27] Running DRC with 2 threads
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 17 Warnings, 6 Advisories
-INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
-Loading data files...
-Loading site data...
-Loading route data...
-Processing options...
-Creating bitmap...
-Creating bitstream...
-Writing bitstream ./mb_system_wrapper.bit...
-INFO: [Vivado 12-1842] Bitgen Completed Successfully.
-INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
-INFO: [Common 17-185] WebTalk report has not been sent to Xilinx. Please check your network and proxy settings.
-INFO: [Common 17-83] Releasing license: Implementation
-write_bitstream: Time (s): cpu = 00:02:11 ; elapsed = 00:02:28 . Memory (MB): peak = 1606.836 ; gain = 426.176
-INFO: [Common 17-206] Exiting Vivado at Sat Aug 22 10:51:50 2015...
+write_bitstream: Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 2216.855 ; gain = 395.984
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 22 15:14:54 2015...

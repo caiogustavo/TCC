@@ -31,6 +31,5 @@ ExecStep()
        exit $RETVAL
    fi
 }
-XELAB_1="C:/Users/Janier Arias Garcia/Documents/Projeto_Caio/project_AES-IP/project_AES-IP.sim/sim_1/behav/TB_myip.prj"
 
-ExecStep xelab -m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot TB_myip_behav --prj "$XELAB_1"   xil_defaultlib.TB_myip
+ExecStep xelab -m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot TB_myip_behav --prj C:/Projetos_git/repo/vivado_projects/project_AES-IP/project_AES-IP.sim/sim_1/behav/TB_myip.prj   xil_defaultlib.TB_myip

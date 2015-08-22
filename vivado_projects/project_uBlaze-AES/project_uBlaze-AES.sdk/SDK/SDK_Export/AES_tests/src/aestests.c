@@ -63,7 +63,7 @@ int main()
 {
     init_platform();
 
-    print("Hello World\n\r");
+    //print("Hello World\n\r");
 
     encripta();
 
@@ -125,4 +125,6 @@ void encripta(void)
 
     printf("Bo = %x %x %x %x\n\r",bo_3, bo_2, bo_1, bo_0);
     printf("Done");
+
+    return;
 }
