@@ -1,0 +1,59 @@
+12:12:46 INFO  : Processing command line option -hwspec C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw/mb_subsystem.xml.
+18:12:07.995 ERROR - Unable to read in MSS file C:\Ublaze\Projeto_Caio\tutorial_ug940-AES_Crypto\test_AES_bsp\system.mss. 
+18:14:05.725 ERROR - Unable to read in MSS file C:\Ublaze\Projeto_Caio\tutorial_ug940-AES_Crypto\test_AES_bsp\system.mss. 
+18:26:13.036 INFO  - Successfully generated C:\Ublaze\Projeto_Caio\tutorial_ug940-AES_Crypto\test_AES\src\lscript.ld. 
+18:26:13.037 INFO  - Applying linker script to all configurations of project test_AES. 
+18:26:13.038 INFO  - Setting rebuild state to true for all configurations of project test_AES. 
+18:50:40.556 INFO  - Successfully generated C:\Ublaze\Projeto_Caio\tutorial_ug940-AES_Crypto\test_AES\src\lscript.ld. 
+18:50:40.557 INFO  - Applying linker script to all configurations of project test_AES. 
+18:50:40.557 INFO  - Setting rebuild state to true for all configurations of project test_AES. 
+18:55:55.361 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+18:58:44.572 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+19:06:21.445 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+14:13:50.421 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+14:22:06.335 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+14:24:47.961 INFO  - Successfully generated C:\Ublaze\Projeto_Caio\tutorial_ug940-AES_Crypto\test_AES\src\lscript.ld. 
+14:24:47.962 INFO  - Applying linker script to all configurations of project test_AES. 
+14:24:47.962 INFO  - Setting rebuild state to true for all configurations of project test_AES. 
+14:25:07.448 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+14:27:35.868 ERROR - Unable to read in MSS file C:\Ublaze\Projeto_Caio\tutorial_ug940-AES_Crypto\test_AES_bsp\system.mss. 
+14:27:38.572 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+14:27:38.574 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+14:36:05.191 ERROR - Unable to read in MSS file C:\Ublaze\Projeto_Caio\tutorial_ug940-AES_Crypto\test_AES_bsp\system.mss. 
+14:36:24.083 ERROR - Unable to read in MSS file C:\Ublaze\Projeto_Caio\tutorial_ug940-AES_Crypto\test_AES_bsp\system.mss. 
+17:33:24.067 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+17:48:40.452 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+17:51:40.245 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+18:02:28.241 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+19:39:52.072 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+19:45:19.696 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+19:47:09.437 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+19:50:09.475 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+19:52:48.973 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+19:55:30.751 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+19:58:16.739 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+20:00:03.823 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+20:01:29.504 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+20:03:12.060 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+20:05:59.928 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+20:13:49.630 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+20:14:47.813 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+20:22:12.356 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+20:27:41.815 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+20:32:26.508 INFO  - FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit" 
+20:33:56.598 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+20:34:02.407 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:35:55 WARN  : Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+14:30:07 INFO  : Inferring section assignments and sizes from elf file: C:\Ublaze\Projeto_Caio\tutorial_ug940-AES_Crypto\test_AES_AXI\Debug\test_AES_AXI.elf
+14:33:01 INFO  : FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit"
+14:36:42 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:44:12 WARN  : Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+15:44:12 WARN  : Unable to obtain port 2357 for use by XMD, java.net.BindException: Address already in use: JVM_Bind

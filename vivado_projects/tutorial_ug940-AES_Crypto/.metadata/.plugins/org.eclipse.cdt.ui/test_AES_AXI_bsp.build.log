@@ -1,0 +1,6 @@
+14:33:04 **** Auto Build of project test_AES_AXI_bsp ****
+make -k all 
+'Finished building libraries'
+
+14:33:05 Build Finished (took 815ms)
+

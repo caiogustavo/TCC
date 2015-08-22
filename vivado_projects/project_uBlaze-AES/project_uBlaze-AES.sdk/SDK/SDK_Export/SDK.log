@@ -40,3 +40,4 @@
 15:19:18 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
 15:22:44 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
 15:26:09 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
+15:58:42 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
