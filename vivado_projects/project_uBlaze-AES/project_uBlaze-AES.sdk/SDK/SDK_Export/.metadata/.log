@@ -10,3 +10,9 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Projetos_git/
 
 !ENTRY org.eclipse.cdt.core 1 0 2015-08-22 11:26:46.340
 !MESSAGE Indexed 'AES_tests_bsp' (48 sources, 84 headers) in 1,83 sec: 1.802 declarations; 7.778 references; 20 unresolved inclusions; 4 syntax errors; 3 unresolved names (0,03%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-08-22 11:57:39.957
+!MESSAGE Indexed 'AES_tests' (2 sources, 27 headers) in 0,27 sec: 1.037 declarations; 1.304 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-08-22 11:57:41.111
+!MESSAGE Indexed 'AES_tests_bsp' (48 sources, 84 headers) in 1,13 sec: 1.802 declarations; 7.778 references; 20 unresolved inclusions; 4 syntax errors; 3 unresolved names (0,03%)

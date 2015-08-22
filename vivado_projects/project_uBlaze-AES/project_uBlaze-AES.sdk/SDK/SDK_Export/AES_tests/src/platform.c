@@ -110,5 +110,3 @@ cleanup_platform()
 {
     disable_caches();
 }
-
-

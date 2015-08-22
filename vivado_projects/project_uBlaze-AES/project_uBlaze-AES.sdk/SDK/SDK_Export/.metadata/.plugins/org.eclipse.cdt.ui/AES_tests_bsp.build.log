@@ -1,4 +1,4 @@
-11:26:30 **** Build of project AES_tests_bsp ****
+11:57:31 **** Build of project AES_tests_bsp ****
 make -k all 
 cp -f microblaze_0/lib/libxil_init.a microblaze_0/lib/libxil.a
 "Running Make include in microblaze_0/libsrc/bram_v4_0/src"
@@ -51,5 +51,5 @@ rm -rf *.o
 make[2]: Leaving directory `C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
 'Finished building libraries'
 
-11:26:43 Build Finished (took 13s.631ms)
+11:57:39 Build Finished (took 7s.805ms)
 

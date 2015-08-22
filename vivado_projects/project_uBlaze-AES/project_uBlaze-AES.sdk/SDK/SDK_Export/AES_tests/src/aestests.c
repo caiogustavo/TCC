@@ -1,13 +1,23 @@
 /*
- * aestests.c
+ * Copyright (c) 2009-2012 Xilinx, Inc.  All rights reserved.
  *
- *  Created on: 22/08/2015
- *      Author: Janier Arias Garcia
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ *
  */
 
-
 /*
- * aestests.c: test application for AES block
+ * helloworld.c: simple test application
  *
  * This application configures UART 16550 to baud rate 9600.
  * PS7 UART (Zynq) is not initialized by this application, since
@@ -19,16 +29,11 @@
  *   uartns550   9600
  *   uartlite    Configurable only in HW design
  *   ps7_uart    115200 (configured by bootrom/bsp)
- *
- *   Caio Gustavo Mesquita Ângelo
- *   17/08/2015
- *   V 1.0
  */
 
 #include <stdio.h>
 #include <xil_io.h>
 #include "platform.h"
-#include <time.h>
 
 #define AES_BASEADDR 0x44A00000
 #define BI_E_0_OFFSET 0x00
@@ -51,7 +56,6 @@
 #define CONFIG_0_OFFSET 0x40
 #define CONFIG_1_OFFSET 0x41
 
-
 void print(char *str);
 void encripta(void);
 
@@ -59,49 +63,9 @@ int main()
 {
     init_platform();
 
+    print("Hello World\n\r");
+
     encripta();
-
-/*	int bo_0 = 0;
-	int bo_1 = 0;
-	int bo_2 = 0;
-	int bo_3 = 0;
-	int config = 0;
-*/
-
-
- //   printf("Teste: %d %d %d %d %d\n\r", bo_0, bo_1, bo_2, bo_3, config);
-/*    printf("Inicializando CONFIG\n\r");
-    Xil_Out32(AES_BASEADDR+CONFIG_OFFSET,0x00000001);
-    printf("Escrevendo chave K0\n\r");
-    Xil_Out32(AES_BASEADDR+BI_E_0_OFFSET,0x09cf4f3c);
-    Xil_Out32(AES_BASEADDR+BI_E_1_OFFSET,0xabf71588);
-    Xil_Out32(AES_BASEADDR+BI_E_2_OFFSET,0x28aed2a6);
-    Xil_Out32(AES_BASEADDR+BI_E_3_OFFSET,0x2b7e1516);
-    printf("Inicializando Key_Expansion\n\r");
-    Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x09);
-
-    printf("Conferindo se Key_Expansion terminou\n\r");
-    config = Xil_In32(AES_BASEADDR+CONFIG_OFFSET);
-    printf("Config = %x \n\r",config);
-
-    printf("Preparando Encriptação\n\r");
-    Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x08);
-    printf("Escrevendo bloco de entrada 0x3243f6a8885a308d313198a2e0370734\n\r");
-    Xil_Out32(AES_BASEADDR+BI_E_0_OFFSET,0xe0370734);
-    Xil_Out32(AES_BASEADDR+BI_E_1_OFFSET,0x313198a2);
-    Xil_Out32(AES_BASEADDR+BI_E_2_OFFSET,0x885a308d);
-    Xil_Out32(AES_BASEADDR+BI_E_3_OFFSET,0x3243f6a8);
-    printf("Inicializando Encriptação\n\r");
-    Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x0A);
-    printf("Lendo bloco encriptado\n\r");
-    bo_0 = Xil_In32(AES_BASEADDR+BO_E_0_OFFSET);
-    bo_1 = Xil_In32(AES_BASEADDR+BO_E_1_OFFSET);
-    bo_2 = Xil_In32(AES_BASEADDR+BO_E_2_OFFSET);
-    bo_3 = Xil_In32(AES_BASEADDR+BO_E_3_OFFSET);
-
-
-    printf("Bo = %x %x %x %x\n\r",bo_3, bo_2, bo_1, bo_0);
- */ //  printf("Done");
 
     return 0;
 }
@@ -135,7 +99,7 @@ void encripta(void)
     Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x09);
 
     printf("Colocando atraso...\n\r");
-    for( i=0; i< 1000; i++)
+    for( i=0; i< 10000; i++)
     {
     	printf(".");
     }

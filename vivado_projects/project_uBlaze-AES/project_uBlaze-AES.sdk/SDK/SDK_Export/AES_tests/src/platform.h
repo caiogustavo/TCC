@@ -1,4 +1,5 @@
-* Copyright (c) 2008 Xilinx, Inc.  All rights reserved.
+/*
+ * Copyright (c) 2008 Xilinx, Inc.  All rights reserved.
  *
  * Xilinx, Inc.
  * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A
@@ -24,4 +25,3 @@ void init_platform();
 void cleanup_platform();
 
 #endif
-

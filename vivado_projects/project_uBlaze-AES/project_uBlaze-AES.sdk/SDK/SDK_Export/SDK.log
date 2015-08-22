@@ -1,1 +1,5 @@
 10:59:31 INFO  : Processing command line option -hwspec C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml.
+11:50:35 INFO  : Inferring section assignments and sizes from elf file: C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\AES_tests\Debug\AES_tests.elf
+11:52:18 INFO  : Successfully generated C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\AES_tests\src\lscript.ld.
+11:52:18 INFO  : Applying linker script to all configurations of project AES_tests.
+11:52:18 INFO  : Setting rebuild state to true for all configurations of project AES_tests.
