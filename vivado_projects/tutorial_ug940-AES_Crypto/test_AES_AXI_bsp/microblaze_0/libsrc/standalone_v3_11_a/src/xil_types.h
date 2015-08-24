@@ -98,6 +98,7 @@ typedef struct
 	u32 Lower;
 } Xuint64;
 
+
 /*****************************************************************************/
 /**
 * Return the most significant half of the 64 bit data type.
@@ -139,6 +140,18 @@ typedef long long s64;
 #include <linux/types.h>
 #endif
 
+
+/**
+ * This data type defines an interrupt handler for a device.
+ * The argument points to the instance of the component
+ */
+typedef void (*XInterruptHandler) (void *InstancePtr);
+
+/**
+ * This data type defines an exception handler for a processor.
+ * The argument points to the instance of the component
+ */
+typedef void (*XExceptionHandler) (void *InstancePtr);
 
 /*@}*/
 

@@ -55,7 +55,7 @@
 --  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 --   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 ------------------------------------------------------------------------------
--- CLK_OUT1____32.000______0.000______50.0______167.070_____98.575
+-- CLK_OUT1____10.000______0.000______50.0______467.358____318.001
 --
 ------------------------------------------------------------------------------
 -- Input Clock   Freq (MHz)    Input Jitter (UI)
@@ -78,7 +78,8 @@ port
   -- Clock out ports
   clk_out1          : out    std_logic;
   -- Status and control signals
-  reset             : in     std_logic
+  reset             : in     std_logic;
+  locked            : out    std_logic
  );
 end mb_system_clk_wiz_0_0_clk_wiz;
 
@@ -134,11 +135,11 @@ begin
     CLKOUT4_CASCADE      => FALSE,
     COMPENSATION         => "ZHOLD",
     STARTUP_WAIT         => FALSE,
-    DIVCLK_DIVIDE        => 1,
-    CLKFBOUT_MULT_F      => 10.000,
+    DIVCLK_DIVIDE        => 5,
+    CLKFBOUT_MULT_F      => 39.000,
     CLKFBOUT_PHASE       => 0.000,
     CLKFBOUT_USE_FINE_PS => FALSE,
-    CLKOUT0_DIVIDE_F     => 31.250,
+    CLKOUT0_DIVIDE_F     => 78.000,
     CLKOUT0_PHASE        => 0.000,
     CLKOUT0_DUTY_CYCLE   => 0.500,
     CLKOUT0_USE_FINE_PS  => FALSE,
@@ -187,6 +188,7 @@ begin
     RST                 => reset_high);
 
   reset_high <= reset; 
+  locked <= locked_int;
 
   -- Output buffering
   -------------------------------------

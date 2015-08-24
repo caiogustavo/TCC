@@ -1,4 +1,4 @@
-15:26:10 **** Auto Build of project AES_tests_bsp ****
+17:22:58 **** Auto Build of project AES_tests_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_0/src"
 make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
@@ -50,5 +50,5 @@ rm -rf *.o
 make[2]: Leaving directory `C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
 'Finished building libraries'
 
-15:26:16 Build Finished (took 6s.119ms)
+17:23:04 Build Finished (took 6s.37ms)
 

@@ -105,6 +105,11 @@ extern "C" {
  */
 typedef void (*Xil_ExceptionHandler)(void *Data);
 
+/**
+ * This data type defines an interrupt handler for a device.
+ * The argument points to the instance of the component
+ */
+typedef void (*XInterruptHandler) (void *InstancePtr);
 
 /***************** Macros (Inline Functions) Definitions *********************/
 

@@ -41,3 +41,50 @@
 15:22:44 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
 15:26:09 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
 15:58:42 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:02:02 INFO  : Processing command line option -hwspec C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml.
+17:02:03 INFO  : The hardware specification for project 'hw_platform_0' is different from C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml.
+17:02:03 INFO  : Copied contents of C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml into \hw_platform_0\system.xml.
+17:02:03 INFO  : Copied contents of C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\hw\mb_system_wrapper.bit into \hw_platform_0\mb_system_wrapper.bit.
+17:02:03 INFO  : Copied contents of C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\hw\mb_system_wrapper_bd.bmm into \hw_platform_0\mb_system_wrapper_bd.bmm.
+17:02:17 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:02:19 INFO  : 
+17:02:19 INFO  : Updating hardware inferred compiler options for AES_tests.
+17:02:19 INFO  : Clearing existing target manager status.
+17:02:50 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
+17:04:50 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:15:59 INFO  : Processing command line option -hwspec C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml.
+18:16:21 INFO  : The hardware specification for project 'hw_platform_0' is different from C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml.
+18:16:21 INFO  : Copied contents of C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml into \hw_platform_0\system.xml.
+18:16:22 INFO  : Updating .bit and .bmm files from XPS's export folder.
+18:16:44 INFO  : Copied contents of C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\hw\mb_system_wrapper.bit into \hw_platform_0\mb_system_wrapper.bit.
+18:16:44 INFO  : Copied contents of C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\hw\mb_system_wrapper_bd.bmm into \hw_platform_0\mb_system_wrapper_bd.bmm.
+18:16:44 INFO  : Copied contents of C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\hw\mb_system_wrapper.bit into \hw_platform_0\mb_system_wrapper.bit.
+18:16:44 INFO  : Copied contents of C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\hw\mb_system_wrapper_bd.bmm into \hw_platform_0\mb_system_wrapper_bd.bmm.
+18:16:53 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:16:54 INFO  : 
+18:16:55 INFO  : Updating hardware inferred compiler options for AES_tests.
+18:16:55 INFO  : Clearing existing target manager status.
+18:17:29 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
+18:25:05 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:28:17 INFO  : Processing command line option -hwspec C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml.
+16:28:24 INFO  : The hardware specification for project 'hw_platform_0' is different from C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml.
+16:28:24 INFO  : Copied contents of C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml into \hw_platform_0\system.xml.
+16:28:25 INFO  : Updating .bit and .bmm files from XPS's export folder.
+16:28:52 INFO  : Copied contents of C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\hw\mb_system_wrapper.bit into \hw_platform_0\mb_system_wrapper.bit.
+16:28:52 INFO  : Copied contents of C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\hw\mb_system_wrapper_bd.bmm into \hw_platform_0\mb_system_wrapper_bd.bmm.
+16:28:52 INFO  : Copied contents of C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\hw\mb_system_wrapper.bit into \hw_platform_0\mb_system_wrapper.bit.
+16:28:52 INFO  : Copied contents of C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\hw\mb_system_wrapper_bd.bmm into \hw_platform_0\mb_system_wrapper_bd.bmm.
+16:29:00 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:29:01 INFO  : 
+16:29:02 INFO  : Updating hardware inferred compiler options for AES_tests.
+16:29:02 INFO  : Clearing existing target manager status.
+16:29:34 INFO  : Inferring section assignments and sizes from elf file: C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\AES_tests\Debug\AES_tests.elf
+16:30:26 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
+16:32:08 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:38:02 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
+16:41:12 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
+16:45:07 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
+17:19:38 INFO  : Inferring section assignments and sizes from elf file: C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\AES_tests\Debug\AES_tests.elf
+17:20:09 INFO  : Inferring section assignments and sizes from elf file: C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\AES_tests\Debug\AES_tests.elf
+17:21:37 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
+17:22:57 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"

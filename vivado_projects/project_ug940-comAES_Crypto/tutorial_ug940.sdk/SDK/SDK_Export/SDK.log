@@ -1,0 +1,5 @@
+20:31:25 ERROR : Workspace location C:\Users\Janier Arias Garcia\Documents\Projeto Caio\tutorial_ug940\tutorial_ug940.sdk\SDK\SDK_Export contains spaces. Please switch to a workspace without spaces in its path.
+20:33:33 ERROR : Workspace location C:\Users\Janier Arias Garcia\Documents\Projeto_Caio\tutorial_ug940\tutorial_ug940.sdk\SDK\SDK_Export contains spaces. Please switch to a workspace without spaces in its path.
+17:30:25 INFO  : Processing command line option -hwspec C:/Projetos_git/repo/vivado_projects/project_ug940-comAES_Crypto/tutorial_ug940.sdk/SDK/SDK_Export/hw/mb_subsystem.xml.
+17:34:12 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_ug940-comAES_Crypto/tutorial_ug940.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
+17:36:20 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

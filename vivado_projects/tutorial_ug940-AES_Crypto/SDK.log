@@ -57,3 +57,19 @@
 14:36:42 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
 15:44:12 WARN  : Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
 15:44:12 WARN  : Unable to obtain port 2357 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+15:58:37 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:05:39 WARN  :  [Hsm 55-1484] MSS file doesn't have NAME. So assuming NAME as system
+
+17:05:49 INFO  : BSP Project P/test_AES_AXI_bsp has been successfully migrated.
+17:06:22 INFO  : FPGA configured successfully with bitstream "C:/Ublaze/Projeto_Caio/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit"
+17:08:22 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:29:12 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit"
+18:29:33 INFO  : Inferring section assignments and sizes from elf file: C:\Projetos_git\repo\vivado_projects\tutorial_ug940-AES_Crypto\test_AES_AXI\Debug\test_AES_AXI.elf
+18:46:18 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:31:43 WARN  : Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+16:32:34 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/tutorial_ug940-AES_Crypto/hw_platform_0/download.bit"
+16:37:06 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+16:53:16 WARN  :  [Hsm 55-1484] MSS file doesn't have NAME. So assuming NAME as system
+
+17:19:18 INFO  : Inferring section assignments and sizes from elf file: C:\Projetos_git\repo\vivado_projects\tutorial_ug940-AES_Crypto\test_AES_AXI\Debug\test_AES_AXI.elf
+17:19:55 INFO  : Inferring section assignments and sizes from elf file: C:\Projetos_git\repo\vivado_projects\tutorial_ug940-AES_Crypto\test_AES_AXI\Debug\test_AES_AXI.elf

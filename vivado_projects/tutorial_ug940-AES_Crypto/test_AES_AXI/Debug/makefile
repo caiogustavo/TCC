@@ -27,9 +27,6 @@ endif
 ELFSIZE += \
 test_AES_AXI.elf.size \
 
-ELFCHECK += \
-test_AES_AXI.elf.elfcheck \
-
 
 # All Target
 all: test_AES_AXI.elf secondary-outputs
@@ -48,18 +45,12 @@ test_AES_AXI.elf.size: test_AES_AXI.elf
 	@echo 'Finished building: $@'
 	@echo ' '
 
-test_AES_AXI.elf.elfcheck: test_AES_AXI.elf
-	@echo 'Invoking: Xilinx ELF Check'
-	elfcheck test_AES_AXI.elf -hw ../../hw_platform_0/system.xml -pe microblaze_0  |tee "test_AES_AXI.elf.elfcheck"
-	@echo 'Finished building: $@'
-	@echo ' '
-
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(C_DEPS)$(EXECUTABLES)$(ELFSIZE)$(ELFCHECK)$(S_UPPER_DEPS) test_AES_AXI.elf
+	-$(RM) $(OBJS)$(C_DEPS)$(EXECUTABLES)$(ELFSIZE)$(S_UPPER_DEPS) test_AES_AXI.elf
 	-@echo ' '
 
-secondary-outputs: $(ELFSIZE) $(ELFCHECK)
+secondary-outputs: $(ELFSIZE)
 
 .PHONY: all clean dependents
 .SECONDARY:

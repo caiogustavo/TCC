@@ -24,7 +24,9 @@
 #ifndef _MICROBLAZE_INTERFACE_H_
 #define _MICROBLAZE_INTERFACE_H_
 
-#include "xbasic_types.h"
+#include "xil_types.h"
+#include "xil_assert.h"
+#include "xil_exception.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -38,7 +40,7 @@ extern void microblaze_disable_dcache(void);                    /* Disable Instr
 extern void microblaze_enable_exceptions(void);                 /* Enable hardware exceptions */
 extern void microblaze_disable_exceptions(void);                /* Disable hardware exceptions */
 extern void microblaze_register_handler(XInterruptHandler Handler, void *DataPtr); /* Register top level interrupt handler */
-extern void microblaze_register_exception_handler(Xuint8 ExceptionId, XExceptionHandler Handler, void *DataPtr); /* Register exception handler */
+extern void microblaze_register_exception_handler(u32 ExceptionId, Xil_ExceptionHandler Handler, void *DataPtr); /* Register exception handler */
 
 extern void microblaze_invalidate_icache(void);         /* Invalidate the entire icache */
 extern void microblaze_invalidate_dcache(void);         /* Invalidate the entire dcache */

@@ -19,12 +19,16 @@ source mb_system_wrapper.tcl
 # set_property board_part xilinx.com:kc705:part0:1.0 [current_project]
 # set_param project.compositeFile.enableAutoGeneration 0
 # set_property default_lib xil_defaultlib [current_project]
-# set_property ip_repo_paths C:/Projetos_git/repo/vivado_projects/project_AES-IP [current_fileset]
+# set_property ip_repo_paths {
+#   C:/Projetos_git/repo/vivado_projects/project_AES-IP
+#   {c:/Users/Janier Arias Garcia/project_AES-IP}
+# } [current_fileset]
 # add_files C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/mb_system.bd
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projetos_git/repo/vivado_projects/project_AES-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Janier Arias Garcia/project_AES-IP'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.1/data/ip'.
-add_files: Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 278.461 ; gain = 102.605
+add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 278.820 ; gain = 102.324
 # set_property used_in_implementation false [get_files -all c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_microblaze_0_0/mb_system_microblaze_0_0.xdc]
 # set_property used_in_implementation false [get_files -all c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_microblaze_0_0/mb_system_microblaze_0_0_ooc.xdc]
 # set_property used_in_implementation false [get_files -all c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc]
@@ -76,103 +80,103 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:48 ; elapsed = 00:01:12 . Memory (MB): peak = 343.816 ; gain = 213.219
+Starting RTL Elaboration : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 344.105 ; gain = 213.027
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'mb_system_wrapper' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system_wrapper.vhd:39]
 INFO: [Synth 8-3491] module 'mb_system' declared at 'C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:3870' bound to instance 'mb_system_i' of component 'mb_system' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system_wrapper.vhd:65]
 INFO: [Synth 8-638] synthesizing module 'mb_system' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:3897]
-INFO: [Synth 8-3491] module 'mb_system_AES_AXI_0_0' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_AES_AXI_0_0/synth/mb_system_AES_AXI_0_0.vhd:59' bound to instance 'AES_AXI_0' of component 'mb_system_AES_AXI_0_0' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:4661]
-INFO: [Synth 8-638] synthesizing module 'mb_system_AES_AXI_0_0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_AES_AXI_0_0/synth/mb_system_AES_AXI_0_0.vhd:86]
+INFO: [Synth 8-3491] module 'mb_system_AES_AXI_0_1' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_AES_AXI_0_1/synth/mb_system_AES_AXI_0_1.vhd:59' bound to instance 'AES_AXI_0' of component 'mb_system_AES_AXI_0_1' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:4663]
+INFO: [Synth 8-638] synthesizing module 'mb_system_AES_AXI_0_1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_AES_AXI_0_1/synth/mb_system_AES_AXI_0_1.vhd:86]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'myip_lite_v1_0' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd:6' bound to instance 'U0' of component 'myip_lite_v1_0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_AES_AXI_0_0/synth/mb_system_AES_AXI_0_0.vhd:147]
-INFO: [Synth 8-638] synthesizing module 'myip_lite_v1_0__parameterized0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd:50]
+INFO: [Synth 8-3491] module 'myip_lite_v1_0' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd:6' bound to instance 'U0' of component 'myip_lite_v1_0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_AES_AXI_0_1/synth/mb_system_AES_AXI_0_1.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'myip_lite_v1_0__parameterized0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd:50]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'myip_lite_v1_0_S00_AXI' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0_S00_AXI.vhd:6' bound to instance 'myip_lite_v1_0_S00_AXI_inst' of component 'myip_lite_v1_0_S00_AXI' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd:119]
-INFO: [Synth 8-638] synthesizing module 'myip_lite_v1_0_S00_AXI__parameterized0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0_S00_AXI.vhd:98]
+INFO: [Synth 8-3491] module 'myip_lite_v1_0_S00_AXI' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0_S00_AXI.vhd:6' bound to instance 'myip_lite_v1_0_S00_AXI_inst' of component 'myip_lite_v1_0_S00_AXI' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'myip_lite_v1_0_S00_AXI__parameterized0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0_S00_AXI.vhd:98]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'DeMux_1x2' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/DeMux_1x2.vhd:34' bound to instance 'DeMux_1' of component 'DeMux_1x2' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0_S00_AXI.vhd:505]
-INFO: [Synth 8-638] synthesizing module 'DeMux_1x2' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/DeMux_1x2.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'DeMux_1x2' (1#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/DeMux_1x2.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'myip_lite_v1_0_S00_AXI__parameterized0' (2#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0_S00_AXI.vhd:98]
-INFO: [Synth 8-3491] module 'AES_Crypto' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:34' bound to instance 'AES_Crypto_0' of component 'AES_Crypto' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd:161]
-INFO: [Synth 8-638] synthesizing module 'AES_Crypto' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:52]
-INFO: [Synth 8-3491] module 'Clock_div32' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Clock_div32.vhd:34' bound to instance 'Clock_div32_0' of component 'Clock_div32' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:159]
-INFO: [Synth 8-638] synthesizing module 'Clock_div32' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Clock_div32.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'Clock_div32' (3#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Clock_div32.vhd:41]
-INFO: [Synth 8-3491] module 'KeyExpansion' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/KeyExpansion.vhd:42' bound to instance 'KeyExpansion_0' of component 'KeyExpansion' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:162]
-INFO: [Synth 8-638] synthesizing module 'KeyExpansion' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/KeyExpansion.vhd:54]
-INFO: [Synth 8-256] done synthesizing module 'KeyExpansion' (4#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/KeyExpansion.vhd:54]
-INFO: [Synth 8-3491] module 'AddKey' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd:34' bound to instance 'AddKey_round_encrypt' of component 'AddKey' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:181]
-INFO: [Synth 8-638] synthesizing module 'AddKey' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'AddKey' (5#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd:41]
-INFO: [Synth 8-3491] module 'SubBytes' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:36' bound to instance 'SubBytes_round' of component 'SubBytes' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:185]
-INFO: [Synth 8-638] synthesizing module 'SubBytes' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:46]
-WARNING: [Synth 8-614] signal 'mode' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
-WARNING: [Synth 8-614] signal 'Bi_key' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
-WARNING: [Synth 8-614] signal 'Bi' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
-WARNING: [Synth 8-614] signal 'y7' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
-WARNING: [Synth 8-614] signal 'y6' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
-WARNING: [Synth 8-614] signal 'y5' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
-WARNING: [Synth 8-614] signal 'y4' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
-WARNING: [Synth 8-614] signal 'y3' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
-WARNING: [Synth 8-614] signal 'y2' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
-WARNING: [Synth 8-614] signal 'y1' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
-WARNING: [Synth 8-614] signal 'y0' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
-INFO: [Synth 8-256] done synthesizing module 'SubBytes' (6#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:46]
-INFO: [Synth 8-3491] module 'ShiftRows' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/ShiftRows.vhd:34' bound to instance 'ShiftRows_round' of component 'ShiftRows' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:191]
-INFO: [Synth 8-638] synthesizing module 'ShiftRows' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/ShiftRows.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'ShiftRows' (7#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/ShiftRows.vhd:41]
-INFO: [Synth 8-3491] module 'MixColumns' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/MixColumns.vhd:33' bound to instance 'MixColumns_round' of component 'MixColumns' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:194]
-INFO: [Synth 8-638] synthesizing module 'MixColumns' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/MixColumns.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'MixColumns' (8#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/MixColumns.vhd:40]
-INFO: [Synth 8-3491] module 'AddKey' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd:34' bound to instance 'AddKey_ext_encrypt' of component 'AddKey' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:197]
-INFO: [Synth 8-3491] module 'Control' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control.vhd:37' bound to instance 'Control_0' of component 'Control' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:201]
-INFO: [Synth 8-638] synthesizing module 'Control' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control.vhd:55]
-INFO: [Synth 8-3491] module 'Mux_2x1' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd:34' bound to instance 'Mux_1' of component 'Mux_2x1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'Mux_2x1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'Mux_2x1' (9#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd:42]
-INFO: [Synth 8-3491] module 'Mux_10x1' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd:34' bound to instance 'Mux_2' of component 'Mux_10x1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control.vhd:99]
-INFO: [Synth 8-638] synthesizing module 'Mux_10x1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'Mux_10x1' (10#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd:42]
-WARNING: [Synth 8-614] signal 's5' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control.vhd:132]
-INFO: [Synth 8-256] done synthesizing module 'Control' (11#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control.vhd:55]
-INFO: [Synth 8-3491] module 'AddKey' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd:34' bound to instance 'AddKey_round_decrypt' of component 'AddKey' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:223]
-INFO: [Synth 8-3491] module 'InvSubBytes' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:34' bound to instance 'InvSubBytes_round' of component 'InvSubBytes' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:227]
-INFO: [Synth 8-638] synthesizing module 'InvSubBytes' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:42]
-WARNING: [Synth 8-614] signal 'Bi' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-WARNING: [Synth 8-614] signal 'y7' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-WARNING: [Synth 8-614] signal 'y6' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-WARNING: [Synth 8-614] signal 'y5' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-WARNING: [Synth 8-614] signal 'y4' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-WARNING: [Synth 8-614] signal 'y3' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-WARNING: [Synth 8-614] signal 'y2' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-WARNING: [Synth 8-614] signal 'y1' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-WARNING: [Synth 8-614] signal 'y0' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'InvSubBytes' (12#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:42]
-INFO: [Synth 8-3491] module 'InvShiftRows' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvShiftRows.vhd:34' bound to instance 'InvShiftRows_round' of component 'InvShiftRows' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:231]
-INFO: [Synth 8-638] synthesizing module 'InvShiftRows' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvShiftRows.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'InvShiftRows' (13#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvShiftRows.vhd:41]
-INFO: [Synth 8-3491] module 'InvMixColumns' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvMixColumns.vhd:34' bound to instance 'InvMixColumns_round' of component 'InvMixColumns' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:234]
-INFO: [Synth 8-638] synthesizing module 'InvMixColumns' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvMixColumns.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'InvMixColumns' (14#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvMixColumns.vhd:40]
-INFO: [Synth 8-3491] module 'AddKey' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd:34' bound to instance 'AddKey_ext_decrypt' of component 'AddKey' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:237]
-INFO: [Synth 8-3491] module 'Control_Decryption' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control_Decryption.vhd:37' bound to instance 'Control_Decryption_0' of component 'Control_Decryption' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:241]
-INFO: [Synth 8-638] synthesizing module 'Control_Decryption' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control_Decryption.vhd:55]
-INFO: [Synth 8-3491] module 'Mux_2x1' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd:34' bound to instance 'Mux_1' of component 'Mux_2x1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control_Decryption.vhd:96]
-INFO: [Synth 8-3491] module 'Mux_10x1' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd:34' bound to instance 'Mux_2' of component 'Mux_10x1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control_Decryption.vhd:99]
-WARNING: [Synth 8-614] signal 's3' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control_Decryption.vhd:117]
-INFO: [Synth 8-256] done synthesizing module 'Control_Decryption' (15#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control_Decryption.vhd:55]
-INFO: [Synth 8-256] done synthesizing module 'AES_Crypto' (16#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/new/AES_Crypto.vhd:52]
-INFO: [Synth 8-256] done synthesizing module 'myip_lite_v1_0__parameterized0' (17#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd:50]
-INFO: [Synth 8-256] done synthesizing module 'mb_system_AES_AXI_0_0' (18#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_AES_AXI_0_0/synth/mb_system_AES_AXI_0_0.vhd:86]
-INFO: [Synth 8-113] binding component instance 'GND' to cell 'GND' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:4686]
-INFO: [Synth 8-113] binding component instance 'VCC' to cell 'VCC' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:4690]
-INFO: [Synth 8-3491] module 'mb_system_axi_bram_ctrl_0_0' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_axi_bram_ctrl_0_0/synth/mb_system_axi_bram_ctrl_0_0.vhd:59' bound to instance 'axi_bram_ctrl_0' of component 'mb_system_axi_bram_ctrl_0_0' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:4694]
+INFO: [Synth 8-3491] module 'DeMux_1x2' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/DeMux_1x2.vhd:34' bound to instance 'DeMux_1' of component 'DeMux_1x2' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0_S00_AXI.vhd:505]
+INFO: [Synth 8-638] synthesizing module 'DeMux_1x2' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/DeMux_1x2.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'DeMux_1x2' (1#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/DeMux_1x2.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'myip_lite_v1_0_S00_AXI__parameterized0' (2#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0_S00_AXI.vhd:98]
+INFO: [Synth 8-3491] module 'AES_Crypto' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:34' bound to instance 'AES_Crypto_0' of component 'AES_Crypto' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'AES_Crypto' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:52]
+INFO: [Synth 8-3491] module 'Clock_div32' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Clock_div32.vhd:34' bound to instance 'Clock_div32_0' of component 'Clock_div32' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'Clock_div32' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Clock_div32.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Clock_div32' (3#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Clock_div32.vhd:41]
+INFO: [Synth 8-3491] module 'KeyExpansion' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/KeyExpansion.vhd:42' bound to instance 'KeyExpansion_0' of component 'KeyExpansion' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'KeyExpansion' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/KeyExpansion.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'KeyExpansion' (4#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/KeyExpansion.vhd:54]
+INFO: [Synth 8-3491] module 'AddKey' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd:34' bound to instance 'AddKey_round_encrypt' of component 'AddKey' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'AddKey' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'AddKey' (5#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd:41]
+INFO: [Synth 8-3491] module 'SubBytes' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:36' bound to instance 'SubBytes_round' of component 'SubBytes' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'SubBytes' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:46]
+WARNING: [Synth 8-614] signal 'mode' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
+WARNING: [Synth 8-614] signal 'Bi_key' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
+WARNING: [Synth 8-614] signal 'Bi' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
+WARNING: [Synth 8-614] signal 'y7' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
+WARNING: [Synth 8-614] signal 'y6' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
+WARNING: [Synth 8-614] signal 'y5' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
+WARNING: [Synth 8-614] signal 'y4' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
+WARNING: [Synth 8-614] signal 'y3' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
+WARNING: [Synth 8-614] signal 'y2' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
+WARNING: [Synth 8-614] signal 'y1' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
+WARNING: [Synth 8-614] signal 'y0' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'SubBytes' (6#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:46]
+INFO: [Synth 8-3491] module 'ShiftRows' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/ShiftRows.vhd:34' bound to instance 'ShiftRows_round' of component 'ShiftRows' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'ShiftRows' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/ShiftRows.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'ShiftRows' (7#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/ShiftRows.vhd:41]
+INFO: [Synth 8-3491] module 'MixColumns' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/MixColumns.vhd:33' bound to instance 'MixColumns_round' of component 'MixColumns' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'MixColumns' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/MixColumns.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'MixColumns' (8#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/MixColumns.vhd:40]
+INFO: [Synth 8-3491] module 'AddKey' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd:34' bound to instance 'AddKey_ext_encrypt' of component 'AddKey' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:197]
+INFO: [Synth 8-3491] module 'Control' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control.vhd:37' bound to instance 'Control_0' of component 'Control' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'Control' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control.vhd:55]
+INFO: [Synth 8-3491] module 'Mux_2x1' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd:34' bound to instance 'Mux_1' of component 'Mux_2x1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'Mux_2x1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2x1' (9#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd:42]
+INFO: [Synth 8-3491] module 'Mux_10x1' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd:34' bound to instance 'Mux_2' of component 'Mux_10x1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'Mux_10x1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Mux_10x1' (10#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd:42]
+WARNING: [Synth 8-614] signal 's5' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'Control' (11#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control.vhd:55]
+INFO: [Synth 8-3491] module 'AddKey' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd:34' bound to instance 'AddKey_round_decrypt' of component 'AddKey' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:223]
+INFO: [Synth 8-3491] module 'InvSubBytes' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:34' bound to instance 'InvSubBytes_round' of component 'InvSubBytes' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'InvSubBytes' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:42]
+WARNING: [Synth 8-614] signal 'Bi' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+WARNING: [Synth 8-614] signal 'y7' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+WARNING: [Synth 8-614] signal 'y6' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+WARNING: [Synth 8-614] signal 'y5' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+WARNING: [Synth 8-614] signal 'y4' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+WARNING: [Synth 8-614] signal 'y3' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+WARNING: [Synth 8-614] signal 'y2' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+WARNING: [Synth 8-614] signal 'y1' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+WARNING: [Synth 8-614] signal 'y0' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'InvSubBytes' (12#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:42]
+INFO: [Synth 8-3491] module 'InvShiftRows' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvShiftRows.vhd:34' bound to instance 'InvShiftRows_round' of component 'InvShiftRows' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'InvShiftRows' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvShiftRows.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'InvShiftRows' (13#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvShiftRows.vhd:41]
+INFO: [Synth 8-3491] module 'InvMixColumns' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvMixColumns.vhd:34' bound to instance 'InvMixColumns_round' of component 'InvMixColumns' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'InvMixColumns' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvMixColumns.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'InvMixColumns' (14#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvMixColumns.vhd:40]
+INFO: [Synth 8-3491] module 'AddKey' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd:34' bound to instance 'AddKey_ext_decrypt' of component 'AddKey' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:237]
+INFO: [Synth 8-3491] module 'Control_Decryption' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control_Decryption.vhd:37' bound to instance 'Control_Decryption_0' of component 'Control_Decryption' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'Control_Decryption' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control_Decryption.vhd:55]
+INFO: [Synth 8-3491] module 'Mux_2x1' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd:34' bound to instance 'Mux_1' of component 'Mux_2x1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control_Decryption.vhd:96]
+INFO: [Synth 8-3491] module 'Mux_10x1' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd:34' bound to instance 'Mux_2' of component 'Mux_10x1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control_Decryption.vhd:99]
+WARNING: [Synth 8-614] signal 's3' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control_Decryption.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'Control_Decryption' (15#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control_Decryption.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'AES_Crypto' (16#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/new/AES_Crypto.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'myip_lite_v1_0__parameterized0' (17#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'mb_system_AES_AXI_0_1' (18#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_AES_AXI_0_1/synth/mb_system_AES_AXI_0_1.vhd:86]
+INFO: [Synth 8-113] binding component instance 'GND' to cell 'GND' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:4688]
+INFO: [Synth 8-113] binding component instance 'VCC' to cell 'VCC' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:4692]
+INFO: [Synth 8-3491] module 'mb_system_axi_bram_ctrl_0_0' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_axi_bram_ctrl_0_0/synth/mb_system_axi_bram_ctrl_0_0.vhd:59' bound to instance 'axi_bram_ctrl_0' of component 'mb_system_axi_bram_ctrl_0_0' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:4696]
 INFO: [Synth 8-638] synthesizing module 'mb_system_axi_bram_ctrl_0_0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_axi_bram_ctrl_0_0/synth/mb_system_axi_bram_ctrl_0_0.vhd:115]
 	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
 	Parameter C_MEMORY_DEPTH bound to: 1024 - type: integer 
@@ -318,7 +322,7 @@ INFO: [Synth 8-256] done synthesizing module 'full_axi' (28#1) [c:/Projetos_git/
 INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_top' (29#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/xilinx.com/axi_bram_ctrl_v4_0/0289339c/hdl/vhdl/axi_bram_ctrl_top.vhd:397]
 INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl__parameterized0' (30#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/xilinx.com/axi_bram_ctrl_v4_0/0289339c/hdl/vhdl/axi_bram_ctrl.vhd:292]
 INFO: [Synth 8-256] done synthesizing module 'mb_system_axi_bram_ctrl_0_0' (31#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_axi_bram_ctrl_0_0/synth/mb_system_axi_bram_ctrl_0_0.vhd:115]
-INFO: [Synth 8-3491] module 'mb_system_axi_bram_ctrl_0_bram_0' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_axi_bram_ctrl_0_bram_0/synth/mb_system_axi_bram_ctrl_0_bram_0.vhd:59' bound to instance 'axi_bram_ctrl_0_bram' of component 'mb_system_axi_bram_ctrl_0_bram_0' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:4748]
+INFO: [Synth 8-3491] module 'mb_system_axi_bram_ctrl_0_bram_0' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_axi_bram_ctrl_0_bram_0/synth/mb_system_axi_bram_ctrl_0_bram_0.vhd:59' bound to instance 'axi_bram_ctrl_0_bram' of component 'mb_system_axi_bram_ctrl_0_bram_0' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:4750]
 INFO: [Synth 8-638] synthesizing module 'mb_system_axi_bram_ctrl_0_bram_0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_axi_bram_ctrl_0_bram_0/synth/mb_system_axi_bram_ctrl_0_bram_0.vhd:78]
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
@@ -1883,7 +1887,7 @@ INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_crossbar' (64#1)
 INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_axi_crossbar' (65#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/xilinx.com/axi_crossbar_v2_1/2e81f3ad/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v:54]
 INFO: [Synth 8-256] done synthesizing module 'mb_system_xbar_0' (66#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_xbar_0/synth/mb_system_xbar_0.v:57]
 INFO: [Synth 8-256] done synthesizing module 'mb_system_axi_mem_intercon_0' (67#1) [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:2085]
-INFO: [Synth 8-3491] module 'mb_system_axi_timer_0_0' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_axi_timer_0_0/synth/mb_system_axi_timer_0_0.vhd:59' bound to instance 'axi_timer_0' of component 'mb_system_axi_timer_0_0' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:4926]
+INFO: [Synth 8-3491] module 'mb_system_axi_timer_0_0' declared at 'c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_axi_timer_0_0/synth/mb_system_axi_timer_0_0.vhd:59' bound to instance 'axi_timer_0' of component 'mb_system_axi_timer_0_0' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:4928]
 INFO: [Synth 8-638] synthesizing module 'mb_system_axi_timer_0_0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_axi_timer_0_0/synth/mb_system_axi_timer_0_0.vhd:90]
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 	Parameter C_COUNT_WIDTH bound to: 32 - type: integer 
@@ -2567,21 +2571,21 @@ INFO: [Synth 8-256] done synthesizing module 'slave_attachment__parameterized0' 
 INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif__parameterized0' (90#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/xilinx.com/axi_lite_ipif_v2_0/82c7a66d/hdl/src/vhdl/axi_lite_ipif.vhd:253]
 INFO: [Synth 8-256] done synthesizing module 'axi_uartlite__parameterized0' (91#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/xilinx.com/axi_uartlite_v2_0/6e58ba99/hdl/src/vhdl/axi_uartlite.vhd:243]
 INFO: [Synth 8-256] done synthesizing module 'mb_system_axi_uartlite_0_0' (92#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_axi_uartlite_0_0/synth/mb_system_axi_uartlite_0_0.vhd:86]
-INFO: [Synth 8-638] synthesizing module 'mb_system_clk_wiz_0_0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'mb_system_clk_wiz_0_0_clk_wiz' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0_clk_wiz.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'mb_system_clk_wiz_0_0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'mb_system_clk_wiz_0_0_clk_wiz' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0_clk_wiz.vhd:86]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-INFO: [Synth 8-113] binding component instance 'clkin1_ibufg' to cell 'IBUF' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0_clk_wiz.vhd:119]
+INFO: [Synth 8-113] binding component instance 'clkin1_ibufg' to cell 'IBUF' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0_clk_wiz.vhd:120]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
-	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_MULT_F bound to: 39.000000 - type: float 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
 	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
 	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
-	Parameter CLKOUT0_DIVIDE_F bound to: 31.250000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 78.000000 - type: float 
 	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
@@ -2611,7 +2615,7 @@ INFO: [Synth 8-113] binding component instance 'clkin1_ibufg' to cell 'IBUF' [c:
 	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
 	Parameter COMPENSATION bound to: ZHOLD - type: string 
-	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
 	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
 	Parameter IS_PSEN_INVERTED bound to: 1'b0 
 	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
@@ -2623,11 +2627,11 @@ INFO: [Synth 8-113] binding component instance 'clkin1_ibufg' to cell 'IBUF' [c:
 	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
 	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
 	Parameter STARTUP_WAIT bound to: 0 - type: bool 
-INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0_clk_wiz.vhd:131]
-INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0_clk_wiz.vhd:194]
-INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0_clk_wiz.vhd:201]
-INFO: [Synth 8-256] done synthesizing module 'mb_system_clk_wiz_0_0_clk_wiz' (93#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0_clk_wiz.vhd:85]
-INFO: [Synth 8-256] done synthesizing module 'mb_system_clk_wiz_0_0' (94#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0.vhd:85]
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0_clk_wiz.vhd:132]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0_clk_wiz.vhd:196]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0_clk_wiz.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'mb_system_clk_wiz_0_0_clk_wiz' (93#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0_clk_wiz.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'mb_system_clk_wiz_0_0' (94#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0.vhd:86]
 INFO: [Synth 8-638] synthesizing module 'mb_system_mdm_1_0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mdm_1_0/synth/mb_system_mdm_1_0.vhd:73]
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
@@ -19393,12 +19397,12 @@ INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (280#1) [c:/Projetos_git/
 INFO: [Synth 8-256] done synthesizing module 'sequence' (281#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/51a8c173/hdl/src/vhdl/sequence.vhd:146]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset__parameterized0' (282#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/51a8c173/hdl/src/vhdl/proc_sys_reset.vhd:199]
 INFO: [Synth 8-256] done synthesizing module 'mb_system_rst_mig_7series_0_100M_0' (283#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_rst_mig_7series_0_100M_0/synth/mb_system_rst_mig_7series_0_100M_0.vhd:74]
-WARNING: [Synth 8-3848] Net NLW_axi_bram_ctrl_0_bram_addra_UNCONNECTED in module/entity mb_system does not have driver. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:4629]
-WARNING: [Synth 8-3848] Net NLW_axi_bram_ctrl_0_bram_addrb_UNCONNECTED in module/entity mb_system does not have driver. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:4630]
+WARNING: [Synth 8-3848] Net NLW_axi_bram_ctrl_0_bram_addra_UNCONNECTED in module/entity mb_system does not have driver. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:4630]
+WARNING: [Synth 8-3848] Net NLW_axi_bram_ctrl_0_bram_addrb_UNCONNECTED in module/entity mb_system does not have driver. [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:4631]
 INFO: [Synth 8-256] done synthesizing module 'mb_system' (284#1) [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:3897]
 INFO: [Synth 8-256] done synthesizing module 'mb_system_wrapper' (285#1) [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system_wrapper.vhd:39]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:03:49 ; elapsed = 00:04:36 . Memory (MB): peak = 884.133 ; gain = 753.535
+Finished RTL Elaboration : Time (s): cpu = 00:03:33 ; elapsed = 00:04:21 . Memory (MB): peak = 884.281 ; gain = 753.203
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -19521,7 +19525,7 @@ Loading package pin functions from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kin
 Loading package from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/kintex7/xc7k325t/ffg900/Package.xml
 Loading io standards from C:/Xilinx/Vivado/2014.1/data\./parts/xilinx/kintex7/IOStandards.xml
 Loading device configuration modes from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/ConfigModes.xml
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'mb_system_i/clk_wiz_0/U0/clkin1_ibufg' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0_clk_wiz.vhd:119]
+WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'mb_system_i/clk_wiz_0/U0/clkin1_ibufg' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0_clk_wiz.vhd:120]
 WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'mb_system_i/mig_7series_0/u_mb_system_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/ddr_ck_gen_loop[0].ddr_ck_gen.ddr_ck_obuf' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/rtl/phy/mig_7series_v2_0_ddr_byte_lane.v:669]
 
 Processing XDC Constraints
@@ -19603,7 +19607,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:05:19 ; elapsed = 00:06:07 . Memory (MB): peak = 1400.652 ; gain = 1270.055
+Finished Loading Part and Timing Information : Time (s): cpu = 00:04:56 ; elapsed = 00:05:40 . Memory (MB): peak = 1392.391 ; gain = 1261.313
 ---------------------------------------------------------------------------------
 
 
@@ -19630,8 +19634,8 @@ Applied set_property DONT_TOUCH = true for axi_mem_intercon. (constraint file  C
 Applied set_property DONT_TOUCH = true for xbar. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 58).
 Applied set_property DONT_TOUCH = true for xbar. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 61).
 Applied set_property DONT_TOUCH = true for axi_bram_ctrl_0_bram. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 64).
-Applied set_property DONT_TOUCH = true for AES_AXI_0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 67).
-Applied set_property DONT_TOUCH = true for clk_wiz_0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 70).
+Applied set_property DONT_TOUCH = true for clk_wiz_0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 67).
+Applied set_property DONT_TOUCH = true for AES_AXI_0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 70).
 Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 73).
 Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 88).
 Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 94).
@@ -19640,11 +19644,11 @@ Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Projetos_git
 Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 118).
 Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 144).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:27 ; elapsed = 00:06:12 . Memory (MB): peak = 1400.652 ; gain = 1270.055
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:04 ; elapsed = 00:05:45 . Memory (MB): peak = 1392.391 ; gain = 1261.313
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:05:27 ; elapsed = 00:06:12 . Memory (MB): peak = 1400.652 ; gain = 1270.055
+Finished RTL Optimization : Time (s): cpu = 00:05:04 ; elapsed = 00:05:45 . Memory (MB): peak = 1392.391 ; gain = 1261.313
 ---------------------------------------------------------------------------------
 
 INFO: [Synth 8-802] inferred FSM for state register 'GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg' in module 'wr_chnl'
@@ -19736,34 +19740,34 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'tempmon_state_reg' in m
 INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/rtl/ui/mig_7series_v2_0_ui_wr_data.v:380]
 INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/rtl/ui/mig_7series_v2_0_ui_rd_data.v:392]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mig_7series_v2_0_axi_mc_r_channel'
-WARNING: [Synth 8-327] inferring latch for variable 'Bo_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:143]
-WARNING: [Synth 8-327] inferring latch for variable 'n_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:122]
-WARNING: [Synth 8-327] inferring latch for variable 'x4_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:59]
-WARNING: [Synth 8-327] inferring latch for variable 'x7_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:58]
-WARNING: [Synth 8-327] inferring latch for variable 'x3_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:59]
-WARNING: [Synth 8-327] inferring latch for variable 'x6_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:59]
-WARNING: [Synth 8-327] inferring latch for variable 'x2_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:59]
-WARNING: [Synth 8-327] inferring latch for variable 'x1_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:59]
-WARNING: [Synth 8-327] inferring latch for variable 'x5_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:58]
-WARNING: [Synth 8-327] inferring latch for variable 'x0_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:65]
-WARNING: [Synth 8-327] inferring latch for variable 'bo_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control.vhd:200]
-WARNING: [Synth 8-327] inferring latch for variable 'rdy_i_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control.vhd:89]
-WARNING: [Synth 8-327] inferring latch for variable 'e_mux_1_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control.vhd:96]
-WARNING: [Synth 8-327] inferring latch for variable 'e_mux_2_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control.vhd:99]
-WARNING: [Synth 8-327] inferring latch for variable 'Bo_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:124]
-WARNING: [Synth 8-327] inferring latch for variable 'n_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:113]
-WARNING: [Synth 8-327] inferring latch for variable 'x7_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'x0_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'x5_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:52]
-WARNING: [Synth 8-327] inferring latch for variable 'x6_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'x1_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'x3_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'x4_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:52]
-WARNING: [Synth 8-327] inferring latch for variable 'x2_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'bo_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control_Decryption.vhd:185]
-WARNING: [Synth 8-327] inferring latch for variable 'rdy_i_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control_Decryption.vhd:91]
-WARNING: [Synth 8-327] inferring latch for variable 'e_mux_1_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control_Decryption.vhd:96]
-WARNING: [Synth 8-327] inferring latch for variable 'e_mux_2_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_0/9c12c494/sources_1/imports/sources_1/new/Control_Decryption.vhd:99]
+WARNING: [Synth 8-327] inferring latch for variable 'Bo_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:143]
+WARNING: [Synth 8-327] inferring latch for variable 'n_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:122]
+WARNING: [Synth 8-327] inferring latch for variable 'x4_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:59]
+WARNING: [Synth 8-327] inferring latch for variable 'x7_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'x3_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:59]
+WARNING: [Synth 8-327] inferring latch for variable 'x6_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:59]
+WARNING: [Synth 8-327] inferring latch for variable 'x2_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:59]
+WARNING: [Synth 8-327] inferring latch for variable 'x1_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:59]
+WARNING: [Synth 8-327] inferring latch for variable 'x5_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'x0_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'bo_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control.vhd:200]
+WARNING: [Synth 8-327] inferring latch for variable 'rdy_i_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control.vhd:89]
+WARNING: [Synth 8-327] inferring latch for variable 'e_mux_1_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control.vhd:96]
+WARNING: [Synth 8-327] inferring latch for variable 'e_mux_2_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control.vhd:99]
+WARNING: [Synth 8-327] inferring latch for variable 'Bo_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:124]
+WARNING: [Synth 8-327] inferring latch for variable 'n_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:113]
+WARNING: [Synth 8-327] inferring latch for variable 'x7_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'x0_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'x5_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'x6_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'x1_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'x3_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'x4_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'x2_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'bo_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control_Decryption.vhd:185]
+WARNING: [Synth 8-327] inferring latch for variable 'rdy_i_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control_Decryption.vhd:91]
+WARNING: [Synth 8-327] inferring latch for variable 'e_mux_1_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control_Decryption.vhd:96]
+WARNING: [Synth 8-327] inferring latch for variable 'e_mux_2_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/AES_AXI_v1_1/24aea3f1/sources_1/imports/sources_1/new/Control_Decryption.vhd:99]
 INFO: [Synth 8-3354] encoded FSM with state register 'GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg' using encoding 'one-hot' in module 'wr_chnl'
 INFO: [Synth 8-3354] encoded FSM with state register 'rlast_sm_cs_reg' using encoding 'one-hot' in module 'rd_chnl'
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_axic_reg_srl_fifo'
@@ -19821,7 +19825,7 @@ Report RTL Partitions:
 |8     |mig_7series_v2_0_memc_ui_top_axi__GC0                |           1|     16288|
 |9     |mb_system_mig_7series_0_0_mig__GC0                   |           1|       328|
 |10    |mb_system__GCB0                                      |           1|     30741|
-|11    |mb_system_AES_AXI_0_0                                |           1|     16490|
+|11    |mb_system_AES_AXI_0_1                                |           1|     16490|
 +------+-----------------------------------------------------+------------+----------+
 
 ---------------------------------------------------------------------------------
@@ -19851,42 +19855,42 @@ Detailed RTL Component Info :
 	   3 Input      3 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 33    
 	   5 Input      2 Bit       Adders := 1     
-	   3 Input      2 Bit       Adders := 3     
-	   2 Input      2 Bit       Adders := 74    
 	   4 Input      2 Bit       Adders := 5     
 	   8 Input      2 Bit       Adders := 1     
-	   7 Input      1 Bit       Adders := 1     
-	   8 Input      1 Bit       Adders := 1     
-	  10 Input      1 Bit       Adders := 1     
-	   6 Input      1 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 74    
+	   3 Input      2 Bit       Adders := 3     
 	   4 Input      1 Bit       Adders := 1     
-	   3 Input      1 Bit       Adders := 1     
-	   2 Input      1 Bit       Adders := 6     
-	   5 Input      1 Bit       Adders := 1     
+	   7 Input      1 Bit       Adders := 1     
 	   9 Input      1 Bit       Adders := 1     
+	   8 Input      1 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 6     
+	   6 Input      1 Bit       Adders := 1     
+	   5 Input      1 Bit       Adders := 1     
+	  10 Input      1 Bit       Adders := 1     
+	   3 Input      1 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 3     
 	   3 Input     32 Bit         XORs := 1     
-	   5 Input      8 Bit         XORs := 4     
-	   4 Input      8 Bit         XORs := 12    
 	   9 Input      8 Bit         XORs := 8     
-	   8 Input      8 Bit         XORs := 8     
 	   2 Input      8 Bit         XORs := 91    
+	   4 Input      8 Bit         XORs := 12    
+	   8 Input      8 Bit         XORs := 8     
+	   5 Input      8 Bit         XORs := 4     
 	   2 Input      2 Bit         XORs := 1     
-	  10 Input      1 Bit         XORs := 3     
+	   5 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 5     
 	  13 Input      1 Bit         XORs := 2     
-	  15 Input      1 Bit         XORs := 1     
-	   4 Input      1 Bit         XORs := 9     
-	   9 Input      1 Bit         XORs := 1     
 	  12 Input      1 Bit         XORs := 2     
 	   7 Input      1 Bit         XORs := 2     
-	   8 Input      1 Bit         XORs := 3     
-	   6 Input      1 Bit         XORs := 5     
 	  11 Input      1 Bit         XORs := 2     
-	   5 Input      1 Bit         XORs := 6     
+	  15 Input      1 Bit         XORs := 1     
 	  16 Input      1 Bit         XORs := 4     
-	   2 Input      1 Bit         XORs := 913   
+	   9 Input      1 Bit         XORs := 1     
 	   3 Input      1 Bit         XORs := 18    
+	  10 Input      1 Bit         XORs := 3     
+	   8 Input      1 Bit         XORs := 3     
+	   2 Input      1 Bit         XORs := 913   
+	   4 Input      1 Bit         XORs := 9     
 +---Registers : 
 	             4096 Bit    Registers := 1     
 	              576 Bit    Registers := 1     
@@ -19935,108 +19939,108 @@ Detailed RTL Component Info :
 	   2 Input     45 Bit        Muxes := 2     
 	   2 Input     36 Bit        Muxes := 4     
 	   2 Input     33 Bit        Muxes := 7     
-	   8 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 53    
-	  10 Input     32 Bit        Muxes := 8     
-	  14 Input     32 Bit        Muxes := 4     
 	   3 Input     32 Bit        Muxes := 1     
 	   4 Input     32 Bit        Muxes := 5     
+	  14 Input     32 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 53    
+	  10 Input     32 Bit        Muxes := 8     
+	   8 Input     32 Bit        Muxes := 1     
 	   2 Input     30 Bit        Muxes := 4     
 	   2 Input     28 Bit        Muxes := 2     
-	   2 Input     27 Bit        Muxes := 4     
 	   4 Input     27 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 4     
 	   4 Input     26 Bit        Muxes := 4     
 	   2 Input     25 Bit        Muxes := 4     
 	   2 Input     24 Bit        Muxes := 9     
-	   2 Input     22 Bit        Muxes := 27    
 	  21 Input     22 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 27    
 	   2 Input     21 Bit        Muxes := 22    
 	   2 Input     17 Bit        Muxes := 3     
-	  16 Input     16 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 23    
+	  16 Input     16 Bit        Muxes := 1     
 	   3 Input     16 Bit        Muxes := 1     
 	   2 Input     15 Bit        Muxes := 10    
-	   9 Input     14 Bit        Muxes := 1     
 	   4 Input     14 Bit        Muxes := 1     
 	   2 Input     14 Bit        Muxes := 14    
+	   9 Input     14 Bit        Muxes := 1     
 	  12 Input     13 Bit        Muxes := 1     
 	   2 Input     13 Bit        Muxes := 11    
 	   2 Input     12 Bit        Muxes := 3     
-	  12 Input     11 Bit        Muxes := 1     
 	   5 Input     11 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 5     
-	   2 Input     10 Bit        Muxes := 20    
+	  12 Input     11 Bit        Muxes := 1     
 	   5 Input     10 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 20    
+	   2 Input      9 Bit        Muxes := 44    
 	   3 Input      9 Bit        Muxes := 1     
 	   4 Input      9 Bit        Muxes := 15    
-	   2 Input      9 Bit        Muxes := 44    
+	   4 Input      8 Bit        Muxes := 2     
+	  14 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 232   
 	  13 Input      8 Bit        Muxes := 1     
 	  10 Input      8 Bit        Muxes := 1     
-	  14 Input      8 Bit        Muxes := 1     
 	   8 Input      8 Bit        Muxes := 2     
-	   2 Input      8 Bit        Muxes := 232   
-	   4 Input      8 Bit        Muxes := 2     
 	   2 Input      7 Bit        Muxes := 1     
-	  36 Input      7 Bit        Muxes := 1     
 	   3 Input      7 Bit        Muxes := 1     
-	  16 Input      6 Bit        Muxes := 1     
-	  30 Input      6 Bit        Muxes := 1     
-	  34 Input      6 Bit        Muxes := 3     
-	  13 Input      6 Bit        Muxes := 5     
-	  22 Input      6 Bit        Muxes := 10    
-	   3 Input      6 Bit        Muxes := 1     
+	  36 Input      7 Bit        Muxes := 1     
 	   8 Input      6 Bit        Muxes := 7     
+	  14 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 203   
 	   5 Input      6 Bit        Muxes := 2     
+	  34 Input      6 Bit        Muxes := 3     
+	  30 Input      6 Bit        Muxes := 1     
+	  13 Input      6 Bit        Muxes := 5     
+	   3 Input      6 Bit        Muxes := 1     
+	  16 Input      6 Bit        Muxes := 1     
 	  36 Input      6 Bit        Muxes := 3     
 	   4 Input      6 Bit        Muxes := 24    
 	  29 Input      6 Bit        Muxes := 9     
-	   2 Input      6 Bit        Muxes := 203   
-	  14 Input      6 Bit        Muxes := 2     
-	  34 Input      5 Bit        Muxes := 1     
+	  22 Input      6 Bit        Muxes := 10    
 	   3 Input      5 Bit        Muxes := 1     
-	  22 Input      5 Bit        Muxes := 1     
 	   8 Input      5 Bit        Muxes := 9     
 	   2 Input      5 Bit        Muxes := 88    
+	  34 Input      5 Bit        Muxes := 1     
 	   4 Input      5 Bit        Muxes := 6     
-	  10 Input      4 Bit        Muxes := 1     
-	   3 Input      4 Bit        Muxes := 1     
-	  17 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 120   
-	  29 Input      4 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 1     
+	  22 Input      5 Bit        Muxes := 1     
 	  34 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 120   
 	   6 Input      4 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	  29 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
 	  29 Input      3 Bit        Muxes := 18    
-	   4 Input      3 Bit        Muxes := 3     
-	   6 Input      3 Bit        Muxes := 2     
 	   5 Input      3 Bit        Muxes := 4     
+	   6 Input      3 Bit        Muxes := 2     
 	   9 Input      3 Bit        Muxes := 1     
 	   8 Input      3 Bit        Muxes := 10    
+	   4 Input      3 Bit        Muxes := 3     
 	   2 Input      3 Bit        Muxes := 81    
-	   8 Input      2 Bit        Muxes := 16    
-	   2 Input      2 Bit        Muxes := 194   
 	   3 Input      2 Bit        Muxes := 10    
+	   2 Input      2 Bit        Muxes := 194   
 	   5 Input      2 Bit        Muxes := 5     
-	  14 Input      2 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 14    
-	  22 Input      2 Bit        Muxes := 3     
 	  34 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 14    
+	  14 Input      2 Bit        Muxes := 1     
+	  22 Input      2 Bit        Muxes := 3     
+	   8 Input      2 Bit        Muxes := 16    
 	   3 Input      1 Bit        Muxes := 23    
-	  29 Input      1 Bit        Muxes := 50    
-	   5 Input      1 Bit        Muxes := 4     
-	  13 Input      1 Bit        Muxes := 21    
+	  12 Input      1 Bit        Muxes := 4     
 	  16 Input      1 Bit        Muxes := 299   
+	   5 Input      1 Bit        Muxes := 4     
 	   7 Input      1 Bit        Muxes := 8     
-	   8 Input      1 Bit        Muxes := 16    
-	  11 Input      1 Bit        Muxes := 9     
+	  29 Input      1 Bit        Muxes := 50    
+	   4 Input      1 Bit        Muxes := 205   
 	  10 Input      1 Bit        Muxes := 43    
 	   6 Input      1 Bit        Muxes := 15    
-	  12 Input      1 Bit        Muxes := 4     
-	   4 Input      1 Bit        Muxes := 205   
-	   2 Input      1 Bit        Muxes := 1689  
 	  14 Input      1 Bit        Muxes := 23    
-	  34 Input      1 Bit        Muxes := 32    
+	   2 Input      1 Bit        Muxes := 1689  
+	  11 Input      1 Bit        Muxes := 9     
+	  13 Input      1 Bit        Muxes := 21    
 	  22 Input      1 Bit        Muxes := 45    
+	  34 Input      1 Bit        Muxes := 32    
+	   8 Input      1 Bit        Muxes := 16    
 
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -20096,19 +20100,19 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input      4 Bit       Adders := 1     
 +---XORs : 
-	  11 Input      1 Bit         XORs := 1     
-	   7 Input      1 Bit         XORs := 1     
-	   9 Input      1 Bit         XORs := 1     
-	  10 Input      1 Bit         XORs := 1     
-	   5 Input      1 Bit         XORs := 4     
 	  12 Input      1 Bit         XORs := 1     
 	  16 Input      1 Bit         XORs := 2     
-	  13 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 12    
+	   5 Input      1 Bit         XORs := 4     
 	   8 Input      1 Bit         XORs := 3     
 	   6 Input      1 Bit         XORs := 3     
-	   4 Input      1 Bit         XORs := 2     
 	   3 Input      1 Bit         XORs := 7     
-	   2 Input      1 Bit         XORs := 12    
+	   4 Input      1 Bit         XORs := 2     
+	   7 Input      1 Bit         XORs := 1     
+	  10 Input      1 Bit         XORs := 1     
+	  13 Input      1 Bit         XORs := 1     
+	  11 Input      1 Bit         XORs := 1     
+	   9 Input      1 Bit         XORs := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 8     
 	  16 Input      1 Bit        Muxes := 8     
@@ -20143,18 +20147,18 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input      4 Bit       Adders := 1     
 +---XORs : 
-	  15 Input      1 Bit         XORs := 1     
-	   7 Input      1 Bit         XORs := 1     
-	  11 Input      1 Bit         XORs := 1     
-	  10 Input      1 Bit         XORs := 2     
-	   5 Input      1 Bit         XORs := 2     
 	  12 Input      1 Bit         XORs := 1     
 	  16 Input      1 Bit         XORs := 2     
-	  13 Input      1 Bit         XORs := 1     
-	   6 Input      1 Bit         XORs := 2     
-	   4 Input      1 Bit         XORs := 6     
 	   2 Input      1 Bit         XORs := 13    
+	   5 Input      1 Bit         XORs := 2     
+	   6 Input      1 Bit         XORs := 2     
 	   3 Input      1 Bit         XORs := 10    
+	   4 Input      1 Bit         XORs := 6     
+	  15 Input      1 Bit         XORs := 1     
+	   7 Input      1 Bit         XORs := 1     
+	  10 Input      1 Bit         XORs := 2     
+	  13 Input      1 Bit         XORs := 1     
+	  11 Input      1 Bit         XORs := 1     
 +---Muxes : 
 	  16 Input      1 Bit        Muxes := 8     
 Module InvShiftRows 
@@ -20183,7 +20187,7 @@ Module AES_Crypto
 Detailed RTL Component Info : 
 Module myip_lite_v1_0__parameterized0 
 Detailed RTL Component Info : 
-Module mb_system_AES_AXI_0_0 
+Module mb_system_AES_AXI_0_1 
 Detailed RTL Component Info : 
 Module mb_system_clk_wiz_0_0_clk_wiz 
 Detailed RTL Component Info : 
@@ -20206,15 +20210,15 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input      6 Bit       Adders := 1     
 	   2 Input      5 Bit       Adders := 1     
-	   3 Input      1 Bit       Adders := 1     
-	   9 Input      1 Bit       Adders := 1     
 	   6 Input      1 Bit       Adders := 1     
-	   7 Input      1 Bit       Adders := 1     
-	   5 Input      1 Bit       Adders := 1     
 	   2 Input      1 Bit       Adders := 1     
-	   4 Input      1 Bit       Adders := 1     
 	   8 Input      1 Bit       Adders := 1     
 	  10 Input      1 Bit       Adders := 1     
+	   7 Input      1 Bit       Adders := 1     
+	   4 Input      1 Bit       Adders := 1     
+	   5 Input      1 Bit       Adders := 1     
+	   3 Input      1 Bit       Adders := 1     
+	   9 Input      1 Bit       Adders := 1     
 +---Registers : 
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
@@ -21003,23 +21007,23 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 15    
 	                1 Bit    Registers := 89    
 +---Muxes : 
-	   9 Input     14 Bit        Muxes := 1     
 	   4 Input     14 Bit        Muxes := 1     
 	   2 Input     14 Bit        Muxes := 9     
+	   9 Input     14 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 2     
 	   3 Input      7 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 74    
 	   2 Input      5 Bit        Muxes := 13    
 	   2 Input      4 Bit        Muxes := 5     
-	   4 Input      3 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 8     
 	   8 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
 	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
 	   4 Input      2 Bit        Muxes := 3     
 	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 23    
-	   4 Input      1 Bit        Muxes := 1     
 Module mig_7series_v2_0_ddr_phy_wrcal 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -21064,19 +21068,19 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input      9 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 2     
-	  29 Input      6 Bit        Muxes := 9     
-	   2 Input      6 Bit        Muxes := 16    
-	   4 Input      6 Bit        Muxes := 8     
 	  30 Input      6 Bit        Muxes := 1     
+	  29 Input      6 Bit        Muxes := 9     
+	   4 Input      6 Bit        Muxes := 8     
+	   2 Input      6 Bit        Muxes := 16    
 	   2 Input      5 Bit        Muxes := 15    
 	   2 Input      4 Bit        Muxes := 20    
 	  29 Input      4 Bit        Muxes := 1     
-	   8 Input      3 Bit        Muxes := 7     
-	  29 Input      3 Bit        Muxes := 18    
 	   2 Input      3 Bit        Muxes := 3     
+	  29 Input      3 Bit        Muxes := 18    
+	   8 Input      3 Bit        Muxes := 7     
 	   2 Input      2 Bit        Muxes := 1     
-	  29 Input      1 Bit        Muxes := 50    
 	   2 Input      1 Bit        Muxes := 116   
+	  29 Input      1 Bit        Muxes := 50    
 Module mig_7series_v2_0_ddr_phy_ck_addr_cmd_delay 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -21109,16 +21113,16 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 161   
 +---Muxes : 
-	   2 Input     22 Bit        Muxes := 27    
 	  21 Input     22 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 21    
+	   2 Input     22 Bit        Muxes := 27    
 	  22 Input      6 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 21    
 	  22 Input      5 Bit        Muxes := 1     
 	  22 Input      2 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 42    
-	   3 Input      1 Bit        Muxes := 2     
 	  22 Input      1 Bit        Muxes := 45    
 	  16 Input      1 Bit        Muxes := 64    
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 42    
 Module mig_7series_v2_0_ddr_phy_dqs_found_cal 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -21137,16 +21141,16 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 32    
 +---Muxes : 
-	  16 Input     16 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 16    
-	   2 Input      6 Bit        Muxes := 14    
+	  16 Input     16 Bit        Muxes := 1     
 	  16 Input      6 Bit        Muxes := 1     
 	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 14    
 	  17 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 2     
+	  16 Input      1 Bit        Muxes := 21    
 	   2 Input      1 Bit        Muxes := 32    
 	   4 Input      1 Bit        Muxes := 1     
-	  16 Input      1 Bit        Muxes := 21    
 Module mig_7series_v2_0_ddr_phy_rdlvl 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -21173,21 +21177,21 @@ Detailed RTL Component Info :
 	   2 Input     48 Bit        Muxes := 4     
 	   2 Input      8 Bit        Muxes := 48    
 	  36 Input      7 Bit        Muxes := 1     
-	  36 Input      6 Bit        Muxes := 3     
-	  34 Input      6 Bit        Muxes := 3     
 	   2 Input      6 Bit        Muxes := 5     
-	  34 Input      5 Bit        Muxes := 1     
-	   8 Input      5 Bit        Muxes := 1     
+	  34 Input      6 Bit        Muxes := 3     
+	  36 Input      6 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 16    
-	  34 Input      4 Bit        Muxes := 1     
-	   3 Input      4 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	  34 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 13    
+	   3 Input      4 Bit        Muxes := 1     
+	  34 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 3     
 	  34 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 3     
+	  34 Input      1 Bit        Muxes := 32    
 	  16 Input      1 Bit        Muxes := 64    
 	   2 Input      1 Bit        Muxes := 251   
-	  34 Input      1 Bit        Muxes := 32    
 Module mig_7series_v2_0_ddr_phy_prbs_rdlvl 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -21205,18 +21209,18 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 159   
 +---Muxes : 
 	   2 Input     48 Bit        Muxes := 1     
-	  12 Input     13 Bit        Muxes := 1     
 	   2 Input     13 Bit        Muxes := 9     
-	   2 Input      8 Bit        Muxes := 2     
+	  12 Input     13 Bit        Muxes := 1     
 	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  14 Input      6 Bit        Muxes := 2     
 	  13 Input      6 Bit        Muxes := 5     
 	   2 Input      6 Bit        Muxes := 7     
-	  14 Input      6 Bit        Muxes := 2     
 	   2 Input      4 Bit        Muxes := 1     
 	  14 Input      2 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 64    
 	   2 Input      1 Bit        Muxes := 13    
 	  13 Input      1 Bit        Muxes := 21    
-	  16 Input      1 Bit        Muxes := 64    
 Module mig_7series_v2_0_ddr_phy_tempmon 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -21227,8 +21231,8 @@ Detailed RTL Component Info :
 	               11 Bit    Registers := 1     
 	                1 Bit    Registers := 22    
 +---Muxes : 
-	  12 Input     11 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 1     
+	  12 Input     11 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
@@ -21946,9 +21950,9 @@ Detailed RTL Component Info :
 	   6 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 6     
 	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
 	  10 Input      1 Bit        Muxes := 23    
 	   2 Input      1 Bit        Muxes := 49    
-	   6 Input      1 Bit        Muxes := 2     
 Module full_axi 
 Detailed RTL Component Info : 
 Module axi_bram_ctrl_top 
@@ -24040,7 +24044,7 @@ WARNING: [Synth 8-3936] Found unconnected internal register 'oclkdelay_start_dly
 WARNING: [Synth 8-3936] Found unconnected internal register 'wrcal_start_dly_r_reg' and it is trimmed from '15' to '14' bits. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/rtl/phy/mig_7series_v2_0_ddr_phy_init.v:1020]
 WARNING: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/a2538a4c/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:06:41 ; elapsed = 00:07:15 . Memory (MB): peak = 1400.652 ; gain = 1270.055
+Finished Cross Boundary Optimization : Time (s): cpu = 00:06:16 ; elapsed = 00:06:42 . Memory (MB): peak = 1392.391 ; gain = 1261.313
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -24285,7 +24289,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/AES_AXI_0/\U0/AES_Crypto_0 /KeyExpansion_0/\K10_reg[76] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:08:30 ; elapsed = 00:09:16 . Memory (MB): peak = 1400.652 ; gain = 1270.055
+Finished Area Optimization : Time (s): cpu = 00:07:54 ; elapsed = 00:08:28 . Memory (MB): peak = 1392.391 ; gain = 1261.313
 ---------------------------------------------------------------------------------
 
 
@@ -24298,11 +24302,11 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:41 ; elapsed = 00:09:27 . Memory (MB): peak = 1406.758 ; gain = 1276.160
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:05 ; elapsed = 00:08:38 . Memory (MB): peak = 1409.266 ; gain = 1278.188
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:08:50 ; elapsed = 00:09:36 . Memory (MB): peak = 1422.199 ; gain = 1291.602
+Finished Timing Optimization : Time (s): cpu = 00:08:12 ; elapsed = 00:08:45 . Memory (MB): peak = 1423.895 ; gain = 1292.816
 ---------------------------------------------------------------------------------
 
 
@@ -24310,7 +24314,7 @@ Finished Timing Optimization : Time (s): cpu = 00:08:50 ; elapsed = 00:09:36 . M
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:09:57 ; elapsed = 00:10:50 . Memory (MB): peak = 1509.059 ; gain = 1378.461
+Finished Technology Mapping : Time (s): cpu = 00:09:12 ; elapsed = 00:09:50 . Memory (MB): peak = 1512.051 ; gain = 1380.973
 ---------------------------------------------------------------------------------
 
 
@@ -24353,7 +24357,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 50 on net \u_mb_system_mi
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:10:05 ; elapsed = 00:10:59 . Memory (MB): peak = 1509.059 ; gain = 1378.461
+Finished IO Insertion : Time (s): cpu = 00:09:19 ; elapsed = 00:09:57 . Memory (MB): peak = 1512.051 ; gain = 1380.973
 ---------------------------------------------------------------------------------
 
 
@@ -24368,7 +24372,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:10:05 ; elapsed = 00:10:59 . Memory (MB): peak = 1509.059 ; gain = 1378.461
+Finished Renaming Generated Instances : Time (s): cpu = 00:09:19 ; elapsed = 00:09:57 . Memory (MB): peak = 1512.051 ; gain = 1380.973
 ---------------------------------------------------------------------------------
 
 
@@ -24376,7 +24380,7 @@ Finished Renaming Generated Instances : Time (s): cpu = 00:10:05 ; elapsed = 00:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:10:13 ; elapsed = 00:11:08 . Memory (MB): peak = 1509.059 ; gain = 1378.461
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:27 ; elapsed = 00:10:05 . Memory (MB): peak = 1512.051 ; gain = 1380.973
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -24539,7 +24543,7 @@ Report Instance Areas:
 +------+------------------------------------------------------------------------------------------------------------------+-------------------------------------+------+
 |1     |top                                                                                                               |                                     | 41967|
 |2     |  mb_system_i                                                                                                     |mb_system                            | 41964|
-|3     |    AES_AXI_0                                                                                                     |mb_system_AES_AXI_0_0                |   732|
+|3     |    AES_AXI_0                                                                                                     |mb_system_AES_AXI_0_1                |   732|
 |4     |    clk_wiz_0                                                                                                     |mb_system_clk_wiz_0_0                |     4|
 |5     |      U0                                                                                                          |mb_system_clk_wiz_0_0_clk_wiz        |     4|
 |6     |    mig_7series_0                                                                                                 |mb_system_mig_7series_0_0            | 26239|
@@ -24576,11 +24580,11 @@ Report Instance Areas:
 |37    |      lmb_bram                                                                                                    |mb_system_lmb_bram_0                 |    16|
 +------+------------------------------------------------------------------------------------------------------------------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:10:17 ; elapsed = 00:11:11 . Memory (MB): peak = 1509.059 ; gain = 1378.461
+Finished Writing Synthesis Report : Time (s): cpu = 00:09:30 ; elapsed = 00:10:08 . Memory (MB): peak = 1512.051 ; gain = 1380.973
 ---------------------------------------------------------------------------------
 
 Synthesis finished with 0 errors, 0 critical warnings and 5442 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:10:17 ; elapsed = 00:11:12 . Memory (MB): peak = 1509.059 ; gain = 1378.461
+Synthesis Optimization Complete : Time (s): cpu = 00:09:30 ; elapsed = 00:10:08 . Memory (MB): peak = 1512.051 ; gain = 1380.973
 INFO: [Netlist 29-17] Analyzing 1379 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. mb_system_i/clk_wiz_0/U0/clkin1_ibufg 
@@ -24613,9 +24617,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 1617 Infos, 420 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:10:29 ; elapsed = 00:11:09 . Memory (MB): peak = 1509.059 ; gain = 1230.598
+synth_design: Time (s): cpu = 00:09:41 ; elapsed = 00:10:08 . Memory (MB): peak = 1512.051 ; gain = 1233.230
 # write_checkpoint mb_system_wrapper.dcp
-write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1509.059 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1512.051 ; gain = 0.000
 # report_utilization -file mb_system_wrapper_utilization_synth.rpt -pb mb_system_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.889 . Memory (MB): peak = 1509.059 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Aug 22 15:01:03 2015...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.811 . Memory (MB): peak = 1512.051 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 22 18:57:32 2015...

@@ -1,7 +1,7 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
---Date        : Sat Aug 22 14:47:42 2015
+--Date        : Sat Aug 22 18:46:26 2015
 --Host        : LAPAR01-PC running 64-bit Service Pack 1  (build 7601)
 --Command     : generate_target mb_system.bd
 --Design      : mb_system
@@ -3891,7 +3891,7 @@ entity mb_system is
     sys_diff_clock_clk_p : in STD_LOGIC
   );
   attribute core_generation_info : string;
-  attribute core_generation_info of mb_system : entity is "mb_system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLanguage=VHDL,numBlks=31,numReposBlks=19,numNonXlnxBlks=1,numHierBlks=12,maxHierDepth=1,da_axi4_cnt=5,da_board_cnt=5,da_bram_cntlr_cnt=2,da_mb_cnt=1}";
+  attribute core_generation_info of mb_system : entity is "mb_system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLanguage=VHDL,numBlks=31,numReposBlks=19,numNonXlnxBlks=1,numHierBlks=12,maxHierDepth=1,da_axi4_cnt=8,da_board_cnt=5,da_bram_cntlr_cnt=2,da_mb_cnt=1}";
 end mb_system;
 
 architecture STRUCTURE of mb_system is
@@ -4280,7 +4280,15 @@ architecture STRUCTURE of mb_system is
     doutb : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component mb_system_axi_bram_ctrl_0_bram_0;
-  component mb_system_AES_AXI_0_0 is
+  component mb_system_clk_wiz_0_0 is
+  port (
+    clk_in1 : in STD_LOGIC;
+    clk_out1 : out STD_LOGIC;
+    reset : in STD_LOGIC;
+    locked : out STD_LOGIC
+  );
+  end component mb_system_clk_wiz_0_0;
+  component mb_system_AES_AXI_0_1 is
   port (
     aes_clk : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
@@ -4305,14 +4313,7 @@ architecture STRUCTURE of mb_system is
     s00_axi_rvalid : out STD_LOGIC;
     s00_axi_rready : in STD_LOGIC
   );
-  end component mb_system_AES_AXI_0_0;
-  component mb_system_clk_wiz_0_0 is
-  port (
-    clk_in1 : in STD_LOGIC;
-    clk_out1 : out STD_LOGIC;
-    reset : in STD_LOGIC
-  );
-  end component mb_system_clk_wiz_0_0;
+  end component mb_system_AES_AXI_0_1;
   signal GND_1 : STD_LOGIC;
   signal VCC_1 : STD_LOGIC;
   signal axi_bram_ctrl_0_BRAM_PORTA_ADDR : STD_LOGIC_VECTOR ( 11 downto 0 );
@@ -4631,6 +4632,7 @@ architecture STRUCTURE of mb_system is
   signal NLW_axi_timer_0_generateout0_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_timer_0_generateout1_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_timer_0_pwm0_UNCONNECTED : STD_LOGIC;
+  signal NLW_clk_wiz_0_locked_UNCONNECTED : STD_LOGIC;
   signal NLW_mig_7series_0_init_calib_complete_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_mig_7series_0_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   attribute KEEP_HIERARCHY : string;
@@ -4658,7 +4660,7 @@ begin
   rs232_uart_txd <= axi_uartlite_0_UART_TxD;
   sys_diff_clock_1_CLK_N <= sys_diff_clock_clk_n;
   sys_diff_clock_1_CLK_P <= sys_diff_clock_clk_p;
-AES_AXI_0: component mb_system_AES_AXI_0_0
+AES_AXI_0: component mb_system_AES_AXI_0_1
     port map (
       aes_clk => clk_wiz_0_clk_out1,
       s00_axi_aclk => microblaze_0_Clk,
@@ -4981,6 +4983,7 @@ clk_wiz_0: component mb_system_clk_wiz_0_0
     port map (
       clk_in1 => microblaze_0_Clk,
       clk_out1 => clk_wiz_0_clk_out1,
+      locked => NLW_clk_wiz_0_locked_UNCONNECTED,
       reset => reset_1
     );
 mdm_1: component mb_system_mdm_1_0

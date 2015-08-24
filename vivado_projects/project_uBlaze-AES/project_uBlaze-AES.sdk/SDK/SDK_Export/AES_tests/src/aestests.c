@@ -83,10 +83,10 @@ void encripta(void)
 
     printf("Teste: %d %d %d %d %d\n\r", bo_0, bo_1, bo_2, bo_3, config);
     printf("Inicializando CONFIG\n\r");
-    Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x01);
+    //Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x01);
 
     printf("\n\rConferindo Config\n\r");
-    config = Xil_In32(AES_BASEADDR+CONFIG_OFFSET);
+    //config = Xil_In32(AES_BASEADDR+CONFIG_OFFSET);
     printf("Config = %x \n\r",config);
     printf("Endereço de reg16 é 0x%x",AES_BASEADDR+CONFIG_OFFSET);
 

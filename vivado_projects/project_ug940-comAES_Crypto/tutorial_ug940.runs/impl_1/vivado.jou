@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.1 (64-bit)
+# SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+# IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+# Start of session at: Sat Aug 22 17:18:37 2015
+# Process ID: 7860
+# Log file: C:/Projetos_git/repo/vivado_projects/project_ug940-comAES_Crypto/tutorial_ug940.runs/impl_1/mb_subsystem_wrapper.vdi
+# Journal file: C:/Projetos_git/repo/vivado_projects/project_ug940-comAES_Crypto/tutorial_ug940.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source mb_subsystem_wrapper.tcl -notrace

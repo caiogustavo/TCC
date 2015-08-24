@@ -40,7 +40,9 @@
 
 /***************************** Include Files *********************************/
 
-#include "xbasic_types.h"
+#include "xil_types.h"
+#include "xil_assert.h"
+#include "xil_exception.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -48,7 +50,7 @@ extern "C" {
 
 typedef struct
 {
-   XExceptionHandler Handler;
+   Xil_ExceptionHandler Handler;
    void *CallBackRef;
 } MB_ExceptionVectorTableEntry;
 
@@ -65,7 +67,7 @@ typedef struct
 #define XEXC_ID_STACK_VIOLATION         7
 #define XEXC_ID_MMU                     7
 
-void microblaze_register_exception_handler(Xuint8 ExceptionId, XExceptionHandler Handler, void *DataPtr);
+void microblaze_register_exception_handler(u32 ExceptionId, Xil_ExceptionHandler Handler, void *DataPtr);
 
 #ifdef __cplusplus
 }

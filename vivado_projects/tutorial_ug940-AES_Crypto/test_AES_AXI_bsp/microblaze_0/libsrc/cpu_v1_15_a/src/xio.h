@@ -82,7 +82,8 @@ extern "C" {
 
 /***************************** Include Files *********************************/
 
-#include "xbasic_types.h"
+#include "xil_types.h"
+#include "xil_assert.h"
 
 /************************** Constant Definitions *****************************/
 

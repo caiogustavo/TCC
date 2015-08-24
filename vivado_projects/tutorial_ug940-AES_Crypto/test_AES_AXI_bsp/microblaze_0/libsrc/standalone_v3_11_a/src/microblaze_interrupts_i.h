@@ -42,7 +42,9 @@
 
 /***************************** Include Files *********************************/
 
-#include "xbasic_types.h"
+#include "xil_types.h"
+#include "xil_assert.h"
+#include "xil_exception.h"
 
 #ifdef __cplusplus
 extern "C" {

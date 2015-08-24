@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2014.1 (64-bit)
+# SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+# IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+# Start of session at: Sat Aug 22 17:13:49 2015
+# Process ID: 6164
+# Log file: C:/Projetos_git/repo/vivado_projects/project_ug940-comAES_Crypto/vivado.log
+# Journal file: C:/Projetos_git/repo/vivado_projects/project_ug940-comAES_Crypto\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Projetos_git\repo\vivado_projects\project_ug940-comAES_Crypto\tutorial_ug940.xpr}
+open_bd_design {C:/Projetos_git/repo/vivado_projects/project_ug940-comAES_Crypto/tutorial_ug940.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd}
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_run impl_1
+open_run impl_1
+report_clock_networks -name {network_1}
+export_hardware [get_files C:/Projetos_git/repo/vivado_projects/project_ug940-comAES_Crypto/tutorial_ug940.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd] [get_runs impl_1] -bitstream
+launch_sdk -bit C:/Projetos_git/repo/vivado_projects/project_ug940-comAES_Crypto/tutorial_ug940.sdk/SDK/SDK_Export/hw/mb_subsystem_wrapper.bit -bmm C:/Projetos_git/repo/vivado_projects/project_ug940-comAES_Crypto/tutorial_ug940.sdk/SDK/SDK_Export/hw/mb_subsystem_wrapper_bd.bmm -workspace C:/Projetos_git/repo/vivado_projects/project_ug940-comAES_Crypto/tutorial_ug940.sdk/SDK/SDK_Export -hwspec C:/Projetos_git/repo/vivado_projects/project_ug940-comAES_Crypto/tutorial_ug940.sdk/SDK/SDK_Export/hw/mb_subsystem.xml
+export_hardware [get_files C:/Projetos_git/repo/vivado_projects/project_ug940-comAES_Crypto/tutorial_ug940.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd] [get_runs impl_1] -bitstream -dir C:/Projetos_git/repo/vivado_projects/tutorial_ug940-AES_Crypto
+launch_sdk -bit C:/Projetos_git/repo/vivado_projects/tutorial_ug940-AES_Crypto/hw/mb_subsystem_wrapper.bit -bmm C:/Projetos_git/repo/vivado_projects/tutorial_ug940-AES_Crypto/hw/mb_subsystem_wrapper_bd.bmm -workspace C:/Projetos_git/repo/vivado_projects/tutorial_ug940-AES_Crypto -hwspec C:/Projetos_git/repo/vivado_projects/tutorial_ug940-AES_Crypto/hw/mb_subsystem.xml

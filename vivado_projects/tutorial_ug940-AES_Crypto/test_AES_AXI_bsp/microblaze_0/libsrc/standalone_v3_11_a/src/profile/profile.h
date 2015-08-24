@@ -23,8 +23,11 @@
 #define	_PROFILE_H	1
 
 #include <stdio.h>
-#include "mblaze_nt_types.h"
 #include "profile_config.h"
+
+#ifdef PROC_MICROBLAZE
+#include "mblaze_nt_types.h"
+#endif
 
 #ifdef __cplusplus
 extern "C" {

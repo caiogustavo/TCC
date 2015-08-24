@@ -125,12 +125,7 @@
  *		       interrupts for ARM. These are done to fix the CR#699680.
  * 3.10a srt  05/20/13 Made changes in cache maintenance APIs to do a proper cach
  *		       sync operation. This fixes the CR# 716781.
- * 3.11a asa  09/07/13 Added support for iccarm toolchain. A new folder "iccarm" 
- *		       is added that contains iccarm (iar arm compiler) specific
- *		       BSP initialization code. Changes are done in other source
- *		       files with inline assembly code to add support for armcc.
- *		       Modified BSP tcl to add support for iccarm.
- *		       Updated armcc specific BSP files to have proper support
+ * 3.11a asa  09/07/13 Updated armcc specific BSP files to have proper support
  *		       for armcc toolchain.
  *		       Modified asm_vectors.S (gcc) and asm_vectors.s (armcc) to
  *		       fix issues related to NEON context saving. The assembly

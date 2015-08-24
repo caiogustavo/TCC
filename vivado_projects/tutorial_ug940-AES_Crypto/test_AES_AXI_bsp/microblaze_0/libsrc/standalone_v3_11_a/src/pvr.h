@@ -30,7 +30,8 @@
 #ifndef _PVR_H
 #define _PVR_H
 
-#include "xbasic_types.h"
+#include "xil_types.h"
+#include "xil_assert.h"
 #include "xparameters.h"
 #include "mb_interface.h" 
 #include "bspconfig.h"

@@ -70,10 +70,11 @@ extern "C" {
 
 #define XIL_ASSERT_NONE     0
 #define XIL_ASSERT_OCCURRED 1
+#define XNULL NULL
 
 extern unsigned int Xil_AssertStatus;
 extern void Xil_Assert(const char *, int);
-
+void XNullHandler(void *NullParameter);
 
 /**
  * This data type defines a callback to be invoked when an
