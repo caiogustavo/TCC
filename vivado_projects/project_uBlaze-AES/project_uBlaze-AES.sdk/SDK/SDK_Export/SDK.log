@@ -1,3 +1,5 @@
 18:46:03 INFO  : Processing command line option -hwspec C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml.
 18:48:37 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
 18:48:55 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
+19:10:52 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+19:31:38 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

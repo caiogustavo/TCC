@@ -69,7 +69,11 @@ int main()
 {
     init_platform();
 
+    printf("vai comecar encripta\n");
+
     encripta();
+
+    printf("done/n");
 
 /*	int bo_0 = 0;
 	int bo_1 = 0;
@@ -127,48 +131,61 @@ void encripta(void)
 
 
 
-    printf("Teste: %d %d %d %d %d\n\r", bo_0, bo_1, bo_2, bo_3, config);
-    printf("Inicializando CONFIG\n\r");
+    printf("Teste: %d %d %d %d %d\n", bo_0, bo_1, bo_2, bo_3, config);
+
+    // Set config = 1
+    printf("Inicializando CONFIG\n");
     Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x01);
 
-    printf("\n\rConferindo Config\n\r");
+    // verifica config
+    printf("\nConferindo Config\n");
     config = Xil_In32(AES_BASEADDR+CONFIG_OFFSET);
-    printf("Config = %x \n\r",config);
-    printf("Endereço de reg16 é 0x%x",AES_BASEADDR+CONFIG_OFFSET);
+    printf("Config = %08x \n",config);
+    //printf("Endereço de reg16 é 0x%08x \n",AES_BASEADDR+CONFIG_OFFSET);
 
-    printf("Escrevendo chave K0\n\r");
+    // escreve a chave e inicializa KeyExpansion
+    printf("Escrevendo chave K0\n");
     Xil_Out32(AES_BASEADDR+BI_E_0_OFFSET,0x09cf4f3c);
     Xil_Out32(AES_BASEADDR+BI_E_1_OFFSET,0xabf71588);
     Xil_Out32(AES_BASEADDR+BI_E_2_OFFSET,0x28aed2a6);
     Xil_Out32(AES_BASEADDR+BI_E_3_OFFSET,0x2b7e1516);
-    printf("Inicializando Key_Expansion\n\r");
+
+
+    printf("Inicializando Key_Expansion\n");
     Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x09);
 
-    printf("Colocando atraso...\n\r");
-    for( i=0; i< 10000; i++)
-    {
-    	printf(".");
-    }
-    printf("\n\rConferindo se Key_Expansion terminou\n\r");
+    // verifica config
+    printf("\nConferindo Config\n");
     config = Xil_In32(AES_BASEADDR+CONFIG_OFFSET);
-    printf("Config = %x \n\r",config);
+    printf("Config = %08x \n",config);
 
-    printf("Preparando Encriptação\n\r");
+    printf("Colocando atraso...\n");
+    while( config == 9 )
+    {
+    	printf("Conferindo Config\n");
+    	config = Xil_In32(AES_BASEADDR+CONFIG_OFFSET);
+    	printf("Config = %08x \n",config);
+    }
+    printf("\n\rConferindo se Key_Expansion terminou\n");
+    config = Xil_In32(AES_BASEADDR+CONFIG_OFFSET);
+    printf("Config = %8x \n",config);
+
+    printf("Preparando Encriptação\n");
     Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x08);
-    printf("Escrevendo bloco de entrada 0x3243f6a8885a308d313198a2e0370734\n\r");
+    printf("Escrevendo bloco de entrada 0x3243f6a8885a308d313198a2e0370734\n");
     Xil_Out32(AES_BASEADDR+BI_E_0_OFFSET,0xe0370734);
     Xil_Out32(AES_BASEADDR+BI_E_1_OFFSET,0x313198a2);
     Xil_Out32(AES_BASEADDR+BI_E_2_OFFSET,0x885a308d);
     Xil_Out32(AES_BASEADDR+BI_E_3_OFFSET,0x3243f6a8);
-    printf("Inicializando Encriptação\n\r");
+    printf("Inicializando Encriptação\n");
     Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x0A);
-    printf("Lendo bloco encriptado\n\r");
+    printf("Lendo bloco encriptado\n");
     bo_0 = Xil_In32(AES_BASEADDR+BO_E_0_OFFSET);
     bo_1 = Xil_In32(AES_BASEADDR+BO_E_1_OFFSET);
     bo_2 = Xil_In32(AES_BASEADDR+BO_E_2_OFFSET);
     bo_3 = Xil_In32(AES_BASEADDR+BO_E_3_OFFSET);
 
 
-    printf("Bo = %x %x %x %x\n\r",bo_3, bo_2, bo_1, bo_0);
+    printf("Bo = %x %x %x %x\n",bo_3, bo_2, bo_1, bo_0);
     printf("Done");
 }
