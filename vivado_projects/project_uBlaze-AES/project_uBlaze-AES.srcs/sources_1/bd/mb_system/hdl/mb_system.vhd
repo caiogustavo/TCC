@@ -1,7 +1,7 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
---Date        : Sat Aug 22 18:46:26 2015
+--Date        : Mon Aug 24 18:10:41 2015
 --Host        : LAPAR01-PC running 64-bit Service Pack 1  (build 7601)
 --Command     : generate_target mb_system.bd
 --Design      : mb_system
@@ -3891,7 +3891,7 @@ entity mb_system is
     sys_diff_clock_clk_p : in STD_LOGIC
   );
   attribute core_generation_info : string;
-  attribute core_generation_info of mb_system : entity is "mb_system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLanguage=VHDL,numBlks=31,numReposBlks=19,numNonXlnxBlks=1,numHierBlks=12,maxHierDepth=1,da_axi4_cnt=8,da_board_cnt=5,da_bram_cntlr_cnt=2,da_mb_cnt=1}";
+  attribute core_generation_info of mb_system : entity is "mb_system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLanguage=VHDL,numBlks=31,numReposBlks=19,numNonXlnxBlks=1,numHierBlks=12,maxHierDepth=1,da_axi4_cnt=9,da_board_cnt=5,da_bram_cntlr_cnt=2,da_mb_cnt=1}";
 end mb_system;
 
 architecture STRUCTURE of mb_system is

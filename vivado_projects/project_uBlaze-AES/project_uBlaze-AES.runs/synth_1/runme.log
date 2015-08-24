@@ -11,7 +11,6 @@
 source mb_system_wrapper.tcl
 # set_param gui.test TreeTableDev
 # set_param simulator.modelsimInstallPath C:/questasim64_10.2c/win64
-# set_msg_config -id {Common-41} -limit 4294967295
 # set_msg_config -id {HDL 9-1061} -limit 100000
 # set_msg_config -id {HDL 9-1654} -limit 100000
 # create_project -in_memory -part xc7k325tffg900-2
@@ -21,14 +20,14 @@ source mb_system_wrapper.tcl
 # set_property default_lib xil_defaultlib [current_project]
 # set_property ip_repo_paths {
 #   C:/Projetos_git/repo/vivado_projects/project_AES-IP
-#   {c:/Users/Janier Arias Garcia/project_AES-IP}
+#   {C:/Users/Janier Arias Garcia/project_AES-IP}
 # } [current_fileset]
 # add_files C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/mb_system.bd
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projetos_git/repo/vivado_projects/project_AES-IP'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Janier Arias Garcia/project_AES-IP'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.1/data/ip'.
-add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 278.820 ; gain = 102.324
+add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 278.781 ; gain = 102.043
 # set_property used_in_implementation false [get_files -all c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_microblaze_0_0/mb_system_microblaze_0_0.xdc]
 # set_property used_in_implementation false [get_files -all c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_microblaze_0_0/mb_system_microblaze_0_0_ooc.xdc]
 # set_property used_in_implementation false [get_files -all c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc]
@@ -80,7 +79,7 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 344.105 ; gain = 213.027
+Starting RTL Elaboration : Time (s): cpu = 00:00:46 ; elapsed = 00:01:05 . Memory (MB): peak = 343.992 ; gain = 212.219
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'mb_system_wrapper' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system_wrapper.vhd:39]
 INFO: [Synth 8-3491] module 'mb_system' declared at 'C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:3870' bound to instance 'mb_system_i' of component 'mb_system' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system_wrapper.vhd:65]
@@ -19402,7 +19401,7 @@ WARNING: [Synth 8-3848] Net NLW_axi_bram_ctrl_0_bram_addrb_UNCONNECTED in module
 INFO: [Synth 8-256] done synthesizing module 'mb_system' (284#1) [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:3897]
 INFO: [Synth 8-256] done synthesizing module 'mb_system_wrapper' (285#1) [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system_wrapper.vhd:39]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:03:33 ; elapsed = 00:04:21 . Memory (MB): peak = 884.281 ; gain = 753.203
+Finished RTL Elaboration : Time (s): cpu = 00:03:41 ; elapsed = 00:04:23 . Memory (MB): peak = 884.250 ; gain = 752.477
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -19607,7 +19606,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:04:56 ; elapsed = 00:05:40 . Memory (MB): peak = 1392.391 ; gain = 1261.313
+Finished Loading Part and Timing Information : Time (s): cpu = 00:05:11 ; elapsed = 00:05:57 . Memory (MB): peak = 1402.230 ; gain = 1270.457
 ---------------------------------------------------------------------------------
 
 
@@ -19644,11 +19643,11 @@ Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Projetos_git
 Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 118).
 Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 144).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:04 ; elapsed = 00:05:45 . Memory (MB): peak = 1392.391 ; gain = 1261.313
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:19 ; elapsed = 00:06:01 . Memory (MB): peak = 1402.230 ; gain = 1270.457
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:05:04 ; elapsed = 00:05:45 . Memory (MB): peak = 1392.391 ; gain = 1261.313
+Finished RTL Optimization : Time (s): cpu = 00:05:19 ; elapsed = 00:06:01 . Memory (MB): peak = 1402.230 ; gain = 1270.457
 ---------------------------------------------------------------------------------
 
 INFO: [Synth 8-802] inferred FSM for state register 'GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg' in module 'wr_chnl'
@@ -19835,8 +19834,8 @@ INFO: [Synth 8-3538] Detected potentially large (wide) register LOCKSTEP_Out_reg
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     33 Bit       Adders := 1     
-	   2 Input     32 Bit       Adders := 4     
 	   3 Input     32 Bit       Adders := 10    
+	   2 Input     32 Bit       Adders := 4     
 	   3 Input     28 Bit       Adders := 1     
 	   3 Input     25 Bit       Adders := 1     
 	   2 Input     23 Bit       Adders := 1     
@@ -19848,49 +19847,49 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit       Adders := 4     
 	   2 Input      8 Bit       Adders := 12    
 	   2 Input      7 Bit       Adders := 11    
-	   3 Input      6 Bit       Adders := 11    
 	   2 Input      6 Bit       Adders := 62    
+	   3 Input      6 Bit       Adders := 11    
 	   2 Input      5 Bit       Adders := 60    
 	   2 Input      4 Bit       Adders := 51    
 	   3 Input      3 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 33    
-	   5 Input      2 Bit       Adders := 1     
 	   4 Input      2 Bit       Adders := 5     
-	   8 Input      2 Bit       Adders := 1     
-	   2 Input      2 Bit       Adders := 74    
 	   3 Input      2 Bit       Adders := 3     
-	   4 Input      1 Bit       Adders := 1     
-	   7 Input      1 Bit       Adders := 1     
-	   9 Input      1 Bit       Adders := 1     
-	   8 Input      1 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 74    
+	   5 Input      2 Bit       Adders := 1     
+	   8 Input      2 Bit       Adders := 1     
 	   2 Input      1 Bit       Adders := 6     
-	   6 Input      1 Bit       Adders := 1     
-	   5 Input      1 Bit       Adders := 1     
-	  10 Input      1 Bit       Adders := 1     
+	   8 Input      1 Bit       Adders := 1     
 	   3 Input      1 Bit       Adders := 1     
+	  10 Input      1 Bit       Adders := 1     
+	   4 Input      1 Bit       Adders := 1     
+	   5 Input      1 Bit       Adders := 1     
+	   6 Input      1 Bit       Adders := 1     
+	   9 Input      1 Bit       Adders := 1     
+	   7 Input      1 Bit       Adders := 1     
 +---XORs : 
-	   2 Input     32 Bit         XORs := 3     
 	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 3     
+	   8 Input      8 Bit         XORs := 8     
 	   9 Input      8 Bit         XORs := 8     
 	   2 Input      8 Bit         XORs := 91    
-	   4 Input      8 Bit         XORs := 12    
-	   8 Input      8 Bit         XORs := 8     
 	   5 Input      8 Bit         XORs := 4     
+	   4 Input      8 Bit         XORs := 12    
 	   2 Input      2 Bit         XORs := 1     
-	   5 Input      1 Bit         XORs := 6     
-	   6 Input      1 Bit         XORs := 5     
-	  13 Input      1 Bit         XORs := 2     
-	  12 Input      1 Bit         XORs := 2     
-	   7 Input      1 Bit         XORs := 2     
-	  11 Input      1 Bit         XORs := 2     
-	  15 Input      1 Bit         XORs := 1     
 	  16 Input      1 Bit         XORs := 4     
-	   9 Input      1 Bit         XORs := 1     
 	   3 Input      1 Bit         XORs := 18    
-	  10 Input      1 Bit         XORs := 3     
-	   8 Input      1 Bit         XORs := 3     
-	   2 Input      1 Bit         XORs := 913   
+	   9 Input      1 Bit         XORs := 1     
 	   4 Input      1 Bit         XORs := 9     
+	   7 Input      1 Bit         XORs := 2     
+	   6 Input      1 Bit         XORs := 5     
+	   2 Input      1 Bit         XORs := 913   
+	  13 Input      1 Bit         XORs := 2     
+	  11 Input      1 Bit         XORs := 2     
+	   8 Input      1 Bit         XORs := 3     
+	  10 Input      1 Bit         XORs := 3     
+	  15 Input      1 Bit         XORs := 1     
+	  12 Input      1 Bit         XORs := 2     
+	   5 Input      1 Bit         XORs := 6     
 +---Registers : 
 	             4096 Bit    Registers := 1     
 	              576 Bit    Registers := 1     
@@ -19939,16 +19938,16 @@ Detailed RTL Component Info :
 	   2 Input     45 Bit        Muxes := 2     
 	   2 Input     36 Bit        Muxes := 4     
 	   2 Input     33 Bit        Muxes := 7     
-	   3 Input     32 Bit        Muxes := 1     
-	   4 Input     32 Bit        Muxes := 5     
-	  14 Input     32 Bit        Muxes := 4     
-	   2 Input     32 Bit        Muxes := 53    
-	  10 Input     32 Bit        Muxes := 8     
 	   8 Input     32 Bit        Muxes := 1     
+	  10 Input     32 Bit        Muxes := 8     
+	   4 Input     32 Bit        Muxes := 5     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 53    
+	  14 Input     32 Bit        Muxes := 4     
 	   2 Input     30 Bit        Muxes := 4     
 	   2 Input     28 Bit        Muxes := 2     
-	   4 Input     27 Bit        Muxes := 2     
 	   2 Input     27 Bit        Muxes := 4     
+	   4 Input     27 Bit        Muxes := 2     
 	   4 Input     26 Bit        Muxes := 4     
 	   2 Input     25 Bit        Muxes := 4     
 	   2 Input     24 Bit        Muxes := 9     
@@ -19957,90 +19956,90 @@ Detailed RTL Component Info :
 	   2 Input     21 Bit        Muxes := 22    
 	   2 Input     17 Bit        Muxes := 3     
 	   2 Input     16 Bit        Muxes := 23    
-	  16 Input     16 Bit        Muxes := 1     
 	   3 Input     16 Bit        Muxes := 1     
+	  16 Input     16 Bit        Muxes := 1     
 	   2 Input     15 Bit        Muxes := 10    
 	   4 Input     14 Bit        Muxes := 1     
-	   2 Input     14 Bit        Muxes := 14    
 	   9 Input     14 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 14    
 	  12 Input     13 Bit        Muxes := 1     
 	   2 Input     13 Bit        Muxes := 11    
 	   2 Input     12 Bit        Muxes := 3     
+	  12 Input     11 Bit        Muxes := 1     
 	   5 Input     11 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 5     
-	  12 Input     11 Bit        Muxes := 1     
 	   5 Input     10 Bit        Muxes := 2     
 	   2 Input     10 Bit        Muxes := 20    
-	   2 Input      9 Bit        Muxes := 44    
 	   3 Input      9 Bit        Muxes := 1     
 	   4 Input      9 Bit        Muxes := 15    
+	   2 Input      9 Bit        Muxes := 44    
+	   8 Input      8 Bit        Muxes := 2     
+	  10 Input      8 Bit        Muxes := 1     
 	   4 Input      8 Bit        Muxes := 2     
 	  14 Input      8 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 232   
 	  13 Input      8 Bit        Muxes := 1     
-	  10 Input      8 Bit        Muxes := 1     
-	   8 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 232   
 	   2 Input      7 Bit        Muxes := 1     
 	   3 Input      7 Bit        Muxes := 1     
 	  36 Input      7 Bit        Muxes := 1     
-	   8 Input      6 Bit        Muxes := 7     
-	  14 Input      6 Bit        Muxes := 2     
-	   2 Input      6 Bit        Muxes := 203   
-	   5 Input      6 Bit        Muxes := 2     
-	  34 Input      6 Bit        Muxes := 3     
 	  30 Input      6 Bit        Muxes := 1     
-	  13 Input      6 Bit        Muxes := 5     
-	   3 Input      6 Bit        Muxes := 1     
+	  34 Input      6 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 203   
 	  16 Input      6 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 2     
+	   3 Input      6 Bit        Muxes := 1     
+	  29 Input      6 Bit        Muxes := 9     
+	   8 Input      6 Bit        Muxes := 7     
+	  13 Input      6 Bit        Muxes := 5     
+	  22 Input      6 Bit        Muxes := 10    
 	  36 Input      6 Bit        Muxes := 3     
 	   4 Input      6 Bit        Muxes := 24    
-	  29 Input      6 Bit        Muxes := 9     
-	  22 Input      6 Bit        Muxes := 10    
-	   3 Input      5 Bit        Muxes := 1     
-	   8 Input      5 Bit        Muxes := 9     
+	  14 Input      6 Bit        Muxes := 2     
 	   2 Input      5 Bit        Muxes := 88    
-	  34 Input      5 Bit        Muxes := 1     
 	   4 Input      5 Bit        Muxes := 6     
 	  22 Input      5 Bit        Muxes := 1     
+	  34 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 9     
+	  17 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
 	  34 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 120   
-	   6 Input      4 Bit        Muxes := 1     
 	  10 Input      4 Bit        Muxes := 1     
 	  29 Input      4 Bit        Muxes := 1     
-	  17 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
 	   3 Input      4 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 1     
-	  29 Input      3 Bit        Muxes := 18    
-	   5 Input      3 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 120   
 	   6 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 4     
 	   9 Input      3 Bit        Muxes := 1     
-	   8 Input      3 Bit        Muxes := 10    
+	  29 Input      3 Bit        Muxes := 18    
 	   4 Input      3 Bit        Muxes := 3     
 	   2 Input      3 Bit        Muxes := 81    
-	   3 Input      2 Bit        Muxes := 10    
-	   2 Input      2 Bit        Muxes := 194   
-	   5 Input      2 Bit        Muxes := 5     
-	  34 Input      2 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 14    
-	  14 Input      2 Bit        Muxes := 1     
-	  22 Input      2 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 10    
 	   8 Input      2 Bit        Muxes := 16    
-	   3 Input      1 Bit        Muxes := 23    
-	  12 Input      1 Bit        Muxes := 4     
-	  16 Input      1 Bit        Muxes := 299   
-	   5 Input      1 Bit        Muxes := 4     
-	   7 Input      1 Bit        Muxes := 8     
-	  29 Input      1 Bit        Muxes := 50    
-	   4 Input      1 Bit        Muxes := 205   
-	  10 Input      1 Bit        Muxes := 43    
-	   6 Input      1 Bit        Muxes := 15    
+	  34 Input      2 Bit        Muxes := 1     
+	  22 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 14    
+	   2 Input      2 Bit        Muxes := 194   
+	   3 Input      2 Bit        Muxes := 10    
+	   5 Input      2 Bit        Muxes := 5     
+	  14 Input      2 Bit        Muxes := 1     
 	  14 Input      1 Bit        Muxes := 23    
-	   2 Input      1 Bit        Muxes := 1689  
-	  11 Input      1 Bit        Muxes := 9     
-	  13 Input      1 Bit        Muxes := 21    
+	  16 Input      1 Bit        Muxes := 299   
+	   4 Input      1 Bit        Muxes := 205   
+	  12 Input      1 Bit        Muxes := 4     
 	  22 Input      1 Bit        Muxes := 45    
 	  34 Input      1 Bit        Muxes := 32    
+	  29 Input      1 Bit        Muxes := 50    
+	   2 Input      1 Bit        Muxes := 1689  
+	  10 Input      1 Bit        Muxes := 43    
+	  13 Input      1 Bit        Muxes := 21    
+	   7 Input      1 Bit        Muxes := 8     
+	   6 Input      1 Bit        Muxes := 15    
+	  11 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 23    
 	   8 Input      1 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 4     
 
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -20100,18 +20099,18 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input      4 Bit       Adders := 1     
 +---XORs : 
-	  12 Input      1 Bit         XORs := 1     
-	  16 Input      1 Bit         XORs := 2     
 	   2 Input      1 Bit         XORs := 12    
+	   7 Input      1 Bit         XORs := 1     
+	  16 Input      1 Bit         XORs := 2     
+	  13 Input      1 Bit         XORs := 1     
 	   5 Input      1 Bit         XORs := 4     
 	   8 Input      1 Bit         XORs := 3     
+	  10 Input      1 Bit         XORs := 1     
+	  11 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 2     
+	  12 Input      1 Bit         XORs := 1     
 	   6 Input      1 Bit         XORs := 3     
 	   3 Input      1 Bit         XORs := 7     
-	   4 Input      1 Bit         XORs := 2     
-	   7 Input      1 Bit         XORs := 1     
-	  10 Input      1 Bit         XORs := 1     
-	  13 Input      1 Bit         XORs := 1     
-	  11 Input      1 Bit         XORs := 1     
 	   9 Input      1 Bit         XORs := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 8     
@@ -20147,18 +20146,18 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input      4 Bit       Adders := 1     
 +---XORs : 
-	  12 Input      1 Bit         XORs := 1     
-	  16 Input      1 Bit         XORs := 2     
 	   2 Input      1 Bit         XORs := 13    
+	   7 Input      1 Bit         XORs := 1     
+	  16 Input      1 Bit         XORs := 2     
+	  15 Input      1 Bit         XORs := 1     
+	  13 Input      1 Bit         XORs := 1     
 	   5 Input      1 Bit         XORs := 2     
+	  10 Input      1 Bit         XORs := 2     
+	  11 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 6     
+	  12 Input      1 Bit         XORs := 1     
 	   6 Input      1 Bit         XORs := 2     
 	   3 Input      1 Bit         XORs := 10    
-	   4 Input      1 Bit         XORs := 6     
-	  15 Input      1 Bit         XORs := 1     
-	   7 Input      1 Bit         XORs := 1     
-	  10 Input      1 Bit         XORs := 2     
-	  13 Input      1 Bit         XORs := 1     
-	  11 Input      1 Bit         XORs := 1     
 +---Muxes : 
 	  16 Input      1 Bit        Muxes := 8     
 Module InvShiftRows 
@@ -20210,15 +20209,15 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input      6 Bit       Adders := 1     
 	   2 Input      5 Bit       Adders := 1     
-	   6 Input      1 Bit       Adders := 1     
-	   2 Input      1 Bit       Adders := 1     
-	   8 Input      1 Bit       Adders := 1     
-	  10 Input      1 Bit       Adders := 1     
-	   7 Input      1 Bit       Adders := 1     
-	   4 Input      1 Bit       Adders := 1     
 	   5 Input      1 Bit       Adders := 1     
-	   3 Input      1 Bit       Adders := 1     
 	   9 Input      1 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
+	   4 Input      1 Bit       Adders := 1     
+	  10 Input      1 Bit       Adders := 1     
+	   3 Input      1 Bit       Adders := 1     
+	   7 Input      1 Bit       Adders := 1     
+	   8 Input      1 Bit       Adders := 1     
+	   6 Input      1 Bit       Adders := 1     
 +---Registers : 
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
@@ -21015,15 +21014,15 @@ Detailed RTL Component Info :
 	   2 Input      6 Bit        Muxes := 74    
 	   2 Input      5 Bit        Muxes := 13    
 	   2 Input      4 Bit        Muxes := 5     
-	   8 Input      3 Bit        Muxes := 2     
-	   4 Input      3 Bit        Muxes := 1     
-	   9 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 8     
-	   4 Input      2 Bit        Muxes := 3     
+	   9 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 23    
 	   4 Input      1 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 23    
 Module mig_7series_v2_0_ddr_phy_wrcal 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -21068,19 +21067,19 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input      9 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 8     
 	  30 Input      6 Bit        Muxes := 1     
 	  29 Input      6 Bit        Muxes := 9     
-	   4 Input      6 Bit        Muxes := 8     
 	   2 Input      6 Bit        Muxes := 16    
 	   2 Input      5 Bit        Muxes := 15    
 	   2 Input      4 Bit        Muxes := 20    
 	  29 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 3     
 	  29 Input      3 Bit        Muxes := 18    
 	   8 Input      3 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 3     
 	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 116   
 	  29 Input      1 Bit        Muxes := 50    
+	   2 Input      1 Bit        Muxes := 116   
 Module mig_7series_v2_0_ddr_phy_ck_addr_cmd_delay 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -21113,16 +21112,16 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 161   
 +---Muxes : 
-	  21 Input     22 Bit        Muxes := 1     
 	   2 Input     22 Bit        Muxes := 27    
+	  21 Input     22 Bit        Muxes := 1     
 	  22 Input      6 Bit        Muxes := 10    
 	   2 Input      6 Bit        Muxes := 21    
 	  22 Input      5 Bit        Muxes := 1     
 	  22 Input      2 Bit        Muxes := 3     
-	  22 Input      1 Bit        Muxes := 45    
+	   2 Input      1 Bit        Muxes := 42    
 	  16 Input      1 Bit        Muxes := 64    
 	   3 Input      1 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 42    
+	  22 Input      1 Bit        Muxes := 45    
 Module mig_7series_v2_0_ddr_phy_dqs_found_cal 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -21141,16 +21140,16 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 32    
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 16    
 	  16 Input     16 Bit        Muxes := 1     
-	  16 Input      6 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 16    
 	   4 Input      6 Bit        Muxes := 1     
+	  16 Input      6 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 14    
 	  17 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 2     
-	  16 Input      1 Bit        Muxes := 21    
-	   2 Input      1 Bit        Muxes := 32    
 	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 32    
+	  16 Input      1 Bit        Muxes := 21    
 Module mig_7series_v2_0_ddr_phy_rdlvl 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -21180,18 +21179,18 @@ Detailed RTL Component Info :
 	   2 Input      6 Bit        Muxes := 5     
 	  34 Input      6 Bit        Muxes := 3     
 	  36 Input      6 Bit        Muxes := 3     
-	   2 Input      5 Bit        Muxes := 16    
 	   8 Input      5 Bit        Muxes := 1     
 	  34 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 16    
 	   2 Input      4 Bit        Muxes := 13    
-	   3 Input      4 Bit        Muxes := 1     
 	  34 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 3     
-	  34 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 3     
+	  34 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 251   
 	  34 Input      1 Bit        Muxes := 32    
 	  16 Input      1 Bit        Muxes := 64    
-	   2 Input      1 Bit        Muxes := 251   
 Module mig_7series_v2_0_ddr_phy_prbs_rdlvl 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -21211,16 +21210,16 @@ Detailed RTL Component Info :
 	   2 Input     48 Bit        Muxes := 1     
 	   2 Input     13 Bit        Muxes := 9     
 	  12 Input     13 Bit        Muxes := 1     
-	  13 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 2     
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 7     
 	  14 Input      6 Bit        Muxes := 2     
 	  13 Input      6 Bit        Muxes := 5     
-	   2 Input      6 Bit        Muxes := 7     
 	   2 Input      4 Bit        Muxes := 1     
 	  14 Input      2 Bit        Muxes := 1     
-	  16 Input      1 Bit        Muxes := 64    
-	   2 Input      1 Bit        Muxes := 13    
 	  13 Input      1 Bit        Muxes := 21    
+	   2 Input      1 Bit        Muxes := 13    
+	  16 Input      1 Bit        Muxes := 64    
 Module mig_7series_v2_0_ddr_phy_tempmon 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -21239,8 +21238,8 @@ Detailed RTL Component Info :
 	   2 Input      7 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 1     
-	  12 Input      1 Bit        Muxes := 4     
 	   2 Input      1 Bit        Muxes := 7     
+	  12 Input      1 Bit        Muxes := 4     
 Module mig_7series_v2_0_ddr_calib_top 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -21950,9 +21949,9 @@ Detailed RTL Component Info :
 	   6 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 6     
 	   2 Input      2 Bit        Muxes := 1     
-	   6 Input      1 Bit        Muxes := 2     
 	  10 Input      1 Bit        Muxes := 23    
 	   2 Input      1 Bit        Muxes := 49    
+	   6 Input      1 Bit        Muxes := 2     
 Module full_axi 
 Detailed RTL Component Info : 
 Module axi_bram_ctrl_top 
@@ -24044,7 +24043,7 @@ WARNING: [Synth 8-3936] Found unconnected internal register 'oclkdelay_start_dly
 WARNING: [Synth 8-3936] Found unconnected internal register 'wrcal_start_dly_r_reg' and it is trimmed from '15' to '14' bits. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/rtl/phy/mig_7series_v2_0_ddr_phy_init.v:1020]
 WARNING: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/a2538a4c/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:06:16 ; elapsed = 00:06:42 . Memory (MB): peak = 1392.391 ; gain = 1261.313
+Finished Cross Boundary Optimization : Time (s): cpu = 00:06:32 ; elapsed = 00:07:04 . Memory (MB): peak = 1402.230 ; gain = 1270.457
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -24289,7 +24288,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/AES_AXI_0/\U0/AES_Crypto_0 /KeyExpansion_0/\K10_reg[76] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:07:54 ; elapsed = 00:08:28 . Memory (MB): peak = 1392.391 ; gain = 1261.313
+Finished Area Optimization : Time (s): cpu = 00:08:18 ; elapsed = 00:09:01 . Memory (MB): peak = 1402.230 ; gain = 1270.457
 ---------------------------------------------------------------------------------
 
 
@@ -24302,11 +24301,11 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:05 ; elapsed = 00:08:38 . Memory (MB): peak = 1409.266 ; gain = 1278.188
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:28 ; elapsed = 00:09:12 . Memory (MB): peak = 1409.406 ; gain = 1277.633
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:08:12 ; elapsed = 00:08:45 . Memory (MB): peak = 1423.895 ; gain = 1292.816
+Finished Timing Optimization : Time (s): cpu = 00:08:37 ; elapsed = 00:09:20 . Memory (MB): peak = 1424.934 ; gain = 1293.160
 ---------------------------------------------------------------------------------
 
 
@@ -24314,7 +24313,7 @@ Finished Timing Optimization : Time (s): cpu = 00:08:12 ; elapsed = 00:08:45 . M
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:09:12 ; elapsed = 00:09:50 . Memory (MB): peak = 1512.051 ; gain = 1380.973
+Finished Technology Mapping : Time (s): cpu = 00:09:42 ; elapsed = 00:10:33 . Memory (MB): peak = 1510.570 ; gain = 1378.797
 ---------------------------------------------------------------------------------
 
 
@@ -24357,7 +24356,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 50 on net \u_mb_system_mi
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:09:19 ; elapsed = 00:09:57 . Memory (MB): peak = 1512.051 ; gain = 1380.973
+Finished IO Insertion : Time (s): cpu = 00:09:49 ; elapsed = 00:10:41 . Memory (MB): peak = 1510.570 ; gain = 1378.797
 ---------------------------------------------------------------------------------
 
 
@@ -24372,7 +24371,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:09:19 ; elapsed = 00:09:57 . Memory (MB): peak = 1512.051 ; gain = 1380.973
+Finished Renaming Generated Instances : Time (s): cpu = 00:09:50 ; elapsed = 00:10:42 . Memory (MB): peak = 1510.570 ; gain = 1378.797
 ---------------------------------------------------------------------------------
 
 
@@ -24380,7 +24379,7 @@ Finished Renaming Generated Instances : Time (s): cpu = 00:09:19 ; elapsed = 00:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:27 ; elapsed = 00:10:05 . Memory (MB): peak = 1512.051 ; gain = 1380.973
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:58 ; elapsed = 00:10:50 . Memory (MB): peak = 1510.570 ; gain = 1378.797
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -24580,13 +24579,13 @@ Report Instance Areas:
 |37    |      lmb_bram                                                                                                    |mb_system_lmb_bram_0                 |    16|
 +------+------------------------------------------------------------------------------------------------------------------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:09:30 ; elapsed = 00:10:08 . Memory (MB): peak = 1512.051 ; gain = 1380.973
+Finished Writing Synthesis Report : Time (s): cpu = 00:10:01 ; elapsed = 00:10:54 . Memory (MB): peak = 1510.570 ; gain = 1378.797
 ---------------------------------------------------------------------------------
 
 Synthesis finished with 0 errors, 0 critical warnings and 5442 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:09:30 ; elapsed = 00:10:08 . Memory (MB): peak = 1512.051 ; gain = 1380.973
+Synthesis Optimization Complete : Time (s): cpu = 00:10:02 ; elapsed = 00:10:54 . Memory (MB): peak = 1510.570 ; gain = 1378.797
 INFO: [Netlist 29-17] Analyzing 1379 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. mb_system_i/clk_wiz_0/U0/clkin1_ibufg 
 Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
@@ -24617,9 +24616,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 1617 Infos, 420 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:09:41 ; elapsed = 00:10:08 . Memory (MB): peak = 1512.051 ; gain = 1233.230
+synth_design: Time (s): cpu = 00:10:14 ; elapsed = 00:10:59 . Memory (MB): peak = 1510.570 ; gain = 1231.789
 # write_checkpoint mb_system_wrapper.dcp
-write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1512.051 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1510.570 ; gain = 0.000
 # report_utilization -file mb_system_wrapper_utilization_synth.rpt -pb mb_system_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.811 . Memory (MB): peak = 1512.051 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Aug 22 18:57:32 2015...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.842 . Memory (MB): peak = 1510.570 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 24 18:23:55 2015...

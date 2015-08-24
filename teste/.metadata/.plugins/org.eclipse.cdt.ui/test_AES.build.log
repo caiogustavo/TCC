@@ -1,0 +1,19 @@
+14:24:48 **** Auto Build of configuration Debug for project test_AES ****
+make all 
+'Building file: ../src/test_code.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_AES_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_code.d" -MT"src/test_code.d" -o "src/test_code.o" "../src/test_code.c"
+../src/test_code.c: In function 'main':
+../src/test_code.c:15:2: warning: 'return' with no value, in function returning non-void [-Wreturn-type]
+'Finished building: ../src/test_code.c'
+' '
+'Building target: test_AES.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_AES_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "test_AES.elf"  ./src/test_code.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinxsp/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: test_AES.elf section `.text' will not fit in region `axi_bram_ctrl_0_S_AXI_BASEADDR'
+c:/xilinxsp/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `axi_bram_ctrl_0_S_AXI_BASEADDR' overflowed by 71820 bytes
+collect2: ld returned 1 exit status
+make: *** [test_AES.elf] Error 1
+
+14:24:49 Build Finished (took 1s.536ms)
+

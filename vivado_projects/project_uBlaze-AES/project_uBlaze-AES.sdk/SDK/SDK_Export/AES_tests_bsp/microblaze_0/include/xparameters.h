@@ -511,7 +511,7 @@
 
 /* Definitions for peripheral AES_AXI_0 */
 #define XPAR_AES_AXI_0_BASEADDR 0x44A00000
-#define XPAR_AES_AXI_0_HIGHADDR 0x44A00FFF
+#define XPAR_AES_AXI_0_HIGHADDR 0x44A0FFFF
 
 
 /******************************************************************/
