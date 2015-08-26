@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "secureip" --snapshot "TB_myip_behav" --prj "C:/Projetos_git/repo/vivado_projects/debug_AES-IP/debug_AES-IP.sim/sim_1/behav/TB_myip.prj" "xil_defaultlib.TB_myip" 

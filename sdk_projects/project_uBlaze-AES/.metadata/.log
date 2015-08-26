@@ -10,3 +10,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Projetos_git/
 
 !ENTRY org.eclipse.cdt.core 1 0 2015-08-24 19:07:36.744
 !MESSAGE Indexed 'AES_tests_bsp' (48 sources, 84 headers) in 1,68 sec: 1.802 declarations; 7.778 references; 20 unresolved inclusions; 4 syntax errors; 3 unresolved names (0,03%)
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-08-24 20:39:03.800
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.xilinx.sdk.hw.sync.HwPlatformMonitorUtils$1

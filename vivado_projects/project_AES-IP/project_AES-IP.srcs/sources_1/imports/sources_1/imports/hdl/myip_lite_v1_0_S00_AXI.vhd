@@ -201,7 +201,7 @@ begin
 	        axi_awaddr <= S_AXI_AWADDR;
 	      end if;
 	    end if;
-	  end if;                   
+	  end if;
 	end process; 
 
 	-- Implement axi_wready generation
