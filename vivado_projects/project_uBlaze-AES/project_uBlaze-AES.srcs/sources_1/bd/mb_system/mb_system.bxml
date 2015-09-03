@@ -172,8 +172,8 @@
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\mb_system_AES_AXI_0_1\mb_system_AES_AXI_0_1.xci" Type="IP">
-        <Instance HierarchyPath="AES_AXI_0"/>
+      <File Name="ip\mb_system_debug_AES_v1_3_0_1\mb_system_debug_AES_v1_3_0_1.xci" Type="IP">
+        <Instance HierarchyPath="debug_AES_v1_3_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

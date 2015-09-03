@@ -50,6 +50,10 @@ architecture simulation of TB_myip is
     signal rresp : std_logic_vector(1 downto 0);
     
     signal bo_e, bo_d : std_logic_vector(127 downto 0);
+    
+    -- debug
+    signal debug_signal: std_logic_vector(127 downto 0);
+    -- end of debug
 
 component myip_lite_v1_0
 	generic (
@@ -348,6 +352,54 @@ sim: process begin
     bready <= '0';
     
     wait for 1 us;
+    
+--    -- debug
+       -- Escreve 13 no sel 
+       awaddr <= "1010100"; --reg_debug_sel
+       awvalid <= '1';
+       wdata <= x"00000013"; -- sel = 13
+       wvalid <= '1';
+       wstrb <= "0001";
+       bready <= '1';
+       wait for 4 us;
+       awaddr <= "0000000";
+       awvalid <= '0';
+       wdata <= x"00000000";
+       wvalid <= '0';
+       wstrb <= "0000";
+       bready <= '0';
+       
+       wait for 1 us;
+    
+       -- lê debug_signal e3
+       araddr <= "1000100"; -- reg_debug0
+       arvalid <= '1';
+       wait for 2 us;
+       rready <= '1';
+       debug_signal(1*32-1 downto 0*32) <= rdata;
+       wait for 2 us;
+       araddr <= "1001000"; -- reg_debug1
+       arvalid <= '1';
+       wait for 2 us;
+       rready <= '1';
+       debug_signal(2*32-1 downto 1*32) <= rdata;
+       wait for 2 us;
+       araddr <= "1001100"; -- reg_debug2
+       arvalid <= '1';
+       wait for 2 us;
+       rready <= '1';
+       debug_signal(3*32-1 downto 2*32) <= rdata;
+       wait for 2 us;
+       araddr <= "1010000"; -- reg_debug3
+       arvalid <= '1';
+       wait for 2 us;
+       rready <= '1';
+       debug_signal(4*32-1 downto 3*32) <= rdata;
+       
+       wait for 4 us;       
+--    -- end of debug
+    
+    
     
     -- Lê bloco bo_e
     araddr <= "0010000"; -- reg4

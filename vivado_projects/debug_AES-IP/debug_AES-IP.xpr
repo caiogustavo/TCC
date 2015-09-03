@@ -184,7 +184,7 @@
         <Option Name="TopModule" Val="TB_myip"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
-        <Option Name="SimulationRunTime" Val="180us"/>
+        <Option Name="SimulationRunTime" Val="300us"/>
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
     </FileSet>

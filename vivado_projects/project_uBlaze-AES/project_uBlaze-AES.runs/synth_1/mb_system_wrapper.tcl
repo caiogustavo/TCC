@@ -13,6 +13,7 @@ set_param project.compositeFile.enableAutoGeneration 0
 set_property default_lib xil_defaultlib [current_project]
 set_property ip_repo_paths {
   C:/Projetos_git/repo/vivado_projects/project_AES-IP
+  C:/Projetos_git/repo/vivado_projects/debug_AES-IP
   {C:/Users/Janier Arias Garcia/project_AES-IP}
 } [current_fileset]
 

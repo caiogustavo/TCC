@@ -1,5 +1,0 @@
-Running: xsim.dir/myip_lite_v1_0_behav/xsimk.exe -simmode gui -wdb myip_lite_v1_0_behav.wdb -simrunnum 0 -socket 2738
-Design successfully loaded
-Design Loading CPU Usage: 155 ms
-Simulation completed
-Simulation CPU Usage: 155 ms

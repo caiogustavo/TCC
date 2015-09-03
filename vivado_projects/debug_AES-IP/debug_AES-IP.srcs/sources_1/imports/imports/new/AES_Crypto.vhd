@@ -33,6 +33,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity AES_Crypto is
     Port ( 
+        
+        debug_signal: out std_logic_vector(127 downto 0);
+        debug_sel: in std_logic_vector(4 downto 0);
+--        s0, s1, s2, s3, s4, s5 : out std_logic_vector(127 downto 0);
+--        z0, z1, z2, z3, z4, z5 : out std_logic_vector(127 downto 0);
+--        k1, k2, k5: out std_logic_vector(127 downto 0);
+--        e9, e8, e7, e6, e5, e4, e3, e2, e1, e0: out std_logic_vector(127 downto 0);
+--        mode: out std_logic;
+--        wtosub: out std_logic_vector(31 downto 0);
+        
         clk_SB: in std_logic;
         bi_encrypt: in std_logic_vector(127 downto 0);
         bi_decrypt: in std_logic_vector(127 downto 0);
@@ -155,6 +165,42 @@ end component;
 
 
 begin
+
+    -- debug
+mux: process (clk_SB)
+    begin
+        case debug_sel is
+            when b"00000" => debug_signal <= s0;
+            when b"00001" => debug_signal <= s1;
+            when b"00010" => debug_signal <= s2;
+            when b"00011" => debug_signal <= s3;
+            when b"00100" => debug_signal <= s4;
+            when b"00101" => debug_signal <= s5;
+            when b"00110" => debug_signal <= z0;
+            when b"00111" => debug_signal <= z1;
+            when b"01000" => debug_signal <= z2;
+            when b"01001" => debug_signal <= z3;
+            when b"01010" => debug_signal <= z4;
+            when b"01011" => debug_signal <= z5;
+            when b"01100" => debug_signal <= k1;
+            when b"01101" => debug_signal <= k2;
+            when b"01110" => debug_signal <= k5;
+            when b"01111" => debug_signal <= x"00000000000000000000000" & b"000" & mode & wtosub;
+            when b"10000" => debug_signal <= e0;
+            when b"10001" => debug_signal <= e1;
+            when b"10010" => debug_signal <= e2;
+            when b"10011" => debug_signal <= e3;
+            when b"10100" => debug_signal <= e4;
+            when b"10101" => debug_signal <= e5;
+            when b"10110" => debug_signal <= e6;
+            when b"10111" => debug_signal <= e7;
+            when b"11000" => debug_signal <= e8;
+            when b"11001" => debug_signal <= e9;
+            when others => debug_signal <= x"ca10ca10ca10ca10ca10ca10ca10ca10";
+         end case;
+    end process mux;
+    -- end of debug
+
 
     Clock_div32_0: Clock_div32 port map(
         clk => clk_SB,

@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
-| Date         : Mon Aug 24 18:30:03 2015
+| Date         : Wed Sep 02 21:01:40 2015
 | Host         : LAPAR01-PC running 64-bit Service Pack 1  (build 7601)
 | Command      : report_io -file mb_system_wrapper_io_placed.rpt
 | Design       : mb_system_wrapper

@@ -65,6 +65,7 @@ begin
 --      Wsub: palavra que retorana do bloco SubBytes
 ---------------------------------------------------------------------------------------------------------    
     WtoSub <= w3(23 downto 0) & w3(31 downto 24);
+
     w4 <= (Wsub xor (RC & x"000000")) xor w0;
     w5 <= w4 xor w1;
     w6 <= w5 xor w2;
@@ -76,6 +77,14 @@ begin
 --      en 0->1 : Começa a expansão (próximo estado: ESTADO_0)
 --      en = 0 : Volta ao estado inicial
 ---------------------------------------------------------------------------------------------------------
+--step: process(w0,w1,Wsub,w2,w3,w4,w5,w6)
+--begin
+--    w4 <= (Wsub xor (RC & x"000000")) xor w0;
+--    w5 <= w4 xor w1;
+--    w6 <= w5 xor w2;
+--    w7 <= w6 xor w3;
+--end process step;
+
 seq: process(clk,en)
     type ESTADOS is (ESTADO_INICIAL, ESTADO_0, ESTADO_1, ESTADO_2, ESTADO_3, ESTADO_4, ESTADO_5, ESTADO_6, ESTADO_7,
                      ESTADO_8, ESTADO_9, ESTADO_10, ESTADO_FINAL);
