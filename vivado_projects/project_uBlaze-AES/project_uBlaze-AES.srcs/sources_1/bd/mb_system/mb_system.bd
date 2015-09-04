@@ -214,16 +214,19 @@
         <spirit:componentRef spirit:library="ip" spirit:name="clk_wiz" spirit:vendor="xilinx.com" spirit:version="5.1"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">mb_system_clk_wiz_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_OUT_FREQ">20.000</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="USE_LOCKED">true</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT2_USED">true</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT3_USED">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_OUT_FREQ">5</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT2_REQUESTED_OUT_FREQ">90.000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="USE_LOCKED">false</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="USE_BOARD_FLOW">false</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>debug_AES_v1_3_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="debug_AES_v1_3" spirit:vendor="CGMA" spirit:version="1.3"/>
+        <spirit:instanceName>debug_AES_v1_5_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="debug_AES_v1_5" spirit:vendor="CGMA" spirit:version="1.5"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">mb_system_debug_AES_v1_3_0_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">mb_system_debug_AES_v1_5_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -301,7 +304,7 @@
       <spirit:interconnection>
         <spirit:name>microblaze_0_axi_periph_M03_AXI</spirit:name>
         <spirit:activeInterface spirit:busRef="M03_AXI" spirit:componentRef="microblaze_0_axi_periph"/>
-        <spirit:activeInterface spirit:busRef="s00_axi" spirit:componentRef="debug_AES_v1_3_0"/>
+        <spirit:activeInterface spirit:busRef="s00_axi" spirit:componentRef="debug_AES_v1_5_0"/>
       </spirit:interconnection>
     </spirit:interconnections>
     <spirit:adHocConnections>
@@ -333,7 +336,7 @@
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M03_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_in1"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S01_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="debug_AES_v1_3_0" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="debug_AES_v1_5_0" spirit:portRef="s00_axi_aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>mig_7series_0_mmcm_locked</spirit:name>
@@ -379,7 +382,7 @@
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M01_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M03_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S01_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="debug_AES_v1_3_0" spirit:portRef="s00_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="debug_AES_v1_5_0" spirit:portRef="s00_axi_aresetn"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>mdm_1_debug_sys_rst</spirit:name>
@@ -405,7 +408,12 @@
       <spirit:adHocConnection>
         <spirit:name>clk_wiz_0_clk_out1</spirit:name>
         <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_out1"/>
-        <spirit:internalPortReference spirit:componentRef="debug_AES_v1_3_0" spirit:portRef="aes_clk"/>
+        <spirit:internalPortReference spirit:componentRef="debug_AES_v1_5_0" spirit:portRef="aes_clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_wiz_0_clk_out2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_out2"/>
+        <spirit:internalPortReference spirit:componentRef="debug_AES_v1_5_0" spirit:portRef="sb_clk"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
@@ -3218,8 +3226,8 @@
             <spirit:range>4K</spirit:range>
           </spirit:segment>
           <spirit:segment>
-            <spirit:name>SEG_debug_AES_v1_3_0_reg0</spirit:name>
-            <spirit:displayName>/debug_AES_v1_3_0/s00_axi/reg0</spirit:displayName>
+            <spirit:name>SEG_debug_AES_v1_5_0_reg0</spirit:name>
+            <spirit:displayName>/debug_AES_v1_5_0/s00_axi/reg0</spirit:displayName>
             <spirit:addressOffset>0x44A00000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>

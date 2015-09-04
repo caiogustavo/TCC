@@ -38,7 +38,7 @@ end TB_myip;
 architecture simulation of TB_myip is
 
     signal bvalid, aresetn, awvalid, awready, wvalid, wready, bready, arvalid, arready, rvalid, rready : std_logic;
-    signal aes_clk, aclk: std_logic := '0';
+    signal aes_clk, sb_clk, aclk: std_logic := '0';
     signal awaddr : std_logic_vector(7-1 downto 0);
     signal awprot : std_logic_vector(2 downto 0);
     signal wdata : std_logic_vector(32-1 downto 0);
@@ -63,6 +63,7 @@ component myip_lite_v1_0
 	port (
 		-- Users to add ports here
         aes_clk : in std_logic;
+        sb_clk : in std_logic;
 		-- User ports ends
 		s00_axi_aclk	: in std_logic;
 		s00_axi_aresetn	: in std_logic;
@@ -99,6 +100,7 @@ myip_0: myip_lite_v1_0
 	port map (
 		-- Users to add ports here
         aes_clk => aes_clk,
+        sb_clk => sb_clk,
 		-- User ports ends
 		s00_axi_aclk => aclk,
 		s00_axi_aresetn => aresetn,
@@ -128,9 +130,16 @@ myip_0: myip_lite_v1_0
 
 clock_procSB: process
 begin
-    aes_clk <= aes_clk xor '1';
+    sb_clk <= sb_clk xor '1';
     wait for 0.005 us; -- 100 MHz
 end process;
+
+clock_proc: process
+begin
+    aes_clk <= aes_clk xor '1';
+    wait for 0.1 us; -- 5 MHz
+end process;
+
 clock_procAXI: process
 begin
     aclk <= aclk xor '1';

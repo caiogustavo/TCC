@@ -55,7 +55,8 @@
 --  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 --   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 ------------------------------------------------------------------------------
--- CLK_OUT1____20.000______0.000______50.0______382.337____307.409
+-- CLK_OUT1_____5.000______0.000______50.0______628.439____347.350
+-- CLK_OUT2____90.000______0.000______50.0______365.374____347.350
 --
 ------------------------------------------------------------------------------
 -- Input Clock   Freq (MHz)    Input Jitter (UI)
@@ -77,9 +78,9 @@ port
   clk_in1           : in     std_logic;
   -- Clock out ports
   clk_out1          : out    std_logic;
+  clk_out2          : out    std_logic;
   -- Status and control signals
-  reset             : in     std_logic;
-  locked            : out    std_logic
+  reset             : in     std_logic
  );
 end mb_system_clk_wiz_0_0_clk_wiz;
 
@@ -92,7 +93,7 @@ architecture xilinx of mb_system_clk_wiz_0_0_clk_wiz is
   signal clkfboutb_unused : std_logic;
   signal clk_out1_mb_system_clk_wiz_0_0          : std_logic;
   signal clkout0b_unused         : std_logic;
-  signal clkout1_unused   : std_logic;
+  signal clk_out2_mb_system_clk_wiz_0_0          : std_logic;
   signal clkout1b_unused         : std_logic;
   signal clkout2_unused   : std_logic;
   signal clkout2b_unused         : std_logic;
@@ -136,13 +137,17 @@ begin
     COMPENSATION         => "ZHOLD",
     STARTUP_WAIT         => FALSE,
     DIVCLK_DIVIDE        => 5,
-    CLKFBOUT_MULT_F      => 42.375,
+    CLKFBOUT_MULT_F      => 31.500,
     CLKFBOUT_PHASE       => 0.000,
     CLKFBOUT_USE_FINE_PS => FALSE,
-    CLKOUT0_DIVIDE_F     => 42.375,
+    CLKOUT0_DIVIDE_F     => 126.000,
     CLKOUT0_PHASE        => 0.000,
     CLKOUT0_DUTY_CYCLE   => 0.500,
     CLKOUT0_USE_FINE_PS  => FALSE,
+    CLKOUT1_DIVIDE       => 7,
+    CLKOUT1_PHASE        => 0.000,
+    CLKOUT1_DUTY_CYCLE   => 0.500,
+    CLKOUT1_USE_FINE_PS  => FALSE,
     CLKIN1_PERIOD        => 10.0,
     REF_JITTER1          => 0.010)
   port map
@@ -152,7 +157,7 @@ begin
     CLKFBOUTB           => clkfboutb_unused,
     CLKOUT0             => clk_out1_mb_system_clk_wiz_0_0,
     CLKOUT0B            => clkout0b_unused,
-    CLKOUT1             => clkout1_unused,
+    CLKOUT1             => clk_out2_mb_system_clk_wiz_0_0,
     CLKOUT1B            => clkout1b_unused,
     CLKOUT2             => clkout2_unused,
     CLKOUT2B            => clkout2b_unused,
@@ -188,7 +193,6 @@ begin
     RST                 => reset_high);
 
   reset_high <= reset; 
-  locked <= locked_int;
 
   -- Output buffering
   -------------------------------------
@@ -206,5 +210,10 @@ begin
     I   => clk_out1_mb_system_clk_wiz_0_0);
 
 
+
+  clkout2_buf : BUFG
+  port map
+   (O   => clk_out2,
+    I   => clk_out2_mb_system_clk_wiz_0_0);
 
 end xilinx;

@@ -3,7 +3,6 @@ vhdl xil_defaultlib "C:/Projetos_git/repo/vivado_projects/debug_AES-IP/debug_AES
 vhdl xil_defaultlib "C:/Projetos_git/repo/vivado_projects/debug_AES-IP/debug_AES-IP.srcs/sources_1/imports/imports/sources_1/new/DeMux_1x2.vhd"
 vhdl xil_defaultlib "C:/Projetos_git/repo/vivado_projects/debug_AES-IP/debug_AES-IP.srcs/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd"
 vhdl xil_defaultlib "C:/Projetos_git/repo/vivado_projects/debug_AES-IP/debug_AES-IP.srcs/sources_1/imports/imports/sources_1/new/Control.vhd"
-vhdl xil_defaultlib "C:/Projetos_git/repo/vivado_projects/debug_AES-IP/debug_AES-IP.srcs/sources_1/imports/imports/sources_1/new/Clock_div32.vhd"
 vhdl xil_defaultlib "C:/Projetos_git/repo/vivado_projects/debug_AES-IP/debug_AES-IP.srcs/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd"
 vhdl xil_defaultlib "C:/Projetos_git/repo/vivado_projects/debug_AES-IP/debug_AES-IP.srcs/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/ShiftRows.vhd"
 vhdl xil_defaultlib "C:/Projetos_git/repo/vivado_projects/debug_AES-IP/debug_AES-IP.srcs/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/MixColumns.vhd"

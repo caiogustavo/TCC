@@ -1,6 +1,6 @@
-21:34:06 **** Auto Build of configuration Debug for project AES_tests ****
+21:19:50 **** Auto Build of configuration Debug for project AES_tests ****
 make all 
 make: Nothing to be done for `all'.
 
-21:34:06 Build Finished (took 200ms)
+21:19:50 Build Finished (took 234ms)
 

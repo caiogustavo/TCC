@@ -1,7 +1,7 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
---Date        : Wed Sep 02 20:15:00 2015
+--Date        : Thu Sep 03 20:46:11 2015
 --Host        : LAPAR01-PC running 64-bit Service Pack 1  (build 7601)
 --Command     : generate_target mb_system.bd
 --Design      : mb_system
@@ -1028,10 +1028,10 @@ architecture STRUCTURE of microblaze_0_local_memory_imp_Z0DGSF is
   signal microblaze_0_ilmb_cntlr_WE : STD_LOGIC_VECTOR ( 0 to 3 );
   signal NLW_dlmb_v10_LMB_Rst_UNCONNECTED : STD_LOGIC;
   signal NLW_ilmb_v10_LMB_Rst_UNCONNECTED : STD_LOGIC;
+  attribute BMM_INFO_ADDRESS_SPACE : string;
+  attribute BMM_INFO_ADDRESS_SPACE of dlmb_bram_if_cntlr : label is "byte  0x0 32 >  mb_system microblaze_0_local_memory/lmb_bram";
   attribute KEEP_HIERARCHY : string;
   attribute KEEP_HIERARCHY of dlmb_bram_if_cntlr : label is "yes";
-  attribute bmm_info_address_space : string;
-  attribute bmm_info_address_space of dlmb_bram_if_cntlr : label is "byte  0x0 32 >  mb_system microblaze_0_local_memory/lmb_bram";
 begin
   DLMB_ce <= microblaze_0_dlmb_CE;
   DLMB_readdbus(0 to 31) <= microblaze_0_dlmb_READDBUS(0 to 31);
@@ -3890,8 +3890,8 @@ entity mb_system is
     sys_diff_clock_clk_n : in STD_LOGIC;
     sys_diff_clock_clk_p : in STD_LOGIC
   );
-  attribute core_generation_info : string;
-  attribute core_generation_info of mb_system : entity is "mb_system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLanguage=VHDL,numBlks=31,numReposBlks=19,numNonXlnxBlks=1,numHierBlks=12,maxHierDepth=1,da_axi4_cnt=17,da_board_cnt=5,da_bram_cntlr_cnt=2,da_mb_cnt=1}";
+  attribute CORE_GENERATION_INFO : string;
+  attribute CORE_GENERATION_INFO of mb_system : entity is "mb_system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLanguage=VHDL,numBlks=31,numReposBlks=19,numNonXlnxBlks=1,numHierBlks=12,maxHierDepth=1,da_axi4_cnt=20,da_board_cnt=5,da_bram_cntlr_cnt=2,da_mb_cnt=1}";
 end mb_system;
 
 architecture STRUCTURE of mb_system is
@@ -4284,13 +4284,14 @@ architecture STRUCTURE of mb_system is
   port (
     clk_in1 : in STD_LOGIC;
     clk_out1 : out STD_LOGIC;
-    reset : in STD_LOGIC;
-    locked : out STD_LOGIC
+    clk_out2 : out STD_LOGIC;
+    reset : in STD_LOGIC
   );
   end component mb_system_clk_wiz_0_0;
-  component mb_system_debug_AES_v1_3_0_1 is
+  component mb_system_debug_AES_v1_5_0_0 is
   port (
     aes_clk : in STD_LOGIC;
+    sb_clk : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_aresetn : in STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
@@ -4313,7 +4314,7 @@ architecture STRUCTURE of mb_system is
     s00_axi_rvalid : out STD_LOGIC;
     s00_axi_rready : in STD_LOGIC
   );
-  end component mb_system_debug_AES_v1_3_0_1;
+  end component mb_system_debug_AES_v1_5_0_0;
   signal GND_1 : STD_LOGIC;
   signal VCC_1 : STD_LOGIC;
   signal axi_bram_ctrl_0_BRAM_PORTA_ADDR : STD_LOGIC_VECTOR ( 11 downto 0 );
@@ -4407,6 +4408,7 @@ architecture STRUCTURE of mb_system is
   signal axi_uartlite_0_UART_TxD : STD_LOGIC;
   signal axi_uartlite_0_interrupt : STD_LOGIC;
   signal clk_wiz_0_clk_out1 : STD_LOGIC;
+  signal clk_wiz_0_clk_out2 : STD_LOGIC;
   signal mdm_1_debug_sys_rst : STD_LOGIC;
   signal microblaze_0_Clk : STD_LOGIC;
   signal microblaze_0_M_AXI_DC_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -4632,16 +4634,15 @@ architecture STRUCTURE of mb_system is
   signal NLW_axi_timer_0_generateout0_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_timer_0_generateout1_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_timer_0_pwm0_UNCONNECTED : STD_LOGIC;
-  signal NLW_clk_wiz_0_locked_UNCONNECTED : STD_LOGIC;
   signal NLW_mig_7series_0_init_calib_complete_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_mig_7series_0_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute BMM_INFO_ADDRESS_SPACE : string;
+  attribute BMM_INFO_ADDRESS_SPACE of axi_bram_ctrl_0 : label is "byte  0xC0000000 32 >  mb_system axi_bram_ctrl_0_bram";
   attribute KEEP_HIERARCHY : string;
   attribute KEEP_HIERARCHY of axi_bram_ctrl_0 : label is "yes";
-  attribute bmm_info_address_space : string;
-  attribute bmm_info_address_space of axi_bram_ctrl_0 : label is "byte  0xC0000000 32 >  mb_system axi_bram_ctrl_0_bram";
+  attribute BMM_INFO_PROCESSOR : string;
+  attribute BMM_INFO_PROCESSOR of microblaze_0 : label is "microblaze-le > mb_system microblaze_0_local_memory/dlmb_bram_if_cntlr mb_system axi_bram_ctrl_0";
   attribute KEEP_HIERARCHY of microblaze_0 : label is "yes";
-  attribute bmm_info_processor : string;
-  attribute bmm_info_processor of microblaze_0 : label is "microblaze-le > mb_system microblaze_0_local_memory/dlmb_bram_if_cntlr mb_system axi_bram_ctrl_0";
 begin
   axi_uartlite_0_UART_RxD <= rs232_uart_rxd;
   ddr3_sdram_addr(13 downto 0) <= mig_7series_0_DDR3_ADDR(13 downto 0);
@@ -4958,10 +4959,10 @@ clk_wiz_0: component mb_system_clk_wiz_0_0
     port map (
       clk_in1 => microblaze_0_Clk,
       clk_out1 => clk_wiz_0_clk_out1,
-      locked => NLW_clk_wiz_0_locked_UNCONNECTED,
+      clk_out2 => clk_wiz_0_clk_out2,
       reset => reset_1
     );
-debug_AES_v1_3_0: component mb_system_debug_AES_v1_3_0_1
+debug_AES_v1_5_0: component mb_system_debug_AES_v1_5_0_0
     port map (
       aes_clk => clk_wiz_0_clk_out1,
       s00_axi_aclk => microblaze_0_Clk,
@@ -4984,7 +4985,8 @@ debug_AES_v1_3_0: component mb_system_debug_AES_v1_3_0_1
       s00_axi_wdata(31 downto 0) => microblaze_0_axi_periph_M03_AXI_WDATA(31 downto 0),
       s00_axi_wready => microblaze_0_axi_periph_M03_AXI_WREADY,
       s00_axi_wstrb(3 downto 0) => microblaze_0_axi_periph_M03_AXI_WSTRB(3 downto 0),
-      s00_axi_wvalid => microblaze_0_axi_periph_M03_AXI_WVALID
+      s00_axi_wvalid => microblaze_0_axi_periph_M03_AXI_WVALID,
+      sb_clk => clk_wiz_0_clk_out2
     );
 mdm_1: component mb_system_mdm_1_0
     port map (

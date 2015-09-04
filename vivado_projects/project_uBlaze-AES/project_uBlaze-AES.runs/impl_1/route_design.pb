@@ -1,278 +1,4 @@
 
-l
-Command: %s
-1870*	planAhead2@
-,open_checkpoint mb_system_wrapper_placed.dcp2default:defaultZ12-2866
-^
--Analyzing %s Unisim elements for replacement
-17*netlist2
-8262default:defaultZ29-17
-a
-2Unisim Transformation completed in %s CPU seconds
-28*netlist2
-02default:defaultZ29-28
-o
-Netlist was created with %s %s291*project2
-Vivado2default:default2
-2014.12default:defaultZ1-479
-
-Loading clock regions from %s
-13*device2f
-RC:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockRegion.xml2default:defaultZ21-13
-ž
-Loading clock buffers from %s
-11*device2g
-SC:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockBuffers.xml2default:defaultZ21-11
-š
-&Loading clock placement rules from %s
-318*place2Z
-FC:/Xilinx/Vivado/2014.1/data/parts/xilinx/kintex7/ClockPlacerRules.xml2default:defaultZ30-318
-˜
-)Loading package pin functions from %s...
-17*device2V
-BC:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/PinFunctions.xml2default:defaultZ21-17
-š
-Loading package from %s
-16*device2i
-UC:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/kintex7/xc7k325t/ffg900/Package.xml2default:defaultZ21-16
-
-Loading io standards from %s
-15*device2W
-CC:/Xilinx/Vivado/2014.1/data\./parts/xilinx/kintex7/IOStandards.xml2default:defaultZ21-15
-™
-+Loading device configuration modes from %s
-14*device2U
-AC:/Xilinx/Vivado/2014.1/data\parts/xilinx/kintex7/ConfigModes.xml2default:defaultZ21-14
-Þ
-Parsing XDC File [%s]
-179*designutils2§
-’C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/impl_1/.Xil/Vivado-3772-LAPAR01-PC/dcp/mb_system_wrapper_early.xdc2default:defaultZ20-179
-Ò
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2_
-Imb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[0]_i_1	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-Ó
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2`
-Jmb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[10]_i_1	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-Ó
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2`
-Jmb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[11]_i_1	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-Ò
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2_
-Imb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[1]_i_1	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-Ò
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2_
-Imb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[2]_i_1	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-Ò
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2_
-Imb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[3]_i_1	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-Ò
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2_
-Imb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[4]_i_1	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-Ò
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2_
-Imb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[5]_i_1	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-Ò
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2_
-Imb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[6]_i_1	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-Ò
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2_
-Imb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[7]_i_1	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-Ò
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2_
-Imb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[8]_i_1	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-Ò
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2_
-Imb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_r[9]_i_1	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-Ü
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2i
-Smb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_2	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-Ü
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2i
-Smb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_3	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-Ü
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2i
-Smb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_4	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-Ü
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2i
-Smb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_i_5	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-à
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2m
-Wmb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/device_temp_sync_r4_neq_r3_reg_i_1	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-ì
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2y
-cmb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.sample_timer_clr_i_1	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-ë
-$%s: '%s' is not a valid startpoint.
-402*constraints2!
-set_max_delay2default:default2x
-bmb_system_i/mig_7series_0/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.sample_timer_en_i_1	2default:default2ê
-ÓC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc2default:default2
-8172default:default8@Z18-402
-…
-%Done setting XDC timing constraints.
-35*timing2¨
-‘C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mdm_1_0/mb_system_mdm_1_0.xdc2default:default2
-502default:default8@Z38-35
-ø
-Deriving generated clocks
-2*timing2¨
-‘C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mdm_1_0/mb_system_mdm_1_0.xdc2default:default2
-502default:default8@Z38-2
-û
-I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
-268*common2 
-get_clocks: 2default:default2
-00:00:262default:default2
-00:00:272default:default2
-1131.2662default:default2
-508.5782default:defaultZ17-268
-€
-Deriving generated clocks
-2*timing2°
-™C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0.xdc2default:default2
-562default:default8@Z38-2
-ç
-Finished Parsing XDC File [%s]
-178*designutils2§
-’C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/impl_1/.Xil/Vivado-3772-LAPAR01-PC/dcp/mb_system_wrapper_early.xdc2default:defaultZ20-178
-Ø
-Parsing XDC File [%s]
-179*designutils2¡
-ŒC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/impl_1/.Xil/Vivado-3772-LAPAR01-PC/dcp/mb_system_wrapper.xdc2default:defaultZ20-179
-á
-Finished Parsing XDC File [%s]
-178*designutils2¡
-ŒC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/impl_1/.Xil/Vivado-3772-LAPAR01-PC/dcp/mb_system_wrapper.xdc2default:defaultZ20-178
-Ý
-Parsing XDC File [%s]
-179*designutils2¦
-‘C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/impl_1/.Xil/Vivado-3772-LAPAR01-PC/dcp/mb_system_wrapper_late.xdc2default:defaultZ20-179
-æ
-Finished Parsing XDC File [%s]
-178*designutils2¦
-‘C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/impl_1/.Xil/Vivado-3772-LAPAR01-PC/dcp/mb_system_wrapper_late.xdc2default:defaultZ20-178
-6
-Reading XDEF placement.
-206*designutilsZ20-206
-4
-Reading XDEF routing.
-207*designutilsZ20-207
-þ
-I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
-268*common2$
-Read XDEF File: 2default:default2
-00:00:012default:default2
-00:00:012default:default2
-1150.8092default:default2
-11.0472default:defaultZ17-268
-3
-Restoring placement.
-754*designutilsZ20-754
-Ý
-ORestored %s out of %s XDEF sites from archive | CPU: %s secs | Memory: %s MB |
-403*designutils2
-71642default:default2
-71642default:default2
-7.0000002default:default2
-0.0000002default:defaultZ20-403
-C
-Pushed %s inverter(s).
-98*opt2
-02default:defaultZ31-138
-Ò
-!Unisim Transformation Summary:
-%s111*project2•
-€  A total of 633 instances were transformed.
-  IOBUFDS_DCIEN => IOBUFDS_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, INV, OBUFTDS_DCIEN, OBUFTDS_DCIEN): 8 instances
-  IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 64 instances
-  LUT6_2 => LUT6_2 (LUT5, LUT6): 82 instances
-  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
-  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 446 instances
-2default:defaultZ1-111
-Y
-$Checkpoint was created with build %s293*project2
-8818342default:defaultZ1-484
-
-I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
-268*common2%
-open_checkpoint: 2default:default2
-00:01:022default:default2
-00:01:022default:default2
-1183.9142default:default2
-1010.2582default:defaultZ17-268
 Y
 Command: %s
 53*	vivadotcl21
@@ -326,27 +52,27 @@ Phase %s%s
 1 2default:default2#
 Build RT Design2default:defaultZ18-101
 9
--Phase 1 Build RT Design | Checksum: 8e44fd3f
+-Phase 1 Build RT Design | Checksum: f853b8d8
 *common
-ˆ
+‡
 
 %s
-*constraints2q
-]Time (s): cpu = 00:00:46 ; elapsed = 00:00:28 . Memory (MB): peak = 1483.305 ; gain = 115.5042default:default
+*constraints2p
+\Time (s): cpu = 00:00:50 ; elapsed = 00:00:31 . Memory (MB): peak = 1580.754 ; gain = 99.5272default:default
 m
 
 Phase %s%s
 101*constraints2
 2 2default:default2)
 Router Initialization2default:defaultZ18-101
-@
-4Phase 2 Router Initialization | Checksum: 12d7285fe
+?
+3Phase 2 Router Initialization | Checksum: 694914ab
 *common
 ˆ
 
 %s
 *constraints2q
-]Time (s): cpu = 00:00:53 ; elapsed = 00:00:35 . Memory (MB): peak = 1530.652 ; gain = 162.8522default:default
+]Time (s): cpu = 00:00:57 ; elapsed = 00:00:37 . Memory (MB): peak = 1618.402 ; gain = 137.1762default:default
 g
 
 Phase %s%s
@@ -354,13 +80,13 @@ Phase %s%s
 3 2default:default2#
 Initial Routing2default:defaultZ18-101
 :
-.Phase 3 Initial Routing | Checksum: 171bf7b58
+.Phase 3 Initial Routing | Checksum: 17839e01b
 *common
 ˆ
 
 %s
 *constraints2q
-]Time (s): cpu = 00:01:04 ; elapsed = 00:00:40 . Memory (MB): peak = 1530.652 ; gain = 162.8522default:default
+]Time (s): cpu = 00:01:09 ; elapsed = 00:00:44 . Memory (MB): peak = 1618.402 ; gain = 137.1762default:default
 j
 
 Phase %s%s
@@ -373,94 +99,94 @@ Phase %s%s
 101*constraints2
 4.1 2default:default2&
 Global Iteration 02default:defaultZ18-101
-?
-3Phase 4.1 Global Iteration 0 | Checksum: 12be4076f
+>
+2Phase 4.1 Global Iteration 0 | Checksum: f5daaaf4
 *common
 ˆ
 
 %s
 *constraints2q
-]Time (s): cpu = 00:01:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1530.652 ; gain = 162.8522default:default
-=
-1Phase 4 Rip-up And Reroute | Checksum: 12be4076f
+]Time (s): cpu = 00:01:26 ; elapsed = 00:00:54 . Memory (MB): peak = 1618.402 ; gain = 137.1762default:default
+<
+0Phase 4 Rip-up And Reroute | Checksum: f5daaaf4
 *common
 ˆ
 
 %s
 *constraints2q
-]Time (s): cpu = 00:01:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1530.652 ; gain = 162.8522default:default
+]Time (s): cpu = 00:01:26 ; elapsed = 00:00:54 . Memory (MB): peak = 1618.402 ; gain = 137.1762default:default
 e
 
 Phase %s%s
 101*constraints2
 5 2default:default2!
 Post Hold Fix2default:defaultZ18-101
-8
-,Phase 5 Post Hold Fix | Checksum: 12be4076f
+7
++Phase 5 Post Hold Fix | Checksum: f5daaaf4
 *common
 ˆ
 
 %s
 *constraints2q
-]Time (s): cpu = 00:01:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1530.652 ; gain = 162.8522default:default
+]Time (s): cpu = 00:01:26 ; elapsed = 00:00:54 . Memory (MB): peak = 1618.402 ; gain = 137.1762default:default
 f
 
 Phase %s%s
 101*constraints2
 6 2default:default2"
 Route finalize2default:defaultZ18-101
-9
--Phase 6 Route finalize | Checksum: 12be4076f
+8
+,Phase 6 Route finalize | Checksum: f5daaaf4
 *common
 ˆ
 
 %s
 *constraints2q
-]Time (s): cpu = 00:01:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1530.652 ; gain = 162.8522default:default
+]Time (s): cpu = 00:01:27 ; elapsed = 00:00:54 . Memory (MB): peak = 1618.402 ; gain = 137.1762default:default
 m
 
 Phase %s%s
 101*constraints2
 7 2default:default2)
 Verifying routed nets2default:defaultZ18-101
-@
-4Phase 7 Verifying routed nets | Checksum: 12be4076f
+?
+3Phase 7 Verifying routed nets | Checksum: f5daaaf4
 *common
 ˆ
 
 %s
 *constraints2q
-]Time (s): cpu = 00:01:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1530.652 ; gain = 162.8522default:default
+]Time (s): cpu = 00:01:27 ; elapsed = 00:00:54 . Memory (MB): peak = 1618.402 ; gain = 137.1762default:default
 i
 
 Phase %s%s
 101*constraints2
 8 2default:default2%
 Depositing Routes2default:defaultZ18-101
-<
-0Phase 8 Depositing Routes | Checksum: 16798f673
+;
+/Phase 8 Depositing Routes | Checksum: e7698591
 *common
 ˆ
 
 %s
 *constraints2q
-]Time (s): cpu = 00:01:26 ; elapsed = 00:00:55 . Memory (MB): peak = 1530.652 ; gain = 162.8522default:default
+]Time (s): cpu = 00:01:31 ; elapsed = 00:00:59 . Memory (MB): peak = 1618.402 ; gain = 137.1762default:default
 4
 Router Completed Successfully
 16*routeZ35-16
-4
-(Ending Route Task | Checksum: 16798f673
+3
+'Ending Route Task | Checksum: e7698591
 *common
 ˆ
 
 %s
 *constraints2q
-]Time (s): cpu = 00:00:00 ; elapsed = 00:00:55 . Memory (MB): peak = 1530.652 ; gain = 162.8522default:default
+]Time (s): cpu = 00:00:00 ; elapsed = 00:00:59 . Memory (MB): peak = 1618.402 ; gain = 137.1762default:default
 ˆ
 
 %s
 *constraints2q
-]Time (s): cpu = 00:00:00 ; elapsed = 00:00:55 . Memory (MB): peak = 1530.652 ; gain = 162.8522default:default
+]Time (s): cpu = 00:00:00 ; elapsed = 00:01:09 . Memory (MB): peak = 1618.402 ; gain = 137.1762default:default
 Q
 Releasing license: %s
 83*common2"
@@ -468,8 +194,8 @@ Q
 ¾
 G%s Infos, %s Warnings, %s Critical Warnings and %s Errors encountered.
 28*	vivadotcl2
-172default:default2
-192default:default2
+472default:default2
+762default:default2
 02default:default2
 02default:defaultZ4-41
 U
@@ -480,10 +206,10 @@ U
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 route_design: 2default:default2
-00:01:412default:default2
-00:01:042default:default2
-1530.6522default:default2
-346.7382default:defaultZ17-268
+00:01:472default:default2
+00:01:582default:default2
+1618.4022default:default2
+229.6882default:defaultZ17-268
 4
 Writing XDEF routing.
 211*designutilsZ20-211
@@ -497,17 +223,17 @@ A
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2)
 Write XDEF Complete: 2default:default2
-00:00:072default:default2
-00:00:072default:default2
-1530.6522default:default2
+00:00:082default:default2
+00:00:082default:default2
+1618.4022default:default2
 0.0002default:defaultZ17-268
 ÿ
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2&
 write_checkpoint: 2default:default2
-00:00:112default:default2
-00:00:122default:default2
-1530.6522default:default2
+00:00:132default:default2
+00:00:132default:default2
+1618.4022default:default2
 0.0002default:defaultZ17-268
 G
 Running DRC with %s threads
@@ -521,10 +247,10 @@ wC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2 
 report_drc: 2default:default2
-00:00:252default:default2
+00:00:262default:default2
 00:00:172default:default2
-1641.5592default:default2
-110.9062default:defaultZ17-268
+1724.7542default:default2
+106.3522default:defaultZ17-268
 €
 UpdateTimingParams:%s.
 91*timing2P
@@ -540,10 +266,10 @@ rThe design failed to meet the timing requirements. Please see the %s report for
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2+
 report_timing_summary: 2default:default2
-00:00:592default:default2
-00:00:372default:default2
-1660.2662default:default2
-18.7072default:defaultZ17-268
+00:00:502default:default2
+00:00:322default:default2
+1734.7582default:default2
+10.0042default:defaultZ17-268
 B
 ,Running Vector-less Activity Propagation...
 51*powerZ33-51
@@ -555,10 +281,10 @@ Finished Running Vector-less Activity Propagation
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 report_power: 2default:default2
-00:00:242default:default2
-00:00:252default:default2
-1730.9452default:default2
-70.6802default:defaultZ17-268
+00:00:212default:default2
+00:00:232default:default2
+1792.2662default:default2
+57.5082default:defaultZ17-268
 
 
 End Record

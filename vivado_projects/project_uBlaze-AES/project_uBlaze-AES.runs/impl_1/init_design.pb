@@ -287,8 +287,8 @@ I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 get_clocks: 2default:default2
 00:00:292default:default2
 00:00:292default:default2
-1167.8632default:default2
-528.6642default:defaultZ17-268
+1167.3792default:default2
+529.1602default:defaultZ17-268
 ž
 -Finished Parsing XDC File [%s] for cell '%s'
 847*designutils2¦
@@ -389,14 +389,14 @@ MSuccessfully populated the BRAM INIT strings from the following elf files: %s
   RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 446 instances
 2default:defaultZ1-111
-ü
+ý
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2!
 link_design: 2default:default2
 00:01:062default:default2
-00:01:072default:default2
-1183.4142default:default2
-999.4692default:defaultZ17-268
+00:01:282default:default2
+1184.6682default:default2
+1001.3632default:defaultZ17-268
 
 
 End Record

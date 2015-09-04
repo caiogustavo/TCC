@@ -15,6 +15,9 @@ set_property ip_repo_paths {
   C:/Projetos_git/repo/vivado_projects/project_AES-IP
   C:/Projetos_git/repo/vivado_projects/debug_AES-IP
   {C:/Users/Janier Arias Garcia/project_AES-IP}
+  c:/Projetos_git/repo/vivado_projects/project_AES-IP
+  c:/Projetos_git/repo/vivado_projects/debug_AES-IP
+  {c:/Users/Janier Arias Garcia/project_AES-IP}
 } [current_fileset]
 
 add_files C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/mb_system.bd
