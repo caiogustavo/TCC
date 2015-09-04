@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-   8840	    320	   2080	  11240	   2be8	AES_tests.elf
+   8048	    320	   2080	  10448	   28d0	AES_tests.elf

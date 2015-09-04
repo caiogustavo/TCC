@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
-| Date         : Thu Sep 03 21:12:00 2015
+| Date         : Fri Sep 04 15:46:16 2015
 | Host         : LAPAR01-PC running 64-bit Service Pack 1  (build 7601)
 | Command      : report_drc
 -----------------------------------------------------------------------------------
@@ -22,7 +22,7 @@ REPORT SUMMARY
       Design limits: <entire design considered>
            Ruledeck: default
            Max violations: <unlimited>
-         Violations found: 23
+         Violations found: 32
 
 2. REPORT DETAILS
 -----------------
@@ -112,6 +112,69 @@ Related violations: <none>
 DPOP-1#3 Warning
 Output pipelining  
 DSP mb_system_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1 output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+LUTLP-1#1 Warning
+Combinatorial Loop  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. To allow bitstream creation for designs with combinatorial logic loops (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks LUTLP-1]. NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_4.
+Related violations: <none>
+
+LUTLP-1#2 Warning
+Combinatorial Loop  
+1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. To allow bitstream creation for designs with combinatorial logic loops (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks LUTLP-1]. NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_8.
+Related violations: <none>
+
+LUTLP-1#3 Warning
+Combinatorial Loop  
+14 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. To allow bitstream creation for designs with combinatorial logic loops (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks LUTLP-1]. NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. mb_system_i/debug_AES_v1_6_0/e_mux_2_reg[2]_i_2, mb_system_i/debug_AES_v1_6_0/e_mux_2_reg[2]_i_3, mb_system_i/debug_AES_v1_6_0/e_mux_2_reg[2]_i_4, mb_system_i/debug_AES_v1_6_0/e_mux_2_reg[2]_i_5, mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_3, mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_4, mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_5, mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_6, mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_7, mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_8, mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_9, mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_10, mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_11, mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_12.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net mb_system_i/debug_AES_v1_6_0/n_1_n_0_1517_BUFG_inst is a gated clock net sourced by a combinational pin mb_system_i/debug_AES_v1_6_0/n_0_1517_BUFG_inst_i_1/O, cell mb_system_i/debug_AES_v1_6_0/n_0_1517_BUFG_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net mb_system_i/debug_AES_v1_6_0/n_3_n_2_809_BUFG_inst is a gated clock net sourced by a combinational pin mb_system_i/debug_AES_v1_6_0/n_2_809_BUFG_inst_i_1/O, cell mb_system_i/debug_AES_v1_6_0/n_2_809_BUFG_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net mb_system_i/debug_AES_v1_6_0/n_4_rdy_i_reg_i_2 is a gated clock net sourced by a combinational pin mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_2/O, cell mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT mb_system_i/debug_AES_v1_6_0/n_0_1517_BUFG_inst_i_1 is driving clock pin of 128 cells. This could lead to large hold time violations. First few involved cells are:
+    mb_system_i/debug_AES_v1_6_0/U0/AES_Crypto_0/Control_0/bo_i_reg[0] {LDCE}
+    mb_system_i/debug_AES_v1_6_0/U0/AES_Crypto_0/Control_0/bo_i_reg[100] {LDCE}
+    mb_system_i/debug_AES_v1_6_0/U0/AES_Crypto_0/Control_0/bo_i_reg[101] {LDCE}
+    mb_system_i/debug_AES_v1_6_0/U0/AES_Crypto_0/Control_0/bo_i_reg[102] {LDCE}
+    mb_system_i/debug_AES_v1_6_0/U0/AES_Crypto_0/Control_0/bo_i_reg[103] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT mb_system_i/debug_AES_v1_6_0/n_2_809_BUFG_inst_i_1 is driving clock pin of 128 cells. This could lead to large hold time violations. First few involved cells are:
+    mb_system_i/debug_AES_v1_6_0/U0/AES_Crypto_0/Control_0/s0_i_reg[0] {LDCE}
+    mb_system_i/debug_AES_v1_6_0/U0/AES_Crypto_0/Control_0/s0_i_reg[100] {LDCE}
+    mb_system_i/debug_AES_v1_6_0/U0/AES_Crypto_0/Control_0/s0_i_reg[101] {LDCE}
+    mb_system_i/debug_AES_v1_6_0/U0/AES_Crypto_0/Control_0/s0_i_reg[102] {LDCE}
+    mb_system_i/debug_AES_v1_6_0/U0/AES_Crypto_0/Control_0/s0_i_reg[103] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_2 is driving clock pin of 13 cells. This could lead to large hold time violations. First few involved cells are:
+    mb_system_i/debug_AES_v1_6_0/U0/AES_Crypto_0/Control_0/e_mux_1_reg {LDCE}
+    mb_system_i/debug_AES_v1_6_0/U0/AES_Crypto_0/Control_0/e_mux_2_reg[0] {LDCE}
+    mb_system_i/debug_AES_v1_6_0/U0/AES_Crypto_0/Control_0/e_mux_2_reg[0]_rep {LDCE}
+    mb_system_i/debug_AES_v1_6_0/U0/AES_Crypto_0/Control_0/e_mux_2_reg[0]_rep__0 {LDCE}
+    mb_system_i/debug_AES_v1_6_0/U0/AES_Crypto_0/Control_0/e_mux_2_reg[1] {LDCE}
+
 Related violations: <none>
 
 REQP-1709#1 Warning

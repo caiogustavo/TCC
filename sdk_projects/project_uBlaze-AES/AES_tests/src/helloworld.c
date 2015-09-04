@@ -164,7 +164,7 @@ void encripta(void)
 	int i;
 
 	int debug_signal_0 = 0;
-	int debug_signal_01, debug_signal_02, debug_signal_03;
+	int debug_signal_31, debug_signal_32, debug_signal_33, debug_signal_34,debug_signal_35, debug_signal_36, debug_signal_37, debug_signal_38, debug_signal_39;
 	int debug_signal_1 = 0;
 	int debug_signal_2 = 0;
 	int debug_signal_3 = 0;
@@ -201,166 +201,90 @@ void encripta(void)
 */
     xil_printf("Colocando atraso...\n\r");
     //while( config == 0xca10d009 )
-    for( i=0; i<20; i++)
-    {
-    	//xil_printf("Conferindo Sinais Internos\n\r");
-    	//config = Xil_In32(AES_BASEADDR+CONFIG_OFFSET);
-    	//xil_printf("Config = %08x \n\r",config);
 
-    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_E0);
-    	debug_signal_01 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	//debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	//debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
-    	//debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-    	//xil_printf("e0 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
-
-
-    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_E1);
-    	//debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	//debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	//debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
-    	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-
-    	//xil_printf("e1 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
-/*
-    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_E2);
-    	debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
-    	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-    	xil_printf("e2 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
-*/
-    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_MODEW);
-    	debug_signal_02 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	//debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	//debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
-    	//debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-
-//    	xil_printf("mode = %01x\n\rWtoSub = %08x\n\r",debug_signal_1,debug_signal_0);
-
-/*    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_S0);
-    	debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
-    	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-    	xil_printf("s0 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
-
-    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_K1);
-    	debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
-    	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-    	xil_printf("k1 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
-
-    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_S1);
-    	debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
-    	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-    	xil_printf("s1 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
-*/
-    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_S2);
-    	debug_signal_03 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	//debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	//debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
-    	//debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-    	//xil_printf("s2 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
-
-
-    	xil_printf("e0 = 2b7e1516 __ __ %08x\n\r", debug_signal_01);
-    	xil_printf("WtoSub = %08x\n\r",debug_signal_02);
-    	xil_printf("wsub = %08x\n\r",debug_signal_03);
-    	xil_printf("w4(e1) = %08x\n\r",debug_signal_3);
-
-
-/*
-    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_S3);
-    	debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
-    	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-    	xil_printf("s3 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
-
-    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_S4);
-    	debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
-    	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-    	xil_printf("s4 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
-*/
-
-    	xil_printf("-----------------------------------------\n\r");
-    }
     xil_printf("\n\rConferindo se Key_Expansion terminou\n\r");
     config = Xil_In32(AES_BASEADDR+CONFIG_OFFSET);
     xil_printf("Config = %8x \n\r",config);
 
+	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_K5);
+	debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
+	debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
+	debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
+	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+	xil_printf("k5 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
+
     xil_printf("Preparando Encriptação\n\r");
-    Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x00);//8);
+    Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x08);
     xil_printf("Escrevendo bloco de entrada 0x3243f6a8885a308d313198a2e0370734\n\r");
     Xil_Out32(AES_BASEADDR+BI_E_0_OFFSET,0xe0370734);
     Xil_Out32(AES_BASEADDR+BI_E_1_OFFSET,0x313198a2);
     Xil_Out32(AES_BASEADDR+BI_E_2_OFFSET,0x885a308d);
     Xil_Out32(AES_BASEADDR+BI_E_3_OFFSET,0x3243f6a8);
     xil_printf("Inicializando Encriptação\n\r");
-    Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x02);//A);
+    Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x0A);
+
+	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_S0);
+	//debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
+	//debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
+	//debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
+	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+	debug_signal_31 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+	debug_signal_32 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+	debug_signal_33 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+
+	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_3);//,debug_signal_2,debug_signal_1,debug_signal_0);
+	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_31);
+	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_32);
+	xil_printf("s0 = %08x __ ___ ___ __\n\r\n\r",debug_signal_33);
 
 
     for( i=0; i<20; i++)
     {
-    	xil_printf("Conferindo Sinais Internos\n\r");
-    	config = Xil_In32(AES_BASEADDR+CONFIG_OFFSET);
-    	xil_printf("Config = %08x \n\r",config);
-
-    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_E0);
-    	debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
-    	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-    	xil_printf("e0 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
-
-    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_E1);
-    	debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
-    	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-    	xil_printf("e1 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
-
-    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_E8);
-    	debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
-    	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-    	xil_printf("e8 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
-
-    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_E9);
-    	debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
-    	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-    	xil_printf("e9 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
-
-    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_MODEW);
-    	debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
-    	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-    	xil_printf("mode = %01x\n\rWtoSub = %08x\n\r",debug_signal_1,debug_signal_0);
+    	//xil_printf("Conferindo Sinais Internos\n\r");
+    	//config = Xil_In32(AES_BASEADDR+CONFIG_OFFSET);
+    	//xil_printf("Config = %08x \n\r",config);
 
     	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_S0);
-    	debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
+    	//debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
+    	//debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
+    	//debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
     	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-    	xil_printf("s0 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
+    	debug_signal_31 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+    	debug_signal_32 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+    	debug_signal_33 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+    	debug_signal_34 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+    	debug_signal_35 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+    	debug_signal_36 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+    	debug_signal_37 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+    	debug_signal_38 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+    	debug_signal_39 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+    	debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+    	debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+    	debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+
+    	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_3);//,debug_signal_2,debug_signal_1,debug_signal_0);
+    	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_31);
+    	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_32);
+    	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_33);
+    	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_34);
+    	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_35);
+    	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_36);
+    	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_37);
+    	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_38);
+    	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_39);
+    	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_0);
+    	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_1);
+    	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_2);
+
+    	//config = Xil_In32(AES_BASEADDR+CONFIG_OFFSET);
 
     	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_K1);
-    	debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
-    	debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
-    	debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
+    	//debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
+    	//debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
+    	//debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
     	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
-    	xil_printf("k1 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
-
+    	xil_printf("k1 = %08x __ ___ __\n\r",debug_signal_3);//,debug_signal_2,debug_signal_1,debug_signal_0);
+/*
     	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_S1);
     	debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
     	debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
@@ -388,8 +312,36 @@ void encripta(void)
     	debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
     	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
     	xil_printf("s4 = %08x %08x %08x %08x\n\r",debug_signal_3,debug_signal_2,debug_signal_1,debug_signal_0);
+*/
+    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_S0);
+    	//debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
+    	//debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
+    	//debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
+    	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+    	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_3);//,debug_signal_2,debug_signal_1,debug_signal_0);
 
-    	xil_printf("-----------------------------------------\n\r");
+    	Xil_Out8(AES_BASEADDR+DEBUG_SEL_OFFSET,CODE_S0);
+    	//debug_signal_0 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_0_OFFSET);
+    	//debug_signal_1 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_1_OFFSET);
+    	//debug_signal_2 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_2_OFFSET);
+    	debug_signal_3 = Xil_In32(AES_BASEADDR+DEBUG_SIGNAL_3_OFFSET);
+    	xil_printf("s0 = %08x __ ___ ___ __\n\r",debug_signal_3);//,debug_signal_2,debug_signal_1,debug_signal_0);
+
+        //xil_printf("Config = %08x \n\r",config);
+
+        xil_printf("Lendo bloco encriptado\n\r");
+        bo_0 = Xil_In32(AES_BASEADDR+BO_E_0_OFFSET);
+        bo_1 = Xil_In32(AES_BASEADDR+BO_E_1_OFFSET);
+        bo_2 = Xil_In32(AES_BASEADDR+BO_E_2_OFFSET);
+        bo_3 = Xil_In32(AES_BASEADDR+BO_E_3_OFFSET);
+        xil_printf("Bo = %x %x %x %x\n\r",bo_3, bo_2, bo_1, bo_0);
+
+        xil_printf("Reinicializando Encriptação\n\r");
+        Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x08);
+        Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x0A);
+
+
+    	//xil_printf("-----------------------------------------\n\r");
     }
 
 

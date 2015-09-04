@@ -1,5 +1,5 @@
-Running: xsim.dir/TB_myip_behav/xsimk.exe -simmode gui -wdb TB_myip_behav.wdb -simrunnum 0 -socket 7342
+Running: xsim.dir/TB_myip_behav/xsimk.exe -simmode gui -wdb TB_myip_behav.wdb -simrunnum 0 -socket 12069
 Design successfully loaded
 Design Loading CPU Usage: 108 ms
 Simulation completed
-Simulation CPU Usage: 826 ms
+Simulation CPU Usage: 561 ms

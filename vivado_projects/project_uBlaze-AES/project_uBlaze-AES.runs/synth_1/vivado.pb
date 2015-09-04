@@ -35,6 +35,48 @@ ARepository '%s' already exists; ignoring attempt to add it again.1296*core
  Loaded user IP repository '%s'.
 1135*coregen2?
 +c:/Users/Janier Arias Garcia/project_AES-IP2default:defaultZ19-1700
+¦
+ARepository '%s' already exists; ignoring attempt to add it again.1296*coregen2G
+3c:/Projetos_git/repo/vivado_projects/project_AES-IP2default:defaultZ19-2207
+…
+ Loaded user IP repository '%s'.
+1135*coregen2G
+3c:/Projetos_git/repo/vivado_projects/project_AES-IP2default:defaultZ19-1700
+¤
+ARepository '%s' already exists; ignoring attempt to add it again.1296*coregen2E
+1c:/Projetos_git/repo/vivado_projects/debug_AES-IP2default:defaultZ19-2207
+ƒ
+ Loaded user IP repository '%s'.
+1135*coregen2E
+1c:/Projetos_git/repo/vivado_projects/debug_AES-IP2default:defaultZ19-1700
+ž
+ARepository '%s' already exists; ignoring attempt to add it again.1296*coregen2?
++c:/Users/Janier Arias Garcia/project_AES-IP2default:defaultZ19-2207
+}
+ Loaded user IP repository '%s'.
+1135*coregen2?
++c:/Users/Janier Arias Garcia/project_AES-IP2default:defaultZ19-1700
+¦
+ARepository '%s' already exists; ignoring attempt to add it again.1296*coregen2G
+3c:/Projetos_git/repo/vivado_projects/project_AES-IP2default:defaultZ19-2207
+…
+ Loaded user IP repository '%s'.
+1135*coregen2G
+3c:/Projetos_git/repo/vivado_projects/project_AES-IP2default:defaultZ19-1700
+¤
+ARepository '%s' already exists; ignoring attempt to add it again.1296*coregen2E
+1c:/Projetos_git/repo/vivado_projects/debug_AES-IP2default:defaultZ19-2207
+ƒ
+ Loaded user IP repository '%s'.
+1135*coregen2E
+1c:/Projetos_git/repo/vivado_projects/debug_AES-IP2default:defaultZ19-1700
+ž
+ARepository '%s' already exists; ignoring attempt to add it again.1296*coregen2?
++c:/Users/Janier Arias Garcia/project_AES-IP2default:defaultZ19-2207
+}
+ Loaded user IP repository '%s'.
+1135*coregen2?
++c:/Users/Janier Arias Garcia/project_AES-IP2default:defaultZ19-1700
 s
 "Loaded Vivado IP repository '%s'.
 1332*coregen23
@@ -43,10 +85,10 @@ s
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2
 add_files: 2default:default2
-00:00:132default:default2
-00:00:172default:default2
-279.1522default:default2
-102.3792default:defaultZ17-268
+00:00:112default:default2
+00:00:152default:default2
+279.4382default:default2
+102.9382default:defaultZ17-268
 v
 Command: %s
 53*	vivadotcl2N
@@ -68,7 +110,7 @@ Starting synthesis...
 xc7k325t2default:defaultZ17-349
 œ
 %s*synth2Œ
-xStarting RTL Elaboration : Time (s): cpu = 00:00:49 ; elapsed = 00:01:42 . Memory (MB): peak = 344.633 ; gain = 212.977
+xStarting RTL Elaboration : Time (s): cpu = 00:00:48 ; elapsed = 00:01:38 . Memory (MB): peak = 344.824 ; gain = 213.523
 2default:default
 Ž
 synthesizing module '%s'638*oasys2%
@@ -11211,8 +11253,8 @@ MMCME2_ADV2default:default2¸
 872default:default8@Z8-256
 Æ
 synthesizing module '%s'638*oasys20
-mb_system_debug_AES_v1_5_0_02default:default2Ä
-­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_5_0_0/synth/mb_system_debug_AES_v1_5_0_0.vhd2default:default2
+mb_system_debug_AES_v1_6_0_02default:default2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
 872default:default8@Z8-638
 a
 %s*synth2R
@@ -11225,7 +11267,7 @@ a
 â
 synthesizing module '%s'638*oasys22
 myip_lite_v1_0__parameterized02default:default2Þ
-Çc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd2default:default2
+Çc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd2default:default2
 672default:default8@Z8-638
 a
 %s*synth2R
@@ -11246,7 +11288,7 @@ _
 ó
 synthesizing module '%s'638*oasys2:
 &myip_lite_v1_0_S00_AXI__parameterized02default:default2æ
-Ïc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/hdl/myip_lite_v1_0_S00_AXI.vhd2default:default2
+Ïc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/hdl/myip_lite_v1_0_S00_AXI.vhd2default:default2
 1042default:default8@Z8-638
 _
 %s*synth2P
@@ -11259,146 +11301,146 @@ _
 À
 synthesizing module '%s'638*oasys2
 	DeMux_1x22default:default2Ñ
-ºc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/DeMux_1x2.vhd2default:default2
+ºc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/DeMux_1x2.vhd2default:default2
 422default:default8@Z8-638
 ü
 %done synthesizing module '%s' (%s#%s)256*oasys2
 	DeMux_1x22default:default2
 772default:default2
 12default:default2Ñ
-ºc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/DeMux_1x2.vhd2default:default2
+ºc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/DeMux_1x2.vhd2default:default2
 422default:default8@Z8-256
 ¯
 %done synthesizing module '%s' (%s#%s)256*oasys2:
 &myip_lite_v1_0_S00_AXI__parameterized02default:default2
 782default:default2
 12default:default2æ
-Ïc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/hdl/myip_lite_v1_0_S00_AXI.vhd2default:default2
+Ïc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/hdl/myip_lite_v1_0_S00_AXI.vhd2default:default2
 1042default:default8@Z8-256
 ¸
 synthesizing module '%s'638*oasys2
 
 AES_Crypto2default:default2È
-±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
+±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
 632default:default8@Z8-638
 å
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 	debug_sel2default:default2È
-±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
+±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
 1712default:default8@Z8-614
 Þ
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 s02default:default2È
-±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
+±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
 1712default:default8@Z8-614
 Þ
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 s12default:default2È
-±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
+±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
 1712default:default8@Z8-614
 Þ
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 s22default:default2È
-±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
+±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
 1712default:default8@Z8-614
 Þ
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 s32default:default2È
-±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
+±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
 1712default:default8@Z8-614
 Þ
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 s42default:default2È
-±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
+±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
 1712default:default8@Z8-614
 Þ
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 k12default:default2È
-±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
+±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
 1712default:default8@Z8-614
 à
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 mode2default:default2È
-±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
+±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
 1712default:default8@Z8-614
 â
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 wtosub2default:default2È
-±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
+±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
 1712default:default8@Z8-614
 Þ
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 e02default:default2È
-±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
+±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
 1712default:default8@Z8-614
 Þ
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 e12default:default2È
-±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
+±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
 1712default:default8@Z8-614
 Þ
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 e82default:default2È
-±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
+±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
 1712default:default8@Z8-614
 Þ
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 e92default:default2È
-±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
+±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
 1712default:default8@Z8-614
 ì
 synthesizing module '%s'638*oasys2 
 KeyExpansion2default:default2ú
-ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/KeyExpansion.vhd2default:default2
+ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/KeyExpansion.vhd2default:default2
 542default:default8@Z8-638
 ¨
 %done synthesizing module '%s' (%s#%s)256*oasys2 
 KeyExpansion2default:default2
 792default:default2
 12default:default2ú
-ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/KeyExpansion.vhd2default:default2
+ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/KeyExpansion.vhd2default:default2
 542default:default8@Z8-256
 à
 synthesizing module '%s'638*oasys2
 AddKey2default:default2ô
-Ýc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd2default:default2
+Ýc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd2default:default2
 412default:default8@Z8-638
 œ
 %done synthesizing module '%s' (%s#%s)256*oasys2
 AddKey2default:default2
 802default:default2
 12default:default2ô
-Ýc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd2default:default2
+Ýc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd2default:default2
 412default:default8@Z8-256
 ä
 synthesizing module '%s'638*oasys2
 SubBytes2default:default2ö
-ßc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd2default:default2
+ßc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd2default:default2
 462default:default8@Z8-638
  
 %done synthesizing module '%s' (%s#%s)256*oasys2
 SubBytes2default:default2
 812default:default2
 12default:default2ö
-ßc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd2default:default2
+ßc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd2default:default2
 462default:default8@Z8-256
 æ
 synthesizing module '%s'638*oasys2
 	ShiftRows2default:default2÷
-àc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/ShiftRows.vhd2default:default2
+àc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/ShiftRows.vhd2default:default2
 412default:default8@Z8-638
 ¢
 %done synthesizing module '%s' (%s#%s)256*oasys2
 	ShiftRows2default:default2
 822default:default2
 12default:default2÷
-àc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/ShiftRows.vhd2default:default2
+àc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/ShiftRows.vhd2default:default2
 412default:default8@Z8-256
 è
 synthesizing module '%s'638*oasys2
 
 MixColumns2default:default2ø
-ác:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/MixColumns.vhd2default:default2
+ác:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/MixColumns.vhd2default:default2
 402default:default8@Z8-638
 ¤
 %done synthesizing module '%s' (%s#%s)256*oasys2
@@ -11406,146 +11448,166 @@ MixColumns2default:default2ø
 MixColumns2default:default2
 832default:default2
 12default:default2ø
-ác:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/MixColumns.vhd2default:default2
+ác:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/MixColumns.vhd2default:default2
 402default:default8@Z8-256
 ¼
 synthesizing module '%s'638*oasys2
 Control2default:default2Ï
-¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
 552default:default8@Z8-638
 â
 synthesizing module '%s'638*oasys2
 Mux_2x12default:default2õ
-Þc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd2default:default2
+Þc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd2default:default2
 422default:default8@Z8-638
 ž
 %done synthesizing module '%s' (%s#%s)256*oasys2
 Mux_2x12default:default2
 842default:default2
 12default:default2õ
-Þc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd2default:default2
+Þc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd2default:default2
 422default:default8@Z8-256
 ä
 synthesizing module '%s'638*oasys2
 Mux_10x12default:default2ö
-ßc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd2default:default2
+ßc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd2default:default2
 422default:default8@Z8-638
  
 %done synthesizing module '%s' (%s#%s)256*oasys2
 Mux_10x12default:default2
 852default:default2
 12default:default2ö
-ßc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd2default:default2
+ßc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd2default:default2
 422default:default8@Z8-256
+è
+Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
+state2default:default2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+1142default:default8@Z8-614
+ê
+Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
+prox_s02default:default2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+1142default:default8@Z8-614
+å
+Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
+en2default:default2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+1142default:default8@Z8-614
+ç
+Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
+s0_i2default:default2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+1142default:default8@Z8-614
 å
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 s52default:default2Ï
-¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
-1322default:default8@Z8-614
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+1142default:default8@Z8-614
 ø
 %done synthesizing module '%s' (%s#%s)256*oasys2
 Control2default:default2
 862default:default2
 12default:default2Ï
-¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
 552default:default8@Z8-256
 ê
 synthesizing module '%s'638*oasys2
 InvSubBytes2default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 422default:default8@Z8-638
 
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 Bi2default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 1062default:default8@Z8-614
 
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 y72default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 1062default:default8@Z8-614
 
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 y62default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 1062default:default8@Z8-614
 
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 y52default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 1062default:default8@Z8-614
 
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 y42default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 1062default:default8@Z8-614
 
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 y32default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 1062default:default8@Z8-614
 
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 y22default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 1062default:default8@Z8-614
 
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 y12default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 1062default:default8@Z8-614
 
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 y02default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 1062default:default8@Z8-614
 ¦
 %done synthesizing module '%s' (%s#%s)256*oasys2
 InvSubBytes2default:default2
 872default:default2
 12default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 422default:default8@Z8-256
 ì
 synthesizing module '%s'638*oasys2 
 InvShiftRows2default:default2ú
-ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvShiftRows.vhd2default:default2
+ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvShiftRows.vhd2default:default2
 412default:default8@Z8-638
 ¨
 %done synthesizing module '%s' (%s#%s)256*oasys2 
 InvShiftRows2default:default2
 882default:default2
 12default:default2ú
-ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvShiftRows.vhd2default:default2
+ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvShiftRows.vhd2default:default2
 412default:default8@Z8-256
 î
 synthesizing module '%s'638*oasys2!
 InvMixColumns2default:default2û
-äc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvMixColumns.vhd2default:default2
+äc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvMixColumns.vhd2default:default2
 402default:default8@Z8-638
 ª
 %done synthesizing module '%s' (%s#%s)256*oasys2!
 InvMixColumns2default:default2
 892default:default2
 12default:default2û
-äc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvMixColumns.vhd2default:default2
+äc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvMixColumns.vhd2default:default2
 402default:default8@Z8-256
 Ò
 synthesizing module '%s'638*oasys2&
 Control_Decryption2default:default2Ú
-Ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd2default:default2
+Ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd2default:default2
 552default:default8@Z8-638
 ð
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
 s32default:default2Ú
-Ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd2default:default2
+Ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd2default:default2
 1172default:default8@Z8-614
 Ž
 %done synthesizing module '%s' (%s#%s)256*oasys2&
 Control_Decryption2default:default2
 902default:default2
 12default:default2Ú
-Ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd2default:default2
+Ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd2default:default2
 552default:default8@Z8-256
 ô
 %done synthesizing module '%s' (%s#%s)256*oasys2
@@ -11553,21 +11615,21 @@ Esignal '%s' is read in the process but is not in the sensitivity list614*o
 AES_Crypto2default:default2
 912default:default2
 12default:default2È
-±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
+±c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd2default:default2
 632default:default8@Z8-256
 ž
 %done synthesizing module '%s' (%s#%s)256*oasys22
 myip_lite_v1_0__parameterized02default:default2
 922default:default2
 12default:default2Þ
-Çc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd2default:default2
+Çc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd2default:default2
 672default:default8@Z8-256
 ‚
 %done synthesizing module '%s' (%s#%s)256*oasys20
-mb_system_debug_AES_v1_5_0_02default:default2
+mb_system_debug_AES_v1_6_0_02default:default2
 932default:default2
 12default:default2Ä
-­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_5_0_0/synth/mb_system_debug_AES_v1_5_0_0.vhd2default:default2
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
 872default:default8@Z8-256
 ¥
 synthesizing module '%s'638*oasys2%
@@ -80485,7 +80547,7 @@ xC:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs
 392default:default8@Z8-256
 œ
 %s*synth2Œ
-xFinished RTL Elaboration : Time (s): cpu = 00:03:47 ; elapsed = 00:05:12 . Memory (MB): peak = 885.355 ; gain = 753.699
+xFinished RTL Elaboration : Time (s): cpu = 00:03:45 ; elapsed = 00:04:51 . Memory (MB): peak = 885.219 ; gain = 753.918
 2default:default
 ;
 %s*synth2,
@@ -81501,15 +81563,15 @@ $mb_system_i/microblaze_0_axi_intc/U02default:defaultZ20-847
 2default:defaultZ1-111
 ³
 %s*synth2£
-ŽFinished Loading Part and Timing Information : Time (s): cpu = 00:05:16 ; elapsed = 00:07:01 . Memory (MB): peak = 1403.797 ; gain = 1272.141
+ŽFinished Loading Part and Timing Information : Time (s): cpu = 00:05:11 ; elapsed = 00:06:34 . Memory (MB): peak = 1394.852 ; gain = 1263.551
 2default:default
 ·
 %s*synth2§
-’Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:24 ; elapsed = 00:07:05 . Memory (MB): peak = 1403.797 ; gain = 1272.141
+’Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:19 ; elapsed = 00:06:38 . Memory (MB): peak = 1394.852 ; gain = 1263.551
 2default:default
 Ÿ
 %s*synth2
-{Finished RTL Optimization : Time (s): cpu = 00:05:24 ; elapsed = 00:07:05 . Memory (MB): peak = 1403.797 ; gain = 1272.141
+{Finished RTL Optimization : Time (s): cpu = 00:05:19 ; elapsed = 00:06:38 . Memory (MB): peak = 1394.852 ; gain = 1263.551
 2default:default
 ²
 3inferred FSM for state register '%s' in module '%s'802*oasys2I
@@ -82059,95 +82121,100 @@ Gencoded FSM with state register '%s' using encoding '%s' in module '%s'3353
 estado_reg2default:default2
 one-hot2default:default2
 SubBytes2default:defaultZ8-3354
-Å
-!inferring latch for variable '%s'327*oasys2
-bo_reg2default:default2Ï
-¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
-2002default:default8@Z8-327
+Æ
+!inferring latch for variable '%s'327*oasys2
+bo_i_reg2default:default2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+932default:default8@Z8-327
+Æ
+!inferring latch for variable '%s'327*oasys2
+s0_i_reg2default:default2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+922default:default8@Z8-327
 Ç
 !inferring latch for variable '%s'327*oasys2
 	rdy_i_reg2default:default2Ï
-¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
-892default:default8@Z8-327
-É
-!inferring latch for variable '%s'327*oasys2
-e_mux_1_reg2default:default2Ï
-¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
-962default:default8@Z8-327
-É
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+902default:default8@Z8-327
+Ê
 !inferring latch for variable '%s'327*oasys2
 e_mux_2_reg2default:default2Ï
-¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
-992default:default8@Z8-327
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+1032default:default8@Z8-327
+Ê
+!inferring latch for variable '%s'327*oasys2
+e_mux_1_reg2default:default2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+1002default:default8@Z8-327
 ï
 !inferring latch for variable '%s'327*oasys2
 Bo_reg2default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 1242default:default8@Z8-327
 î
 !inferring latch for variable '%s'327*oasys2
 n_reg2default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 1132default:default8@Z8-327
 î
 !inferring latch for variable '%s'327*oasys2
 x7_reg2default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 502default:default8@Z8-327
 î
 !inferring latch for variable '%s'327*oasys2
 x0_reg2default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 512default:default8@Z8-327
 î
 !inferring latch for variable '%s'327*oasys2
 x5_reg2default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 522default:default8@Z8-327
 î
 !inferring latch for variable '%s'327*oasys2
 x6_reg2default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 502default:default8@Z8-327
 î
 !inferring latch for variable '%s'327*oasys2
 x1_reg2default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 502default:default8@Z8-327
 î
 !inferring latch for variable '%s'327*oasys2
 x3_reg2default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 512default:default8@Z8-327
 î
 !inferring latch for variable '%s'327*oasys2
 x4_reg2default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 522default:default8@Z8-327
 î
 !inferring latch for variable '%s'327*oasys2
 x2_reg2default:default2ù
-âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
+âc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd2default:default2
 502default:default8@Z8-327
 Ð
 !inferring latch for variable '%s'327*oasys2
 bo_reg2default:default2Ú
-Ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd2default:default2
+Ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd2default:default2
 1852default:default8@Z8-327
 Ò
 !inferring latch for variable '%s'327*oasys2
 	rdy_i_reg2default:default2Ú
-Ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd2default:default2
+Ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd2default:default2
 912default:default8@Z8-327
 Ô
 !inferring latch for variable '%s'327*oasys2
 e_mux_1_reg2default:default2Ú
-Ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd2default:default2
+Ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd2default:default2
 962default:default8@Z8-327
 Ô
 !inferring latch for variable '%s'327*oasys2
 e_mux_2_reg2default:default2Ú
-Ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd2default:default2
+Ãc:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd2default:default2
 992default:default8@Z8-327
 …
 0Net %s in module/entity %s does not have driver.3422*oasys2"
@@ -82417,7 +82484,7 @@ W|10    |mb_system__GCB0                                      |           1|    
 2default:default
 z
 %s*synth2k
-W|11    |mb_system_debug_AES_v1_5_0_0                         |           1|     20008|
+W|11    |mb_system_debug_AES_v1_6_0_0                         |           1|     20075|
 2default:default
 z
 %s*synth2k
@@ -82474,11 +82541,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     10 Bit       Adders := 12    
+.	   3 Input     10 Bit       Adders := 3     
 2default:default
 Q
 %s*synth2B
-.	   3 Input     10 Bit       Adders := 3     
+.	   2 Input     10 Bit       Adders := 12    
 2default:default
 Q
 %s*synth2B
@@ -82494,11 +82561,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      6 Bit       Adders := 62    
+.	   3 Input      6 Bit       Adders := 11    
 2default:default
 Q
 %s*synth2B
-.	   3 Input      6 Bit       Adders := 11    
+.	   2 Input      6 Bit       Adders := 62    
 2default:default
 Q
 %s*synth2B
@@ -82518,11 +82585,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      2 Bit       Adders := 1     
+.	   5 Input      2 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
-.	   5 Input      2 Bit       Adders := 1     
+.	   2 Input      2 Bit       Adders := 74    
 2default:default
 Q
 %s*synth2B
@@ -82534,19 +82601,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit       Adders := 74    
+.	   8 Input      2 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
-.	   6 Input      1 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      1 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      1 Bit       Adders := 1     
+.	   7 Input      1 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -82554,11 +82613,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      1 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit       Adders := 6     
+.	  10 Input      1 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -82566,11 +82621,23 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   4 Input      1 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit       Adders := 6     
+2default:default
+Q
+%s*synth2B
 .	   9 Input      1 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
-.	   7 Input      1 Bit       Adders := 1     
+.	   6 Input      1 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      1 Bit       Adders := 1     
 2default:default
 /
 %s*synth2 
@@ -82578,15 +82645,23 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit         XORs := 3     
-2default:default
-Q
-%s*synth2B
 .	   3 Input     32 Bit         XORs := 1     
 2default:default
 Q
 %s*synth2B
+.	   2 Input     32 Bit         XORs := 3     
+2default:default
+Q
+%s*synth2B
+.	   9 Input      8 Bit         XORs := 8     
+2default:default
+Q
+%s*synth2B
 .	   2 Input      8 Bit         XORs := 91    
+2default:default
+Q
+%s*synth2B
+.	   4 Input      8 Bit         XORs := 12    
 2default:default
 Q
 %s*synth2B
@@ -82598,15 +82673,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   9 Input      8 Bit         XORs := 8     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      8 Bit         XORs := 12    
-2default:default
-Q
-%s*synth2B
 .	   2 Input      2 Bit         XORs := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 906   
+2default:default
+Q
+%s*synth2B
+.	  10 Input      1 Bit         XORs := 3     
+2default:default
+Q
+%s*synth2B
+.	   5 Input      1 Bit         XORs := 4     
 2default:default
 Q
 %s*synth2B
@@ -82618,23 +82697,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  19 Input      1 Bit         XORs := 2     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit         XORs := 906   
-2default:default
-Q
-%s*synth2B
-.	   5 Input      1 Bit         XORs := 4     
-2default:default
-Q
-%s*synth2B
-.	  13 Input      1 Bit         XORs := 3     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      1 Bit         XORs := 2     
+.	  12 Input      1 Bit         XORs := 2     
 2default:default
 Q
 %s*synth2B
@@ -82642,19 +82705,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  10 Input      1 Bit         XORs := 3     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      1 Bit         XORs := 8     
-2default:default
-Q
-%s*synth2B
-.	  11 Input      1 Bit         XORs := 2     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      1 Bit         XORs := 19    
+.	   8 Input      1 Bit         XORs := 2     
 2default:default
 Q
 %s*synth2B
@@ -82662,7 +82713,23 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  12 Input      1 Bit         XORs := 2     
+.	  19 Input      1 Bit         XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	  11 Input      1 Bit         XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit         XORs := 8     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit         XORs := 19    
+2default:default
+Q
+%s*synth2B
+.	  13 Input      1 Bit         XORs := 3     
 2default:default
 4
 %s*synth2%
@@ -82690,7 +82757,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	              128 Bit    Registers := 14    
+.	              128 Bit    Registers := 13    
 2default:default
 Q
 %s*synth2B
@@ -82830,11 +82897,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  21 Input    128 Bit        Muxes := 1     
+.	  12 Input    128 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  12 Input    128 Bit        Muxes := 1     
+.	  21 Input    128 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -82866,15 +82933,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 54    
-2default:default
-Q
-%s*synth2B
 .	  14 Input     32 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
-.	   3 Input     32 Bit        Muxes := 1     
+.	   2 Input     32 Bit        Muxes := 54    
 2default:default
 Q
 %s*synth2B
@@ -82887,6 +82950,10 @@ Q
 Q
 %s*synth2B
 .	   8 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -82918,15 +82985,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     22 Bit        Muxes := 27    
-2default:default
-Q
-%s*synth2B
 .	  21 Input     22 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  20 Input     21 Bit        Muxes := 1     
+.	   2 Input     22 Bit        Muxes := 27    
 2default:default
 Q
 %s*synth2B
@@ -82934,11 +82997,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     17 Bit        Muxes := 3     
+.	  20 Input     21 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     16 Bit        Muxes := 23    
+.	   2 Input     17 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -82950,7 +83013,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input     16 Bit        Muxes := 23    
+2default:default
+Q
+%s*synth2B
 .	   2 Input     15 Bit        Muxes := 10    
+2default:default
+Q
+%s*synth2B
+.	   2 Input     14 Bit        Muxes := 26    
 2default:default
 Q
 %s*synth2B
@@ -82958,15 +83029,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   9 Input     14 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	  13 Input     14 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     14 Bit        Muxes := 26    
+.	   9 Input     14 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -83006,23 +83073,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      9 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   2 Input      9 Bit        Muxes := 44    
 2default:default
 Q
 %s*synth2B
-.	  21 Input      8 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  14 Input      8 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      8 Bit        Muxes := 232   
+.	   3 Input      9 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -83030,11 +83085,23 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input      8 Bit        Muxes := 1     
+.	  14 Input      8 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	  11 Input      8 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      8 Bit        Muxes := 232   
+2default:default
+Q
+%s*synth2B
+.	  13 Input      8 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  21 Input      8 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -83054,23 +83121,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  29 Input      6 Bit        Muxes := 9     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      6 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  34 Input      6 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	  14 Input      6 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	  13 Input      6 Bit        Muxes := 5     
+.	  30 Input      6 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -83078,23 +83129,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  22 Input      6 Bit        Muxes := 10    
-2default:default
-Q
-%s*synth2B
-.	   2 Input      6 Bit        Muxes := 203   
-2default:default
-Q
-%s*synth2B
-.	   5 Input      6 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	   4 Input      6 Bit        Muxes := 24    
-2default:default
-Q
-%s*synth2B
-.	  30 Input      6 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -83102,7 +83137,51 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  22 Input      6 Bit        Muxes := 10    
+2default:default
+Q
+%s*synth2B
+.	   5 Input      6 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	  34 Input      6 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	  13 Input      6 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	  29 Input      6 Bit        Muxes := 9     
+2default:default
+Q
+%s*synth2B
 .	  36 Input      6 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      6 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      6 Bit        Muxes := 203   
+2default:default
+Q
+%s*synth2B
+.	  14 Input      6 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      5 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      5 Bit        Muxes := 6     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      5 Bit        Muxes := 9     
 2default:default
 Q
 %s*synth2B
@@ -83114,43 +83193,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  34 Input      5 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      5 Bit        Muxes := 6     
-2default:default
-Q
-%s*synth2B
 .	  21 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   8 Input      5 Bit        Muxes := 9     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      5 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  34 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      4 Bit        Muxes := 1     
+.	  34 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -83158,11 +83205,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  14 Input      4 Bit        Muxes := 1     
+.	   4 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit        Muxes := 119   
+.	   6 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -83170,7 +83217,43 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input      4 Bit        Muxes := 119   
+2default:default
+Q
+%s*synth2B
+.	  14 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  10 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  34 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      3 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      3 Bit        Muxes := 10    
+2default:default
+Q
+%s*synth2B
+.	  29 Input      3 Bit        Muxes := 18    
+2default:default
+Q
+%s*synth2B
 .	   2 Input      3 Bit        Muxes := 81    
+2default:default
+Q
+%s*synth2B
+.	   5 Input      3 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
@@ -83182,43 +83265,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      3 Bit        Muxes := 10    
-2default:default
-Q
-%s*synth2B
-.	   5 Input      3 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      3 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	  29 Input      3 Bit        Muxes := 18    
-2default:default
-Q
-%s*synth2B
-.	  14 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  34 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	  22 Input      2 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   5 Input      2 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      2 Bit        Muxes := 14    
-2default:default
-Q
-%s*synth2B
-.	   2 Input      2 Bit        Muxes := 194   
 2default:default
 Q
 %s*synth2B
@@ -83226,47 +83273,27 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   5 Input      2 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	  14 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 194   
+2default:default
+Q
+%s*synth2B
 .	   3 Input      2 Bit        Muxes := 10    
 2default:default
 Q
 %s*synth2B
-.	  29 Input      1 Bit        Muxes := 50    
+.	  34 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 1681  
-2default:default
-Q
-%s*synth2B
-.	  22 Input      1 Bit        Muxes := 45    
-2default:default
-Q
-%s*synth2B
-.	  13 Input      1 Bit        Muxes := 21    
-2default:default
-Q
-%s*synth2B
-.	  14 Input      1 Bit        Muxes := 12    
-2default:default
-Q
-%s*synth2B
-.	   4 Input      1 Bit        Muxes := 205   
-2default:default
-Q
-%s*synth2B
-.	   5 Input      1 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	  11 Input      1 Bit        Muxes := 9     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      1 Bit        Muxes := 43    
-2default:default
-Q
-%s*synth2B
-.	   6 Input      1 Bit        Muxes := 15    
+.	   4 Input      2 Bit        Muxes := 14    
 2default:default
 Q
 %s*synth2B
@@ -83274,7 +83301,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 23    
+.	  29 Input      1 Bit        Muxes := 50    
+2default:default
+Q
+%s*synth2B
+.	   7 Input      1 Bit        Muxes := 8     
 2default:default
 Q
 %s*synth2B
@@ -83282,7 +83313,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  34 Input      1 Bit        Muxes := 32    
+.	   4 Input      1 Bit        Muxes := 205   
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 23    
 2default:default
 Q
 %s*synth2B
@@ -83290,7 +83325,39 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   7 Input      1 Bit        Muxes := 8     
+.	  11 Input      1 Bit        Muxes := 9     
+2default:default
+Q
+%s*synth2B
+.	  13 Input      1 Bit        Muxes := 21    
+2default:default
+Q
+%s*synth2B
+.	  14 Input      1 Bit        Muxes := 13    
+2default:default
+Q
+%s*synth2B
+.	   5 Input      1 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	   6 Input      1 Bit        Muxes := 15    
+2default:default
+Q
+%s*synth2B
+.	  10 Input      1 Bit        Muxes := 43    
+2default:default
+Q
+%s*synth2B
+.	  22 Input      1 Bit        Muxes := 45    
+2default:default
+Q
+%s*synth2B
+.	  34 Input      1 Bit        Muxes := 32    
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1681  
 2default:default
 Ä
 -Detected potentially large (wide) register %s3414*oasys2$
@@ -83487,11 +83554,7 @@ B
 2default:default
 Q
 %s*synth2B
-.	   8 Input      1 Bit         XORs := 2     
-2default:default
-Q
-%s*synth2B
-.	  15 Input      1 Bit         XORs := 1     
+.	  13 Input      1 Bit         XORs := 2     
 2default:default
 Q
 %s*synth2B
@@ -83499,39 +83562,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit         XORs := 10    
-2default:default
-Q
-%s*synth2B
-.	   5 Input      1 Bit         XORs := 2     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      1 Bit         XORs := 8     
-2default:default
-Q
-%s*synth2B
-.	  11 Input      1 Bit         XORs := 1     
-2default:default
-Q
-%s*synth2B
-.	   7 Input      1 Bit         XORs := 2     
-2default:default
-Q
-%s*synth2B
 .	   6 Input      1 Bit         XORs := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      1 Bit         XORs := 1     
-2default:default
-Q
-%s*synth2B
-.	  12 Input      1 Bit         XORs := 1     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      1 Bit         XORs := 1     
 2default:default
 Q
 %s*synth2B
@@ -83539,7 +83570,43 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input      1 Bit         XORs := 2     
+.	   7 Input      1 Bit         XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	  16 Input      1 Bit         XORs := 1     
+2default:default
+Q
+%s*synth2B
+.	  12 Input      1 Bit         XORs := 1     
+2default:default
+Q
+%s*synth2B
+.	  11 Input      1 Bit         XORs := 1     
+2default:default
+Q
+%s*synth2B
+.	   5 Input      1 Bit         XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit         XORs := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 10    
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit         XORs := 8     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      1 Bit         XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	  15 Input      1 Bit         XORs := 1     
 2default:default
 4
 %s*synth2%
@@ -83649,21 +83716,13 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	              128 Bit    Registers := 1     
-2default:default
 0
 %s*synth2!
 +---Muxes : 
 2default:default
 Q
 %s*synth2B
-.	  14 Input      1 Bit        Muxes := 4     
+.	  14 Input      1 Bit        Muxes := 5     
 2default:default
 5
 %s*synth2&
@@ -83707,35 +83766,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit         XORs := 13    
-2default:default
-Q
-%s*synth2B
-.	  15 Input      1 Bit         XORs := 1     
-2default:default
-Q
-%s*synth2B
-.	   5 Input      1 Bit         XORs := 2     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      1 Bit         XORs := 10    
-2default:default
-Q
-%s*synth2B
-.	  11 Input      1 Bit         XORs := 1     
-2default:default
-Q
-%s*synth2B
-.	   7 Input      1 Bit         XORs := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      1 Bit         XORs := 6     
+.	  13 Input      1 Bit         XORs := 1     
 2default:default
 Q
 %s*synth2B
 .	   6 Input      1 Bit         XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	   7 Input      1 Bit         XORs := 1     
 2default:default
 Q
 %s*synth2B
@@ -83747,7 +83786,27 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input      1 Bit         XORs := 1     
+.	   5 Input      1 Bit         XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	  11 Input      1 Bit         XORs := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit         XORs := 6     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 13    
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit         XORs := 10    
+2default:default
+Q
+%s*synth2B
+.	  15 Input      1 Bit         XORs := 1     
 2default:default
 0
 %s*synth2!
@@ -83871,7 +83930,7 @@ B
 2default:default
 H
 %s*synth29
-%Module mb_system_debug_AES_v1_5_0_0 
+%Module mb_system_debug_AES_v1_6_0_0 
 2default:default
 B
 %s*synth23
@@ -83947,31 +84006,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
-.	   7 Input      1 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      1 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      1 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
 .	   2 Input      1 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      1 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
-.	   5 Input      1 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -83979,7 +84014,31 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   7 Input      1 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   5 Input      1 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   6 Input      1 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
 .	   9 Input      1 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      1 Bit       Adders := 1     
 2default:default
 4
 %s*synth2%
@@ -87135,7 +87194,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   9 Input     14 Bit        Muxes := 1     
+.	   4 Input     14 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -87143,7 +87202,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input     14 Bit        Muxes := 1     
+.	   9 Input     14 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -87167,15 +87226,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   8 Input      3 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      3 Bit        Muxes := 8     
 2default:default
 Q
 %s*synth2B
@@ -87183,7 +87234,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 3     
+.	   2 Input      3 Bit        Muxes := 8     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -87191,7 +87246,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      1 Bit        Muxes := 1     
+.	   2 Input      2 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -87199,7 +87258,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 3     
+.	   4 Input      1 Bit        Muxes := 1     
 2default:default
 J
 %s*synth2;
@@ -87379,15 +87438,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      6 Bit        Muxes := 16    
-2default:default
-Q
-%s*synth2B
 .	  29 Input      6 Bit        Muxes := 9     
 2default:default
 Q
 %s*synth2B
-.	   4 Input      6 Bit        Muxes := 8     
+.	   2 Input      6 Bit        Muxes := 16    
 2default:default
 Q
 %s*synth2B
@@ -87395,7 +87450,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   4 Input      6 Bit        Muxes := 8     
+2default:default
+Q
+%s*synth2B
 .	   2 Input      5 Bit        Muxes := 15    
+2default:default
+Q
+%s*synth2B
+.	  29 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -87403,7 +87466,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  29 Input      4 Bit        Muxes := 1     
+.	   8 Input      3 Bit        Muxes := 7     
 2default:default
 Q
 %s*synth2B
@@ -87415,19 +87478,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      3 Bit        Muxes := 7     
-2default:default
-Q
-%s*synth2B
 .	   2 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 116   
+.	  29 Input      1 Bit        Muxes := 50    
 2default:default
 Q
 %s*synth2B
-.	  29 Input      1 Bit        Muxes := 50    
+.	   2 Input      1 Bit        Muxes := 116   
 2default:default
 V
 %s*synth2G
@@ -87559,19 +87618,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     22 Bit        Muxes := 27    
-2default:default
-Q
-%s*synth2B
 .	  21 Input     22 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      6 Bit        Muxes := 21    
+.	   2 Input     22 Bit        Muxes := 27    
 2default:default
 Q
 %s*synth2B
 .	  22 Input      6 Bit        Muxes := 10    
+2default:default
+Q
+%s*synth2B
+.	   2 Input      6 Bit        Muxes := 21    
 2default:default
 Q
 %s*synth2B
@@ -87587,15 +87646,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	  16 Input      1 Bit        Muxes := 64    
 2default:default
 Q
 %s*synth2B
 .	  22 Input      1 Bit        Muxes := 45    
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 2     
 2default:default
 R
 %s*synth2C
@@ -87679,15 +87738,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  16 Input      6 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   2 Input      6 Bit        Muxes := 14    
 2default:default
 Q
 %s*synth2B
 .	   4 Input      6 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      6 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -87815,15 +87874,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      6 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
 .	  36 Input      6 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
+.	   2 Input      6 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
 .	  34 Input      6 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	  34 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -87835,11 +87898,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  34 Input      5 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      4 Bit        Muxes := 13    
+.	   3 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -87847,7 +87906,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      4 Bit        Muxes := 1     
+.	   2 Input      4 Bit        Muxes := 13    
 2default:default
 Q
 %s*synth2B
@@ -87943,11 +88002,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input     13 Bit        Muxes := 9     
+2default:default
+Q
+%s*synth2B
 .	  12 Input     13 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     13 Bit        Muxes := 9     
+.	  13 Input      8 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -87955,7 +88018,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input      8 Bit        Muxes := 1     
+.	  13 Input      6 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
@@ -87964,10 +88027,6 @@ Q
 Q
 %s*synth2B
 .	  14 Input      6 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	  13 Input      6 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
@@ -87983,11 +88042,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input      1 Bit        Muxes := 21    
+.	  16 Input      1 Bit        Muxes := 64    
 2default:default
 Q
 %s*synth2B
-.	  16 Input      1 Bit        Muxes := 64    
+.	  13 Input      1 Bit        Muxes := 21    
 2default:default
 L
 %s*synth2=
@@ -90787,11 +90846,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      6 Bit        Muxes := 3     
+.	   5 Input      6 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   5 Input      6 Bit        Muxes := 1     
+.	   2 Input      6 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -90799,11 +90858,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      3 Bit        Muxes := 6     
+.	   6 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   6 Input      3 Bit        Muxes := 1     
+.	   2 Input      3 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
@@ -90815,11 +90874,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  10 Input      1 Bit        Muxes := 23    
+.	   6 Input      1 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   6 Input      1 Bit        Muxes := 2     
+.	  10 Input      1 Bit        Muxes := 23    
 2default:default
 4
 %s*synth2%
@@ -99219,7 +99278,7 @@ RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bi
 1212default:default8@Z8-3936
 «
 %s*synth2›
-†Finished Cross Boundary Optimization : Time (s): cpu = 00:06:36 ; elapsed = 00:08:08 . Memory (MB): peak = 1403.797 ; gain = 1272.141
+†Finished Cross Boundary Optimization : Time (s): cpu = 00:06:26 ; elapsed = 00:07:35 . Memory (MB): peak = 1394.852 ; gain = 1263.551
 2default:default
 ¢
 %s*synth2’
@@ -99492,335 +99551,331 @@ Smb_system_i/mig_7series_0/u_memc_ui_top_axii_5/\u_ui_top/ui_cmd0/app_hi_pri_r1_
 Ô
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2l
-Xmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /KeyExpansion_0/\FSM_onehot_estado_reg[0] 2default:defaultZ8-3333
+Xmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /KeyExpansion_0/\FSM_onehot_estado_reg[0] 2default:defaultZ8-3333
 Ô
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2l
-Xmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /SubBytes_round/\FSM_onehot_estado_reg[0] 2default:defaultZ8-3333
+Xmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /SubBytes_round/\FSM_onehot_estado_reg[0] 2default:defaultZ8-3333
 Î
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2f
-Rmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\state_reg[3] 2default:defaultZ8-3333
-Ã
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2[
-Gmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\state_reg[3] 2default:defaultZ8-3333
+Rmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\state_reg[3] 2default:defaultZ8-3333
 Ê
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2b
-Nmb_system_i/debug_AES_v1_5_0/\U0/myip_lite_v1_0_S00_AXI_inst/axi_rresp_reg[0] 2default:defaultZ8-3333
+Nmb_system_i/debug_AES_v1_6_0/\U0/myip_lite_v1_0_S00_AXI_inst/axi_rresp_reg[0] 2default:defaultZ8-3333
 Ê
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2b
-Nmb_system_i/debug_AES_v1_5_0/\U0/myip_lite_v1_0_S00_AXI_inst/axi_rresp_reg[1] 2default:defaultZ8-3333
+Nmb_system_i/debug_AES_v1_6_0/\U0/myip_lite_v1_0_S00_AXI_inst/axi_rresp_reg[1] 2default:defaultZ8-3333
 Ê
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2b
-Nmb_system_i/debug_AES_v1_5_0/\U0/myip_lite_v1_0_S00_AXI_inst/axi_bresp_reg[0] 2default:defaultZ8-3333
+Nmb_system_i/debug_AES_v1_6_0/\U0/myip_lite_v1_0_S00_AXI_inst/axi_bresp_reg[0] 2default:defaultZ8-3333
 Ê
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2b
-Nmb_system_i/debug_AES_v1_5_0/\U0/myip_lite_v1_0_S00_AXI_inst/axi_bresp_reg[1] 2default:defaultZ8-3333
+Nmb_system_i/debug_AES_v1_6_0/\U0/myip_lite_v1_0_S00_AXI_inst/axi_bresp_reg[1] 2default:defaultZ8-3333
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[96] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[96] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[96] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[96] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[64] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[64] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[64] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[64] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[32] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[32] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[32] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[32] 2default:defaultZ8-264
 ¡
 %enable of latch %s is always disabled264*oasys2c
-Omb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[0] 2default:defaultZ8-264
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[0] 2default:defaultZ8-264
 ¡
 %enable of latch %s is always disabled264*oasys2c
-Omb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[0] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[96] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[96] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[64] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[64] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[32] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[32] 2default:defaultZ8-264
-–
-%enable of latch %s is always disabled264*oasys2X
-Dmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[0] 2default:defaultZ8-264
-–
-%enable of latch %s is always disabled264*oasys2X
-Dmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[0] 2default:defaultZ8-264
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[0] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[97] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[97] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[97] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[97] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[65] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[65] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[65] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[65] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[33] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[33] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[33] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[33] 2default:defaultZ8-264
 ¡
 %enable of latch %s is always disabled264*oasys2c
-Omb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[1] 2default:defaultZ8-264
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[1] 2default:defaultZ8-264
 ¡
 %enable of latch %s is always disabled264*oasys2c
-Omb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[1] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[97] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[97] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[65] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[65] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[33] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[33] 2default:defaultZ8-264
-–
-%enable of latch %s is always disabled264*oasys2X
-Dmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[1] 2default:defaultZ8-264
-–
-%enable of latch %s is always disabled264*oasys2X
-Dmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[1] 2default:defaultZ8-264
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[1] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[98] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[98] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[98] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[98] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[66] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[66] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[66] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[66] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[34] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[34] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[34] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[34] 2default:defaultZ8-264
 ¡
 %enable of latch %s is always disabled264*oasys2c
-Omb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[2] 2default:defaultZ8-264
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[2] 2default:defaultZ8-264
 ¡
 %enable of latch %s is always disabled264*oasys2c
-Omb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[2] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[98] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[98] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[66] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[66] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[34] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[34] 2default:defaultZ8-264
-–
-%enable of latch %s is always disabled264*oasys2X
-Dmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[2] 2default:defaultZ8-264
-–
-%enable of latch %s is always disabled264*oasys2X
-Dmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[2] 2default:defaultZ8-264
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[2] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[99] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[99] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[99] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[99] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[67] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[67] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[67] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[67] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[35] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[35] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[35] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[35] 2default:defaultZ8-264
 ¡
 %enable of latch %s is always disabled264*oasys2c
-Omb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[3] 2default:defaultZ8-264
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[3] 2default:defaultZ8-264
 ¡
 %enable of latch %s is always disabled264*oasys2c
-Omb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[3] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[99] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[99] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[67] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[67] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[35] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[35] 2default:defaultZ8-264
-–
-%enable of latch %s is always disabled264*oasys2X
-Dmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[3] 2default:defaultZ8-264
-–
-%enable of latch %s is always disabled264*oasys2X
-Dmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[3] 2default:defaultZ8-264
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[3] 2default:defaultZ8-264
 £
 %enable of latch %s is always disabled264*oasys2e
-Qmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[100] 2default:defaultZ8-264
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[100] 2default:defaultZ8-264
 £
 %enable of latch %s is always disabled264*oasys2e
-Qmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[100] 2default:defaultZ8-264
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[100] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[68] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[68] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[68] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[68] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[36] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[36] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[36] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[36] 2default:defaultZ8-264
 ¡
 %enable of latch %s is always disabled264*oasys2c
-Omb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[4] 2default:defaultZ8-264
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[4] 2default:defaultZ8-264
 ¡
 %enable of latch %s is always disabled264*oasys2c
-Omb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[4] 2default:defaultZ8-264
-˜
-%enable of latch %s is always disabled264*oasys2Z
-Fmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[100] 2default:defaultZ8-264
-˜
-%enable of latch %s is always disabled264*oasys2Z
-Fmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[100] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[68] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[68] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[36] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[36] 2default:defaultZ8-264
-–
-%enable of latch %s is always disabled264*oasys2X
-Dmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[4] 2default:defaultZ8-264
-–
-%enable of latch %s is always disabled264*oasys2X
-Dmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[4] 2default:defaultZ8-264
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[4] 2default:defaultZ8-264
 £
 %enable of latch %s is always disabled264*oasys2e
-Qmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[101] 2default:defaultZ8-264
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[101] 2default:defaultZ8-264
 £
 %enable of latch %s is always disabled264*oasys2e
-Qmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[101] 2default:defaultZ8-264
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[101] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[69] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[69] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[69] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[69] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[37] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[37] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[37] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[37] 2default:defaultZ8-264
 ¡
 %enable of latch %s is always disabled264*oasys2c
-Omb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[5] 2default:defaultZ8-264
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[5] 2default:defaultZ8-264
 ¡
 %enable of latch %s is always disabled264*oasys2c
-Omb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[5] 2default:defaultZ8-264
-˜
-%enable of latch %s is always disabled264*oasys2Z
-Fmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[101] 2default:defaultZ8-264
-˜
-%enable of latch %s is always disabled264*oasys2Z
-Fmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[101] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[69] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[69] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[37] 2default:defaultZ8-264
-—
-%enable of latch %s is always disabled264*oasys2Y
-Emb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[37] 2default:defaultZ8-264
-–
-%enable of latch %s is always disabled264*oasys2X
-Dmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[5] 2default:defaultZ8-264
-–
-%enable of latch %s is always disabled264*oasys2X
-Dmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[5] 2default:defaultZ8-264
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[5] 2default:defaultZ8-264
 £
 %enable of latch %s is always disabled264*oasys2e
-Qmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[102] 2default:defaultZ8-264
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[102] 2default:defaultZ8-264
 £
 %enable of latch %s is always disabled264*oasys2e
-Qmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[102] 2default:defaultZ8-264
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[102] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[70] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[70] 2default:defaultZ8-264
 ¢
 %enable of latch %s is always disabled264*oasys2d
-Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[70] 2default:defaultZ8-264
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[70] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[38] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[38] 2default:defaultZ8-264
+¡
+%enable of latch %s is always disabled264*oasys2c
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[6] 2default:defaultZ8-264
+¡
+%enable of latch %s is always disabled264*oasys2c
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[6] 2default:defaultZ8-264
+£
+%enable of latch %s is always disabled264*oasys2e
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[103] 2default:defaultZ8-264
+£
+%enable of latch %s is always disabled264*oasys2e
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[103] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[71] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[71] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[39] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[39] 2default:defaultZ8-264
+¡
+%enable of latch %s is always disabled264*oasys2c
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[7] 2default:defaultZ8-264
+¡
+%enable of latch %s is always disabled264*oasys2c
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[7] 2default:defaultZ8-264
+£
+%enable of latch %s is always disabled264*oasys2e
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[104] 2default:defaultZ8-264
+£
+%enable of latch %s is always disabled264*oasys2e
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[104] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[72] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[72] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[40] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[40] 2default:defaultZ8-264
+¡
+%enable of latch %s is always disabled264*oasys2c
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[8] 2default:defaultZ8-264
+¡
+%enable of latch %s is always disabled264*oasys2c
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[8] 2default:defaultZ8-264
+£
+%enable of latch %s is always disabled264*oasys2e
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[105] 2default:defaultZ8-264
+£
+%enable of latch %s is always disabled264*oasys2e
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[105] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[73] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[73] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[41] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[41] 2default:defaultZ8-264
+¡
+%enable of latch %s is always disabled264*oasys2c
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[9] 2default:defaultZ8-264
+¡
+%enable of latch %s is always disabled264*oasys2c
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[9] 2default:defaultZ8-264
+£
+%enable of latch %s is always disabled264*oasys2e
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[106] 2default:defaultZ8-264
+£
+%enable of latch %s is always disabled264*oasys2e
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[106] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[74] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[74] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[42] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[42] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[10] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[10] 2default:defaultZ8-264
+£
+%enable of latch %s is always disabled264*oasys2e
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[107] 2default:defaultZ8-264
+£
+%enable of latch %s is always disabled264*oasys2e
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[107] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[75] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[75] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[43] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[43] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[11] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[11] 2default:defaultZ8-264
+£
+%enable of latch %s is always disabled264*oasys2e
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[108] 2default:defaultZ8-264
+£
+%enable of latch %s is always disabled264*oasys2e
+Qmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[108] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[76] 2default:defaultZ8-264
+¢
+%enable of latch %s is always disabled264*oasys2d
+Pmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[76] 2default:defaultZ8-264
 Ó
 Message '%s' appears more than %s times and has been disabled. User can change this message limit to see more message instances.
 14*common2
@@ -99829,51 +99884,27 @@ Pmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[70]
 Ë
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2c
-Omb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/e_mux_1_reg2default:defaultZ8-3333
-À
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2X
-Dmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/e_mux_1_reg2default:defaultZ8-3333
+Omb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/e_mux_1_reg2default:defaultZ8-3333
 Ð
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2h
-Tmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\e_mux_2_reg[3] 2default:defaultZ8-3333
+Tmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\e_mux_2_reg[3] 2default:defaultZ8-3333
 Ð
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2h
-Tmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\e_mux_2_reg[2] 2default:defaultZ8-3333
+Tmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\e_mux_2_reg[2] 2default:defaultZ8-3333
 Ð
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2h
-Tmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\e_mux_2_reg[1] 2default:defaultZ8-3333
+Tmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\e_mux_2_reg[1] 2default:defaultZ8-3333
 Ð
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2h
-Tmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\e_mux_2_reg[0] 2default:defaultZ8-3333
-¾
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2V
-Bmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/rdy_i_reg2default:defaultZ8-3333
+Tmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\e_mux_2_reg[0] 2default:defaultZ8-3333
 É
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2a
-Mmb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/rdy_i_reg2default:defaultZ8-3333
-Å
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2]
-Imb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\e_mux_2_reg[3] 2default:defaultZ8-3333
-Å
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2]
-Imb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\e_mux_2_reg[1] 2default:defaultZ8-3333
-Å
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2]
-Imb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\e_mux_2_reg[2] 2default:defaultZ8-3333
-Å
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2]
-Imb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\e_mux_2_reg[0] 2default:defaultZ8-3333
+Mmb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/rdy_i_reg2default:defaultZ8-3333
 „
 6propagating constant %s across sequential element (%s)3333*oasys2
 12default:default2›
@@ -99924,7 +99955,7 @@ Imb_system_i/mig_7series_0/u_ddr_mc_phy_wrapperi_3/\phy_ctl_wd_i1_reg[25] 2defa
 Imb_system_i/mig_7series_0/u_ddr_mc_phy_wrapperi_3/\phy_ctl_wd_i1_reg[26] 2default:defaultZ8-3333
  
 %s*synth2
-|Finished Area Optimization : Time (s): cpu = 00:08:27 ; elapsed = 00:10:13 . Memory (MB): peak = 1439.117 ; gain = 1307.461
+|Finished Area Optimization : Time (s): cpu = 00:08:22 ; elapsed = 00:09:42 . Memory (MB): peak = 1443.586 ; gain = 1312.285
 2default:default
 {
 %s*synth2l
@@ -99932,15 +99963,2189 @@ XINFO: Moved 1 constraints on hierarchical pins to their respective driving/load
 2default:default
 ¯
 %s*synth2Ÿ
-ŠFinished Applying XDC Timing Constraints : Time (s): cpu = 00:08:38 ; elapsed = 00:10:25 . Memory (MB): peak = 1439.117 ; gain = 1307.461
+ŠFinished Applying XDC Timing Constraints : Time (s): cpu = 00:08:33 ; elapsed = 00:09:53 . Memory (MB): peak = 1443.586 ; gain = 1312.285
 2default:default
+6
+%s*synth2'
+Found timing loop:
+2default:default
+v
+%s*synth2g
+S     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+2default:default
+v
+%s*synth2g
+S     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+2default:default
+~
+%s*synth2o
+[     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+€
+%s*synth2q
+]     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+2default:default
+v
+%s*synth2g
+S     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+2default:default
+™
+found timing loop.295*oasys2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+902default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+v
+%s*synth2g
+S     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+2default:default
+v
+%s*synth2g
+S     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+2default:default
+~
+%s*synth2o
+[     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+€
+%s*synth2q
+]     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+2default:default
+v
+%s*synth2g
+S     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+2default:default
+™
+found timing loop.295*oasys2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+902default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+v
+%s*synth2g
+S     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_19/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_19/A (MUX1)
+2default:default
+~
+%s*synth2o
+[     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_39/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_39/I0 (GATE_2_8_AND)
+2default:default
+~
+%s*synth2o
+[     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_14/O (GATE_2_14_OR)
+2default:default
+
+%s*synth2p
+\     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_14/I1 (GATE_2_14_OR)
+2default:default
+v
+%s*synth2g
+S     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_19/Z (MUX1)
+2default:default
+™
+found timing loop.295*oasys2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+902default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+
+%s*synth2p
+\     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+€
+%s*synth2q
+]     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+2default:default
+v
+%s*synth2g
+S     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+2default:default
+v
+%s*synth2g
+S     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+2default:default
+~
+%s*synth2o
+[     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+™
+found timing loop.295*oasys2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+902default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+
+%s*synth2p
+\     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+€
+%s*synth2q
+]     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+2default:default
+v
+%s*synth2g
+S     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+2default:default
+v
+%s*synth2g
+S     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+2default:default
+~
+%s*synth2o
+[     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+™
+found timing loop.295*oasys2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+902default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+~
+%s*synth2o
+[     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_34/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_34/I0 (GATE_2_8_AND)
+2default:default
+u
+%s*synth2f
+R     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_12/O (INV)
+2default:default
+u
+%s*synth2f
+R     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_12/I (INV)
+2default:default
+v
+%s*synth2g
+S     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_13/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_13/A (MUX1)
+2default:default
+~
+%s*synth2o
+[     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_36/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_36/I1 (GATE_2_8_AND)
+2default:default
+~
+%s*synth2o
+[     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_35/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     9: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_35/I0 (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\    10: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+€
+%s*synth2q
+]    11: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+2default:default
+v
+%s*synth2g
+S    12: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S    13: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+2default:default
+v
+%s*synth2g
+S    14: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S    15: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+2default:default
+~
+%s*synth2o
+[    16: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\    17: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\    18: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+™
+found timing loop.295*oasys2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+902default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+~
+%s*synth2o
+[     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_34/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_34/I0 (GATE_2_8_AND)
+2default:default
+u
+%s*synth2f
+R     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_12/O (INV)
+2default:default
+u
+%s*synth2f
+R     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_12/I (INV)
+2default:default
+v
+%s*synth2g
+S     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_13/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_13/B (MUX1)
+2default:default
+~
+%s*synth2o
+[     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_34/O (GATE_2_8_AND)
+2default:default
+™
+found timing loop.295*oasys2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+902default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+
+%s*synth2p
+\     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+€
+%s*synth2q
+]     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+2default:default
+v
+%s*synth2g
+S     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+2default:default
+v
+%s*synth2g
+S     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+2default:default
+~
+%s*synth2o
+[     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+™
+found timing loop.295*oasys2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+902default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+
+%s*synth2p
+\     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+€
+%s*synth2q
+]     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+2default:default
+v
+%s*synth2g
+S     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+2default:default
+v
+%s*synth2g
+S     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+2default:default
+~
+%s*synth2o
+[     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+™
+found timing loop.295*oasys2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+902default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+v
+%s*synth2g
+S     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+2default:default
+v
+%s*synth2g
+S     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+2default:default
+~
+%s*synth2o
+[     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+€
+%s*synth2q
+]     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+2default:default
+v
+%s*synth2g
+S     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+2default:default
+™
+found timing loop.295*oasys2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+902default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+v
+%s*synth2g
+S     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_19/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_19/A (MUX1)
+2default:default
+~
+%s*synth2o
+[     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_39/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_39/I1 (GATE_2_8_AND)
+2default:default
+~
+%s*synth2o
+[     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_38/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_38/I0 (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+€
+%s*synth2q
+]     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+2default:default
+v
+%s*synth2g
+S     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     9: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+2default:default
+v
+%s*synth2g
+S    10: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S    11: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+2default:default
+~
+%s*synth2o
+[    12: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\    13: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\    14: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+™
+found timing loop.295*oasys2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+902default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+v
+%s*synth2g
+S     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_13/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_13/B (MUX1)
+2default:default
+~
+%s*synth2o
+[     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_34/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_34/I0 (GATE_2_8_AND)
+2default:default
+u
+%s*synth2f
+R     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_12/O (INV)
+2default:default
+u
+%s*synth2f
+R     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_12/I (INV)
+2default:default
+v
+%s*synth2g
+S     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_13/Z (MUX1)
+2default:default
+™
+found timing loop.295*oasys2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+902default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+v
+%s*synth2g
+S     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_25/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_25/S (MUX1)
+2default:default
+v
+%s*synth2g
+S     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_25/Z (MUX1)
+2default:default
+™
+found timing loop.295*oasys2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+902default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+v
+%s*synth2g
+S     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_19/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_19/A (MUX1)
+2default:default
+~
+%s*synth2o
+[     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_39/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_39/I1 (GATE_2_8_AND)
+2default:default
+~
+%s*synth2o
+[     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_38/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_38/I0 (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+€
+%s*synth2q
+]     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+2default:default
+v
+%s*synth2g
+S     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     9: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+2default:default
+v
+%s*synth2g
+S    10: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S    11: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+2default:default
+~
+%s*synth2o
+[    12: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\    13: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+2default:default
+
+%s*synth2p
+\    14: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+2default:default
+™
+found timing loop.295*oasys2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+902default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+v
+%s*synth2g
+S     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/B (MUX1)
+2default:default
+v
+%s*synth2g
+S     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_22/Z (MUX1)
+2default:default
+v
+%s*synth2g
+S     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_22/S (MUX1)
+2default:default
+v
+%s*synth2g
+S     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+2default:default
+™
+found timing loop.295*oasys2Ï
+¸c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd2default:default2
+902default:default8@Z8-295
+¼
+-inferred exception to break timing loop: '%s'326*oasys2v
+bset_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_12 -from I -to O2default:defaultZ8-326
+¼
+-inferred exception to break timing loop: '%s'326*oasys2v
+bset_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_20 -from S -to Z2default:defaultZ8-326
+½
+-inferred exception to break timing loop: '%s'326*oasys2w
+cset_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_44 -from I1 -to O2default:defaultZ8-326
+¼
+-inferred exception to break timing loop: '%s'326*oasys2v
+bset_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_22 -from S -to Z2default:defaultZ8-326
+½
+-inferred exception to break timing loop: '%s'326*oasys2w
+cset_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_44 -from I0 -to O2default:defaultZ8-326
+½
+-inferred exception to break timing loop: '%s'326*oasys2w
+cset_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43 -from I0 -to O2default:defaultZ8-326
+½
+-inferred exception to break timing loop: '%s'326*oasys2w
+cset_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_45 -from I0 -to O2default:defaultZ8-326
+¼
+-inferred exception to break timing loop: '%s'326*oasys2v
+bset_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_42 -from I -to O2default:defaultZ8-326
+¼
+-inferred exception to break timing loop: '%s'326*oasys2v
+bset_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24 -from S -to Z2default:defaultZ8-326
+½
+-inferred exception to break timing loop: '%s'326*oasys2w
+cset_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_39 -from I0 -to O2default:defaultZ8-326
+½
+-inferred exception to break timing loop: '%s'326*oasys2w
+cset_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_36 -from I0 -to O2default:defaultZ8-326
+¼
+-inferred exception to break timing loop: '%s'326*oasys2v
+bset_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_26 -from S -to Z2default:defaultZ8-326
+½
+-inferred exception to break timing loop: '%s'326*oasys2w
+cset_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_39 -from I1 -to O2default:defaultZ8-326
+½
+-inferred exception to break timing loop: '%s'326*oasys2w
+cset_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_36 -from I1 -to O2default:defaultZ8-326
 ¢
 %s*synth2’
-~Finished Timing Optimization : Time (s): cpu = 00:08:47 ; elapsed = 00:10:34 . Memory (MB): peak = 1448.391 ; gain = 1316.734
+~Finished Timing Optimization : Time (s): cpu = 00:08:42 ; elapsed = 00:10:02 . Memory (MB): peak = 1454.758 ; gain = 1323.457
 2default:default
+ž
+-inferred exception to break timing loop: '%s'326*oasys2X
+Dset_disable_timing mb_system_i/debug_AES_v1_6_0/i_4503 -from B -to Z2default:defaultZ8-326
+ž
+-inferred exception to break timing loop: '%s'326*oasys2X
+Dset_disable_timing mb_system_i/debug_AES_v1_6_0/i_4510 -from B -to Z2default:defaultZ8-326
+ž
+-inferred exception to break timing loop: '%s'326*oasys2X
+Dset_disable_timing mb_system_i/debug_AES_v1_6_0/i_4512 -from B -to Z2default:defaultZ8-326
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     7: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5     8: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6     9: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5    10: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1946/O (LUT5)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1946/I4 (LUT5)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     7: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     8: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     9: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    10: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6    11: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5    12: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1949/O (LUT5)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1949/I4 (LUT5)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1954/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1954/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1938/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_1938/I1 (LUT3)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1946/O (LUT5)
+2default:default
+Y
+%s*synth2J
+6     7: mb_system_i/debug_AES_v1_6_0/i_1946/I4 (LUT5)
+2default:default
+X
+%s*synth2I
+5     8: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     9: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5    10: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6    11: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    12: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6    13: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5    14: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6    15: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    16: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6    17: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5    18: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1950/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1950/I1 (LUT3)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1950/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1956/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1956/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1961/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1961/I0 (LUT2)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1937/O (LUT6)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_1937/I5 (LUT6)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     7: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     8: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     9: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    10: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6    11: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5    12: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6    13: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    14: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6    15: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5    16: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1956/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1956/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1961/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1961/I0 (LUT2)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1937/O (LUT6)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_1937/I5 (LUT6)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     7: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     8: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     9: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    10: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6    11: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5    12: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6    13: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    14: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6    15: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5    16: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     7: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5     8: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6     9: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5    10: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1954/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1954/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1938/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1938/I1 (LUT3)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1946/O (LUT5)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_1946/I4 (LUT5)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     7: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     8: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     9: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    10: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6    11: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5    12: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6    13: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    14: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6    15: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5    16: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1937/O (LUT6)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1937/I5 (LUT6)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     7: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     8: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     9: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    10: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6    11: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5    12: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1949/O (LUT5)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1949/I4 (LUT5)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1954/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1954/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1938/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_1938/I1 (LUT3)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1946/O (LUT5)
+2default:default
+Y
+%s*synth2J
+6     7: mb_system_i/debug_AES_v1_6_0/i_1946/I4 (LUT5)
+2default:default
+X
+%s*synth2I
+5     8: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     9: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5    10: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6    11: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    12: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6    13: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5    14: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6    15: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    16: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6    17: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5    18: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1946/O (LUT5)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1946/I4 (LUT5)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     7: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     8: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     9: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    10: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6    11: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5    12: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1955/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1955/I0 (LUT3)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_3047/O (LUT6)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_3047/I5 (LUT6)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1955/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1956/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1956/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1961/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1961/I0 (LUT2)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1937/O (LUT6)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_1937/I5 (LUT6)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     7: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     8: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     9: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    10: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6    11: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5    12: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6    13: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    14: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6    15: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5    16: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1954/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1954/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1938/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1938/I1 (LUT3)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1946/O (LUT5)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_1946/I4 (LUT5)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     7: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     8: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     9: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    10: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6    11: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5    12: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6    13: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    14: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6    15: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5    16: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1946/O (LUT5)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1946/I4 (LUT5)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     7: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     8: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     9: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    10: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6    11: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5    12: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1958/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1958/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1935/O (LUT6)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1935/I5 (LUT6)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     7: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5     8: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     9: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5    10: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6    11: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    12: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6    13: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5    14: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1949/O (LUT5)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1949/I4 (LUT5)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1954/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1954/I0 (LUT3)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1949/O (LUT5)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1956/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1956/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1961/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1961/I0 (LUT2)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_1937/O (LUT6)
+2default:default
+Y
+%s*synth2J
+6     5: mb_system_i/debug_AES_v1_6_0/i_1937/I5 (LUT6)
+2default:default
+X
+%s*synth2I
+5     6: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     7: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5     8: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     9: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    10: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6    11: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+2default:default
+X
+%s*synth2I
+5    12: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6    13: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5    14: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+2default:default
+Y
+%s*synth2J
+6    15: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+2default:default
+X
+%s*synth2I
+5    16: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+2default:default
+Y
+%s*synth2J
+6     3: mb_system_i/debug_AES_v1_6_0/i_1952/I1 (LUT3)
+2default:default
+X
+%s*synth2I
+5     4: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_3150 -from I1 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1945 -from I2 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1956 -from I0 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1957 -from I0 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_3047 -from I5 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1960 -from I0 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1954 -from I0 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1961 -from I0 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1959 -from I0 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1958 -from I1 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1953 -from I0 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1945 -from I0 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1938 -from I1 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_3047 -from I0 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1956 -from I1 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1955 -from I1 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1957 -from I1 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1950 -from I1 -to O2default:defaultZ8-326
+6
+%s*synth2'
+Found timing loop:
+2default:default
+X
+%s*synth2I
+5     0: mb_system_i/debug_AES_v1_6_0/i_1961/O (LUT5)
+2default:default
+Y
+%s*synth2J
+6     1: mb_system_i/debug_AES_v1_6_0/i_1961/I1 (LUT5)
+2default:default
+X
+%s*synth2I
+5     2: mb_system_i/debug_AES_v1_6_0/i_1961/O (LUT5)
+2default:default
+Ž
+found timing loop.295*oasys2Ä
+­c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd2default:default2
+592default:default8@Z8-295
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1959 -from I5 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1959 -from I1 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1960 -from I3 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1959 -from I3 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1960 -from I2 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1959 -from I2 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1946 -from I4 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1949 -from I3 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1950 -from I2 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1946 -from I3 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_3047 -from I2 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1949 -from I4 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_3047 -from I1 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1959 -from I4 -to O2default:defaultZ8-326
+Ÿ
+-inferred exception to break timing loop: '%s'326*oasys2Y
+Eset_disable_timing mb_system_i/debug_AES_v1_6_0/i_1960 -from I5 -to O2default:defaultZ8-326
 ¡
 %s*synth2‘
-}Finished Technology Mapping : Time (s): cpu = 00:09:59 ; elapsed = 00:11:54 . Memory (MB): peak = 1530.867 ; gain = 1399.211
+}Finished Technology Mapping : Time (s): cpu = 00:09:55 ; elapsed = 00:11:21 . Memory (MB): peak = 1540.066 ; gain = 1408.766
 2default:default
 ð
 eFound max_fanout attribute set to %s on net %s. Fanout reduced from %s to %s by creating %s replicas.3744*oasys2
@@ -100077,7 +102282,7 @@ z\u_mb_system_mig_7series_0_0_mig/u_memc_ui_top_axi/u_axi_mc/USE_UPSIZER.upsizer
 12default:defaultZ8-4618
 ›
 %s*synth2‹
-wFinished IO Insertion : Time (s): cpu = 00:10:07 ; elapsed = 00:12:03 . Memory (MB): peak = 1530.867 ; gain = 1399.211
+wFinished IO Insertion : Time (s): cpu = 00:10:04 ; elapsed = 00:11:30 . Memory (MB): peak = 1540.066 ; gain = 1408.766
 2default:default
 ;
 %s*synth2,
@@ -100106,11 +102311,14 @@ I+------+------------------+-------+---------+-------+------------------+
 2default:default
 ¬
 %s*synth2œ
-‡Finished Renaming Generated Instances : Time (s): cpu = 00:10:08 ; elapsed = 00:12:04 . Memory (MB): peak = 1530.867 ; gain = 1399.211
+‡Finished Renaming Generated Instances : Time (s): cpu = 00:10:04 ; elapsed = 00:11:30 . Memory (MB): peak = 1540.066 ; gain = 1408.766
 2default:default
+¦
+-inferred exception to break timing loop: '%s'326*oasys2`
+Lset_disable_timing mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_8 -from I1 -to O2default:defaultZ8-326
 ©
 %s*synth2™
-„Finished Rebuilding User Hierarchy : Time (s): cpu = 00:10:16 ; elapsed = 00:12:13 . Memory (MB): peak = 1530.867 ; gain = 1399.211
+„Finished Rebuilding User Hierarchy : Time (s): cpu = 00:10:12 ; elapsed = 00:11:39 . Memory (MB): peak = 1540.066 ; gain = 1408.766
 2default:default
 ¢
 %s*synth2’
@@ -100410,7 +102618,7 @@ E
 2default:default
 E
 %s*synth26
-"|3     |BUFG             |     7|
+"|3     |BUFG             |     9|
 2default:default
 E
 %s*synth26
@@ -100470,23 +102678,23 @@ E
 2default:default
 E
 %s*synth26
-"|18    |LUT2             |  2137|
+"|18    |LUT2             |  2267|
 2default:default
 E
 %s*synth26
-"|19    |LUT3             |  4464|
+"|19    |LUT3             |  4534|
 2default:default
 E
 %s*synth26
-"|20    |LUT4             |  2826|
+"|20    |LUT4             |  2931|
 2default:default
 E
 %s*synth26
-"|21    |LUT5             |  4386|
+"|21    |LUT5             |  4463|
 2default:default
 E
 %s*synth26
-"|22    |LUT6             |  6238|
+"|22    |LUT6             |  6864|
 2default:default
 E
 %s*synth26
@@ -100510,7 +102718,7 @@ E
 2default:default
 E
 %s*synth26
-"|28    |MUXF7            |   656|
+"|28    |MUXF7            |   648|
 2default:default
 E
 %s*synth26
@@ -100638,7 +102846,7 @@ E
 2default:default
 E
 %s*synth26
-"|60    |FDRE             | 19427|
+"|60    |FDRE             | 20195|
 2default:default
 E
 %s*synth26
@@ -100650,35 +102858,39 @@ E
 2default:default
 E
 %s*synth26
-"|63    |FDSE             |   415|
+"|63    |FDSE             |   416|
 2default:default
 E
 %s*synth26
-"|64    |IBUF             |     3|
+"|64    |LD               |   269|
 2default:default
 E
 %s*synth26
-"|65    |IBUFGDS          |     1|
+"|65    |IBUF             |     3|
 2default:default
 E
 %s*synth26
-"|66    |IOBUFDS_DCIEN    |     8|
+"|66    |IBUFGDS          |     1|
 2default:default
 E
 %s*synth26
-"|67    |IOBUF_DCIEN      |    64|
+"|67    |IOBUFDS_DCIEN    |     8|
 2default:default
 E
 %s*synth26
-"|68    |OBUF             |    25|
+"|68    |IOBUF_DCIEN      |    64|
 2default:default
 E
 %s*synth26
-"|69    |OBUFDS           |     1|
+"|69    |OBUF             |    25|
 2default:default
 E
 %s*synth26
-"|70    |OBUFT            |     8|
+"|70    |OBUFDS           |     1|
+2default:default
+E
+%s*synth26
+"|71    |OBUFT            |     8|
 2default:default
 E
 %s*synth26
@@ -100703,11 +102915,11 @@ Report Instance Areas:
 2default:default
 Î
 %s*synth2¾
-©|1     |top                                                                                                               |                                     | 44654|
+©|1     |top                                                                                                               |                                     | 46694|
 2default:default
 Î
 %s*synth2¾
-©|2     |  mb_system_i                                                                                                     |mb_system                            | 44651|
+©|2     |  mb_system_i                                                                                                     |mb_system                            | 46691|
 2default:default
 Î
 %s*synth2¾
@@ -100719,7 +102931,7 @@ Report Instance Areas:
 2default:default
 Î
 %s*synth2¾
-©|5     |    debug_AES_v1_5_0                                                                                              |mb_system_debug_AES_v1_5_0_0         |  3418|
+©|5     |    debug_AES_v1_6_0                                                                                              |mb_system_debug_AES_v1_6_0_0         |  5458|
 2default:default
 Î
 %s*synth2¾
@@ -100855,20 +103067,20 @@ Report Instance Areas:
 2default:default
 ¨
 %s*synth2˜
-ƒFinished Writing Synthesis Report : Time (s): cpu = 00:10:20 ; elapsed = 00:12:17 . Memory (MB): peak = 1530.867 ; gain = 1399.211
+ƒFinished Writing Synthesis Report : Time (s): cpu = 00:10:16 ; elapsed = 00:11:42 . Memory (MB): peak = 1540.066 ; gain = 1408.766
 2default:default
 l
 %s*synth2]
-ISynthesis finished with 0 errors, 0 critical warnings and 4815 warnings.
+ISynthesis finished with 0 errors, 0 critical warnings and 3361 warnings.
 2default:default
 ¦
 %s*synth2–
-Synthesis Optimization Complete : Time (s): cpu = 00:10:20 ; elapsed = 00:12:17 . Memory (MB): peak = 1530.867 ; gain = 1399.211
+Synthesis Optimization Complete : Time (s): cpu = 00:10:16 ; elapsed = 00:11:42 . Memory (MB): peak = 1540.066 ; gain = 1408.766
 2default:default
 _
 -Analyzing %s Unisim elements for replacement
 17*netlist2
-13792default:defaultZ29-17
+16482default:defaultZ29-17
 a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
@@ -100887,10 +103099,10 @@ D
 Pushed %s inverter(s).
 98*opt2
 762default:defaultZ31-138
-’
+®
 !Unisim Transformation Summary:
-%s111*project2Õ
-À  A total of 1047 instances were transformed.
+%s111*project2ñ
+Ü  A total of 1316 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 185 instances
   FD => FDRE: 3 instances
   FDC_1 => FDCE (inverted pins: C): 1 instances
@@ -100901,6 +103113,7 @@ D
   IBUFGDS => IBUFDS: 1 instances
   IOBUFDS_DCIEN => IOBUFDS_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, INV, OBUFTDS_DCIEN, OBUFTDS_DCIEN): 8 instances
   IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 64 instances
+  LD => LDCE: 269 instances
   LUT6_2 => LUT6_2 (LUT5, LUT6): 92 instances
   MULT_AND => LUT2: 10 instances
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
@@ -100918,8 +103131,8 @@ L
 Á
 G%s Infos, %s Warnings, %s Critical Warnings and %s Errors encountered.
 28*	vivadotcl2
-15862default:default2
-4122default:default2
+15792default:default2
+5082default:default2
 02default:default2
 02default:defaultZ4-41
 U
@@ -100930,23 +103143,23 @@ U
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
-00:10:342default:default2
-00:12:262default:default2
-1530.8672default:default2
-1251.7152default:defaultZ17-268
+00:10:302default:default2
+00:11:522default:default2
+1540.0662default:default2
+1260.6292default:defaultZ17-268
 ÿ
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2&
 write_checkpoint: 2default:default2
-00:00:052default:default2
 00:00:062default:default2
-1530.8672default:default2
+00:00:062default:default2
+1540.0662default:default2
 0.0002default:defaultZ17-268
 €
-treport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.748 . Memory (MB): peak = 1530.867 ; gain = 0.000
+treport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.962 . Memory (MB): peak = 1540.066 ; gain = 0.000
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Thu Sep 03 21:00:46 20152default:defaultZ17-206
+Fri Sep 04 15:35:29 20152default:defaultZ17-206

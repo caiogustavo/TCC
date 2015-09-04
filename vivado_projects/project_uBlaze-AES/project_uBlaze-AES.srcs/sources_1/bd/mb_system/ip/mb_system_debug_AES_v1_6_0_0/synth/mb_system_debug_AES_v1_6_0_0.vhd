@@ -46,7 +46,7 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: CGMA:user:debug_AES_v1_5:1.5
+-- IP VLNV: CGMA:user:debug_AES_v1_6:1.6
 -- IP Revision: 1
 
 LIBRARY ieee;
@@ -56,7 +56,7 @@ USE ieee.numeric_std.ALL;
 LIBRARY xil_defaultlib;
 USE xil_defaultlib.myip_lite_v1_0;
 
-ENTITY mb_system_debug_AES_v1_5_0_0 IS
+ENTITY mb_system_debug_AES_v1_6_0_0 IS
   PORT (
     aes_clk : IN STD_LOGIC;
     sb_clk : IN STD_LOGIC;
@@ -82,11 +82,11 @@ ENTITY mb_system_debug_AES_v1_5_0_0 IS
     s00_axi_rvalid : OUT STD_LOGIC;
     s00_axi_rready : IN STD_LOGIC
   );
-END mb_system_debug_AES_v1_5_0_0;
+END mb_system_debug_AES_v1_6_0_0;
 
-ARCHITECTURE mb_system_debug_AES_v1_5_0_0_arch OF mb_system_debug_AES_v1_5_0_0 IS
+ARCHITECTURE mb_system_debug_AES_v1_6_0_0_arch OF mb_system_debug_AES_v1_6_0_0 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : string;
-  ATTRIBUTE DowngradeIPIdentifiedWarnings OF mb_system_debug_AES_v1_5_0_0_arch: ARCHITECTURE IS "yes";
+  ATTRIBUTE DowngradeIPIdentifiedWarnings OF mb_system_debug_AES_v1_6_0_0_arch: ARCHITECTURE IS "yes";
 
   COMPONENT myip_lite_v1_0 IS
     GENERIC (
@@ -120,9 +120,9 @@ ARCHITECTURE mb_system_debug_AES_v1_5_0_0_arch OF mb_system_debug_AES_v1_5_0_0 I
     );
   END COMPONENT myip_lite_v1_0;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF mb_system_debug_AES_v1_5_0_0_arch: ARCHITECTURE IS "myip_lite_v1_0,Vivado 2014.1";
+  ATTRIBUTE X_CORE_INFO OF mb_system_debug_AES_v1_6_0_0_arch: ARCHITECTURE IS "myip_lite_v1_0,Vivado 2014.1";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
-  ATTRIBUTE CHECK_LICENSE_TYPE OF mb_system_debug_AES_v1_5_0_0_arch : ARCHITECTURE IS "mb_system_debug_AES_v1_5_0_0,myip_lite_v1_0,{}";
+  ATTRIBUTE CHECK_LICENSE_TYPE OF mb_system_debug_AES_v1_6_0_0_arch : ARCHITECTURE IS "mb_system_debug_AES_v1_6_0_0,myip_lite_v1_0,{}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF s00_axi_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 s00_axi_signal_clock CLK";
   ATTRIBUTE X_INTERFACE_INFO OF s00_axi_aresetn: SIGNAL IS "xilinx.com:signal:reset:1.0 s00_axi_signal_reset RST";
@@ -176,4 +176,4 @@ BEGIN
       s00_axi_rvalid => s00_axi_rvalid,
       s00_axi_rready => s00_axi_rready
     );
-END mb_system_debug_AES_v1_5_0_0_arch;
+END mb_system_debug_AES_v1_6_0_0_arch;

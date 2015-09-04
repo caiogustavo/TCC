@@ -45,6 +45,12 @@
         <Option Name="IPRepoPath" Val="$PPRDIR/../project_AES-IP"/>
         <Option Name="IPRepoPath" Val="$PPRDIR/../debug_AES-IP"/>
         <Option Name="IPRepoPath" Val="$PPRDIR/../../../../Users/Janier Arias Garcia/project_AES-IP"/>
+        <Option Name="IPRepoPath" Val="$PPRDIR/../project_AES-IP"/>
+        <Option Name="IPRepoPath" Val="$PPRDIR/../debug_AES-IP"/>
+        <Option Name="IPRepoPath" Val="$PPRDIR/../../../../Users/Janier Arias Garcia/project_AES-IP"/>
+        <Option Name="IPRepoPath" Val="$PPRDIR/../project_AES-IP"/>
+        <Option Name="IPRepoPath" Val="$PPRDIR/../debug_AES-IP"/>
+        <Option Name="IPRepoPath" Val="$PPRDIR/../../../../Users/Janier Arias Garcia/project_AES-IP"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

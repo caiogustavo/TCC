@@ -2,8 +2,8 @@
 # Vivado v2014.1 (64-bit)
 # SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
 # IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
-# Start of session at: Thu Sep 03 20:47:53 2015
-# Process ID: 5220
+# Start of session at: Fri Sep 04 15:23:11 2015
+# Process ID: 8124
 # Log file: C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/mb_system_wrapper.vds
 # Journal file: C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
@@ -21,9 +21,15 @@ source mb_system_wrapper.tcl
 #   C:/Projetos_git/repo/vivado_projects/project_AES-IP
 #   C:/Projetos_git/repo/vivado_projects/debug_AES-IP
 #   {C:/Users/Janier Arias Garcia/project_AES-IP}
-#   c:/Projetos_git/repo/vivado_projects/project_AES-IP
-#   c:/Projetos_git/repo/vivado_projects/debug_AES-IP
-#   {c:/Users/Janier Arias Garcia/project_AES-IP}
+#   C:/Projetos_git/repo/vivado_projects/project_AES-IP
+#   C:/Projetos_git/repo/vivado_projects/debug_AES-IP
+#   {C:/Users/Janier Arias Garcia/project_AES-IP}
+#   C:/Projetos_git/repo/vivado_projects/project_AES-IP
+#   C:/Projetos_git/repo/vivado_projects/debug_AES-IP
+#   {C:/Users/Janier Arias Garcia/project_AES-IP}
+#   C:/Projetos_git/repo/vivado_projects/project_AES-IP
+#   C:/Projetos_git/repo/vivado_projects/debug_AES-IP
+#   {C:/Users/Janier Arias Garcia/project_AES-IP}
 # } [current_fileset]
 # add_files C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/mb_system.bd
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -36,8 +42,20 @@ WARNING: [IP_Flow 19-2207] Repository 'c:/Projetos_git/repo/vivado_projects/debu
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projetos_git/repo/vivado_projects/debug_AES-IP'.
 WARNING: [IP_Flow 19-2207] Repository 'c:/Users/Janier Arias Garcia/project_AES-IP' already exists; ignoring attempt to add it again.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Janier Arias Garcia/project_AES-IP'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projetos_git/repo/vivado_projects/project_AES-IP' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projetos_git/repo/vivado_projects/project_AES-IP'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projetos_git/repo/vivado_projects/debug_AES-IP' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projetos_git/repo/vivado_projects/debug_AES-IP'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/Janier Arias Garcia/project_AES-IP' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Janier Arias Garcia/project_AES-IP'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projetos_git/repo/vivado_projects/project_AES-IP' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projetos_git/repo/vivado_projects/project_AES-IP'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Projetos_git/repo/vivado_projects/debug_AES-IP' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projetos_git/repo/vivado_projects/debug_AES-IP'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/Janier Arias Garcia/project_AES-IP' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Janier Arias Garcia/project_AES-IP'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.1/data/ip'.
-add_files: Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 279.152 ; gain = 102.379
+add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 279.438 ; gain = 102.938
 # set_property used_in_implementation false [get_files -all c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_microblaze_0_0/mb_system_microblaze_0_0.xdc]
 # set_property used_in_implementation false [get_files -all c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_microblaze_0_0/mb_system_microblaze_0_0_ooc.xdc]
 # set_property used_in_implementation false [get_files -all c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/constraints/mb_system_mig_7series_0_0.xdc]
@@ -89,7 +107,7 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:49 ; elapsed = 00:01:42 . Memory (MB): peak = 344.633 ; gain = 212.977
+Starting RTL Elaboration : Time (s): cpu = 00:00:48 ; elapsed = 00:01:38 . Memory (MB): peak = 344.824 ; gain = 213.523
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'mb_system_wrapper' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system_wrapper.vhd:39]
 INFO: [Synth 8-3491] module 'mb_system' declared at 'C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:3870' bound to instance 'mb_system_i' of component 'mb_system' [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system_wrapper.vhd:65]
@@ -2576,72 +2594,76 @@ INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [c:/
 INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFG' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0_clk_wiz.vhd:214]
 INFO: [Synth 8-256] done synthesizing module 'mb_system_clk_wiz_0_0_clk_wiz' (75#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0_clk_wiz.vhd:87]
 INFO: [Synth 8-256] done synthesizing module 'mb_system_clk_wiz_0_0' (76#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_clk_wiz_0_0/mb_system_clk_wiz_0_0.vhd:87]
-INFO: [Synth 8-638] synthesizing module 'mb_system_debug_AES_v1_5_0_0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_5_0_0/synth/mb_system_debug_AES_v1_5_0_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'mb_system_debug_AES_v1_6_0_0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:87]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'myip_lite_v1_0__parameterized0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'myip_lite_v1_0__parameterized0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd:67]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'myip_lite_v1_0_S00_AXI__parameterized0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/hdl/myip_lite_v1_0_S00_AXI.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'myip_lite_v1_0_S00_AXI__parameterized0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/hdl/myip_lite_v1_0_S00_AXI.vhd:104]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'DeMux_1x2' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/DeMux_1x2.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'DeMux_1x2' (77#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/DeMux_1x2.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'myip_lite_v1_0_S00_AXI__parameterized0' (78#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/hdl/myip_lite_v1_0_S00_AXI.vhd:104]
-INFO: [Synth 8-638] synthesizing module 'AES_Crypto' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd:63]
-WARNING: [Synth 8-614] signal 'debug_sel' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd:171]
-WARNING: [Synth 8-614] signal 's0' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd:171]
-WARNING: [Synth 8-614] signal 's1' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd:171]
-WARNING: [Synth 8-614] signal 's2' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd:171]
-WARNING: [Synth 8-614] signal 's3' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd:171]
-WARNING: [Synth 8-614] signal 's4' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd:171]
-WARNING: [Synth 8-614] signal 'k1' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd:171]
-WARNING: [Synth 8-614] signal 'mode' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd:171]
-WARNING: [Synth 8-614] signal 'wtosub' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd:171]
-WARNING: [Synth 8-614] signal 'e0' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd:171]
-WARNING: [Synth 8-614] signal 'e1' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd:171]
-WARNING: [Synth 8-614] signal 'e8' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd:171]
-WARNING: [Synth 8-614] signal 'e9' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd:171]
-INFO: [Synth 8-638] synthesizing module 'KeyExpansion' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/KeyExpansion.vhd:54]
-INFO: [Synth 8-256] done synthesizing module 'KeyExpansion' (79#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/KeyExpansion.vhd:54]
-INFO: [Synth 8-638] synthesizing module 'AddKey' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'AddKey' (80#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd:41]
-INFO: [Synth 8-638] synthesizing module 'SubBytes' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'SubBytes' (81#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:46]
-INFO: [Synth 8-638] synthesizing module 'ShiftRows' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/ShiftRows.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'ShiftRows' (82#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/ShiftRows.vhd:41]
-INFO: [Synth 8-638] synthesizing module 'MixColumns' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/MixColumns.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'MixColumns' (83#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/MixColumns.vhd:40]
-INFO: [Synth 8-638] synthesizing module 'Control' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control.vhd:55]
-INFO: [Synth 8-638] synthesizing module 'Mux_2x1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'Mux_2x1' (84#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd:42]
-INFO: [Synth 8-638] synthesizing module 'Mux_10x1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'Mux_10x1' (85#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd:42]
-WARNING: [Synth 8-614] signal 's5' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control.vhd:132]
-INFO: [Synth 8-256] done synthesizing module 'Control' (86#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control.vhd:55]
-INFO: [Synth 8-638] synthesizing module 'InvSubBytes' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:42]
-WARNING: [Synth 8-614] signal 'Bi' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-WARNING: [Synth 8-614] signal 'y7' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-WARNING: [Synth 8-614] signal 'y6' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-WARNING: [Synth 8-614] signal 'y5' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-WARNING: [Synth 8-614] signal 'y4' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-WARNING: [Synth 8-614] signal 'y3' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-WARNING: [Synth 8-614] signal 'y2' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-WARNING: [Synth 8-614] signal 'y1' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-WARNING: [Synth 8-614] signal 'y0' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'InvSubBytes' (87#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:42]
-INFO: [Synth 8-638] synthesizing module 'InvShiftRows' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvShiftRows.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'InvShiftRows' (88#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvShiftRows.vhd:41]
-INFO: [Synth 8-638] synthesizing module 'InvMixColumns' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvMixColumns.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'InvMixColumns' (89#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvMixColumns.vhd:40]
-INFO: [Synth 8-638] synthesizing module 'Control_Decryption' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd:55]
-WARNING: [Synth 8-614] signal 's3' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd:117]
-INFO: [Synth 8-256] done synthesizing module 'Control_Decryption' (90#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd:55]
-INFO: [Synth 8-256] done synthesizing module 'AES_Crypto' (91#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/new/AES_Crypto.vhd:63]
-INFO: [Synth 8-256] done synthesizing module 'myip_lite_v1_0__parameterized0' (92#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd:67]
-INFO: [Synth 8-256] done synthesizing module 'mb_system_debug_AES_v1_5_0_0' (93#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_5_0_0/synth/mb_system_debug_AES_v1_5_0_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'DeMux_1x2' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/DeMux_1x2.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'DeMux_1x2' (77#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/DeMux_1x2.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'myip_lite_v1_0_S00_AXI__parameterized0' (78#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/hdl/myip_lite_v1_0_S00_AXI.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'AES_Crypto' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd:63]
+WARNING: [Synth 8-614] signal 'debug_sel' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd:171]
+WARNING: [Synth 8-614] signal 's0' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd:171]
+WARNING: [Synth 8-614] signal 's1' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd:171]
+WARNING: [Synth 8-614] signal 's2' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd:171]
+WARNING: [Synth 8-614] signal 's3' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd:171]
+WARNING: [Synth 8-614] signal 's4' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd:171]
+WARNING: [Synth 8-614] signal 'k1' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd:171]
+WARNING: [Synth 8-614] signal 'mode' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd:171]
+WARNING: [Synth 8-614] signal 'wtosub' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd:171]
+WARNING: [Synth 8-614] signal 'e0' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd:171]
+WARNING: [Synth 8-614] signal 'e1' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd:171]
+WARNING: [Synth 8-614] signal 'e8' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd:171]
+WARNING: [Synth 8-614] signal 'e9' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'KeyExpansion' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/KeyExpansion.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'KeyExpansion' (79#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/KeyExpansion.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'AddKey' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'AddKey' (80#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/AddKey.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'SubBytes' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'SubBytes' (81#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/SubBytes.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'ShiftRows' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/ShiftRows.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'ShiftRows' (82#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/ShiftRows.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'MixColumns' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/MixColumns.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'MixColumns' (83#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/MixColumns.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'Control' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'Mux_2x1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2x1' (84#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'Mux_10x1' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Mux_10x1' (85#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd:42]
+WARNING: [Synth 8-614] signal 'state' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:114]
+WARNING: [Synth 8-614] signal 'prox_s0' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:114]
+WARNING: [Synth 8-614] signal 'en' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:114]
+WARNING: [Synth 8-614] signal 's0_i' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:114]
+WARNING: [Synth 8-614] signal 's5' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:114]
+INFO: [Synth 8-256] done synthesizing module 'Control' (86#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'InvSubBytes' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:42]
+WARNING: [Synth 8-614] signal 'Bi' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+WARNING: [Synth 8-614] signal 'y7' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+WARNING: [Synth 8-614] signal 'y6' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+WARNING: [Synth 8-614] signal 'y5' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+WARNING: [Synth 8-614] signal 'y4' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+WARNING: [Synth 8-614] signal 'y3' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+WARNING: [Synth 8-614] signal 'y2' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+WARNING: [Synth 8-614] signal 'y1' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+WARNING: [Synth 8-614] signal 'y0' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'InvSubBytes' (87#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'InvShiftRows' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvShiftRows.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'InvShiftRows' (88#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvShiftRows.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'InvMixColumns' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvMixColumns.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'InvMixColumns' (89#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvMixColumns.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'Control_Decryption' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd:55]
+WARNING: [Synth 8-614] signal 's3' is read in the process but is not in the sensitivity list [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'Control_Decryption' (90#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'AES_Crypto' (91#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/new/AES_Crypto.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'myip_lite_v1_0__parameterized0' (92#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'mb_system_debug_AES_v1_6_0_0' (93#1) [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:87]
 INFO: [Synth 8-638] synthesizing module 'mb_system_mdm_1_0' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mdm_1_0/synth/mb_system_mdm_1_0.vhd:73]
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
@@ -19411,7 +19433,7 @@ WARNING: [Synth 8-3848] Net NLW_axi_bram_ctrl_0_bram_addrb_UNCONNECTED in module
 INFO: [Synth 8-256] done synthesizing module 'mb_system' (283#1) [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system.vhd:3897]
 INFO: [Synth 8-256] done synthesizing module 'mb_system_wrapper' (284#1) [C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/hdl/mb_system_wrapper.vhd:39]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:03:47 ; elapsed = 00:05:12 . Memory (MB): peak = 885.355 ; gain = 753.699
+Finished RTL Elaboration : Time (s): cpu = 00:03:45 ; elapsed = 00:04:51 . Memory (MB): peak = 885.219 ; gain = 753.918
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -19616,7 +19638,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:05:16 ; elapsed = 00:07:01 . Memory (MB): peak = 1403.797 ; gain = 1272.141
+Finished Loading Part and Timing Information : Time (s): cpu = 00:05:11 ; elapsed = 00:06:34 . Memory (MB): peak = 1394.852 ; gain = 1263.551
 ---------------------------------------------------------------------------------
 
 
@@ -19644,7 +19666,7 @@ Applied set_property DONT_TOUCH = true for xbar. (constraint file  C:/Projetos_g
 Applied set_property DONT_TOUCH = true for xbar. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 61).
 Applied set_property DONT_TOUCH = true for axi_bram_ctrl_0_bram. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 64).
 Applied set_property DONT_TOUCH = true for clk_wiz_0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 67).
-Applied set_property DONT_TOUCH = true for debug_AES_v1_5_0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 70).
+Applied set_property DONT_TOUCH = true for debug_AES_v1_6_0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 70).
 Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 73).
 Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 88).
 Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 94).
@@ -19653,11 +19675,11 @@ Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Projetos_git
 Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 118).
 Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.runs/synth_1/dont_touch.xdc, line 144).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:24 ; elapsed = 00:07:05 . Memory (MB): peak = 1403.797 ; gain = 1272.141
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:19 ; elapsed = 00:06:38 . Memory (MB): peak = 1394.852 ; gain = 1263.551
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:05:24 ; elapsed = 00:07:05 . Memory (MB): peak = 1403.797 ; gain = 1272.141
+Finished RTL Optimization : Time (s): cpu = 00:05:19 ; elapsed = 00:06:38 . Memory (MB): peak = 1394.852 ; gain = 1263.551
 ---------------------------------------------------------------------------------
 
 INFO: [Synth 8-802] inferred FSM for state register 'GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg' in module 'wr_chnl'
@@ -19759,24 +19781,25 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_axic_reg_srl_fifo__parameterized2'
 INFO: [Synth 8-3354] encoded FSM with state register 'estado_reg' using encoding 'one-hot' in module 'KeyExpansion'
 INFO: [Synth 8-3354] encoded FSM with state register 'estado_reg' using encoding 'one-hot' in module 'SubBytes'
-WARNING: [Synth 8-327] inferring latch for variable 'bo_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control.vhd:200]
-WARNING: [Synth 8-327] inferring latch for variable 'rdy_i_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control.vhd:89]
-WARNING: [Synth 8-327] inferring latch for variable 'e_mux_1_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control.vhd:96]
-WARNING: [Synth 8-327] inferring latch for variable 'e_mux_2_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control.vhd:99]
-WARNING: [Synth 8-327] inferring latch for variable 'Bo_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:124]
-WARNING: [Synth 8-327] inferring latch for variable 'n_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:113]
-WARNING: [Synth 8-327] inferring latch for variable 'x7_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'x0_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'x5_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:52]
-WARNING: [Synth 8-327] inferring latch for variable 'x6_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'x1_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'x3_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:51]
-WARNING: [Synth 8-327] inferring latch for variable 'x4_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:52]
-WARNING: [Synth 8-327] inferring latch for variable 'x2_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'bo_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd:185]
-WARNING: [Synth 8-327] inferring latch for variable 'rdy_i_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd:91]
-WARNING: [Synth 8-327] inferring latch for variable 'e_mux_1_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd:96]
-WARNING: [Synth 8-327] inferring latch for variable 'e_mux_2_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_5_v1_5/d576dd00/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd:99]
+WARNING: [Synth 8-327] inferring latch for variable 'bo_i_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:93]
+WARNING: [Synth 8-327] inferring latch for variable 's0_i_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:92]
+WARNING: [Synth 8-327] inferring latch for variable 'rdy_i_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:90]
+WARNING: [Synth 8-327] inferring latch for variable 'e_mux_2_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:103]
+WARNING: [Synth 8-327] inferring latch for variable 'e_mux_1_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:100]
+WARNING: [Synth 8-327] inferring latch for variable 'Bo_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:124]
+WARNING: [Synth 8-327] inferring latch for variable 'n_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:113]
+WARNING: [Synth 8-327] inferring latch for variable 'x7_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'x0_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'x5_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'x6_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'x1_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'x3_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'x4_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'x2_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/InvSubBytes.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'bo_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd:185]
+WARNING: [Synth 8-327] inferring latch for variable 'rdy_i_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd:91]
+WARNING: [Synth 8-327] inferring latch for variable 'e_mux_1_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd:96]
+WARNING: [Synth 8-327] inferring latch for variable 'e_mux_2_reg' [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd:99]
 WARNING: [Synth 8-3848] Net mask_0_15_orig in module/entity Shift_Logic_Module_gti__parameterized0 does not have driver. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/xilinx.com/microblaze_v9_3/7b6e2d75/hdl/vhdl/shift_logic_gti.vhd:227]
 WARNING: [Synth 8-3848] Net mask_16_23_orig in module/entity Shift_Logic_Module_gti__parameterized0 does not have driver. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/xilinx.com/microblaze_v9_3/7b6e2d75/hdl/vhdl/shift_logic_gti.vhd:228]
 INFO: [Synth 8-3354] encoded FSM with state register 'cache_state_reg' using encoding 'one-hot' in module 'Icache'
@@ -19828,7 +19851,7 @@ Report RTL Partitions:
 |8     |mig_7series_v2_0_memc_ui_top_axi__GC0                |           1|     16288|
 |9     |mb_system_mig_7series_0_0_mig__GC0                   |           1|       328|
 |10    |mb_system__GCB0                                      |           1|     30741|
-|11    |mb_system_debug_AES_v1_5_0_0                         |           1|     20008|
+|11    |mb_system_debug_AES_v1_6_0_0                         |           1|     20075|
 +------+-----------------------------------------------------+------------+----------+
 
 ---------------------------------------------------------------------------------
@@ -19846,61 +19869,61 @@ Detailed RTL Component Info :
 	   2 Input     13 Bit       Adders := 1     
 	   2 Input     12 Bit       Adders := 15    
 	   2 Input     11 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 12    
 	   3 Input     10 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 12    
 	   2 Input      9 Bit       Adders := 4     
 	   2 Input      8 Bit       Adders := 12    
 	   2 Input      7 Bit       Adders := 11    
-	   2 Input      6 Bit       Adders := 62    
 	   3 Input      6 Bit       Adders := 11    
+	   2 Input      6 Bit       Adders := 62    
 	   2 Input      5 Bit       Adders := 60    
 	   2 Input      4 Bit       Adders := 50    
 	   2 Input      3 Bit       Adders := 33    
 	   3 Input      3 Bit       Adders := 1     
-	   8 Input      2 Bit       Adders := 1     
 	   5 Input      2 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 74    
 	   3 Input      2 Bit       Adders := 3     
 	   4 Input      2 Bit       Adders := 5     
-	   2 Input      2 Bit       Adders := 74    
-	   6 Input      1 Bit       Adders := 1     
-	  10 Input      1 Bit       Adders := 1     
-	   4 Input      1 Bit       Adders := 1     
-	   5 Input      1 Bit       Adders := 1     
-	   8 Input      1 Bit       Adders := 1     
-	   2 Input      1 Bit       Adders := 6     
-	   3 Input      1 Bit       Adders := 1     
-	   9 Input      1 Bit       Adders := 1     
+	   8 Input      2 Bit       Adders := 1     
 	   7 Input      1 Bit       Adders := 1     
+	   5 Input      1 Bit       Adders := 1     
+	  10 Input      1 Bit       Adders := 1     
+	   3 Input      1 Bit       Adders := 1     
+	   4 Input      1 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 6     
+	   9 Input      1 Bit       Adders := 1     
+	   6 Input      1 Bit       Adders := 1     
+	   8 Input      1 Bit       Adders := 1     
 +---XORs : 
-	   2 Input     32 Bit         XORs := 3     
 	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 3     
+	   9 Input      8 Bit         XORs := 8     
 	   2 Input      8 Bit         XORs := 91    
+	   4 Input      8 Bit         XORs := 12    
 	   8 Input      8 Bit         XORs := 8     
 	   5 Input      8 Bit         XORs := 4     
-	   9 Input      8 Bit         XORs := 8     
-	   4 Input      8 Bit         XORs := 12    
 	   2 Input      2 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 906   
+	  10 Input      1 Bit         XORs := 3     
+	   5 Input      1 Bit         XORs := 4     
 	  16 Input      1 Bit         XORs := 3     
 	   6 Input      1 Bit         XORs := 3     
-	  19 Input      1 Bit         XORs := 2     
-	   2 Input      1 Bit         XORs := 906   
-	   5 Input      1 Bit         XORs := 4     
-	  13 Input      1 Bit         XORs := 3     
-	   8 Input      1 Bit         XORs := 2     
-	  15 Input      1 Bit         XORs := 2     
-	  10 Input      1 Bit         XORs := 3     
-	   4 Input      1 Bit         XORs := 8     
-	  11 Input      1 Bit         XORs := 2     
-	   3 Input      1 Bit         XORs := 19    
-	   7 Input      1 Bit         XORs := 3     
 	  12 Input      1 Bit         XORs := 2     
+	  15 Input      1 Bit         XORs := 2     
+	   8 Input      1 Bit         XORs := 2     
+	   7 Input      1 Bit         XORs := 3     
+	  19 Input      1 Bit         XORs := 2     
+	  11 Input      1 Bit         XORs := 2     
+	   4 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 19    
+	  13 Input      1 Bit         XORs := 3     
 +---Registers : 
 	             4096 Bit    Registers := 1     
 	              576 Bit    Registers := 1     
 	              516 Bit    Registers := 2     
 	              512 Bit    Registers := 6     
 	              320 Bit    Registers := 1     
-	              128 Bit    Registers := 14    
+	              128 Bit    Registers := 13    
 	               80 Bit    Registers := 8     
 	               64 Bit    Registers := 7     
 	               63 Bit    Registers := 2     
@@ -19935,8 +19958,8 @@ Detailed RTL Component Info :
 +---Multipliers : 
 	                  3x6  Multipliers := 1     
 +---Muxes : 
-	  21 Input    128 Bit        Muxes := 1     
 	  12 Input    128 Bit        Muxes := 1     
+	  21 Input    128 Bit        Muxes := 1     
 	   2 Input     80 Bit        Muxes := 19    
 	   2 Input     64 Bit        Muxes := 6     
 	   2 Input     56 Bit        Muxes := 1     
@@ -19944,12 +19967,12 @@ Detailed RTL Component Info :
 	   2 Input     45 Bit        Muxes := 2     
 	   2 Input     36 Bit        Muxes := 4     
 	   2 Input     33 Bit        Muxes := 7     
-	   2 Input     32 Bit        Muxes := 54    
 	  14 Input     32 Bit        Muxes := 4     
-	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 54    
 	  11 Input     32 Bit        Muxes := 9     
 	   4 Input     32 Bit        Muxes := 5     
 	   8 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
 	   2 Input     30 Bit        Muxes := 4     
 	   2 Input     28 Bit        Muxes := 2     
 	   2 Input     27 Bit        Muxes := 4     
@@ -19957,19 +19980,19 @@ Detailed RTL Component Info :
 	   4 Input     26 Bit        Muxes := 4     
 	   2 Input     25 Bit        Muxes := 4     
 	   2 Input     24 Bit        Muxes := 9     
-	   2 Input     22 Bit        Muxes := 27    
 	  21 Input     22 Bit        Muxes := 1     
-	  20 Input     21 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 27    
 	   2 Input     21 Bit        Muxes := 41    
+	  20 Input     21 Bit        Muxes := 1     
 	   2 Input     17 Bit        Muxes := 3     
-	   2 Input     16 Bit        Muxes := 23    
 	   3 Input     16 Bit        Muxes := 1     
 	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 23    
 	   2 Input     15 Bit        Muxes := 10    
-	   4 Input     14 Bit        Muxes := 1     
-	   9 Input     14 Bit        Muxes := 1     
-	  13 Input     14 Bit        Muxes := 1     
 	   2 Input     14 Bit        Muxes := 26    
+	   4 Input     14 Bit        Muxes := 1     
+	  13 Input     14 Bit        Muxes := 1     
+	   9 Input     14 Bit        Muxes := 1     
 	   2 Input     13 Bit        Muxes := 11    
 	  12 Input     13 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 3     
@@ -19979,78 +20002,78 @@ Detailed RTL Component Info :
 	   5 Input     10 Bit        Muxes := 2     
 	   2 Input     10 Bit        Muxes := 20    
 	   4 Input      9 Bit        Muxes := 15    
-	   3 Input      9 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 44    
-	  21 Input      8 Bit        Muxes := 1     
-	  14 Input      8 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 232   
+	   3 Input      9 Bit        Muxes := 1     
 	   8 Input      8 Bit        Muxes := 2     
-	  13 Input      8 Bit        Muxes := 1     
+	  14 Input      8 Bit        Muxes := 1     
 	  11 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 232   
+	  13 Input      8 Bit        Muxes := 1     
+	  21 Input      8 Bit        Muxes := 1     
 	   4 Input      8 Bit        Muxes := 2     
 	   2 Input      7 Bit        Muxes := 1     
 	   3 Input      7 Bit        Muxes := 1     
 	  36 Input      7 Bit        Muxes := 1     
-	  29 Input      6 Bit        Muxes := 9     
-	   3 Input      6 Bit        Muxes := 1     
-	  34 Input      6 Bit        Muxes := 3     
-	  14 Input      6 Bit        Muxes := 2     
-	  13 Input      6 Bit        Muxes := 5     
-	   8 Input      6 Bit        Muxes := 7     
-	  22 Input      6 Bit        Muxes := 10    
-	   2 Input      6 Bit        Muxes := 203   
-	   5 Input      6 Bit        Muxes := 2     
-	   4 Input      6 Bit        Muxes := 24    
 	  30 Input      6 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 7     
+	   4 Input      6 Bit        Muxes := 24    
 	  16 Input      6 Bit        Muxes := 1     
+	  22 Input      6 Bit        Muxes := 10    
+	   5 Input      6 Bit        Muxes := 2     
+	  34 Input      6 Bit        Muxes := 3     
+	  13 Input      6 Bit        Muxes := 5     
+	  29 Input      6 Bit        Muxes := 9     
 	  36 Input      6 Bit        Muxes := 3     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 203   
+	  14 Input      6 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 6     
+	   8 Input      5 Bit        Muxes := 9     
 	  22 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 88    
-	  34 Input      5 Bit        Muxes := 1     
-	   4 Input      5 Bit        Muxes := 6     
 	  21 Input      5 Bit        Muxes := 1     
-	   8 Input      5 Bit        Muxes := 9     
-	   3 Input      5 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 1     
-	  34 Input      4 Bit        Muxes := 1     
-	  10 Input      4 Bit        Muxes := 1     
-	   3 Input      4 Bit        Muxes := 1     
-	   6 Input      4 Bit        Muxes := 1     
+	  34 Input      5 Bit        Muxes := 1     
 	  29 Input      4 Bit        Muxes := 1     
-	  14 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 119   
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
 	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 119   
+	  14 Input      4 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	  34 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 10    
+	  29 Input      3 Bit        Muxes := 18    
 	   2 Input      3 Bit        Muxes := 81    
+	   5 Input      3 Bit        Muxes := 4     
 	   6 Input      3 Bit        Muxes := 2     
 	   9 Input      3 Bit        Muxes := 1     
-	   8 Input      3 Bit        Muxes := 10    
-	   5 Input      3 Bit        Muxes := 4     
-	   4 Input      3 Bit        Muxes := 3     
-	  29 Input      3 Bit        Muxes := 18    
-	  14 Input      2 Bit        Muxes := 1     
-	  34 Input      2 Bit        Muxes := 1     
 	  22 Input      2 Bit        Muxes := 3     
-	   5 Input      2 Bit        Muxes := 5     
-	   4 Input      2 Bit        Muxes := 14    
-	   2 Input      2 Bit        Muxes := 194   
 	   8 Input      2 Bit        Muxes := 16    
+	   5 Input      2 Bit        Muxes := 5     
+	  14 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 194   
 	   3 Input      2 Bit        Muxes := 10    
-	  29 Input      1 Bit        Muxes := 50    
-	   2 Input      1 Bit        Muxes := 1681  
-	  22 Input      1 Bit        Muxes := 45    
-	  13 Input      1 Bit        Muxes := 21    
-	  14 Input      1 Bit        Muxes := 12    
-	   4 Input      1 Bit        Muxes := 205   
-	   5 Input      1 Bit        Muxes := 4     
-	  11 Input      1 Bit        Muxes := 9     
-	  10 Input      1 Bit        Muxes := 43    
-	   6 Input      1 Bit        Muxes := 15    
+	  34 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 14    
 	  12 Input      1 Bit        Muxes := 4     
-	   3 Input      1 Bit        Muxes := 23    
-	  16 Input      1 Bit        Muxes := 291   
-	  34 Input      1 Bit        Muxes := 32    
-	   8 Input      1 Bit        Muxes := 16    
+	  29 Input      1 Bit        Muxes := 50    
 	   7 Input      1 Bit        Muxes := 8     
+	  16 Input      1 Bit        Muxes := 291   
+	   4 Input      1 Bit        Muxes := 205   
+	   3 Input      1 Bit        Muxes := 23    
+	   8 Input      1 Bit        Muxes := 16    
+	  11 Input      1 Bit        Muxes := 9     
+	  13 Input      1 Bit        Muxes := 21    
+	  14 Input      1 Bit        Muxes := 13    
+	   5 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 15    
+	  10 Input      1 Bit        Muxes := 43    
+	  22 Input      1 Bit        Muxes := 45    
+	  34 Input      1 Bit        Muxes := 32    
+	   2 Input      1 Bit        Muxes := 1681  
 
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -20107,20 +20130,20 @@ Detailed RTL Component Info :
 Module SubBytes 
 Detailed RTL Component Info : 
 +---XORs : 
+	  13 Input      1 Bit         XORs := 2     
+	  10 Input      1 Bit         XORs := 1     
+	   6 Input      1 Bit         XORs := 1     
+	  19 Input      1 Bit         XORs := 2     
+	   7 Input      1 Bit         XORs := 2     
+	  16 Input      1 Bit         XORs := 1     
+	  12 Input      1 Bit         XORs := 1     
+	  11 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 2     
+	   4 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 8     
 	   8 Input      1 Bit         XORs := 2     
 	  15 Input      1 Bit         XORs := 1     
-	  10 Input      1 Bit         XORs := 1     
-	   2 Input      1 Bit         XORs := 10    
-	   5 Input      1 Bit         XORs := 2     
-	   3 Input      1 Bit         XORs := 8     
-	  11 Input      1 Bit         XORs := 1     
-	   7 Input      1 Bit         XORs := 2     
-	   6 Input      1 Bit         XORs := 1     
-	   4 Input      1 Bit         XORs := 1     
-	  12 Input      1 Bit         XORs := 1     
-	  16 Input      1 Bit         XORs := 1     
-	  19 Input      1 Bit         XORs := 2     
-	  13 Input      1 Bit         XORs := 2     
 +---Registers : 
 	              128 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
@@ -20148,10 +20171,8 @@ Module Mux_10x1
 Detailed RTL Component Info : 
 Module Control 
 Detailed RTL Component Info : 
-+---Registers : 
-	              128 Bit    Registers := 1     
 +---Muxes : 
-	  14 Input      1 Bit        Muxes := 4     
+	  14 Input      1 Bit        Muxes := 5     
 Module AddKey__3 
 Detailed RTL Component Info : 
 +---XORs : 
@@ -20162,17 +20183,17 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit       Adders := 1     
 +---XORs : 
 	  10 Input      1 Bit         XORs := 2     
-	   2 Input      1 Bit         XORs := 13    
-	  15 Input      1 Bit         XORs := 1     
-	   5 Input      1 Bit         XORs := 2     
-	   3 Input      1 Bit         XORs := 10    
-	  11 Input      1 Bit         XORs := 1     
-	   7 Input      1 Bit         XORs := 1     
-	   4 Input      1 Bit         XORs := 6     
+	  13 Input      1 Bit         XORs := 1     
 	   6 Input      1 Bit         XORs := 2     
+	   7 Input      1 Bit         XORs := 1     
 	  12 Input      1 Bit         XORs := 1     
 	  16 Input      1 Bit         XORs := 2     
-	  13 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 2     
+	  11 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 6     
+	   2 Input      1 Bit         XORs := 13    
+	   3 Input      1 Bit         XORs := 10    
+	  15 Input      1 Bit         XORs := 1     
 +---Muxes : 
 	  16 Input      1 Bit        Muxes := 8     
 Module InvShiftRows 
@@ -20203,7 +20224,7 @@ Detailed RTL Component Info :
 	  12 Input    128 Bit        Muxes := 1     
 Module myip_lite_v1_0__parameterized0 
 Detailed RTL Component Info : 
-Module mb_system_debug_AES_v1_5_0_0 
+Module mb_system_debug_AES_v1_6_0_0 
 Detailed RTL Component Info : 
 Module mig_7series_v2_0_clk_ibuf 
 Detailed RTL Component Info : 
@@ -20222,15 +20243,15 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input      6 Bit       Adders := 1     
 	   2 Input      5 Bit       Adders := 1     
-	   3 Input      1 Bit       Adders := 1     
-	   7 Input      1 Bit       Adders := 1     
-	   8 Input      1 Bit       Adders := 1     
-	   4 Input      1 Bit       Adders := 1     
 	   2 Input      1 Bit       Adders := 1     
-	   6 Input      1 Bit       Adders := 1     
-	   5 Input      1 Bit       Adders := 1     
 	  10 Input      1 Bit       Adders := 1     
+	   7 Input      1 Bit       Adders := 1     
+	   5 Input      1 Bit       Adders := 1     
+	   6 Input      1 Bit       Adders := 1     
 	   9 Input      1 Bit       Adders := 1     
+	   3 Input      1 Bit       Adders := 1     
+	   4 Input      1 Bit       Adders := 1     
+	   8 Input      1 Bit       Adders := 1     
 +---Registers : 
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
@@ -21019,23 +21040,23 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 15    
 	                1 Bit    Registers := 89    
 +---Muxes : 
-	   9 Input     14 Bit        Muxes := 1     
-	   2 Input     14 Bit        Muxes := 9     
 	   4 Input     14 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 9     
+	   9 Input     14 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 2     
 	   3 Input      7 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 74    
 	   2 Input      5 Bit        Muxes := 13    
 	   2 Input      4 Bit        Muxes := 5     
-	   4 Input      3 Bit        Muxes := 1     
 	   8 Input      3 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 8     
 	   9 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 8     
+	   4 Input      3 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 3     
-	   4 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 23    
+	   2 Input      2 Bit        Muxes := 3     
 	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 23    
+	   4 Input      1 Bit        Muxes := 1     
 Module mig_7series_v2_0_ddr_phy_wrcal 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -21080,19 +21101,19 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input      9 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 2     
-	   2 Input      6 Bit        Muxes := 16    
 	  29 Input      6 Bit        Muxes := 9     
-	   4 Input      6 Bit        Muxes := 8     
+	   2 Input      6 Bit        Muxes := 16    
 	  30 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 8     
 	   2 Input      5 Bit        Muxes := 15    
-	   2 Input      4 Bit        Muxes := 20    
 	  29 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 20    
+	   8 Input      3 Bit        Muxes := 7     
 	   2 Input      3 Bit        Muxes := 3     
 	  29 Input      3 Bit        Muxes := 18    
-	   8 Input      3 Bit        Muxes := 7     
 	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 116   
 	  29 Input      1 Bit        Muxes := 50    
+	   2 Input      1 Bit        Muxes := 116   
 Module mig_7series_v2_0_ddr_phy_ck_addr_cmd_delay 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -21125,16 +21146,16 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 161   
 +---Muxes : 
-	   2 Input     22 Bit        Muxes := 27    
 	  21 Input     22 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 21    
+	   2 Input     22 Bit        Muxes := 27    
 	  22 Input      6 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 21    
 	  22 Input      5 Bit        Muxes := 1     
 	  22 Input      2 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 42    
-	   3 Input      1 Bit        Muxes := 2     
 	  16 Input      1 Bit        Muxes := 64    
 	  22 Input      1 Bit        Muxes := 45    
+	   3 Input      1 Bit        Muxes := 2     
 Module mig_7series_v2_0_ddr_phy_dqs_found_cal 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -21155,9 +21176,9 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 16    
 	  16 Input     16 Bit        Muxes := 1     
+	  16 Input      6 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 14    
 	   4 Input      6 Bit        Muxes := 1     
-	  16 Input      6 Bit        Muxes := 1     
 	  17 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 32    
@@ -21189,15 +21210,15 @@ Detailed RTL Component Info :
 	   2 Input     48 Bit        Muxes := 4     
 	   2 Input      8 Bit        Muxes := 48    
 	  36 Input      7 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 5     
 	  36 Input      6 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 5     
 	  34 Input      6 Bit        Muxes := 3     
+	  34 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 16    
 	   8 Input      5 Bit        Muxes := 1     
-	  34 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 13    
-	  34 Input      4 Bit        Muxes := 1     
 	   3 Input      4 Bit        Muxes := 1     
+	  34 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 13    
 	   2 Input      3 Bit        Muxes := 3     
 	   2 Input      2 Bit        Muxes := 3     
 	  34 Input      2 Bit        Muxes := 1     
@@ -21221,18 +21242,18 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 159   
 +---Muxes : 
 	   2 Input     48 Bit        Muxes := 1     
-	  12 Input     13 Bit        Muxes := 1     
 	   2 Input     13 Bit        Muxes := 9     
-	   2 Input      8 Bit        Muxes := 2     
+	  12 Input     13 Bit        Muxes := 1     
 	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  13 Input      6 Bit        Muxes := 5     
 	   2 Input      6 Bit        Muxes := 7     
 	  14 Input      6 Bit        Muxes := 2     
-	  13 Input      6 Bit        Muxes := 5     
 	   2 Input      4 Bit        Muxes := 1     
 	  14 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 13    
-	  13 Input      1 Bit        Muxes := 21    
 	  16 Input      1 Bit        Muxes := 64    
+	  13 Input      1 Bit        Muxes := 21    
 Module mig_7series_v2_0_ddr_phy_tempmon 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -21932,15 +21953,15 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 4     
 	   2 Input      8 Bit        Muxes := 3     
-	   2 Input      6 Bit        Muxes := 3     
 	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
 	   2 Input      4 Bit        Muxes := 4     
-	   2 Input      3 Bit        Muxes := 6     
 	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
 	   2 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 49    
-	  10 Input      1 Bit        Muxes := 23    
 	   6 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 23    
 Module full_axi 
 Detailed RTL Component Info : 
 Module axi_bram_ctrl_top 
@@ -24056,7 +24077,7 @@ WARNING: [Synth 8-3936] Found unconnected internal register 'oclkdelay_start_dly
 WARNING: [Synth 8-3936] Found unconnected internal register 'wrcal_start_dly_r_reg' and it is trimmed from '15' to '14' bits. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_mig_7series_0_0/mb_system_mig_7series_0_0/user_design/rtl/phy/mig_7series_v2_0_ddr_phy_init.v:1020]
 WARNING: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/a2538a4c/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:06:36 ; elapsed = 00:08:08 . Memory (MB): peak = 1403.797 ; gain = 1272.141
+Finished Cross Boundary Optimization : Time (s): cpu = 00:06:26 ; elapsed = 00:07:35 . Memory (MB): peak = 1394.852 ; gain = 1263.551
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -24133,127 +24154,120 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/mig_7series_0/u_memc_ui_top_axii_5/\u_ui_top/ui_cmd0/app_hi_pri_r1_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/mig_7series_0/u_memc_ui_top_axii_5/\u_axi_mc/USE_UPSIZER.upsizer_d2 /mi_register_slice_inst/\r_pipe/storage_data1_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/mig_7series_0/u_mb_system_mig_7series_0_0_migi_6/\temp_mon_enabled.u_tempmon/FSM_onehot_xadc_supplied_temperature.tempmon_state_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /KeyExpansion_0/\FSM_onehot_estado_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /SubBytes_round/\FSM_onehot_estado_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\state_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\state_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/myip_lite_v1_0_S00_AXI_inst/axi_rresp_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/myip_lite_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/myip_lite_v1_0_S00_AXI_inst/axi_bresp_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/myip_lite_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[96]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[96]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[64]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[64]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[32]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[32]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[96]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[96]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[64]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[64]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[32]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[32]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[0]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[97]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[97]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[65]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[65]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[33]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[33]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[1]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[1]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[97]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[97]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[65]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[65]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[33]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[33]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[1]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[1]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[98]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[98]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[66]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[66]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[34]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[34]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[2]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[2]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[98]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[98]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[66]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[66]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[34]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[34]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[2]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[2]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[99]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[99]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[67]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[67]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[35]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[35]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[3]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[3]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[99]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[99]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[67]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[67]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[35]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[35]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[3]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[3]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[100]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[100]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[68]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[68]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[36]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[36]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[4]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[4]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[100]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[100]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[68]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[68]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[36]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[36]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[4]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[4]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[101]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[101]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[69]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[69]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[37]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[37]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[5]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[5]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[101]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[101]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[69]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[69]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[37]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[37]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[5]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\bo_reg[5]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[102]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[102]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[70]  is always disabled
-WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[70]  is always disabled
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /KeyExpansion_0/\FSM_onehot_estado_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /SubBytes_round/\FSM_onehot_estado_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_6_0/\U0/myip_lite_v1_0_S00_AXI_inst/axi_rresp_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_6_0/\U0/myip_lite_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_6_0/\U0/myip_lite_v1_0_S00_AXI_inst/axi_bresp_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_6_0/\U0/myip_lite_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[96]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[96]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[64]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[64]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[32]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[32]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[0]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[0]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[97]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[97]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[65]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[65]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[33]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[33]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[98]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[98]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[66]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[66]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[34]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[34]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[99]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[99]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[67]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[67]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[35]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[35]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[100]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[100]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[68]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[68]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[36]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[36]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[101]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[101]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[69]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[69]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[37]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[37]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[102]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[102]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[70]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[70]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[38]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[38]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[103]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[103]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[71]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[71]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[39]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[39]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[7]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[7]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[104]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[104]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[72]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[72]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[40]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[40]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[8]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[8]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[105]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[105]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[73]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[73]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[41]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[41]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[9]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[9]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[106]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[106]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[74]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[74]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[42]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[42]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[10]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[10]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[107]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[107]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[75]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[75]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[43]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[43]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[11]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[11]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[108]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[108]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[76]  is always disabled
+WARNING: [Synth 8-264] enable of latch mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\bo_reg[76]  is always disabled
 INFO: [Common 17-14] Message 'Synth 8-264' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/e_mux_1_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/e_mux_1_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\e_mux_2_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\e_mux_2_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\e_mux_2_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/\e_mux_2_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/rdy_i_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_Decryption_0/rdy_i_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\e_mux_2_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\e_mux_2_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\e_mux_2_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_5_0/\U0/AES_Crypto_0 /Control_0/\e_mux_2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/e_mux_1_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\e_mux_2_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\e_mux_2_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\e_mux_2_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/\e_mux_2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_Decryption_0/rdy_i_reg)
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (mb_system_i/mig_7series_0/ddr_phy_top0i_4/u_ddr_calib_top/\dqsfind_calib_right.u_ddr_phy_dqs_found_cal /\pi_dqs_found_lanes_r1_reg[6] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/mig_7series_0/ddr_phy_top0i_4/u_ddr_calib_top/u_ddr_phy_rdlvl/\cal1_cnt_cpt_r_reg[3] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/mig_7series_0/ddr_phy_top0i_4/u_ddr_calib_top/\ddr_phy_prbs_rdlvl_gen.u_ddr_phy_prbs_rdlvl /i_24/\prbs_dqs_cnt_r_reg[3] )
@@ -24267,7 +24281,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (mb_system_i/mig_7series_0/u_ddr_mc_phy_wrapperi_3/\phy_ctl_wd_i1_reg[25] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (mb_system_i/mig_7series_0/u_ddr_mc_phy_wrapperi_3/\phy_ctl_wd_i1_reg[26] )
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:08:27 ; elapsed = 00:10:13 . Memory (MB): peak = 1439.117 ; gain = 1307.461
+Finished Area Optimization : Time (s): cpu = 00:08:22 ; elapsed = 00:09:42 . Memory (MB): peak = 1443.586 ; gain = 1312.285
 ---------------------------------------------------------------------------------
 
 
@@ -24280,19 +24294,575 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:38 ; elapsed = 00:10:25 . Memory (MB): peak = 1439.117 ; gain = 1307.461
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:33 ; elapsed = 00:09:53 . Memory (MB): peak = 1443.586 ; gain = 1312.285
 ---------------------------------------------------------------------------------
 
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:90]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:90]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_19/Z (MUX1)
+     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_19/A (MUX1)
+     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_39/O (GATE_2_8_AND)
+     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_39/I0 (GATE_2_8_AND)
+     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_14/O (GATE_2_14_OR)
+     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_14/I1 (GATE_2_14_OR)
+     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_19/Z (MUX1)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:90]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:90]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:90]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_34/O (GATE_2_8_AND)
+     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_34/I0 (GATE_2_8_AND)
+     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_12/O (INV)
+     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_12/I (INV)
+     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_13/Z (MUX1)
+     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_13/A (MUX1)
+     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_36/O (GATE_2_8_AND)
+     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_36/I1 (GATE_2_8_AND)
+     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_35/O (GATE_2_8_AND)
+     9: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_35/I0 (GATE_2_8_AND)
+    10: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+    11: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+    12: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+    13: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+    14: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+    15: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+    16: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+    17: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+    18: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:90]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_34/O (GATE_2_8_AND)
+     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_34/I0 (GATE_2_8_AND)
+     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_12/O (INV)
+     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_12/I (INV)
+     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_13/Z (MUX1)
+     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_13/B (MUX1)
+     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_34/O (GATE_2_8_AND)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:90]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:90]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:90]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:90]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_19/Z (MUX1)
+     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_19/A (MUX1)
+     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_39/O (GATE_2_8_AND)
+     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_39/I1 (GATE_2_8_AND)
+     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_38/O (GATE_2_8_AND)
+     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_38/I0 (GATE_2_8_AND)
+     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+     9: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+    10: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+    11: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+    12: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+    13: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+    14: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:90]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_13/Z (MUX1)
+     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_13/B (MUX1)
+     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_34/O (GATE_2_8_AND)
+     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_34/I0 (GATE_2_8_AND)
+     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_12/O (INV)
+     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_12/I (INV)
+     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_13/Z (MUX1)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:90]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_25/Z (MUX1)
+     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_25/S (MUX1)
+     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_25/Z (MUX1)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:90]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_19/Z (MUX1)
+     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_19/A (MUX1)
+     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_39/O (GATE_2_8_AND)
+     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_39/I1 (GATE_2_8_AND)
+     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_38/O (GATE_2_8_AND)
+     5: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_38/I0 (GATE_2_8_AND)
+     6: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+     7: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/I0 (GATE_2_7_NAND)
+     8: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+     9: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/A (MUX1)
+    10: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/Z (MUX1)
+    11: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24/A (MUX1)
+    12: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/O (GATE_2_8_AND)
+    13: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43/I0 (GATE_2_8_AND)
+    14: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_18/O (GATE_2_7_NAND)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:90]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+     1: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/B (MUX1)
+     2: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_22/Z (MUX1)
+     3: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_22/S (MUX1)
+     4: mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_21/Z (MUX1)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/ipshared/CGMA/debug_AES_v1_6_v1_6/494c750d/sources_1/imports/imports/sources_1/new/Control.vhd:90]
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_12 -from I -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_20 -from S -to Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_44 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_22 -from S -to Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_44 -from I0 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_43 -from I0 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_45 -from I0 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_42 -from I -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_24 -from S -to Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_39 -from I0 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_36 -from I0 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_26 -from S -to Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_39 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/\U0/AES_Crypto_0 /Control_0/i_2/i_36 -from I1 -to O'
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:08:47 ; elapsed = 00:10:34 . Memory (MB): peak = 1448.391 ; gain = 1316.734
+Finished Timing Optimization : Time (s): cpu = 00:08:42 ; elapsed = 00:10:02 . Memory (MB): peak = 1454.758 ; gain = 1323.457
 ---------------------------------------------------------------------------------
 
 
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_4503 -from B -to Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_4510 -from B -to Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_4512 -from B -to Z'
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+     1: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+     2: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+     3: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+     4: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+     5: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+     1: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+     2: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+     3: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+     4: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+     5: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+     6: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+     7: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+     8: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+     9: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+    10: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+     1: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+     2: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+     3: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+     4: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+     5: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1946/O (LUT5)
+     1: mb_system_i/debug_AES_v1_6_0/i_1946/I4 (LUT5)
+     2: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+     3: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+     4: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+     5: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+     7: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+     8: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+     9: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+    10: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+    11: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+    12: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1949/O (LUT5)
+     1: mb_system_i/debug_AES_v1_6_0/i_1949/I4 (LUT5)
+     2: mb_system_i/debug_AES_v1_6_0/i_1954/O (LUT3)
+     3: mb_system_i/debug_AES_v1_6_0/i_1954/I2 (LUT3)
+     4: mb_system_i/debug_AES_v1_6_0/i_1938/O (LUT3)
+     5: mb_system_i/debug_AES_v1_6_0/i_1938/I1 (LUT3)
+     6: mb_system_i/debug_AES_v1_6_0/i_1946/O (LUT5)
+     7: mb_system_i/debug_AES_v1_6_0/i_1946/I4 (LUT5)
+     8: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+     9: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+    10: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+    11: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+    12: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+    13: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+    14: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+    15: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+    16: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+    17: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+    18: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1950/O (LUT3)
+     1: mb_system_i/debug_AES_v1_6_0/i_1950/I1 (LUT3)
+     2: mb_system_i/debug_AES_v1_6_0/i_1950/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1956/O (LUT3)
+     1: mb_system_i/debug_AES_v1_6_0/i_1956/I2 (LUT3)
+     2: mb_system_i/debug_AES_v1_6_0/i_1961/O (LUT2)
+     3: mb_system_i/debug_AES_v1_6_0/i_1961/I0 (LUT2)
+     4: mb_system_i/debug_AES_v1_6_0/i_1937/O (LUT6)
+     5: mb_system_i/debug_AES_v1_6_0/i_1937/I5 (LUT6)
+     6: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+     7: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+     8: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+     9: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+    10: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+    11: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+    12: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+    13: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+    14: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+    15: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+    16: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1956/O (LUT3)
+     1: mb_system_i/debug_AES_v1_6_0/i_1956/I2 (LUT3)
+     2: mb_system_i/debug_AES_v1_6_0/i_1961/O (LUT2)
+     3: mb_system_i/debug_AES_v1_6_0/i_1961/I0 (LUT2)
+     4: mb_system_i/debug_AES_v1_6_0/i_1937/O (LUT6)
+     5: mb_system_i/debug_AES_v1_6_0/i_1937/I5 (LUT6)
+     6: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+     7: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+     8: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+     9: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+    10: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+    11: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+    12: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+    13: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+    14: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+    15: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+    16: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+     1: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+     2: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+     3: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+     4: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+     5: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+     6: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+     7: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+     8: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+     9: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+    10: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1954/O (LUT3)
+     1: mb_system_i/debug_AES_v1_6_0/i_1954/I2 (LUT3)
+     2: mb_system_i/debug_AES_v1_6_0/i_1938/O (LUT3)
+     3: mb_system_i/debug_AES_v1_6_0/i_1938/I1 (LUT3)
+     4: mb_system_i/debug_AES_v1_6_0/i_1946/O (LUT5)
+     5: mb_system_i/debug_AES_v1_6_0/i_1946/I4 (LUT5)
+     6: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+     7: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+     8: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+     9: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+    10: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+    11: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+    12: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+    13: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+    14: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+    15: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+    16: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1937/O (LUT6)
+     1: mb_system_i/debug_AES_v1_6_0/i_1937/I5 (LUT6)
+     2: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+     3: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+     4: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+     5: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+     7: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+     8: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+     9: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+    10: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+    11: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+    12: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1949/O (LUT5)
+     1: mb_system_i/debug_AES_v1_6_0/i_1949/I4 (LUT5)
+     2: mb_system_i/debug_AES_v1_6_0/i_1954/O (LUT3)
+     3: mb_system_i/debug_AES_v1_6_0/i_1954/I2 (LUT3)
+     4: mb_system_i/debug_AES_v1_6_0/i_1938/O (LUT3)
+     5: mb_system_i/debug_AES_v1_6_0/i_1938/I1 (LUT3)
+     6: mb_system_i/debug_AES_v1_6_0/i_1946/O (LUT5)
+     7: mb_system_i/debug_AES_v1_6_0/i_1946/I4 (LUT5)
+     8: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+     9: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+    10: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+    11: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+    12: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+    13: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+    14: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+    15: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+    16: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+    17: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+    18: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+     1: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+     2: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+     3: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+     4: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+     5: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1946/O (LUT5)
+     1: mb_system_i/debug_AES_v1_6_0/i_1946/I4 (LUT5)
+     2: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+     3: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+     4: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+     5: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+     7: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+     8: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+     9: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+    10: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+    11: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+    12: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1955/O (LUT3)
+     1: mb_system_i/debug_AES_v1_6_0/i_1955/I0 (LUT3)
+     2: mb_system_i/debug_AES_v1_6_0/i_3047/O (LUT6)
+     3: mb_system_i/debug_AES_v1_6_0/i_3047/I5 (LUT6)
+     4: mb_system_i/debug_AES_v1_6_0/i_1955/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1956/O (LUT3)
+     1: mb_system_i/debug_AES_v1_6_0/i_1956/I2 (LUT3)
+     2: mb_system_i/debug_AES_v1_6_0/i_1961/O (LUT2)
+     3: mb_system_i/debug_AES_v1_6_0/i_1961/I0 (LUT2)
+     4: mb_system_i/debug_AES_v1_6_0/i_1937/O (LUT6)
+     5: mb_system_i/debug_AES_v1_6_0/i_1937/I5 (LUT6)
+     6: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+     7: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+     8: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+     9: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+    10: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+    11: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+    12: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+    13: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+    14: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+    15: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+    16: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1954/O (LUT3)
+     1: mb_system_i/debug_AES_v1_6_0/i_1954/I2 (LUT3)
+     2: mb_system_i/debug_AES_v1_6_0/i_1938/O (LUT3)
+     3: mb_system_i/debug_AES_v1_6_0/i_1938/I1 (LUT3)
+     4: mb_system_i/debug_AES_v1_6_0/i_1946/O (LUT5)
+     5: mb_system_i/debug_AES_v1_6_0/i_1946/I4 (LUT5)
+     6: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+     7: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+     8: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+     9: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+    10: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+    11: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+    12: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+    13: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+    14: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+    15: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+    16: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1946/O (LUT5)
+     1: mb_system_i/debug_AES_v1_6_0/i_1946/I4 (LUT5)
+     2: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+     3: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+     4: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+     5: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+     7: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+     8: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+     9: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+    10: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+    11: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+    12: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+     1: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+     2: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+     3: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+     4: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+     5: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1958/O (LUT2)
+     1: mb_system_i/debug_AES_v1_6_0/i_1958/I1 (LUT2)
+     2: mb_system_i/debug_AES_v1_6_0/i_1935/O (LUT6)
+     3: mb_system_i/debug_AES_v1_6_0/i_1935/I5 (LUT6)
+     4: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+     5: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+     6: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+     7: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+     8: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+     9: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+    10: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+    11: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+    12: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+    13: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+    14: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+     1: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+     2: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+     3: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+     4: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+     5: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+     6: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1949/O (LUT5)
+     1: mb_system_i/debug_AES_v1_6_0/i_1949/I4 (LUT5)
+     2: mb_system_i/debug_AES_v1_6_0/i_1954/O (LUT3)
+     3: mb_system_i/debug_AES_v1_6_0/i_1954/I0 (LUT3)
+     4: mb_system_i/debug_AES_v1_6_0/i_1949/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1956/O (LUT3)
+     1: mb_system_i/debug_AES_v1_6_0/i_1956/I2 (LUT3)
+     2: mb_system_i/debug_AES_v1_6_0/i_1961/O (LUT2)
+     3: mb_system_i/debug_AES_v1_6_0/i_1961/I0 (LUT2)
+     4: mb_system_i/debug_AES_v1_6_0/i_1937/O (LUT6)
+     5: mb_system_i/debug_AES_v1_6_0/i_1937/I5 (LUT6)
+     6: mb_system_i/debug_AES_v1_6_0/i_1953/O (LUT3)
+     7: mb_system_i/debug_AES_v1_6_0/i_1953/I2 (LUT3)
+     8: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+     9: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+    10: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+    11: mb_system_i/debug_AES_v1_6_0/i_1952/I2 (LUT3)
+    12: mb_system_i/debug_AES_v1_6_0/i_1957/O (LUT2)
+    13: mb_system_i/debug_AES_v1_6_0/i_1957/I1 (LUT2)
+    14: mb_system_i/debug_AES_v1_6_0/i_1936/O (LUT4)
+    15: mb_system_i/debug_AES_v1_6_0/i_1936/I2 (LUT4)
+    16: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+     1: mb_system_i/debug_AES_v1_6_0/i_3150/I1 (LUT2)
+     2: mb_system_i/debug_AES_v1_6_0/i_1952/O (LUT3)
+     3: mb_system_i/debug_AES_v1_6_0/i_1952/I1 (LUT3)
+     4: mb_system_i/debug_AES_v1_6_0/i_3150/O (LUT2)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_3150 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1945 -from I2 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1956 -from I0 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1957 -from I0 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_3047 -from I5 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1960 -from I0 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1954 -from I0 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1961 -from I0 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1959 -from I0 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1958 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1953 -from I0 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1945 -from I0 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1938 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_3047 -from I0 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1956 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1955 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1957 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1950 -from I1 -to O'
+Found timing loop:
+     0: mb_system_i/debug_AES_v1_6_0/i_1961/O (LUT5)
+     1: mb_system_i/debug_AES_v1_6_0/i_1961/I1 (LUT5)
+     2: mb_system_i/debug_AES_v1_6_0/i_1961/O (LUT5)
+WARNING: [Synth 8-295] found timing loop. [c:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.srcs/sources_1/bd/mb_system/ip/mb_system_debug_AES_v1_6_0_0/synth/mb_system_debug_AES_v1_6_0_0.vhd:59]
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1959 -from I5 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1959 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1960 -from I3 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1959 -from I3 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1960 -from I2 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1959 -from I2 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1946 -from I4 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1949 -from I3 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1950 -from I2 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1946 -from I3 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_3047 -from I2 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1949 -from I4 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_3047 -from I1 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1959 -from I4 -to O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/i_1960 -from I5 -to O'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:09:59 ; elapsed = 00:11:54 . Memory (MB): peak = 1530.867 ; gain = 1399.211
+Finished Technology Mapping : Time (s): cpu = 00:09:55 ; elapsed = 00:11:21 . Memory (MB): peak = 1540.066 ; gain = 1408.766
 ---------------------------------------------------------------------------------
 
 
@@ -24335,7 +24905,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 50 on net \u_mb_system_mi
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:10:07 ; elapsed = 00:12:03 . Memory (MB): peak = 1530.867 ; gain = 1399.211
+Finished IO Insertion : Time (s): cpu = 00:10:04 ; elapsed = 00:11:30 . Memory (MB): peak = 1540.066 ; gain = 1408.766
 ---------------------------------------------------------------------------------
 
 
@@ -24350,15 +24920,16 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:10:08 ; elapsed = 00:12:04 . Memory (MB): peak = 1530.867 ; gain = 1399.211
+Finished Renaming Generated Instances : Time (s): cpu = 00:10:04 ; elapsed = 00:11:30 . Memory (MB): peak = 1540.066 ; gain = 1408.766
 ---------------------------------------------------------------------------------
 
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing mb_system_i/debug_AES_v1_6_0/rdy_i_reg_i_8 -from I1 -to O'
 
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:10:16 ; elapsed = 00:12:13 . Memory (MB): peak = 1530.867 ; gain = 1399.211
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:10:12 ; elapsed = 00:11:39 . Memory (MB): peak = 1540.066 ; gain = 1408.766
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -24445,7 +25016,7 @@ Report Cell Usage:
 +------+-----------------+------+
 |1     |AND2B1L          |    18|
 |2     |BSCANE2          |     1|
-|3     |BUFG             |     7|
+|3     |BUFG             |     9|
 |4     |BUFH             |     2|
 |5     |BUFIO            |     3|
 |6     |CARRY4           |   214|
@@ -24460,17 +25031,17 @@ Report Cell Usage:
 |15    |IN_FIFO          |     8|
 |16    |ISERDESE2        |    64|
 |17    |LUT1             |   620|
-|18    |LUT2             |  2137|
-|19    |LUT3             |  4464|
-|20    |LUT4             |  2826|
-|21    |LUT5             |  4386|
-|22    |LUT6             |  6238|
+|18    |LUT2             |  2267|
+|19    |LUT3             |  4534|
+|20    |LUT4             |  2931|
+|21    |LUT5             |  4463|
+|22    |LUT6             |  6864|
 |23    |LUT6_2           |    92|
 |24    |MMCME2_ADV       |     2|
 |25    |MULT_AND         |    10|
 |26    |MUXCY            |   234|
 |27    |MUXCY_L          |   348|
-|28    |MUXF7            |   656|
+|28    |MUXF7            |   648|
 |29    |MUXF8            |    11|
 |30    |ODDR             |    17|
 |31    |OR2L             |     2|
@@ -24502,28 +25073,29 @@ Report Cell Usage:
 |57    |FDE              |    32|
 |58    |FDPE             |    58|
 |59    |FDR              |   133|
-|60    |FDRE             | 19427|
+|60    |FDRE             | 20195|
 |61    |FDRE_1           |     1|
 |62    |FDS              |    13|
-|63    |FDSE             |   415|
-|64    |IBUF             |     3|
-|65    |IBUFGDS          |     1|
-|66    |IOBUFDS_DCIEN    |     8|
-|67    |IOBUF_DCIEN      |    64|
-|68    |OBUF             |    25|
-|69    |OBUFDS           |     1|
-|70    |OBUFT            |     8|
+|63    |FDSE             |   416|
+|64    |LD               |   269|
+|65    |IBUF             |     3|
+|66    |IBUFGDS          |     1|
+|67    |IOBUFDS_DCIEN    |     8|
+|68    |IOBUF_DCIEN      |    64|
+|69    |OBUF             |    25|
+|70    |OBUFDS           |     1|
+|71    |OBUFT            |     8|
 +------+-----------------+------+
 
 Report Instance Areas: 
 +------+------------------------------------------------------------------------------------------------------------------+-------------------------------------+------+
 |      |Instance                                                                                                          |Module                               |Cells |
 +------+------------------------------------------------------------------------------------------------------------------+-------------------------------------+------+
-|1     |top                                                                                                               |                                     | 44654|
-|2     |  mb_system_i                                                                                                     |mb_system                            | 44651|
+|1     |top                                                                                                               |                                     | 46694|
+|2     |  mb_system_i                                                                                                     |mb_system                            | 46691|
 |3     |    clk_wiz_0                                                                                                     |mb_system_clk_wiz_0_0                |     5|
 |4     |      U0                                                                                                          |mb_system_clk_wiz_0_0_clk_wiz        |     5|
-|5     |    debug_AES_v1_5_0                                                                                              |mb_system_debug_AES_v1_5_0_0         |  3418|
+|5     |    debug_AES_v1_6_0                                                                                              |mb_system_debug_AES_v1_6_0_0         |  5458|
 |6     |    mig_7series_0                                                                                                 |mb_system_mig_7series_0_0            | 26239|
 |7     |      \u_mb_system_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/u_ddr_phy_rdlvl  |mig_7series_v2_0_ddr_phy_rdlvl       |  2048|
 |8     |    axi_bram_ctrl_0                                                                                               |mb_system_axi_bram_ctrl_0_0          |   669|
@@ -24558,12 +25130,12 @@ Report Instance Areas:
 |37    |      lmb_bram                                                                                                    |mb_system_lmb_bram_0                 |    16|
 +------+------------------------------------------------------------------------------------------------------------------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:10:20 ; elapsed = 00:12:17 . Memory (MB): peak = 1530.867 ; gain = 1399.211
+Finished Writing Synthesis Report : Time (s): cpu = 00:10:16 ; elapsed = 00:11:42 . Memory (MB): peak = 1540.066 ; gain = 1408.766
 ---------------------------------------------------------------------------------
 
-Synthesis finished with 0 errors, 0 critical warnings and 4815 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:10:20 ; elapsed = 00:12:17 . Memory (MB): peak = 1530.867 ; gain = 1399.211
-INFO: [Netlist 29-17] Analyzing 1379 Unisim elements for replacement
+Synthesis finished with 0 errors, 0 critical warnings and 3361 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:10:16 ; elapsed = 00:11:42 . Memory (MB): peak = 1540.066 ; gain = 1408.766
+INFO: [Netlist 29-17] Analyzing 1648 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. mb_system_i/clk_wiz_0/U0/clkin1_ibufg 
 Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
@@ -24571,7 +25143,7 @@ INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 76 inverter(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1047 instances were transformed.
+  A total of 1316 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 185 instances
   FD => FDRE: 3 instances
   FDC_1 => FDCE (inverted pins: C): 1 instances
@@ -24582,6 +25154,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IBUFGDS => IBUFDS: 1 instances
   IOBUFDS_DCIEN => IOBUFDS_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, INV, OBUFTDS_DCIEN, OBUFTDS_DCIEN): 8 instances
   IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 64 instances
+  LD => LDCE: 269 instances
   LUT6_2 => LUT6_2 (LUT5, LUT6): 92 instances
   MULT_AND => LUT2: 10 instances
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
@@ -24593,11 +25166,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRLC32E => SRL16E: 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-1586 Infos, 412 Warnings, 0 Critical Warnings and 0 Errors encountered.
+1579 Infos, 508 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:10:34 ; elapsed = 00:12:26 . Memory (MB): peak = 1530.867 ; gain = 1251.715
+synth_design: Time (s): cpu = 00:10:30 ; elapsed = 00:11:52 . Memory (MB): peak = 1540.066 ; gain = 1260.629
 # write_checkpoint mb_system_wrapper.dcp
-write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1530.867 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1540.066 ; gain = 0.000
 # report_utilization -file mb_system_wrapper_utilization_synth.rpt -pb mb_system_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.748 . Memory (MB): peak = 1530.867 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 03 21:00:46 2015...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.962 . Memory (MB): peak = 1540.066 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 04 15:35:29 2015...

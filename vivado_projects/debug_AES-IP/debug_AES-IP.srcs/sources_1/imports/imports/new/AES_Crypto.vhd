@@ -185,7 +185,7 @@ mux: process (clk_SB)
 --            when b"01011" => debug_signal <= z5;
             when b"01100" => debug_signal <= k1;
 --            when b"01101" => debug_signal <= k2;
---            when b"01110" => debug_signal <= k5;
+            when b"01110" => debug_signal <= k5;
             when b"01111" => debug_signal <= x"00000000000000000000000" & b"000" & mode & wtosub;
             when b"10000" => debug_signal <= e0;
             when b"10001" => debug_signal <= e1;

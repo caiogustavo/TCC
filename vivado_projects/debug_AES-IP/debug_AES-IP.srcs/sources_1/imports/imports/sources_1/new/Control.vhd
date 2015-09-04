@@ -57,7 +57,8 @@ architecture rtl_structural of Control is
 type state_type is (st_idle, st_round_0, st_round_1, st_round_2, st_round_3, st_round_4,
                     st_round_5, st_round_6, st_round_7, st_round_8, st_round_9,
                     st_round_10, st_ready);
-signal state, next_state : state_type := st_idle;
+signal state : state_type := st_idle;
+signal s0_i, bo_i, k1_i: std_logic_vector(127 downto 0) := (others => '0');
 
 --signal en_delay: std_logic;
 
@@ -87,6 +88,9 @@ begin
 
     --rdy_i <= e_mux_2(3) and e_mux_2(0) and en;
     rdy <= rdy_i;
+    k1 <= k1_i;
+    s0 <= s0_i;
+    bo <= bo_i;
     -- Para garantir que 
     --en_delay <= not (not (not (not (not (not en)))));
    -- clk <= clk_i;
@@ -98,7 +102,7 @@ begin
 -- Mux da chave
     Mux_2: Mux_10x1 port map( sel => e_mux_2, ent9 => e9, ent8 => e8, ent7 => e7,
                               ent6 => e6, ent5 => e5, ent4 => e4, ent3 => e3,
-                              ent2 => e2, ent1 => e1, ent0 => e0, saida => k1);
+                              ent2 => e2, ent1 => e1, ent0 => e0, saida => k1_i);
 
 ---------------------------------------------------------------------------------------------------------
 -- rounds: processo que controla o fluxo de sinais durante as rodadas do AES
@@ -106,6 +110,146 @@ begin
 --      en = 0 : reinicia o contador e os seletores dos multiplexadores
 --      en = 1: permite o andamento das rodadas
 ---------------------------------------------------------------------------------------------------------
+
+SM_proc: process (clk)
+begin
+   case (state) is
+      when st_idle =>
+         s0_i <= prox_s0;
+         rdy_i <= '0';
+         e_mux_1 <= '0';
+         e_mux_2 <= "0000";
+         if en ='1' then
+            state <= st_round_0;--0;
+         else
+            state <= st_idle;
+         end if;
+      when st_round_0 =>
+         s0_i <= prox_s0;
+         rdy_i <= '0';
+         e_mux_1 <= '0';
+         e_mux_2 <= "0000";
+         if en = '1' then
+            state <= st_round_1;
+         else
+            state <= st_idle;
+         end if;
+      when st_round_1 =>
+         s0_i <= prox_s0;
+         rdy_i <= '0';
+         e_mux_1 <= '1';
+         e_mux_2 <= "0000";
+         if en = '1' then
+            state <= st_round_2;
+         else
+            state <= st_idle;
+         end if;
+      when st_round_2 =>
+         s0_i <= prox_s0;
+         rdy_i <= '0';
+         e_mux_1 <= '1';
+         e_mux_2 <= "0001";
+         if en = '1' then
+            state <= st_round_3;
+         else
+            state <= st_idle;
+         end if;
+      when st_round_3 =>
+         s0_i <= prox_s0;
+         rdy_i <= '0';
+         e_mux_1 <= '1';
+         e_mux_2 <= "0010";
+         if en = '1' then
+            state <= st_round_4;
+         else
+            state <= st_idle;
+         end if;
+      when st_round_4 =>
+         s0_i <= prox_s0;
+         rdy_i <= '0';
+         e_mux_1 <= '1';
+         e_mux_2 <= "0011";
+         if en = '1' then
+            state <= st_round_5;
+         else
+            state <= st_idle;
+         end if;
+      when st_round_5 =>
+         s0_i <= prox_s0;
+         rdy_i <= '0';
+         e_mux_1 <= '1';
+         e_mux_2 <= "0100";
+         if en = '1' then
+            state <= st_round_6;
+         else
+            state <= st_idle;
+         end if;
+      when st_round_6 =>
+         s0_i <= prox_s0;
+         rdy_i <= '0';
+         e_mux_1 <= '1';
+         e_mux_2 <= "0101";
+         if en = '1' then
+            state <= st_round_7;
+         else
+            state <= st_idle;
+         end if;
+      when st_round_7 =>
+         s0_i <= prox_s0;
+         rdy_i <= '0';
+         e_mux_1 <= '1';
+         e_mux_2 <= "0110";
+         if en = '1' then
+            state <= st_round_8;
+         else
+            state <= st_idle;
+         end if;
+      when st_round_8 =>
+         s0_i <= prox_s0;
+         rdy_i <= '0';
+         e_mux_1 <= '1';
+         e_mux_2 <= "0111";
+         if en = '1' then
+            state <= st_round_9;
+         else
+            state <= st_idle;
+         end if;
+      when st_round_9 =>
+         s0_i <= prox_s0;
+         rdy_i <= '0';
+         e_mux_1 <= '1';
+         e_mux_2 <= "1000";
+         if en = '1' then
+            state <= st_round_10;
+         else
+            state <= st_idle;
+         end if;
+      when st_round_10 =>
+         s0_i <= prox_s0;
+         rdy_i <= '0';
+         e_mux_1 <= '1';
+         e_mux_2 <= "1001";
+         if en = '1' then
+            state <= st_ready;
+         else
+            state <= st_idle;
+         end if;
+      when st_ready =>
+         s0_i <= s0_i;
+         bo_i <= s5;
+         rdy_i <= '1';
+         e_mux_1 <= '1';
+         e_mux_2 <= "1001";
+         if en = '1' then
+            state <= st_ready;
+         else
+            state <= st_idle;
+         end if;
+      when others =>
+         state <= st_idle;
+   end case;      
+end process;
+
 --ASSYNC_PROC: process (en)
 --begin
 --   if en = '1' then
@@ -115,97 +259,97 @@ begin
 --   end if;
 --end process;
 
-ASSYNC_SYNC_PROC: process (clk,en)
-  begin
-     if ( rising_edge(clk) and en = '1' ) then
-         state <= next_state;
-         s0 <= prox_s0;
-     end if;
-     if rising_edge(en) then
-        state <= st_round_0;
-     end if;
-     if falling_edge(en) then    
-        state <= st_idle;
-     end if;
-end process;
+--ASSYNC_SYNC_PROC: process (clk,en)
+--  begin
+--     if ( rising_edge(clk) and en = '1' ) then
+--         state <= next_state;
+--         s0 <= prox_s0;
+--     end if;
+--     if rising_edge(en) then
+--        state <= st_round_0;
+--     end if;
+--     if falling_edge(en) then    
+--        state <= st_idle;
+--     end if;
+--end process;
   
-STATE_DECODE: process (state)
-begin
-   --declare default state for next_state to avoid latches
-   --next_state <= state;  --default is to stay in current state
-   --insert statements to decode next_state
-   --below is a simple example
-   case (state) is
-      when st_idle =>
-         rdy_i <= '0';
-         e_mux_1 <= '0';
-         e_mux_2 <= "0000";
-         next_state <= st_idle;
-      when st_round_0 =>
-         rdy_i <= '0';
-         e_mux_1 <= '0';
-         e_mux_2 <= "0000";
-         next_state <= st_round_1;
-      when st_round_1 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0000";
-         next_state <= st_round_2;
-      when st_round_2 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0001";
-         next_state <= st_round_3;
-      when st_round_3 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0010";
-         next_state <= st_round_4;
-      when st_round_4 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0011";
-         next_state <= st_round_5;
-      when st_round_5 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0100";
-         next_state <= st_round_6;
-      when st_round_6 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0101";
-         next_state <= st_round_7;
-      when st_round_7 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0110";
-         next_state <= st_round_8;
-      when st_round_8 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0111";
-         next_state <= st_round_9;
-      when st_round_9 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "1000";
-         next_state <= st_round_10;
-      when st_round_10 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "1001";
-         next_state <= st_ready;
-      when st_ready =>
-         bo <= s5 after 5ns;
-         rdy_i <= '1';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0000";
-         next_state <= st_ready;
-      when others =>
-         next_state <= st_idle;
-   end case;      
-end process;
+--STATE_DECODE: process (state)
+--begin
+--   --declare default state for next_state to avoid latches
+--   --next_state <= state;  --default is to stay in current state
+--   --insert statements to decode next_state
+--   --below is a simple example
+--   case (state) is
+--      when st_idle =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '0';
+--         e_mux_2 <= "0000";
+--         next_state <= st_idle;
+--      when st_round_0 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '0';
+--         e_mux_2 <= "0000";
+--         next_state <= st_round_1;
+--      when st_round_1 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0000";
+--         next_state <= st_round_2;
+--      when st_round_2 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0001";
+--         next_state <= st_round_3;
+--      when st_round_3 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0010";
+--         next_state <= st_round_4;
+--      when st_round_4 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0011";
+--         next_state <= st_round_5;
+--      when st_round_5 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0100";
+--         next_state <= st_round_6;
+--      when st_round_6 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0101";
+--         next_state <= st_round_7;
+--      when st_round_7 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0110";
+--         next_state <= st_round_8;
+--      when st_round_8 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0111";
+--         next_state <= st_round_9;
+--      when st_round_9 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "1000";
+--         next_state <= st_round_10;
+--      when st_round_10 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "1001";
+--         next_state <= st_ready;
+--      when st_ready =>
+--         bo <= s5 after 5ns;
+--         rdy_i <= '1';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0000";
+--         next_state <= st_ready;
+--      when others =>
+--         next_state <= st_idle;
+--   end case;      
+--end process;
 
 
 --rounds: process(clk,en)

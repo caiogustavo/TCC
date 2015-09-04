@@ -4370,3 +4370,1632 @@ make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES
 21:19:50 **** Auto Build of configuration Debug for project AES_tests ****
 make all 
 make: Nothing to be done for `all'.
+14:16:52 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+14:17:03 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+14:17:10 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+14:17:46 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+14:17:52 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+14:21:47 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8844	    320	   2084	  11248	   2bf0	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+14:22:02 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+14:22:08 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+14:37:46 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8912	    320	   2080	  11312	   2c30	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+14:37:55 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8912	    320	   2080	  11312	   2c30	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+14:38:08 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+14:38:14 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+14:40:08 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8196	    320	   2084	  10600	   2968	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+14:40:23 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+14:40:29 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+15:52:43 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+15:52:50 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+15:54:40 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+15:54:46 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+15:55:17 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+15:55:23 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+16:09:04 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'encripta':
+../src/helloworld.c:167:40: warning: unused variable 'debug_signal_03' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                                        ^
+../src/helloworld.c:167:23: warning: unused variable 'debug_signal_02' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                       ^
+../src/helloworld.c:167:6: warning: unused variable 'debug_signal_01' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7284	    320	   2084	   9688	   25d8	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:09:18 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+16:09:24 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+16:10:23 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'encripta':
+../src/helloworld.c:167:40: warning: unused variable 'debug_signal_03' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                                        ^
+../src/helloworld.c:167:23: warning: unused variable 'debug_signal_02' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                       ^
+../src/helloworld.c:167:6: warning: unused variable 'debug_signal_01' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7232	    320	   2080	   9632	   25a0	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:10:38 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+16:10:44 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+16:12:33 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'encripta':
+../src/helloworld.c:167:40: warning: unused variable 'debug_signal_03' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                                        ^
+../src/helloworld.c:167:23: warning: unused variable 'debug_signal_02' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                       ^
+../src/helloworld.c:167:6: warning: unused variable 'debug_signal_01' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7232	    320	   2080	   9632	   25a0	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:12:46 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+16:12:52 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+16:15:06 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'encripta':
+../src/helloworld.c:167:40: warning: unused variable 'debug_signal_03' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                                        ^
+../src/helloworld.c:167:23: warning: unused variable 'debug_signal_02' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                       ^
+../src/helloworld.c:167:6: warning: unused variable 'debug_signal_01' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7248	    320	   2080	   9648	   25b0	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:15:19 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+16:15:26 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+16:19:47 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'encripta':
+../src/helloworld.c:167:40: warning: unused variable 'debug_signal_03' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                                        ^
+../src/helloworld.c:167:23: warning: unused variable 'debug_signal_02' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                       ^
+../src/helloworld.c:167:6: warning: unused variable 'debug_signal_01' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7248	    320	   2080	   9648	   25b0	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:20:03 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'encripta':
+../src/helloworld.c:167:40: warning: unused variable 'debug_signal_03' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                                        ^
+../src/helloworld.c:167:23: warning: unused variable 'debug_signal_02' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                       ^
+../src/helloworld.c:167:6: warning: unused variable 'debug_signal_01' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7184	    320	   2080	   9584	   2570	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:20:26 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+16:20:32 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+16:26:18 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'encripta':
+../src/helloworld.c:167:40: warning: unused variable 'debug_signal_03' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                                        ^
+../src/helloworld.c:167:23: warning: unused variable 'debug_signal_02' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                       ^
+../src/helloworld.c:167:6: warning: unused variable 'debug_signal_01' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7184	    320	   2080	   9584	   2570	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:26:37 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+16:26:43 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+16:28:18 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'encripta':
+../src/helloworld.c:167:40: warning: unused variable 'debug_signal_03' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                                        ^
+../src/helloworld.c:167:23: warning: unused variable 'debug_signal_02' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                       ^
+../src/helloworld.c:167:6: warning: unused variable 'debug_signal_01' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7304	    320	   2080	   9704	   25e8	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:28:27 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'encripta':
+../src/helloworld.c:167:40: warning: unused variable 'debug_signal_03' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                                        ^
+../src/helloworld.c:167:23: warning: unused variable 'debug_signal_02' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                       ^
+../src/helloworld.c:167:6: warning: unused variable 'debug_signal_01' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7288	    320	   2080	   9688	   25d8	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:28:40 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+16:28:47 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+16:30:10 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'encripta':
+../src/helloworld.c:167:40: warning: unused variable 'debug_signal_03' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                                        ^
+../src/helloworld.c:167:23: warning: unused variable 'debug_signal_02' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                       ^
+../src/helloworld.c:167:6: warning: unused variable 'debug_signal_01' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7392	    320	   2080	   9792	   2640	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:30:16 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'encripta':
+../src/helloworld.c:167:40: warning: unused variable 'debug_signal_03' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                                        ^
+../src/helloworld.c:167:23: warning: unused variable 'debug_signal_02' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+                       ^
+../src/helloworld.c:167:6: warning: unused variable 'debug_signal_01' [-Wunused-variable]
+  int debug_signal_01, debug_signal_02, debug_signal_03;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7368	    320	   2080	   9768	   2628	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:30:29 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+16:30:35 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+16:33:00 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7488	    320	   2080	   9888	   26a0	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:33:16 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+16:33:22 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+16:34:20 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7660	    320	   2084	  10064	   2750	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:34:41 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+16:34:47 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+16:38:48 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'encripta':
+../src/helloworld.c:167:90: warning: unused variable 'debug_signal_36' [-Wunused-variable]
+  int debug_signal_31, debug_signal_32, debug_signal_33, debug_signal_34,debug_signal_35, debug_signal_36;
+                                                                                          ^
+../src/helloworld.c:167:73: warning: unused variable 'debug_signal_35' [-Wunused-variable]
+  int debug_signal_31, debug_signal_32, debug_signal_33, debug_signal_34,debug_signal_35, debug_signal_36;
+                                                                         ^
+../src/helloworld.c:167:57: warning: unused variable 'debug_signal_34' [-Wunused-variable]
+  int debug_signal_31, debug_signal_32, debug_signal_33, debug_signal_34,debug_signal_35, debug_signal_36;
+                                                         ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7660	    320	   2084	  10064	   2750	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:39:47 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7900	    320	   2084	  10304	   2840	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:39:53 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7928	    320	   2080	  10328	   2858	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:40:07 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+16:40:13 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
+16:42:43 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../AES_tests_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AES_tests.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../AES_tests_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "AES_tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_tests.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AES_tests.elf  |tee "AES_tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8048	    320	   2080	  10448	   28d0	AES_tests.elf
+'Finished building: AES_tests.elf.size'
+' '
+16:42:57 **** Auto Build of project AES_tests_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/intc_v3_0/src"
+make -C microblaze_0/libsrc/intc_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling intc"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/intc_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src"
+make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling tmrctr"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/tmrctr_v3_0/src'
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/AES_tests_bsp/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+16:43:03 **** Auto Build of configuration Debug for project AES_tests ****
+make all 
+make: Nothing to be done for `all'.
