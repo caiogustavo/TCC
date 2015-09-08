@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Sep 04 15:52:26 2015" VIVADOVERSION="2014.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Sep 08 18:06:51 2015" VIVADOVERSION="2014.1">
 
   <SYSTEMINFO ARCH="kintex7" BOARD="xilinx.com:kc705:part0:1.0" DEVICE="7k325t" NAME="mb_system_imp" PACKAGE="ffg900" SPEEDGRADE="-2"/>
 
@@ -3257,14 +3257,10 @@
         </PORT>
         <PORT CLKFREQUENCY="5000000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="aes_clk"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="sb_clk"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="90000000" DIR="O" NAME="clk_out2" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out2">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="sb_clk"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT CLKFREQUENCY="90000000" DIR="O" NAME="clk_out2" SIGIS="clk"/>
         <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
@@ -3273,25 +3269,20 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/debug_AES_v1_6_0" HWVERSION="1.6" INSTANCE="debug_AES_v1_6_0" IPTYPE="PERIPHERAL" MODCLASS="PERIPHERAL" MODTYPE="debug_AES_v1_6" VLNV="CGMA:user:debug_AES_v1_6:1.6">
+    <MODULE FULLNAME="/debug_AES_v1_7_0" HWVERSION="1.7" INSTANCE="debug_AES_v1_7_0" IPTYPE="PERIPHERAL" MODCLASS="PERIPHERAL" MODTYPE="debug_AES_v1_7" VLNV="CGMA:user:debug_AES_v1_7:1.7">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_S00_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_S00_AXI_ADDR_WIDTH" VALUE="7"/>
-        <PARAMETER NAME="Component_Name" VALUE="mb_system_debug_AES_v1_6_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="mb_system_debug_AES_v1_7_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_BASEADDR" VALUE="0x44A00000"/>
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x44A0FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="aes_clk" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out1">
+        <PORT DIR="I" NAME="sb_clk" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="sb_clk" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out2">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out2"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s00_axi_aclk" SIGIS="clk" SIGNAME="mig_7series_0_ui_clk">
@@ -3304,97 +3295,97 @@
             <CONNECTION INSTANCE="rst_mig_7series_0_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_awaddr" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_awaddr">
+        <PORT DIR="I" NAME="s00_axi_awaddr" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_awprot" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_awprot">
+        <PORT DIR="I" NAME="s00_axi_awprot" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_awprot">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_awprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_awvalid" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_awvalid">
+        <PORT DIR="I" NAME="s00_axi_awvalid" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_awvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s00_axi_awready" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_awready">
+        <PORT DIR="O" NAME="s00_axi_awready" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_awready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_wdata" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_wdata">
+        <PORT DIR="I" NAME="s00_axi_wdata" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_wdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_wstrb" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_wstrb">
+        <PORT DIR="I" NAME="s00_axi_wstrb" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_wstrb">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_wvalid" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_wvalid">
+        <PORT DIR="I" NAME="s00_axi_wvalid" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_wvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s00_axi_wready" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_wready">
+        <PORT DIR="O" NAME="s00_axi_wready" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_wready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s00_axi_bresp" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_bresp">
+        <PORT DIR="O" NAME="s00_axi_bresp" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_bresp">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s00_axi_bvalid" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_bvalid">
+        <PORT DIR="O" NAME="s00_axi_bvalid" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_bvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_bready" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_bready">
+        <PORT DIR="I" NAME="s00_axi_bready" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_bready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_araddr" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_araddr">
+        <PORT DIR="I" NAME="s00_axi_araddr" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_araddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_arprot" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_arprot">
+        <PORT DIR="I" NAME="s00_axi_arprot" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_arprot">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_arprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_arvalid" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_arvalid">
+        <PORT DIR="I" NAME="s00_axi_arvalid" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s00_axi_arready" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_arready">
+        <PORT DIR="O" NAME="s00_axi_arready" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_arready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s00_axi_rdata" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_rdata">
+        <PORT DIR="O" NAME="s00_axi_rdata" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_rdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s00_axi_rresp" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_rresp">
+        <PORT DIR="O" NAME="s00_axi_rresp" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_rresp">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s00_axi_rvalid" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_rvalid">
+        <PORT DIR="O" NAME="s00_axi_rvalid" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_rvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_rready" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_rready">
+        <PORT DIR="I" NAME="s00_axi_rready" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_rready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph_xbar" PORT="m_axi_rready"/>
           </CONNECTIONS>
@@ -4498,7 +4489,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
       <MEMORYMAP>
-        <MEMRANGE BASENAME="C_BASEADDR" BASEVALUE="0x44A00000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x44A0FFFF" INSTANCE="debug_AES_v1_6_0" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MEMTYPE="REGISTER"/>
+        <MEMRANGE BASENAME="C_BASEADDR" BASEVALUE="0x44A00000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x44A0FFFF" INSTANCE="debug_AES_v1_7_0" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xC0000000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xC0000FFF" INSTANCE="axi_bram_ctrl_0" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MEMTYPE="MEMORY"/>
         <MEMRANGE BASENAME="C_BASEADDR" BASEVALUE="0x41C00000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x41C0FFFF" INSTANCE="axi_timer_0" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_BASEADDR" BASEVALUE="0x40600000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4060FFFF" INSTANCE="axi_uartlite_0" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" MEMTYPE="REGISTER"/>
@@ -4510,7 +4501,7 @@
         <MEMRANGE BASENAME="C_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x0000FFFF" INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr" IS_DATA="FALSE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
       </MEMORYMAP>
       <PERIPHERALS>
-        <PERIPHERAL INSTANCE="debug_AES_v1_6_0"/>
+        <PERIPHERAL INSTANCE="debug_AES_v1_7_0"/>
         <PERIPHERAL INSTANCE="axi_bram_ctrl_0"/>
         <PERIPHERAL INSTANCE="axi_timer_0"/>
         <PERIPHERAL INSTANCE="axi_uartlite_0"/>
@@ -6071,15 +6062,15 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_awaddr"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_awaddr"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axi_awprot" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_awprot">
+        <PORT DIR="O" NAME="m_axi_awprot" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_awprot">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_awprot"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_awprot"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axi_awvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_intc_s_axi_awvalid">
@@ -6090,7 +6081,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_awvalid"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_awvalid"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_awvalid"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_awvalid"/>
@@ -6104,7 +6095,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_awready"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_awready"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_awready"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_awready"/>
@@ -6118,7 +6109,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_wdata"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_wdata"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_wdata"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_wdata"/>
@@ -6132,7 +6123,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_wstrb"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_wstrb"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_wstrb"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_wstrb"/>
@@ -6146,7 +6137,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_wvalid"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_wvalid"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_wvalid"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_wvalid"/>
@@ -6160,7 +6151,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_wready"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_wready"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_wready"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_wready"/>
@@ -6174,7 +6165,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_bresp"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_bresp"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_bresp"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_bresp"/>
@@ -6188,7 +6179,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_bvalid"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_bvalid"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_bvalid"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_bvalid"/>
@@ -6202,7 +6193,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_bready"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_bready"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_bready"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_bready"/>
@@ -6216,15 +6207,15 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_araddr"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_araddr"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_araddr"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axi_arprot" SIGIS="undef" SIGNAME="debug_AES_v1_6_0_s00_axi_arprot">
+        <PORT DIR="O" NAME="m_axi_arprot" SIGIS="undef" SIGNAME="debug_AES_v1_7_0_s00_axi_arprot">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_arprot"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_arprot"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axi_arvalid" SIGIS="undef" SIGNAME="microblaze_0_axi_intc_s_axi_arvalid">
@@ -6235,7 +6226,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_arvalid"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_arvalid"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_arvalid"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_arvalid"/>
@@ -6249,7 +6240,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_arready"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_arready"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_arready"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_arready"/>
@@ -6263,7 +6254,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_rdata"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_rdata"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_rdata"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_rdata"/>
@@ -6277,7 +6268,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_rresp"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_rresp"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_rresp"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_rresp"/>
@@ -6291,7 +6282,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_rvalid"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_rvalid"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_rvalid"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_rvalid"/>
@@ -6305,7 +6296,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_rready"/>
           </CONNECTIONS>
           <CONNECTIONS>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_rready"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_rready"/>
           </CONNECTIONS>
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_rready"/>
@@ -8329,7 +8320,7 @@
             <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_aclk"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="s_axi_awid" SIGIS="undef" SIGNAME="axi_mem_intercon_xbar_m_axi_awid">
@@ -8669,7 +8660,7 @@
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_timer_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="s_axi_aresetn"/>
-            <CONNECTION INSTANCE="debug_AES_v1_6_0" PORT="s00_axi_aresetn"/>
+            <CONNECTION INSTANCE="debug_AES_v1_7_0" PORT="s00_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

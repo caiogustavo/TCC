@@ -62,7 +62,7 @@ component myip_lite_v1_0
 	);
 	port (
 		-- Users to add ports here
-        aes_clk : in std_logic;
+        --aes_clk : in std_logic;
         sb_clk : in std_logic;
 		-- User ports ends
 		s00_axi_aclk	: in std_logic;
@@ -99,7 +99,7 @@ myip_0: myip_lite_v1_0
 	)
 	port map (
 		-- Users to add ports here
-        aes_clk => aes_clk,
+        --aes_clk => aes_clk,
         sb_clk => sb_clk,
 		-- User ports ends
 		s00_axi_aclk => aclk,
@@ -363,10 +363,10 @@ sim: process begin
     wait for 1 us;
     
 --    -- debug
-       -- Escreve 13 no sel 
+       -- Escreve 0c no sel 
        awaddr <= "1010100"; --reg_debug_sel
        awvalid <= '1';
-       wdata <= x"00000013"; -- sel = 13
+       wdata <= x"0000000c"; -- sel = 0c (k1)
        wvalid <= '1';
        wstrb <= "0001";
        bready <= '1';
@@ -380,7 +380,7 @@ sim: process begin
        
        wait for 1 us;
     
-       -- lê debug_signal e3
+       -- lê debug_signal k1
        araddr <= "1000100"; -- reg_debug0
        arvalid <= '1';
        wait for 2 us;

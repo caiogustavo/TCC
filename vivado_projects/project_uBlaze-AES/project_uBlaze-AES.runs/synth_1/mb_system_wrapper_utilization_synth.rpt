@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
-| Date         : Fri Sep 04 15:35:28 2015
+| Date         : Tue Sep 08 17:50:10 2015
 | Host         : LAPAR01-PC running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file mb_system_wrapper_utilization_synth.rpt -pb mb_system_wrapper_utilization_synth.pb
 | Design       : mb_system_wrapper
@@ -29,16 +29,16 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Loced | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 21108 |     0 |    203800 | 10.35 |
-|   LUT as Logic             | 18420 |     0 |    203800 |  9.03 |
+| Slice LUTs*                | 20767 |     0 |    203800 | 10.18 |
+|   LUT as Logic             | 18079 |     0 |    203800 |  8.87 |
 |   LUT as Memory            |  2688 |     0 |     64000 |  4.20 |
 |     LUT as Distributed RAM |  1848 |     0 |           |       |
 |     LUT as Shift Register  |   840 |     0 |           |       |
-| Slice Registers            | 21334 |     2 |    407600 |  5.23 |
-|   Register as Flip Flop    | 21065 |     2 |    407600 |  5.16 |
-|   Register as Latch        |   269 |     0 |    407600 |  0.06 |
-| F7 Muxes                   |   648 |     0 |    101900 |  0.63 |
-| F8 Muxes                   |    11 |     0 |     50950 |  0.02 |
+| Slice Registers            | 21468 |     2 |    407600 |  5.26 |
+|   Register as Flip Flop    | 21468 |     2 |    407600 |  5.26 |
+|   Register as Latch        |     0 |     0 |    407600 |  0.00 |
+| F7 Muxes                   |   650 |     0 |    101900 |  0.63 |
+| F8 Muxes                   |    28 |     0 |     50950 |  0.05 |
 +----------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
@@ -106,7 +106,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Loced | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    9 |     0 |        32 | 28.12 |
+| BUFGCTRL   |    8 |     0 |        32 | 25.00 |
 | BUFIO      |    0 |     0 |        40 |  0.00 |
 | MMCME2_ADV |    2 |     0 |        10 | 20.00 |
 | PLLE2_ADV  |    1 |     0 |        10 | 10.00 |
@@ -140,20 +140,19 @@ Table of Contents
 +------------------------+-------+---------------------+
 |        Ref Name        |  Used | Functional Category |
 +------------------------+-------+---------------------+
-| FDRE                   | 20364 |        Flop & Latch |
-| LUT6                   |  6956 |                 LUT |
-| LUT5                   |  4555 |                 LUT |
-| LUT3                   |  4534 |                 LUT |
-| LUT4                   |  2931 |                 LUT |
+| FDRE                   | 20767 |        Flop & Latch |
+| LUT6                   |  6646 |                 LUT |
+| LUT5                   |  4616 |                 LUT |
+| LUT3                   |  4526 |                 LUT |
+| LUT4                   |  2949 |                 LUT |
 | RAMD32                 |  2740 |  Distributed Memory |
-| LUT2                   |  2277 |                 LUT |
+| LUT2                   |  2269 |                 LUT |
 | RAMS32                 |   892 |  Distributed Memory |
-| MUXF7                  |   648 |               MuxFx |
-| LUT1                   |   620 |                 LUT |
+| MUXF7                  |   650 |               MuxFx |
+| LUT1                   |   626 |                 LUT |
 | SRLC32E                |   604 |  Distributed Memory |
 | FDSE                   |   429 |        Flop & Latch |
 | CARRY4                 |   399 |          CarryLogic |
-| LDCE                   |   269 |        Flop & Latch |
 | SRL16E                 |   229 |  Distributed Memory |
 | FDCE                   |   214 |        Flop & Latch |
 | OSERDESE2              |   103 |                  IO |
@@ -163,6 +162,7 @@ Table of Contents
 | IBUF_IBUFDISABLE       |    64 |                  IO |
 | FDPE                   |    58 |        Flop & Latch |
 | RAMB36E1               |    36 |        Block Memory |
+| MUXF8                  |    28 |               MuxFx |
 | OBUF                   |    25 |                  IO |
 | AND2B1L                |    18 |              Others |
 | ODDR                   |    17 |                  IO |
@@ -170,12 +170,11 @@ Table of Contents
 | IBUFDS_IBUFDISABLE_INT |    16 |                  IO |
 | PHASER_OUT_PHY         |    11 |                  IO |
 | OUT_FIFO               |    11 |                  IO |
-| MUXF8                  |    11 |               MuxFx |
 | INV                    |     9 |                 LUT |
-| BUFG                   |     9 |               Clock |
 | PHASER_IN_PHY          |     8 |                  IO |
 | OBUFT                  |     8 |                  IO |
 | IN_FIFO                |     8 |                  IO |
+| BUFG                   |     8 |               Clock |
 | SRLC16E                |     7 |  Distributed Memory |
 | DSP48E1                |     5 |    Block Arithmetic |
 | PHY_CONTROL            |     3 |                  IO |
