@@ -2,8 +2,8 @@
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>CGMA</spirit:vendor>
   <spirit:library>user</spirit:library>
-  <spirit:name>debug_AES_v1_7</spirit:name>
-  <spirit:version>1.7</spirit:version>
+  <spirit:name>debug_AES_v1_8</spirit:name>
+  <spirit:version>1.8</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>s00_axi</spirit:name>
@@ -242,7 +242,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>b8fa136e</spirit:value>
+            <spirit:value>a25ab4a3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -258,7 +258,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>b8fa136e</spirit:value>
+            <spirit:value>a25ab4a3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -832,7 +832,7 @@
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>debug_AES_v1_7: Uso do clk_divider e liberação do k1</spirit:description>
+  <spirit:description>debug_AES_v1_8: arrumada a decriptação</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
@@ -857,15 +857,15 @@
       <xilinx:taxonomies>
         <xilinx:taxonomy>/BaseIP</xilinx:taxonomy>
       </xilinx:taxonomies>
-      <xilinx:displayName>debug_AES_v1_7</xilinx:displayName>
+      <xilinx:displayName>debug_AES_v1_8</xilinx:displayName>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2015-09-08T20:35:49Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2015-09-08T21:57:35Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2014.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="8ecf72e9"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="bd713eed"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="292e59b5"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6403a890"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="c27f11eb"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="aed2e092"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="c83760bd"/>

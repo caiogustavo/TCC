@@ -94,6 +94,7 @@
    <wvobject db_ref_id="1" fp_name="/TB_myip/rdata" type="array">
       <obj_property name="ElementShortName">rdata[31:0]</obj_property>
       <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" fp_name="/TB_myip/rresp" type="array">
       <obj_property name="ElementShortName">rresp[1:0]</obj_property>

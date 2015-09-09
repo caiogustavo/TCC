@@ -1,7 +1,7 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
---Date        : Tue Sep 08 17:36:58 2015
+--Date        : Tue Sep 08 20:37:59 2015
 --Host        : LAPAR01-PC running 64-bit Service Pack 1  (build 7601)
 --Command     : generate_target mb_system.bd
 --Design      : mb_system
@@ -3891,7 +3891,7 @@ entity mb_system is
     sys_diff_clock_clk_p : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of mb_system : entity is "mb_system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLanguage=VHDL,numBlks=31,numReposBlks=19,numNonXlnxBlks=1,numHierBlks=12,maxHierDepth=1,da_axi4_cnt=27,da_board_cnt=5,da_bram_cntlr_cnt=2,da_mb_cnt=1}";
+  attribute CORE_GENERATION_INFO of mb_system : entity is "mb_system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLanguage=VHDL,numBlks=31,numReposBlks=19,numNonXlnxBlks=1,numHierBlks=12,maxHierDepth=1,da_axi4_cnt=32,da_board_cnt=5,da_bram_cntlr_cnt=2,da_mb_cnt=1}";
 end mb_system;
 
 architecture STRUCTURE of mb_system is
@@ -4288,9 +4288,9 @@ architecture STRUCTURE of mb_system is
     reset : in STD_LOGIC
   );
   end component mb_system_clk_wiz_0_0;
-  component mb_system_debug_AES_v1_7_0_1 is
+  component mb_system_AES_AXI_0_0 is
   port (
-    sb_clk : in STD_LOGIC;
+    aes_clk : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_aresetn : in STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
@@ -4313,7 +4313,7 @@ architecture STRUCTURE of mb_system is
     s00_axi_rvalid : out STD_LOGIC;
     s00_axi_rready : in STD_LOGIC
   );
-  end component mb_system_debug_AES_v1_7_0_1;
+  end component mb_system_AES_AXI_0_0;
   signal GND_1 : STD_LOGIC;
   signal VCC_1 : STD_LOGIC;
   signal axi_bram_ctrl_0_BRAM_PORTA_ADDR : STD_LOGIC_VECTOR ( 11 downto 0 );
@@ -4660,6 +4660,31 @@ begin
   rs232_uart_txd <= axi_uartlite_0_UART_TxD;
   sys_diff_clock_1_CLK_N <= sys_diff_clock_clk_n;
   sys_diff_clock_1_CLK_P <= sys_diff_clock_clk_p;
+AES_AXI_0: component mb_system_AES_AXI_0_0
+    port map (
+      aes_clk => clk_wiz_0_clk_out1,
+      s00_axi_aclk => microblaze_0_Clk,
+      s00_axi_araddr(6 downto 0) => microblaze_0_axi_periph_M03_AXI_ARADDR(6 downto 0),
+      s00_axi_aresetn => rst_mig_7series_0_100M_peripheral_aresetn(0),
+      s00_axi_arprot(2 downto 0) => microblaze_0_axi_periph_M03_AXI_ARPROT(2 downto 0),
+      s00_axi_arready => microblaze_0_axi_periph_M03_AXI_ARREADY,
+      s00_axi_arvalid => microblaze_0_axi_periph_M03_AXI_ARVALID,
+      s00_axi_awaddr(6 downto 0) => microblaze_0_axi_periph_M03_AXI_AWADDR(6 downto 0),
+      s00_axi_awprot(2 downto 0) => microblaze_0_axi_periph_M03_AXI_AWPROT(2 downto 0),
+      s00_axi_awready => microblaze_0_axi_periph_M03_AXI_AWREADY,
+      s00_axi_awvalid => microblaze_0_axi_periph_M03_AXI_AWVALID,
+      s00_axi_bready => microblaze_0_axi_periph_M03_AXI_BREADY,
+      s00_axi_bresp(1 downto 0) => microblaze_0_axi_periph_M03_AXI_BRESP(1 downto 0),
+      s00_axi_bvalid => microblaze_0_axi_periph_M03_AXI_BVALID,
+      s00_axi_rdata(31 downto 0) => microblaze_0_axi_periph_M03_AXI_RDATA(31 downto 0),
+      s00_axi_rready => microblaze_0_axi_periph_M03_AXI_RREADY,
+      s00_axi_rresp(1 downto 0) => microblaze_0_axi_periph_M03_AXI_RRESP(1 downto 0),
+      s00_axi_rvalid => microblaze_0_axi_periph_M03_AXI_RVALID,
+      s00_axi_wdata(31 downto 0) => microblaze_0_axi_periph_M03_AXI_WDATA(31 downto 0),
+      s00_axi_wready => microblaze_0_axi_periph_M03_AXI_WREADY,
+      s00_axi_wstrb(3 downto 0) => microblaze_0_axi_periph_M03_AXI_WSTRB(3 downto 0),
+      s00_axi_wvalid => microblaze_0_axi_periph_M03_AXI_WVALID
+    );
 GND: unisim.vcomponents.GND
     port map (
       G => GND_1
@@ -4960,31 +4985,6 @@ clk_wiz_0: component mb_system_clk_wiz_0_0
       clk_out1 => clk_wiz_0_clk_out1,
       clk_out2 => NLW_clk_wiz_0_clk_out2_UNCONNECTED,
       reset => reset_1
-    );
-debug_AES_v1_7_0: component mb_system_debug_AES_v1_7_0_1
-    port map (
-      s00_axi_aclk => microblaze_0_Clk,
-      s00_axi_araddr(6 downto 0) => microblaze_0_axi_periph_M03_AXI_ARADDR(6 downto 0),
-      s00_axi_aresetn => rst_mig_7series_0_100M_peripheral_aresetn(0),
-      s00_axi_arprot(2 downto 0) => microblaze_0_axi_periph_M03_AXI_ARPROT(2 downto 0),
-      s00_axi_arready => microblaze_0_axi_periph_M03_AXI_ARREADY,
-      s00_axi_arvalid => microblaze_0_axi_periph_M03_AXI_ARVALID,
-      s00_axi_awaddr(6 downto 0) => microblaze_0_axi_periph_M03_AXI_AWADDR(6 downto 0),
-      s00_axi_awprot(2 downto 0) => microblaze_0_axi_periph_M03_AXI_AWPROT(2 downto 0),
-      s00_axi_awready => microblaze_0_axi_periph_M03_AXI_AWREADY,
-      s00_axi_awvalid => microblaze_0_axi_periph_M03_AXI_AWVALID,
-      s00_axi_bready => microblaze_0_axi_periph_M03_AXI_BREADY,
-      s00_axi_bresp(1 downto 0) => microblaze_0_axi_periph_M03_AXI_BRESP(1 downto 0),
-      s00_axi_bvalid => microblaze_0_axi_periph_M03_AXI_BVALID,
-      s00_axi_rdata(31 downto 0) => microblaze_0_axi_periph_M03_AXI_RDATA(31 downto 0),
-      s00_axi_rready => microblaze_0_axi_periph_M03_AXI_RREADY,
-      s00_axi_rresp(1 downto 0) => microblaze_0_axi_periph_M03_AXI_RRESP(1 downto 0),
-      s00_axi_rvalid => microblaze_0_axi_periph_M03_AXI_RVALID,
-      s00_axi_wdata(31 downto 0) => microblaze_0_axi_periph_M03_AXI_WDATA(31 downto 0),
-      s00_axi_wready => microblaze_0_axi_periph_M03_AXI_WREADY,
-      s00_axi_wstrb(3 downto 0) => microblaze_0_axi_periph_M03_AXI_WSTRB(3 downto 0),
-      s00_axi_wvalid => microblaze_0_axi_periph_M03_AXI_WVALID,
-      sb_clk => clk_wiz_0_clk_out1
     );
 mdm_1: component mb_system_mdm_1_0
     port map (

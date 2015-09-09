@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
-| Date         : Tue Sep 08 17:50:10 2015
+| Date         : Tue Sep 08 20:51:32 2015
 | Host         : LAPAR01-PC running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file mb_system_wrapper_utilization_synth.rpt -pb mb_system_wrapper_utilization_synth.pb
 | Design       : mb_system_wrapper
@@ -29,16 +29,16 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Loced | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 20767 |     0 |    203800 | 10.18 |
-|   LUT as Logic             | 18079 |     0 |    203800 |  8.87 |
+| Slice LUTs*                | 21172 |     0 |    203800 | 10.38 |
+|   LUT as Logic             | 18484 |     0 |    203800 |  9.06 |
 |   LUT as Memory            |  2688 |     0 |     64000 |  4.20 |
 |     LUT as Distributed RAM |  1848 |     0 |           |       |
 |     LUT as Shift Register  |   840 |     0 |           |       |
-| Slice Registers            | 21468 |     2 |    407600 |  5.26 |
-|   Register as Flip Flop    | 21468 |     2 |    407600 |  5.26 |
+| Slice Registers            | 21994 |     2 |    407600 |  5.39 |
+|   Register as Flip Flop    | 21994 |     2 |    407600 |  5.39 |
 |   Register as Latch        |     0 |     0 |    407600 |  0.00 |
-| F7 Muxes                   |   650 |     0 |    101900 |  0.63 |
-| F8 Muxes                   |    28 |     0 |     50950 |  0.05 |
+| F7 Muxes                   |   679 |     0 |    101900 |  0.66 |
+| F8 Muxes                   |    43 |     0 |     50950 |  0.08 |
 +----------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
@@ -140,18 +140,18 @@ Table of Contents
 +------------------------+-------+---------------------+
 |        Ref Name        |  Used | Functional Category |
 +------------------------+-------+---------------------+
-| FDRE                   | 20767 |        Flop & Latch |
-| LUT6                   |  6646 |                 LUT |
-| LUT5                   |  4616 |                 LUT |
-| LUT3                   |  4526 |                 LUT |
-| LUT4                   |  2949 |                 LUT |
+| FDRE                   | 21292 |        Flop & Latch |
+| LUT6                   |  6965 |                 LUT |
+| LUT3                   |  4570 |                 LUT |
+| LUT5                   |  4417 |                 LUT |
+| LUT4                   |  3057 |                 LUT |
 | RAMD32                 |  2740 |  Distributed Memory |
-| LUT2                   |  2269 |                 LUT |
+| LUT2                   |  2483 |                 LUT |
 | RAMS32                 |   892 |  Distributed Memory |
-| MUXF7                  |   650 |               MuxFx |
-| LUT1                   |   626 |                 LUT |
+| MUXF7                  |   679 |               MuxFx |
+| LUT1                   |   627 |                 LUT |
 | SRLC32E                |   604 |  Distributed Memory |
-| FDSE                   |   429 |        Flop & Latch |
+| FDSE                   |   430 |        Flop & Latch |
 | CARRY4                 |   399 |          CarryLogic |
 | SRL16E                 |   229 |  Distributed Memory |
 | FDCE                   |   214 |        Flop & Latch |
@@ -161,8 +161,8 @@ Table of Contents
 | IDELAYE2               |    64 |                  IO |
 | IBUF_IBUFDISABLE       |    64 |                  IO |
 | FDPE                   |    58 |        Flop & Latch |
+| MUXF8                  |    43 |               MuxFx |
 | RAMB36E1               |    36 |        Block Memory |
-| MUXF8                  |    28 |               MuxFx |
 | OBUF                   |    25 |                  IO |
 | AND2B1L                |    18 |              Others |
 | ODDR                   |    17 |                  IO |

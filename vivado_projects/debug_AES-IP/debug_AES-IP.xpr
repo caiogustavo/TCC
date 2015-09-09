@@ -25,26 +25,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../project_AES-IP/project_AES-IP.srcs/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd"/>
-          <Attr Name="ImportTime" Val="1424537774"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/imports/sources_1/new/DeMux_1x2.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../project_AES-IP/project_AES-IP.srcs/sources_1/imports/sources_1/new/DeMux_1x2.vhd"/>
           <Attr Name="ImportTime" Val="1437439640"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../project_AES-IP/project_AES-IP.srcs/sources_1/imports/sources_1/new/Control_Decryption.vhd"/>
-          <Attr Name="ImportTime" Val="1437920446"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -149,6 +133,22 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../project_AES-IP/project_AES-IP.srcs/sources_1/imports/sources_1/imports/hdl/myip_lite_v1_0.vhd"/>
           <Attr Name="ImportTime" Val="1437623506"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../project_AES-IP/project_AES-IP.srcs/sources_1/imports/sources_1/new/Control_Decryption.vhd"/>
+          <Attr Name="ImportTime" Val="1437920446"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../project_AES-IP/project_AES-IP.srcs/sources_1/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd"/>
+          <Attr Name="ImportTime" Val="1424537774"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

@@ -60,6 +60,7 @@ type state_type is (st_idle, st_round_0, st_round_1, st_round_2, st_round_3, st_
 signal state, next_state : state_type := st_idle;
 
 signal rdy_i: std_logic := '0';
+signal s0_i, bo_i, k1_i: std_logic_vector(127 downto 0) := (others => '0');
 --signal clk_i, clk_x2, clk_x4, clk_x8, clk_x16: std_logic := '0';
 
 
@@ -77,120 +78,263 @@ component Mux_2x1
         saida: out std_logic_vector(127 downto 0)
     );
 end component;
-component Mux_10x1
-    Port ( 
-        ent9, ent8, ent7, ent6, ent5, ent4, ent3, ent2, ent1, ent0: in std_logic_vector(127 downto 0);
-        sel: in std_logic_vector(3 downto 0);
-        saida: out std_logic_vector(127 downto 0)
-    );
-end component;
+--component Mux_10x1
+--    Port ( 
+--        ent9, ent8, ent7, ent6, ent5, ent4, ent3, ent2, ent1, ent0: in std_logic_vector(127 downto 0);
+--        sel: in std_logic_vector(3 downto 0);
+--        saida: out std_logic_vector(127 downto 0)
+--    );
+--end component;
 
 
 begin
 
-rdy <= rdy_i;
+    rdy <= rdy_i;
+    k1 <= k1_i;
+    s0 <= s0_i;
+    bo <= bo_i;
    -- clk <= clk_i;
 
 
 -- Mux do registrador de início da rodada
     Mux_1: Mux_2x1 port map( sel => e_mux_1, ent0 => s5, ent1 => s4, saida => prox_s0);
 
--- Mux da chave
-    Mux_2: Mux_10x1 port map( sel => e_mux_2, ent9 => e0, ent8 => e1, ent7 => e2,
-                              ent6 => e3, ent5 => e4, ent4 => e5, ent3 => e6,
-                              ent2 => e7, ent1 => e8, ent0 => e9, saida => k1);
+---- Mux da chave
+--    Mux_2: Mux_10x1 port map( sel => e_mux_2, ent9 => e0, ent8 => e1, ent7 => e2,
+--                              ent6 => e3, ent5 => e4, ent4 => e5, ent3 => e6,
+--                              ent2 => e7, ent1 => e8, ent0 => e9, saida => k1);
 
-ASSYNC_SYNC_PROC: process (clk,en)
-  begin
-     if ( rising_edge(clk) ) and en = '1' then
-         state <= next_state;
-         s0 <= prox_s0;
-     end if;
-     if rising_edge(en) then
-        state <= st_round_0;
-     end if;
-     if falling_edge(en) then    
-        state <= st_idle;
-     end if;
-end process;
+--SM_proc: process (clk)
+--begin
+--if rising_edge(clk) then
+--    --s0_i <= prox_s0; 
+--   case (state) is
+--      when st_idle =>
+--         rdy_i <= '0';
+--         k1_i <= e0;
+--         e_mux_1 <= '0';
+--         if en ='1' then
+--            state <= st_round_0;
+--         else
+--            state <= st_idle;
+--         end if;
+--      when st_round_0 =>
+--         rdy_i <= '0';
+--         k1_i <= e0;
+--         e_mux_1 <= '0';
+--         if en = '1' then
+--            state <= st_round_1;
+--         else
+--            state <= st_idle;
+--         end if;
+--      when st_round_1 =>
+--         s0_i <= prox_s0;
+--         rdy_i <= '0';
+--         k1_i <= e0;
+--         e_mux_1 <= '1';
+--         if en = '1' then
+--            state <= st_round_2;
+--         else
+--            state <= st_idle;
+--         end if;
+--      when st_round_2 =>
+--         s0_i <= prox_s0;
+--         rdy_i <= '0';
+--         k1_i <= e1;
+--         e_mux_1 <= '1';
+--         if en = '1' then
+--            state <= st_round_3;
+--         else
+--            state <= st_idle;
+--         end if;
+--      when st_round_3 =>
+--         s0_i <= prox_s0;
+--         rdy_i <= '0';
+--         k1_i <= e2;
+--         e_mux_1 <= '1';
+--         if en = '1' then
+--            state <= st_round_4;
+--         else
+--            state <= st_idle;
+--         end if;
+--      when st_round_4 =>
+--         s0_i <= prox_s0;
+--         rdy_i <= '0';
+--         k1_i <= e3;
+--         e_mux_1 <= '1';
+--         if en = '1' then
+--            state <= st_round_5;
+--         else
+--            state <= st_idle;
+--         end if;
+--      when st_round_5 =>
+--         s0_i <= prox_s0;
+--         rdy_i <= '0';
+--         k1_i <= e4;
+--         e_mux_1 <= '1';
+--         if en = '1' then
+--            state <= st_round_6;
+--         else
+--            state <= st_idle;
+--         end if;
+--      when st_round_6 =>
+--         s0_i <= prox_s0;
+--         rdy_i <= '0';
+--         k1_i <= e5;
+--         e_mux_1 <= '1';
+--         if en = '1' then
+--            state <= st_round_7;
+--         else
+--            state <= st_idle;
+--         end if;
+--      when st_round_7 =>
+--         s0_i <= prox_s0;
+--         rdy_i <= '0';
+--         k1_i <= e6;
+--         e_mux_1 <= '1';
+--         if en = '1' then
+--            state <= st_round_8;
+--         else
+--            state <= st_idle;
+--         end if;
+--      when st_round_8 =>
+--         s0_i <= prox_s0;
+--         rdy_i <= '0';
+--         k1_i <= e7;
+--         e_mux_1 <= '1';
+--         if en = '1' then
+--            state <= st_round_9;
+--         else
+--            state <= st_idle;
+--         end if;
+--      when st_round_9 =>
+--         s0_i <= prox_s0;
+--         rdy_i <= '0';
+--         k1_i <= e8;
+--         e_mux_1 <= '1';
+--         if en = '1' then
+--            state <= st_round_10;
+--         else
+--            state <= st_idle;
+--         end if;
+--      when st_round_10 =>
+--         s0_i <= prox_s0;
+--         rdy_i <= '0';
+--         k1_i <= e9;
+--         e_mux_1 <= '1';
+--         if en = '1' then
+--            state <= st_ready;
+--         else
+--            state <= st_idle;
+--         end if;
+--      when st_ready =>
+--         bo_i <= s5;
+--         rdy_i <= '1';
+--         k1_i <= e9;
+--         e_mux_1 <= '1';
+--         if en = '1' then
+--            state <= st_ready;
+--         else
+--            state <= st_idle;
+--         end if;
+--      when others =>
+--         state <= st_idle;
+--   end case;  
+--end if;    
+--end process;
+
+
+--ASSYNC_SYNC_PROC: process (clk,en)
+--  begin
+--     if ( rising_edge(clk) ) and en = '1' then
+--         state <= next_state;
+--         s0 <= prox_s0;
+--     end if;
+--     if rising_edge(en) then
+--        state <= st_round_0;
+--     end if;
+--     if falling_edge(en) then    
+--        state <= st_idle;
+--     end if;
+--end process;
   
-STATE_DECODE: process (state)
-begin
-   --declare default state for next_state to avoid latches
-   --next_state <= state;  --default is to stay in current state
-   --insert statements to decode next_state
-   --below is a simple example
-   case (state) is
-      when st_idle =>
-         rdy_i <= '0';
-         e_mux_1 <= '0';
-         e_mux_2 <= "0000";
-         next_state <= st_idle;
-      when st_round_0 =>
-         rdy_i <= '0';
-         e_mux_1 <= '0';
-         e_mux_2 <= "0000";
-         next_state <= st_round_1;
-      when st_round_1 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0000";
-         next_state <= st_round_2;
-      when st_round_2 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0001";
-         next_state <= st_round_3;
-      when st_round_3 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0010";
-         next_state <= st_round_4;
-      when st_round_4 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0011";
-         next_state <= st_round_5;
-      when st_round_5 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0100";
-         next_state <= st_round_6;
-      when st_round_6 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0101";
-         next_state <= st_round_7;
-      when st_round_7 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0110";
-         next_state <= st_round_8;
-      when st_round_8 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0111";
-         next_state <= st_round_9;
-      when st_round_9 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "1000";
-         next_state <= st_round_10;
-      when st_round_10 =>
-         rdy_i <= '0';
-         e_mux_1 <= '1';
-         e_mux_2 <= "1001";
-         next_state <= st_ready;
-      when st_ready =>
-         bo <= s3 after 5ns;
-         rdy_i <= '1';
-         e_mux_1 <= '1';
-         e_mux_2 <= "0000";
-         next_state <= st_ready;
-      when others =>
-         next_state <= st_idle;
-   end case;      
-end process;
+--STATE_DECODE: process (state)
+--begin
+--   --declare default state for next_state to avoid latches
+--   --next_state <= state;  --default is to stay in current state
+--   --insert statements to decode next_state
+--   --below is a simple example
+--   case (state) is
+--      when st_idle =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '0';
+--         e_mux_2 <= "0000";
+--         next_state <= st_idle;
+--      when st_round_0 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '0';
+--         e_mux_2 <= "0000";
+--         next_state <= st_round_1;
+--      when st_round_1 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0000";
+--         next_state <= st_round_2;
+--      when st_round_2 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0001";
+--         next_state <= st_round_3;
+--      when st_round_3 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0010";
+--         next_state <= st_round_4;
+--      when st_round_4 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0011";
+--         next_state <= st_round_5;
+--      when st_round_5 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0100";
+--         next_state <= st_round_6;
+--      when st_round_6 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0101";
+--         next_state <= st_round_7;
+--      when st_round_7 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0110";
+--         next_state <= st_round_8;
+--      when st_round_8 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0111";
+--         next_state <= st_round_9;
+--      when st_round_9 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "1000";
+--         next_state <= st_round_10;
+--      when st_round_10 =>
+--         rdy_i <= '0';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "1001";
+--         next_state <= st_ready;
+--      when st_ready =>
+--         bo <= s3 after 5ns;
+--         rdy_i <= '1';
+--         e_mux_1 <= '1';
+--         e_mux_2 <= "0000";
+--         next_state <= st_ready;
+--      when others =>
+--         next_state <= st_idle;
+--   end case;      
+--end process;
 
 
 ---------------------------------------------------------------------------------------------------------

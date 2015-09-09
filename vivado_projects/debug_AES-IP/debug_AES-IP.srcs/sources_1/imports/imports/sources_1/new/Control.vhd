@@ -57,7 +57,7 @@ architecture rtl_structural of Control is
 type state_type is (st_idle, st_round_0, st_round_1, st_round_2, st_round_3, st_round_4,
                     st_round_5, st_round_6, st_round_7, st_round_8, st_round_9,
                     st_round_10, st_ready);
-signal next_state, state : state_type := st_idle;
+signal state : state_type := st_idle;
 signal s0_i, bo_i, k1_i: std_logic_vector(127 downto 0) := (others => '0');
 
 --signal en_delay: std_logic;

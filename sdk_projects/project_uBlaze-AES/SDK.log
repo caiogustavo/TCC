@@ -215,3 +215,31 @@
 18:09:52 INFO  : Updating hardware inferred compiler options for AES_tests.
 18:09:52 INFO  : Clearing existing target manager status.
 18:10:40 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw_platform_0/download.bit"
+19:36:51 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:37:22 INFO  : Processing command line option -hwspec C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw/mb_system.xml.
+19:37:36 INFO  : The hardware specification for project 'hw_platform_0' is different from C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw/mb_system.xml.
+19:37:37 INFO  : Copied contents of C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw/mb_system.xml into \hw_platform_0\system.xml.
+19:37:39 INFO  : Updating .bit and .bmm files from XPS's export folder.
+19:37:48 INFO  : Copied contents of C:\Projetos_git\repo\sdk_projects\project_uBlaze-AES\hw\mb_system_wrapper.bit into \hw_platform_0\mb_system_wrapper.bit.
+19:37:48 INFO  : Copied contents of C:\Projetos_git\repo\sdk_projects\project_uBlaze-AES\hw\mb_system_wrapper_bd.bmm into \hw_platform_0\mb_system_wrapper_bd.bmm.
+19:37:48 INFO  : Copied contents of C:\Projetos_git\repo\sdk_projects\project_uBlaze-AES\hw\mb_system_wrapper.bit into \hw_platform_0\mb_system_wrapper.bit.
+19:37:48 INFO  : Copied contents of C:\Projetos_git\repo\sdk_projects\project_uBlaze-AES\hw\mb_system_wrapper_bd.bmm into \hw_platform_0\mb_system_wrapper_bd.bmm.
+19:37:55 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:38:01 INFO  : 
+19:38:02 INFO  : Updating hardware inferred compiler options for AES_tests.
+19:38:02 INFO  : Clearing existing target manager status.
+19:39:37 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw_platform_0/download.bit"
+21:10:42 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:11:06 INFO  : Processing command line option -hwspec C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw/mb_system.xml.
+21:11:17 INFO  : The hardware specification for project 'hw_platform_0' is different from C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw/mb_system.xml.
+21:11:18 INFO  : Copied contents of C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw/mb_system.xml into \hw_platform_0\system.xml.
+21:11:18 INFO  : Updating .bit and .bmm files from XPS's export folder.
+21:11:27 INFO  : Copied contents of C:\Projetos_git\repo\sdk_projects\project_uBlaze-AES\hw\mb_system_wrapper.bit into \hw_platform_0\mb_system_wrapper.bit.
+21:11:27 INFO  : Copied contents of C:\Projetos_git\repo\sdk_projects\project_uBlaze-AES\hw\mb_system_wrapper_bd.bmm into \hw_platform_0\mb_system_wrapper_bd.bmm.
+21:11:27 INFO  : Copied contents of C:\Projetos_git\repo\sdk_projects\project_uBlaze-AES\hw\mb_system_wrapper.bit into \hw_platform_0\mb_system_wrapper.bit.
+21:11:27 INFO  : Copied contents of C:\Projetos_git\repo\sdk_projects\project_uBlaze-AES\hw\mb_system_wrapper_bd.bmm into \hw_platform_0\mb_system_wrapper_bd.bmm.
+21:11:35 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:11:39 INFO  : 
+21:11:40 INFO  : Updating hardware inferred compiler options for AES_tests.
+21:11:40 INFO  : Clearing existing target manager status.
+21:13:55 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw_platform_0/download.bit"

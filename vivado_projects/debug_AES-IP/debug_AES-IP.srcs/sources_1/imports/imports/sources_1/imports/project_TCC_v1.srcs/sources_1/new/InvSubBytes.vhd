@@ -43,9 +43,18 @@ architecture Behavioral of InvSubBytes is
 
 signal a3, a2, a1, a0, b3, b2, b1, b0, c3, c2, c1, c0, d3, d2, d1, d0: std_logic;
 signal x7, x6, x5, x4, x3, x2, x1, x0, y7, y6, y5, y4, y3, y2, y1, y0: std_logic;
+signal x, y : std_logic_vector( 7 downto 0);
 
 begin
-
+    x7 <= x(7);
+    x6 <= x(6);
+    x5 <= x(5);
+    x4 <= x(4);
+    x3 <= x(3);
+    x2 <= x(2);
+    x1 <= x(1);
+    x0 <= x(0);
+    y <= y7 & y6 & y5 & y4 & y3 & y2 & y1 & y0;
 -- Stage 1
     a3 <= x6 xor x1 xor x7 xor x2;
     a2 <= '1' xor x6 xor x1 xor x3 xor x0 xor x2 xor x7;
@@ -102,43 +111,134 @@ begin
          (a1 and d0) xor (a0 and d0) xor (b2 and d2) xor (b0 and d2) xor (b2 and d0) xor 
          (b1 and d3) xor (b3 and d1) xor (b0 and d0) xor (b1 and d1) xor (b2 and d3) xor 
          (b3 and d2);
-        
-seq: process(clk)
-    variable n: integer range 0 to 15 := 0;
-    
-begin if clk='1' then
 
--- input
-            
-    x7 <= Bi(n*8+7);
-    x6 <= Bi(n*8+6);
-    x5 <= Bi(n*8+5);
-    x4 <= Bi(n*8+4);
-    x3 <= Bi(n*8+3);
-    x2 <= Bi(n*8+2);
-    x1 <= Bi(n*8+1);
-    x0 <= Bi(n*8);
-    
-else
--- Output
-    Bo(n*8+7) <= y7;
-    Bo(n*8+6) <= y6;
-    Bo(n*8+5) <= y5;
-    Bo(n*8+4) <= y4;
-    Bo(n*8+3) <= y3;
-    Bo(n*8+2) <= y2;
-    Bo(n*8+1) <= y1;
-    Bo(n*8) <= y0;
 
--- Control
-    --if clk'event then
-        n := n+1;
-        if n>15 then
-            n := 0;
-        end if;
-    --end if;
+seq: process(clk)--,en)
+    type ESTADOS is (ESTADO_0, ESTADO_1, ESTADO_2, ESTADO_3, ESTADO_4, 
+                     ESTADO_5, ESTADO_6, ESTADO_7, ESTADO_8, ESTADO_9, ESTADO_10, ESTADO_11, ESTADO_12, ESTADO_13, 
+                     ESTADO_14, ESTADO_15);
+    variable estado: ESTADOS := ESTADO_0;
+begin 
+-- Comportamento assíncrono do en (enable)
+--if rising_edge(en) then
+--    estado := ESTADO_0;
+--end if;
+--if en='0' then
+--    estado := ESTADO_INICIAL;
+--end if;
+
+-- Sequenciamento síncrono
+if rising_edge(clk) then
+    case estado is
+        when ESTADO_0 =>
+            x <= Bi(0*8+7 downto 0*8);
+            Bo(15*8+7 downto 15*8) <= y;
+            estado := ESTADO_1;
+        when ESTADO_1 =>
+            x <= Bi(1*8+7 downto 1*8);
+            Bo(0*8+7 downto 0*8) <= y;
+            estado := ESTADO_2;
+        when ESTADO_2 =>
+            x <= Bi(2*8+7 downto 2*8);
+            Bo(1*8+7 downto 1*8) <= y;
+            estado := ESTADO_3;
+        when ESTADO_3 =>
+            x <= Bi(3*8+7 downto 3*8);
+            Bo(2*8+7 downto 2*8) <= y;
+            estado := ESTADO_4;
+        when ESTADO_4 =>
+            x <= Bi(4*8+7 downto 4*8);
+            Bo(3*8+7 downto 3*8) <= y;
+            estado := ESTADO_5;
+        when ESTADO_5 =>
+            x <= Bi(5*8+7 downto 5*8);
+            Bo(4*8+7 downto 4*8) <= y;
+            estado := ESTADO_6;
+        when ESTADO_6 =>
+            x <= Bi(6*8+7 downto 6*8);
+            Bo(5*8+7 downto 5*8) <= y;
+            estado := ESTADO_7;
+        when ESTADO_7 =>
+            x <= Bi(7*8+7 downto 7*8);
+            Bo(6*8+7 downto 6*8) <= y;
+            estado := ESTADO_8;
+        when ESTADO_8 =>
+            x <= Bi(8*8+7 downto 8*8);
+            Bo(7*8+7 downto 7*8) <= y;
+            estado := ESTADO_9;
+        when ESTADO_9 =>
+            x <= Bi(9*8+7 downto 9*8);
+            Bo(8*8+7 downto 8*8) <= y;
+            estado := ESTADO_10;
+        when ESTADO_10 =>
+            x <= Bi(10*8+7 downto 10*8);
+            Bo(9*8+7 downto 9*8) <= y;
+            estado := ESTADO_11;
+        when ESTADO_11 =>
+            x <= Bi(11*8+7 downto 11*8);
+            Bo(10*8+7 downto 10*8) <= y;
+            estado := ESTADO_12;
+        when ESTADO_12 =>
+            x <= Bi(12*8+7 downto 12*8);
+            Bo(11*8+7 downto 11*8) <= y;
+            estado := ESTADO_13;
+        when ESTADO_13 =>
+            x <= Bi(13*8+7 downto 13*8);
+            Bo(12*8+7 downto 12*8) <= y;
+            estado := ESTADO_14;
+        when ESTADO_14 =>
+            x <= Bi(14*8+7 downto 14*8);
+            Bo(13*8+7 downto 13*8) <= y;
+            estado := ESTADO_15;
+        when ESTADO_15 =>
+            x <= Bi(15*8+7 downto 15*8);
+            Bo(14*8+7 downto 14*8) <= y;
+            estado := ESTADO_0;
+        when others =>
+            estado := ESTADO_0;
+   end case; 
 end if;
-end process seq;
+    
+end process;
+
+
+        
+--seq: process(clk)
+--    variable n: integer range 0 to 15 := 0;
+    
+--begin if clk='1' then
+
+---- input
+            
+--    x7 <= Bi(n*8+7);
+--    x6 <= Bi(n*8+6);
+--    x5 <= Bi(n*8+5);
+--    x4 <= Bi(n*8+4);
+--    x3 <= Bi(n*8+3);
+--    x2 <= Bi(n*8+2);
+--    x1 <= Bi(n*8+1);
+--    x0 <= Bi(n*8);
+    
+--else
+---- Output
+--    Bo(n*8+7) <= y7;
+--    Bo(n*8+6) <= y6;
+--    Bo(n*8+5) <= y5;
+--    Bo(n*8+4) <= y4;
+--    Bo(n*8+3) <= y3;
+--    Bo(n*8+2) <= y2;
+--    Bo(n*8+1) <= y1;
+--    Bo(n*8) <= y0;
+
+---- Control
+--    --if clk'event then
+--        n := n+1;
+--        if n>15 then
+--            n := 0;
+--        end if;
+--    --end if;
+--end if;
+--end process seq;
 
 
 end Behavioral;

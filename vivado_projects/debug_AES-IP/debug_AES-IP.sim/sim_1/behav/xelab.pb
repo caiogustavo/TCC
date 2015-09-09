@@ -30,17 +30,9 @@ K
 (Analyzing VHDL file "%s" into library %s163*xsimverific2≤
 ùC:/Projetos_git/repo/vivado_projects/debug_AES-IP/debug_AES-IP.srcs/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_2x1.vhd2default:default2"
 xil_defaultlib2default:defaultZ10-163
-†
-(Analyzing VHDL file "%s" into library %s163*xsimverific2≥
-ûC:/Projetos_git/repo/vivado_projects/debug_AES-IP/debug_AES-IP.srcs/sources_1/imports/imports/sources_1/imports/project_TCC_v1.srcs/sources_1/new/Mux_10x1.vhd2default:default2"
-xil_defaultlib2default:defaultZ10-163
 ˙
 (Analyzing VHDL file "%s" into library %s163*xsimverific2ç
 yC:/Projetos_git/repo/vivado_projects/debug_AES-IP/debug_AES-IP.srcs/sources_1/imports/imports/sources_1/new/DeMux_1x2.vhd2default:default2"
-xil_defaultlib2default:defaultZ10-163
-Ñ
-(Analyzing VHDL file "%s" into library %s163*xsimverific2ó
-ÇC:/Projetos_git/repo/vivado_projects/debug_AES-IP/debug_AES-IP.srcs/sources_1/imports/imports/sources_1/new/Control_Decryption.vhd2default:default2"
 xil_defaultlib2default:defaultZ10-163
 ¯
 (Analyzing VHDL file "%s" into library %s163*xsimverific2ã
@@ -186,14 +178,6 @@ Tarchitecture behavioral of entity xil_defaultlib.InvShiftRows [invshiftrows_def
 Compiling %s
 389*	simulator2j
 Varchitecture behavioral of entity xil_defaultlib.InvMixColumns [invmixcolumns_default]2default:defaultZ43-3505
-Ö
-Compiling %s
-389*	simulator2Y
-Earchitecture rtl of entity xil_defaultlib.Mux_10x1 [mux_10x1_default]2default:defaultZ43-3505
-§
-Compiling %s
-389*	simulator2x
-darchitecture rtl_structural of entity xil_defaultlib.Control_Decryption [control_decryption_default]2default:defaultZ43-3505
 ê
 Compiling %s
 389*	simulator2d
@@ -209,7 +193,7 @@ x
 c
 /Waiting for %s sub-compilation(s) to finish...
 381*	simulator2
-32default:defaultZ43-3497
+22default:defaultZ43-3497
 ]
 Built simulation snapshot %s
 278*	simulator2!

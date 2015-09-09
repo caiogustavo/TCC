@@ -148,9 +148,9 @@ sim: process begin
     -- Inicializa Registrador de status/config (reg16)
     awaddr <= "1000000"; --reg16
     awvalid <= '1';
-    wdata <= x"00000001"; -- demux deixa chave na saída
+    wdata <= x"00000010"; -- demux deixa chave na saída
     wvalid <= '1';
-    wstrb <= "1111";
+    wstrb <= "0111";
     bready <= '1';
     wait for 4 us;
     awaddr <= "0000000";
@@ -233,7 +233,7 @@ sim: process begin
     -- Inicializa KeyExpansion, setando en_k
     awaddr <= "1000000"; --reg16
     awvalid <= '1';
-    wdata <= x"00000009"; -- en_k = 1 e k = 1
+    wdata <= x"00000011"; -- en_k = 1 e k = 1
     wvalid <= '1';
     wstrb <= "0001";
     bready <= '1';
@@ -250,7 +250,7 @@ sim: process begin
     -- Reseta Config para mudar demux
     awaddr <= "1000000"; --reg16
     awvalid <= '1';
-    wdata <= x"00000008"; -- en_k = 1 e k = 0
+    wdata <= x"00000001"; -- en_k = 1 e k = 0
     wvalid <= '1';
     wstrb <= "0001";
     bready <= '1';
@@ -335,9 +335,9 @@ sim: process begin
     -- Inicializa Encryption
     awaddr <= "1000000"; --reg16
     awvalid <= '1';
-    wdata <= x"0000000A"; -- en_k = 1 e en_e = 1
+    wdata <= x"00000101"; -- en_k = 1 e en_e = 1
     wvalid <= '1';
-    wstrb <= "0001";
+    wstrb <= "0011";
     bready <= '1';
     wait for 4 us;
     awaddr <= "0000000";
@@ -447,9 +447,9 @@ sim: process begin
     -- Inicializa Decryption
     awaddr <= "1000000"; --reg16
     awvalid <= '1';
-    wdata <= x"0000000C"; -- en_k = 1 e en_d = 1
+    wdata <= x"00010001"; -- en_k = 1 e en_d = 1
     wvalid <= '1';
-    wstrb <= "0001";
+    wstrb <= "0101";
     bready <= '1';
     wait for 4 us;
     awaddr <= "0000000";
