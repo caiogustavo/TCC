@@ -1,0 +1,37 @@
+/*
+ * aes_driver.c
+ *
+ *  Created on: 08/09/2015
+ *      Author: Caio Gustavo Mesquita Ângelo
+ */
+
+#include <stdio.h>
+#include <xil_io.h>
+#include "aes_driver.h"
+
+
+int aes_expand_key(unsigned int *key)
+{
+	int config;
+
+	Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x10);
+
+    // escreve a chave e inicializa KeyExpansion
+    xil_printf("Escrevendo chave K0\n\r");
+    Xil_Out32(AES_BASEADDR+BI_E_0_OFFSET,key[0]);
+    Xil_Out32(AES_BASEADDR+BI_E_1_OFFSET,key[1]);
+    Xil_Out32(AES_BASEADDR+BI_E_2_OFFSET,key[2]);
+    Xil_Out32(AES_BASEADDR+BI_E_3_OFFSET,key[3]);
+
+    // Inicializando Key_Expansion
+    Xil_Out8(AES_BASEADDR+CONFIG_0_OFFSET,0x11);
+
+    config = Xil_In8(AES_BASEADDR+CONFIG_3_OFFSET);
+
+    while ( (config & RDY_K_MASK) != 1)
+    {
+    	config = Xil_In8(AES_BASEADDR+CONFIG_3_OFFSET);
+    }
+
+	return 1;
+}

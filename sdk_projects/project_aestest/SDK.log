@@ -1,0 +1,150 @@
+20:37:02 INFO  : Project 'hw_hw_platform_0' created. You can now create BSPs and application projects targeting this hardware platform.
+20:37:03 INFO  : Updating .bit and .bmm files from XPS's export folder.
+20:37:42 ERROR : Exception while attemping to 'diff' hardware specification files for project hw_hw_platform_0
+java.io.FileNotFoundException: C:\Projetos_git\repo\sdk_projects\project_aestest\hw_hw_platform_0\system.xml (O sistema não pode encontrar o caminho especificado)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileInputStream.<init>(FileInputStream.java:101)
+	at com.xilinx.sdk.hw.sync.HwSpecChangeUtil.formMd5Sum(HwSpecChangeUtil.java:412)
+	at com.xilinx.sdk.hw.sync.HwSpecChangeUtil.hasSpecChanged(HwSpecChangeUtil.java:279)
+	at com.xilinx.sdk.hw.sync.HwSpecChangeUtil.hasChanges(HwSpecChangeUtil.java:72)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.doMonitorTask(HwPlatformMonitor.java:46)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.access$0(HwPlatformMonitor.java:35)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor$1.run(HwPlatformMonitor.java:30)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:164)
+	at org.eclipse.ui.internal.UISynchronizer$3.run(UISynchronizer.java:158)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4144)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.xilinx.sdk.appwiz.ApplicationWizard.newHw(ApplicationWizard.java:156)
+	at com.xilinx.sdk.appwiz.internal.ui.AppMainComposite.createNewHwPlatform(AppMainComposite.java:567)
+	at com.xilinx.sdk.appwiz.internal.ui.AppMainComposite.access$1(AppMainComposite.java:566)
+	at com.xilinx.sdk.appwiz.internal.ui.AppMainComposite$2.widgetSelected(AppMainComposite.java:257)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.xilinx.sdk.appwiz.actions.OpenAppWizardAction.run(OpenAppWizardAction.java:23)
+	at org.eclipse.ui.internal.intro.impl.model.url.IntroURL.runAction(IntroURL.java:282)
+	at org.eclipse.ui.internal.intro.impl.model.url.IntroURL.doExecute(IntroURL.java:193)
+	at org.eclipse.ui.internal.intro.impl.model.url.IntroURL$1.run(IntroURL.java:144)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.intro.impl.model.url.IntroURL.execute(IntroURL.java:141)
+	at org.eclipse.ui.internal.intro.impl.presentations.BrowserIntroPartLocationListener.changing(BrowserIntroPartLocationListener.java:130)
+	at org.eclipse.swt.browser.IE$7.handleEvent(IE.java:506)
+	at org.eclipse.swt.ole.win32.OleEventTable.sendEvent(OleEventTable.java:55)
+	at org.eclipse.swt.ole.win32.OleEventSink.notifyListener(OleEventSink.java:145)
+	at org.eclipse.swt.ole.win32.OleEventSink.Invoke(OleEventSink.java:120)
+	at org.eclipse.swt.ole.win32.OleEventSink.access$1(OleEventSink.java:97)
+	at org.eclipse.swt.ole.win32.OleEventSink$1.method6(OleEventSink.java:71)
+	at org.eclipse.swt.internal.ole.win32.COMObject.callback6(COMObject.java:119)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+20:37:43 INFO  : Project hw_hw_platform_0's source hardware specification located at C:\Projetos_git\repo\sdk_projects\project_Analog-AES\hw\mb_system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+20:37:45 INFO  : Project hw_hw_platform_0's source hardware specification location will not be monitored anymore.
+16:46:39 ERROR :  No Ethernet MAC cores are addressable from processor microblaze_0.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_ethernet | axi_ethernet_buffer | axi_ethernetlite | ps7_ethernet) core  with its interrupt pin connected to the interrupt controller.
+ [Hsm 55-1545] Problem running tcl command ::sw_lwip140_v2_1::lwip_drc : ERROR: No Ethernet MAC cores are addressable from processor microblaze_0.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_ethernet | axi_ethernet_buffer | axi_ethernetlite | ps7_ethernet) core  with its interrupt pin connected to the interrupt controller.
+    while executing
+"error "ERROR: No Ethernet MAC cores are addressable from processor $cpuname.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_et..."
+    (procedure "::sw_lwip140_v2_1::lwip_drc" line 12)
+    invoked from within
+"::sw_lwip140_v2_1::lwip_drc lwip140"
+ [Hsm 55-1440] Error(s) while running DRCs.
+16:46:39 ERROR : Error generating bsp sources: Failed to generate BSP.
+16:46:39 ERROR : Failed to generate sources for BSP project aestest-xilinx-linux_bsp_0
+org.eclipse.core.runtime.CoreException: Internal error occurred while generating bsp sources. Please check the SDK Log view for further details.
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:178)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+16:54:07 ERROR :  No Ethernet MAC cores are addressable from processor microblaze_0.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_ethernet | axi_ethernet_buffer | axi_ethernetlite | ps7_ethernet) core  with its interrupt pin connected to the interrupt controller.
+ [Hsm 55-1545] Problem running tcl command ::sw_lwip140_v2_1::lwip_drc : ERROR: No Ethernet MAC cores are addressable from processor microblaze_0.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_ethernet | axi_ethernet_buffer | axi_ethernetlite | ps7_ethernet) core  with its interrupt pin connected to the interrupt controller.
+    while executing
+"error "ERROR: No Ethernet MAC cores are addressable from processor $cpuname.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_et..."
+    (procedure "::sw_lwip140_v2_1::lwip_drc" line 12)
+    invoked from within
+"::sw_lwip140_v2_1::lwip_drc lwip140"
+ [Hsm 55-1440] Error(s) while running DRCs.
+16:54:07 ERROR : Error generating bsp sources: Failed to generate BSP.
+16:54:07 ERROR : Failed to generate sources for BSP project aestest-app-linux_bsp_0
+org.eclipse.core.runtime.CoreException: Internal error occurred while generating bsp sources. Please check the SDK Log view for further details.
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:178)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+17:04:08 ERROR :  No Ethernet MAC cores are addressable from processor microblaze_0.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_ethernet | axi_ethernet_buffer | axi_ethernetlite | ps7_ethernet) core  with its interrupt pin connected to the interrupt controller.
+ [Hsm 55-1545] Problem running tcl command ::sw_lwip140_v2_1::lwip_drc : ERROR: No Ethernet MAC cores are addressable from processor microblaze_0.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_ethernet | axi_ethernet_buffer | axi_ethernetlite | ps7_ethernet) core  with its interrupt pin connected to the interrupt controller.
+    while executing
+"error "ERROR: No Ethernet MAC cores are addressable from processor $cpuname.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_et..."
+    (procedure "::sw_lwip140_v2_1::lwip_drc" line 12)
+    invoked from within
+"::sw_lwip140_v2_1::lwip_drc lwip140"
+ [Hsm 55-1440] Error(s) while running DRCs.
+17:04:08 ERROR : Error generating bsp sources: Failed to generate BSP.
+17:04:08 ERROR : Failed to regenerate sources for BSP project aestest-app-linux-bsp_bsp
+org.eclipse.core.runtime.CoreException: Internal error occurred while generating bsp sources. Please check the SDK Log view for further details.
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:178)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+17:04:17 INFO  : Refreshed build settings on project aestest-app-linux
+17:04:17 INFO  : Refreshed build settings on project aestest-app-linux-bsp
+17:04:35 ERROR :  No Ethernet MAC cores are addressable from processor microblaze_0.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_ethernet | axi_ethernet_buffer | axi_ethernetlite | ps7_ethernet) core  with its interrupt pin connected to the interrupt controller.
+ [Hsm 55-1545] Problem running tcl command ::sw_lwip140_v2_1::lwip_drc : ERROR: No Ethernet MAC cores are addressable from processor microblaze_0.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_ethernet | axi_ethernet_buffer | axi_ethernetlite | ps7_ethernet) core  with its interrupt pin connected to the interrupt controller.
+    while executing
+"error "ERROR: No Ethernet MAC cores are addressable from processor $cpuname.  lwIP requires atleast one EMAC (xps_ethernetlite | xps_ll_temac | axi_et..."
+    (procedure "::sw_lwip140_v2_1::lwip_drc" line 12)
+    invoked from within
+"::sw_lwip140_v2_1::lwip_drc lwip140"
+ [Hsm 55-1440] Error(s) while running DRCs.
+17:04:35 ERROR : Error generating bsp sources: Failed to generate BSP.
+17:04:35 ERROR : Failed to regenerate sources for BSP project aestest-app-linux-bsp_bsp
+org.eclipse.core.runtime.CoreException: Internal error occurred while generating bsp sources. Please check the SDK Log view for further details.
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:178)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+17:50:32 INFO  : Inferring section assignments and sizes from elf file: C:\Projetos_git\repo\sdk_projects\project_aestest\aestest-app-standalone-empty\Debug\aestest-app-standalone-empty.elf
+19:19:47 INFO  : Successfully generated C:\Projetos_git\repo\sdk_projects\project_aestest\aestest-xilinx-linux\src\lscript.ld.
+19:19:47 INFO  : Applying linker script to all configurations of project aestest-xilinx-linux.
+19:19:47 INFO  : Setting rebuild state to true for all configurations of project aestest-xilinx-linux.
+19:20:17 INFO  : Successfully generated C:\Projetos_git\repo\sdk_projects\project_aestest\aestest-xilinx-linux\src\lscript.ld.
+19:20:17 INFO  : Applying linker script to all configurations of project aestest-xilinx-linux.
+19:20:17 INFO  : Setting rebuild state to true for all configurations of project aestest-xilinx-linux.
+22:25:47 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

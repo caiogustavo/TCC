@@ -1,0 +1,13 @@
+/*
+ * ringbuffer.h
+ *
+ *  Created on: 01/10/2015
+ *      Author: Janier Arias Garcia
+ */
+
+#ifndef RINGBUFFER_H_
+#define RINGBUFFER_H_
+
+
+
+#endif /* RINGBUFFER_H_ */

@@ -243,3 +243,24 @@
 21:11:40 INFO  : Updating hardware inferred compiler options for AES_tests.
 21:11:40 INFO  : Clearing existing target manager status.
 21:13:55 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw_platform_0/download.bit"
+21:19:35 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+14:53:24 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw_platform_0/download.bit"
+14:54:36 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw_platform_0/download.bit"
+14:57:00 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw_platform_0/download.bit"
+14:58:46 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw_platform_0/download.bit"
+15:01:30 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw_platform_0/download.bit"
+15:02:24 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw_platform_0/download.bit"
+15:05:30 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw_platform_0/download.bit"
+15:08:57 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw_platform_0/download.bit"
+16:26:53 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw_platform_0/download.bit"
+16:29:00 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw_platform_0/download.bit"
+20:25:30 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:07:52 ERROR : Unsatisfied link error while loading librdi_jtag_settings.dll: java.lang.UnsatisfiedLinkError: no librdi_jtag_settings in java.library.path
+11:07:56 ERROR : Unsatisfied link error while loading librdi_repo_manager.dll: java.lang.UnsatisfiedLinkError: no librdi_repo_manager in java.library.path
+11:08:01 ERROR : Unsatisfied link error while loading librdi_hw_platform.dll: java.lang.UnsatisfiedLinkError: no librdi_hw_platform in java.library.path
+17:01:09 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/sdk_projects/project_uBlaze-AES/hw_platform_0/download.bit"
+17:03:29 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+17:08:52 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+17:19:29 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+17:29:29 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:58:54 INFO  : FPGA Cable Disconnected. All active launches will be terminated.

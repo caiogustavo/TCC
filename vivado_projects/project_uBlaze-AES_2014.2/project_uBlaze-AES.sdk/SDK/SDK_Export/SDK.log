@@ -1,0 +1,54 @@
+18:46:03 INFO  : Processing command line option -hwspec C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml.
+18:48:37 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+18:48:55 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
+19:10:52 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+19:31:38 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:12:47 INFO  : Processing command line option -hwspec C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml.
+17:13:01 INFO  : The hardware specification for project 'hw_platform_0' is different from C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml.
+17:13:01 INFO  : Copied contents of C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml into \hw_platform_0\system.xml.
+17:13:03 INFO  : Updating .bit and .bmm files from XPS's export folder.
+17:13:25 INFO  : Copied contents of C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\hw\mb_system_wrapper.bit into \hw_platform_0\mb_system_wrapper.bit.
+17:13:25 INFO  : Copied contents of C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\hw\mb_system_wrapper_bd.bmm into \hw_platform_0\mb_system_wrapper_bd.bmm.
+17:13:25 INFO  : Copied contents of C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\hw\mb_system_wrapper.bit into \hw_platform_0\mb_system_wrapper.bit.
+17:13:25 INFO  : Copied contents of C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\hw\mb_system_wrapper_bd.bmm into \hw_platform_0\mb_system_wrapper_bd.bmm.
+17:13:32 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:13:33 INFO  : 
+17:13:34 INFO  : Updating hardware inferred compiler options for AES_tests.
+17:13:34 INFO  : Clearing existing target manager status.
+17:14:15 INFO  : Inferring section assignments and sizes from elf file: C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\AES_tests\Debug\AES_tests.elf
+17:14:23 INFO  : Successfully generated C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\AES_tests\src\lscript.ld.
+17:14:23 INFO  : Applying linker script to all configurations of project AES_tests.
+17:14:23 INFO  : Setting rebuild state to true for all configurations of project AES_tests.
+17:14:39 ERROR : FPGA Configuration failed.Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+17:15:04 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
+17:15:42 INFO  : Successfully generated C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\AES_tests\src\lscript.ld.
+17:15:42 INFO  : Applying linker script to all configurations of project AES_tests.
+17:15:42 INFO  : Setting rebuild state to true for all configurations of project AES_tests.
+17:16:04 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
+17:17:32 INFO  : Successfully generated C:\Projetos_git\repo\vivado_projects\project_uBlaze-AES\project_uBlaze-AES.sdk\SDK\SDK_Export\AES_tests\src\lscript.ld.
+17:17:32 INFO  : Applying linker script to all configurations of project AES_tests.
+17:17:32 INFO  : Setting rebuild state to true for all configurations of project AES_tests.
+17:17:51 INFO  : FPGA configured successfully with bitstream "C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw_platform_0/download.bit"
+17:19:11 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:30:33 INFO  : Processing command line option -hwspec C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml.
+16:31:37 INFO  : The hardware specification for project 'hw_platform_0' is different from C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml.
+16:31:38 INFO  : Copied contents of C:/Projetos_git/repo/vivado_projects/project_uBlaze-AES/project_uBlaze-AES.sdk/SDK/SDK_Export/hw/mb_system.xml into \hw_platform_0\system.xml.
+16:31:45 INFO  : Updating .bit and .bmm files from XPS's export folder.
+16:33:22 ERROR : Unexpected error while fetching XMD's response: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:154)
+	at java.io.BufferedReader.read(BufferedReader.java:175)
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess$CommandResultsReader.run(XMDJSONProcess.java:328)
+	at java.lang.Thread.run(Thread.java:724)
+16:33:22 ERROR : Zero sized response read from XMD. This indicates a communication error or a programming error.
