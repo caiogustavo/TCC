@@ -182,7 +182,7 @@ void encripta(void)
 	buf_fh_tx = RingBuffer_create(66);
 	buf_fh_rx = RingBuffer_create(66);
 
-	RingBuffer_write( buf_fh_tx, seq_bits_tx, 66 );
+	RingBuffer_write( buf_fh_tx, seq_bits_tx, 54 );
 	buf_to_tx( buf_tx_rx, buf_fh_tx);
 	//rx_to_buf( buf_tx_rx, buf_fh_rx);
 	payload_size = extract_payload(buf_tx_rx, buf_fh_rx, payload);

@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  28923	    464	   8316	  37703	   9347	aestest-xilinx-linux.elf
+  29082	    468	   8316	  37866	   93ea	aestest-xilinx-linux.elf

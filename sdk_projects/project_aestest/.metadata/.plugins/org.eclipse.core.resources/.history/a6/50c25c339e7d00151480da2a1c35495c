@@ -21,7 +21,7 @@
 #include <stdint.h>
 #include <iio.h>
 #include <pthread.h>
-#include <time.h>
+//#include <>
 
 #include "aes_driver.h"
 #include "ringbuffer.h"
@@ -161,8 +161,7 @@ void encripta(void)
 	uint8_t payload[256];
 	int payload_size;
 
-	time_t cur_time = time(NULL);
-	printf("\n\rcur_time = %f",cur_time);
+
 
 
 	int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
@@ -182,7 +181,7 @@ void encripta(void)
 	buf_fh_tx = RingBuffer_create(66);
 	buf_fh_rx = RingBuffer_create(66);
 
-	RingBuffer_write( buf_fh_tx, seq_bits_tx, 66 );
+	RingBuffer_write( buf_fh_tx, seq_bits_tx, 54 );
 	buf_to_tx( buf_tx_rx, buf_fh_tx);
 	//rx_to_buf( buf_tx_rx, buf_fh_rx);
 	payload_size = extract_payload(buf_tx_rx, buf_fh_rx, payload);
@@ -192,9 +191,6 @@ void encripta(void)
 	for( i=0; i<payload_size; i++)
 		printf("%02x",payload[i]);
 	printf("\n\r");
-
-	cur_time = time(NULL);
-	printf("\n\rcur_time = %f",cur_time);
 
 //	printf("\n\r Seq_bits_rs = ");
 //	for( i=0; i<18; i++)

@@ -15326,3 +15326,239 @@ microblazeel-xilinx-linux-gnu-size aestest-xilinx-linux.elf  |tee "aestest-xilin
   28923	    464	   8316	  37703	   9347	aestest-xilinx-linux.elf
 'Finished building: aestest-xilinx-linux.elf.size'
 ' '
+16:03:33 **** Auto Build of configuration Debug for project aestest-xilinx-linux ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MBEL Linux gcc compiler'
+microblazeel-xilinx-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'encripta':
+../src/helloworld.c:165:2: warning: format '%f' expects argument of type 'double', but argument 2 has type 'time_t' [-Wformat=]
+  printf("\n\rcur_time = %f",cur_time);
+  ^
+../src/helloworld.c:197:2: warning: format '%f' expects argument of type 'double', but argument 2 has type 'time_t' [-Wformat=]
+  printf("\n\rcur_time = %f",cur_time);
+  ^
+../src/helloworld.c:168:87: warning: unused variable 'config10' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+                                                                                       ^
+../src/helloworld.c:168:78: warning: unused variable 'config9' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+                                                                              ^
+../src/helloworld.c:168:69: warning: unused variable 'config8' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+                                                                     ^
+../src/helloworld.c:168:60: warning: unused variable 'config7' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+                                                            ^
+../src/helloworld.c:168:51: warning: unused variable 'config6' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+                                                   ^
+../src/helloworld.c:168:42: warning: unused variable 'config5' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+                                          ^
+../src/helloworld.c:168:33: warning: unused variable 'config4' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+                                 ^
+../src/helloworld.c:168:24: warning: unused variable 'config3' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+                        ^
+../src/helloworld.c:168:15: warning: unused variable 'config2' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+               ^
+../src/helloworld.c:168:6: warning: unused variable 'config1' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+      ^
+../src/helloworld.c:160:10: warning: unused variable 'seq_bits_rx' [-Wunused-variable]
+  uint8_t seq_bits_rx[66];
+          ^
+../src/helloworld.c:152:26: warning: unused variable 'buf_tx' [-Wunused-variable]
+  RingBuffer *buf_tx_rx, *buf_tx, *buf_fh_tx, *buf_fh_rx;
+                          ^
+../src/helloworld.c:150:27: warning: unused variable 'dec_out_buf' [-Wunused-variable]
+  RingBuffer *dec_in_buf, *dec_out_buf;
+                           ^
+../src/helloworld.c:150:14: warning: unused variable 'dec_in_buf' [-Wunused-variable]
+  RingBuffer *dec_in_buf, *dec_out_buf;
+              ^
+../src/helloworld.c:149:27: warning: unused variable 'enc_out_buf' [-Wunused-variable]
+  RingBuffer *enc_in_buf, *enc_out_buf;
+                           ^
+../src/helloworld.c:149:14: warning: unused variable 'enc_in_buf' [-Wunused-variable]
+  RingBuffer *enc_in_buf, *enc_out_buf;
+              ^
+../src/helloworld.c:148:19: warning: unused variable 'bo_d' [-Wunused-variable]
+  uint32_t *bo_e, *bo_d;
+                   ^
+../src/helloworld.c:148:12: warning: unused variable 'bo_e' [-Wunused-variable]
+  uint32_t *bo_e, *bo_d;
+            ^
+../src/helloworld.c:145:7: warning: unused variable 'prime' [-Wunused-variable]
+  char prime[65] = //"10001";
+       ^
+../src/helloworld.c:143:7: warning: unused variable 'exp' [-Wunused-variable]
+  char exp[2049] = //"9A2E";
+       ^
+../src/helloworld.c:141:7: warning: unused variable 'gen' [-Wunused-variable]
+  char gen[2049] = //"6246";
+       ^
+../src/helloworld.c:139:7: warning: unused variable 'text3' [-Wunused-variable]
+  char text3[31] = " e decriptografá-la em seguida!";
+       ^
+../src/helloworld.c:138:7: warning: unused variable 'text2' [-Wunused-variable]
+  char text2[46] = " vou conseguir criptografar toda essa mensagem";
+       ^
+../src/helloworld.c:137:7: warning: unused variable 'text1' [-Wunused-variable]
+  char text1[30] = "Se meu programa estiver certo,";
+       ^
+../src/helloworld.c:135:11: warning: variable 'key' set but not used [-Wunused-but-set-variable]
+  uint32_t key[4];
+           ^
+../src/helloworld.c:133:6: warning: unused variable 'cnt' [-Wunused-variable]
+  int cnt =0;
+      ^
+../src/helloworld.c:131:6: warning: unused variable 'config' [-Wunused-variable]
+  int config = 0;
+      ^
+../src/helloworld.c:130:6: warning: unused variable 'bo_3' [-Wunused-variable]
+  int bo_3 = 0;
+      ^
+../src/helloworld.c:129:6: warning: unused variable 'bo_2' [-Wunused-variable]
+  int bo_2 = 0;
+      ^
+../src/helloworld.c:128:6: warning: unused variable 'bo_1' [-Wunused-variable]
+  int bo_1 = 0;
+      ^
+../src/helloworld.c:127:6: warning: unused variable 'bo_0' [-Wunused-variable]
+  int bo_0 = 0;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: aestest-xilinx-linux.elf'
+'Invoking: MBEL Linux gcc linker'
+microblazeel-xilinx-linux-gnu-gcc -L"C:\Xilinx\SDK\2014.2\gnu\microblaze\linux_toolchain\nt64_le\microblazeel-xilinx-linux-gnu\sys-root\usr\lib\usr_lib" -o "aestest-xilinx-linux.elf"  ./src/ad9361_iiostream.o ./src/aes_driver.o ./src/dh.o ./src/fhss.o ./src/helloworld.o ./src/ringbuffer.o   -lxml2 -lcrypto -liio -lssl -lz
+'Finished building target: aestest-xilinx-linux.elf'
+' '
+'Invoking: MBEL Linux Print Size'
+microblazeel-xilinx-linux-gnu-size aestest-xilinx-linux.elf  |tee "aestest-xilinx-linux.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29082	    468	   8316	  37866	   93ea	aestest-xilinx-linux.elf
+'Finished building: aestest-xilinx-linux.elf.size'
+' '
+16:05:51 **** Auto Build of configuration Debug for project aestest-xilinx-linux ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MBEL Linux gcc compiler'
+microblazeel-xilinx-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'encripta':
+../src/helloworld.c:165:2: warning: format '%f' expects argument of type 'double', but argument 2 has type 'time_t' [-Wformat=]
+  printf("\n\rcur_time = %f",cur_time);
+  ^
+../src/helloworld.c:197:2: warning: format '%f' expects argument of type 'double', but argument 2 has type 'time_t' [-Wformat=]
+  printf("\n\rcur_time = %f",cur_time);
+  ^
+../src/helloworld.c:168:87: warning: unused variable 'config10' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+                                                                                       ^
+../src/helloworld.c:168:78: warning: unused variable 'config9' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+                                                                              ^
+../src/helloworld.c:168:69: warning: unused variable 'config8' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+                                                                     ^
+../src/helloworld.c:168:60: warning: unused variable 'config7' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+                                                            ^
+../src/helloworld.c:168:51: warning: unused variable 'config6' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+                                                   ^
+../src/helloworld.c:168:42: warning: unused variable 'config5' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+                                          ^
+../src/helloworld.c:168:33: warning: unused variable 'config4' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+                                 ^
+../src/helloworld.c:168:24: warning: unused variable 'config3' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+                        ^
+../src/helloworld.c:168:15: warning: unused variable 'config2' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+               ^
+../src/helloworld.c:168:6: warning: unused variable 'config1' [-Wunused-variable]
+  int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
+      ^
+../src/helloworld.c:160:10: warning: unused variable 'seq_bits_rx' [-Wunused-variable]
+  uint8_t seq_bits_rx[66];
+          ^
+../src/helloworld.c:152:26: warning: unused variable 'buf_tx' [-Wunused-variable]
+  RingBuffer *buf_tx_rx, *buf_tx, *buf_fh_tx, *buf_fh_rx;
+                          ^
+../src/helloworld.c:150:27: warning: unused variable 'dec_out_buf' [-Wunused-variable]
+  RingBuffer *dec_in_buf, *dec_out_buf;
+                           ^
+../src/helloworld.c:150:14: warning: unused variable 'dec_in_buf' [-Wunused-variable]
+  RingBuffer *dec_in_buf, *dec_out_buf;
+              ^
+../src/helloworld.c:149:27: warning: unused variable 'enc_out_buf' [-Wunused-variable]
+  RingBuffer *enc_in_buf, *enc_out_buf;
+                           ^
+../src/helloworld.c:149:14: warning: unused variable 'enc_in_buf' [-Wunused-variable]
+  RingBuffer *enc_in_buf, *enc_out_buf;
+              ^
+../src/helloworld.c:148:19: warning: unused variable 'bo_d' [-Wunused-variable]
+  uint32_t *bo_e, *bo_d;
+                   ^
+../src/helloworld.c:148:12: warning: unused variable 'bo_e' [-Wunused-variable]
+  uint32_t *bo_e, *bo_d;
+            ^
+../src/helloworld.c:145:7: warning: unused variable 'prime' [-Wunused-variable]
+  char prime[65] = //"10001";
+       ^
+../src/helloworld.c:143:7: warning: unused variable 'exp' [-Wunused-variable]
+  char exp[2049] = //"9A2E";
+       ^
+../src/helloworld.c:141:7: warning: unused variable 'gen' [-Wunused-variable]
+  char gen[2049] = //"6246";
+       ^
+../src/helloworld.c:139:7: warning: unused variable 'text3' [-Wunused-variable]
+  char text3[31] = " e decriptografá-la em seguida!";
+       ^
+../src/helloworld.c:138:7: warning: unused variable 'text2' [-Wunused-variable]
+  char text2[46] = " vou conseguir criptografar toda essa mensagem";
+       ^
+../src/helloworld.c:137:7: warning: unused variable 'text1' [-Wunused-variable]
+  char text1[30] = "Se meu programa estiver certo,";
+       ^
+../src/helloworld.c:135:11: warning: variable 'key' set but not used [-Wunused-but-set-variable]
+  uint32_t key[4];
+           ^
+../src/helloworld.c:133:6: warning: unused variable 'cnt' [-Wunused-variable]
+  int cnt =0;
+      ^
+../src/helloworld.c:131:6: warning: unused variable 'config' [-Wunused-variable]
+  int config = 0;
+      ^
+../src/helloworld.c:130:6: warning: unused variable 'bo_3' [-Wunused-variable]
+  int bo_3 = 0;
+      ^
+../src/helloworld.c:129:6: warning: unused variable 'bo_2' [-Wunused-variable]
+  int bo_2 = 0;
+      ^
+../src/helloworld.c:128:6: warning: unused variable 'bo_1' [-Wunused-variable]
+  int bo_1 = 0;
+      ^
+../src/helloworld.c:127:6: warning: unused variable 'bo_0' [-Wunused-variable]
+  int bo_0 = 0;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: aestest-xilinx-linux.elf'
+'Invoking: MBEL Linux gcc linker'
+microblazeel-xilinx-linux-gnu-gcc -L"C:\Xilinx\SDK\2014.2\gnu\microblaze\linux_toolchain\nt64_le\microblazeel-xilinx-linux-gnu\sys-root\usr\lib\usr_lib" -o "aestest-xilinx-linux.elf"  ./src/ad9361_iiostream.o ./src/aes_driver.o ./src/dh.o ./src/fhss.o ./src/helloworld.o ./src/ringbuffer.o   -lxml2 -lcrypto -liio -lssl -lz
+'Finished building target: aestest-xilinx-linux.elf'
+' '
+'Invoking: MBEL Linux Print Size'
+microblazeel-xilinx-linux-gnu-size aestest-xilinx-linux.elf  |tee "aestest-xilinx-linux.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29082	    468	   8316	  37866	   93ea	aestest-xilinx-linux.elf
+'Finished building: aestest-xilinx-linux.elf.size'
+' '

@@ -1,37 +1,43 @@
-20:28:02 **** Auto Build of configuration Debug for project aestest-xilinx-linux ****
+16:05:51 **** Auto Build of configuration Debug for project aestest-xilinx-linux ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MBEL Linux gcc compiler'
 microblazeel-xilinx-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'encripta':
-../src/helloworld.c:167:87: warning: unused variable 'config10' [-Wunused-variable]
+../src/helloworld.c:165:2: warning: format '%f' expects argument of type 'double', but argument 2 has type 'time_t' [-Wformat=]
+  printf("\n\rcur_time = %f",cur_time);
+  ^
+../src/helloworld.c:197:2: warning: format '%f' expects argument of type 'double', but argument 2 has type 'time_t' [-Wformat=]
+  printf("\n\rcur_time = %f",cur_time);
+  ^
+../src/helloworld.c:168:87: warning: unused variable 'config10' [-Wunused-variable]
   int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
                                                                                        ^
-../src/helloworld.c:167:78: warning: unused variable 'config9' [-Wunused-variable]
+../src/helloworld.c:168:78: warning: unused variable 'config9' [-Wunused-variable]
   int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
                                                                               ^
-../src/helloworld.c:167:69: warning: unused variable 'config8' [-Wunused-variable]
+../src/helloworld.c:168:69: warning: unused variable 'config8' [-Wunused-variable]
   int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
                                                                      ^
-../src/helloworld.c:167:60: warning: unused variable 'config7' [-Wunused-variable]
+../src/helloworld.c:168:60: warning: unused variable 'config7' [-Wunused-variable]
   int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
                                                             ^
-../src/helloworld.c:167:51: warning: unused variable 'config6' [-Wunused-variable]
+../src/helloworld.c:168:51: warning: unused variable 'config6' [-Wunused-variable]
   int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
                                                    ^
-../src/helloworld.c:167:42: warning: unused variable 'config5' [-Wunused-variable]
+../src/helloworld.c:168:42: warning: unused variable 'config5' [-Wunused-variable]
   int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
                                           ^
-../src/helloworld.c:167:33: warning: unused variable 'config4' [-Wunused-variable]
+../src/helloworld.c:168:33: warning: unused variable 'config4' [-Wunused-variable]
   int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
                                  ^
-../src/helloworld.c:167:24: warning: unused variable 'config3' [-Wunused-variable]
+../src/helloworld.c:168:24: warning: unused variable 'config3' [-Wunused-variable]
   int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
                         ^
-../src/helloworld.c:167:15: warning: unused variable 'config2' [-Wunused-variable]
+../src/helloworld.c:168:15: warning: unused variable 'config2' [-Wunused-variable]
   int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
                ^
-../src/helloworld.c:167:6: warning: unused variable 'config1' [-Wunused-variable]
+../src/helloworld.c:168:6: warning: unused variable 'config1' [-Wunused-variable]
   int config1, config2, config3, config4, config5, config6, config7, config8, config9, config10;
       ^
 ../src/helloworld.c:160:10: warning: unused variable 'seq_bits_rx' [-Wunused-variable]
@@ -107,9 +113,9 @@ microblazeel-xilinx-linux-gnu-gcc -L"C:\Xilinx\SDK\2014.2\gnu\microblaze\linux_t
 'Invoking: MBEL Linux Print Size'
 microblazeel-xilinx-linux-gnu-size aestest-xilinx-linux.elf  |tee "aestest-xilinx-linux.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  28923	    464	   8316	  37703	   9347	aestest-xilinx-linux.elf
+  29082	    468	   8316	  37866	   93ea	aestest-xilinx-linux.elf
 'Finished building: aestest-xilinx-linux.elf.size'
 ' '
 
-20:28:03 Build Finished (took 1s.233ms)
+16:05:52 Build Finished (took 1s.427ms)
 
