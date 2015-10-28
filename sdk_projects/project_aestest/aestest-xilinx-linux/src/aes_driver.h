@@ -37,21 +37,30 @@
 
 int aes_init_device(void);
 void aes_close_device(void);
+
 uint32_t aes_read_32bits( unsigned offset_addr );
 uint32_t* aes_read_128bits( unsigned offset_addr);
+
 void aes_write_8bits( unsigned offset_addr, uint8_t value );
 //void aes_write_24bits( unsigned offset_addr, uint32_t value );
 void aes_write_32bits( unsigned offset_addr, uint32_t value );
 void aes_write_128bits( unsigned offset_addr, uint32_t *value );
+
 int aes_key_rdy(void);
 int aes_enc_rdy(void);
 int aes_dec_rdy(void);
+
 void aes_key_expansion( uint32_t* key );
+
 void aes_init_enc( uint32_t* data );
-void aes_init_enc_buffer( RingBuffer* rbuffer );
+int aes_init_enc_buffer( RingBuffer* rbuffer );
 uint32_t* aes_read_enc(void);
+int aes_read_enc_buffer(RingBuffer* rbuffer);
+
 void aes_init_dec( uint32_t* data );
+int aes_init_dec_buffer( RingBuffer* rbuffer );
 uint32_t* aes_read_dec(void);
+int aes_read_enc_buffer(RingBuffer* rbuffer);
 
 
 

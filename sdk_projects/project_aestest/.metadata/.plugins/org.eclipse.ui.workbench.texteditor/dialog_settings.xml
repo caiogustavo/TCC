@@ -13,8 +13,12 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="bo_e" key="selection"/>
+		<item value="buffer_push" key="selection"/>
 		<list key="findhistory">
+			<item value="buffer_push"/>
+			<item value="iio_buffer"/>
+			<item value="buffer"/>
+			<item value="c"/>
 			<item value="bo_e"/>
 			<item value="aes_read_enc"/>
 			<item value="malloc"/>

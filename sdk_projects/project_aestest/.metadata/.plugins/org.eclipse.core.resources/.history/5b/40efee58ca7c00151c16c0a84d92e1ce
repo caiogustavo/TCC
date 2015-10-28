@@ -1,0 +1,16 @@
+/*
+ * fhss.h
+ *
+ *  Created on: 19/10/2015
+ *      Author: Janier Arias Garcia
+ */
+
+#ifndef FHSS_H_
+#define FHSS_H_
+
+#define M	6
+
+
+int generate_frame();
+
+#endif /* FHSS_H_ */

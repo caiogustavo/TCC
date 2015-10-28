@@ -1,0 +1,6 @@
+11:32:04 **** Build of project aestest-xilinx-linux_bsp_2 ****
+make -k all 
+make: *** No rule to make target `all'.
+
+11:32:04 Build Finished (took 174ms)
+

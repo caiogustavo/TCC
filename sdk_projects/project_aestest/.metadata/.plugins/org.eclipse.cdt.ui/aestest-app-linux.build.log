@@ -1,13 +1,13 @@
-22:32:39 **** Build of configuration Debug for project aestest-app-linux ****
+14:38:13 **** Build of configuration Debug for project aestest-app-linux ****
 make all 
-'Building file: ../src/aes_driver.c'
+'Building file: ../src/helloworld.c'
 'Invoking: MBEL Linux gcc compiler'
-microblazeel-xilinx-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../aestest-app-linux-bsp_bsp/microblaze_0/include -MMD -MP -MF"src/aes_driver.d" -MT"src/aes_driver.d" -o "src/aes_driver.o" "../src/aes_driver.c"
-../src/aes_driver.c:9:20: fatal error: xil_io.h: No such file or directory
+microblazeel-xilinx-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../aestest-app-linux-bsp_bsp/microblaze_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:39:20: fatal error: xil_io.h: No such file or directory
  #include <xil_io.h>
                     ^
 compilation terminated.
-make: *** [src/aes_driver.o] Error 1
+make: *** [src/helloworld.o] Error 1
 
-22:32:40 Build Finished (took 655ms)
+14:38:14 Build Finished (took 1s.30ms)
 

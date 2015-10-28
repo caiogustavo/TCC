@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;aestest-xilinx-linux/src/ad9361-iiostream.c&apos; to &apos;ad9361_iiostream.c&apos;" description="Rename resource &apos;ad9361-iiostream.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/ad9361-iiostream.c" name="ad9361_iiostream.c" stamp="1445276716968" updateReferences="true"/>
+</session>

@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS :=
+LIBS := -lxml2 -lcrypto -liio -lssl -lz
 

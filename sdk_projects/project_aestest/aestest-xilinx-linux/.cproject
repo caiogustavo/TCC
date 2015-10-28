@@ -25,9 +25,8 @@
 							<tool id="xilinx.gnu.mbellinux.c.toolchain.compiler.debug.2041209555" name="MBEL Linux gcc compiler" superClass="xilinx.gnu.mbellinux.c.toolchain.compiler.debug">
 								<option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.21848330" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
 								<option id="xilinx.gnu.compiler.option.debugging.level.1418221849" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
-								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.2134517413" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
-									<listOptionValue builtIn="false" value="../../aestest-xilinx-linux_bsp_1/microblaze_0/include"/>
-								</option>
+								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.2134517413" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes"/>
+								<option id="xilinx.gnu.compiler.dircategory.includes.666821181" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes"/>
 								<inputType id="xilinx.gnu.mbellinux.c.compiler.input.1833226466" name="C source files" superClass="xilinx.gnu.mbellinux.c.compiler.input"/>
 							</tool>
 							<tool id="xilinx.gnu.mbellinux.cxx.toolchain.compiler.debug.2108091615" name="MBEL Linux g++ compiler" superClass="xilinx.gnu.mbellinux.cxx.toolchain.compiler.debug">
@@ -39,9 +38,21 @@
 							</tool>
 							<tool id="xilinx.gnu.mbellinux.toolchain.archiver.960479195" name="MBEL Linux archiver" superClass="xilinx.gnu.mbellinux.toolchain.archiver"/>
 							<tool id="xilinx.gnu.mbellinux.c.toolchain.linker.debug.1544150643" name="MBEL Linux gcc linker" superClass="xilinx.gnu.mbellinux.c.toolchain.linker.debug">
-								<option id="xilinx.gnu.linker.inferred.swplatform.lpath.59919277" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths"/>
-								<option id="xilinx.gnu.linker.inferred.swplatform.flags.239337710" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs"/>
+								<option id="xilinx.gnu.linker.inferred.swplatform.lpath.59919277" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath"/>
+								<option id="xilinx.gnu.linker.inferred.swplatform.flags.239337710" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags"/>
 								<option id="xilinx.gnu.c.linker.option.lscript.2056901222" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="" valueType="string"/>
+								<option id="xilinx.gnu.c.link.option.paths.626501144" name="Library search path (-L)" superClass="xilinx.gnu.c.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;C:\Xilinx\SDK\2014.2\gnu\microblaze\linux_toolchain\nt64_le\microblazeel-xilinx-linux-gnu\sys-root\usr\lib\usr_lib&quot;"/>
+								</option>
+								<option id="xilinx.gnu.c.link.option.libs.1537420534" name="Libraries (-l)" superClass="xilinx.gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="xml2"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="crypto"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="iio"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="ssl"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="z"/>
+								</option>
+								<option id="xilinx.gnu.c.link.option.userobjs.372855484" name="Other Objects" superClass="xilinx.gnu.c.link.option.userobjs" valueType="userObjs"/>
+								<option id="xilinx.gnu.c.link.option.ldflags.981734097" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" value="" valueType="string"/>
 								<inputType id="xilinx.gnu.linker.input.947652826" superClass="xilinx.gnu.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -151,5 +162,13 @@
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.MBELLinuxGCCManagedMakePerProjectProfileC"/>
 		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/aestest-xilinx-linux"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/aestest-xilinx-linux"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>

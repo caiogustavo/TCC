@@ -1,0 +1,24 @@
+/*
+ * fhss.h
+ *
+ *  Created on: 19/10/2015
+ *      Author: Janier Arias Garcia
+ */
+
+#ifndef FHSS_H_
+#define FHSS_H_
+
+#include "ringbuffer.h"
+
+
+#define M	6
+#define SIZE_BYTES 1
+
+
+int generate_frame();
+int rx_to_buf(RingBuffer* buf_rx, RingBuffer* buf_fh);
+int buf_to_tx(RingBuffer* buf_tx, RingBuffer* buf_fh);
+int extract_payload(RingBuffer* buf_fh);
+
+
+#endif /* FHSS_H_ */

@@ -1,4 +1,4 @@
-22:32:28 **** Build of project aestest-app-linux-bsp_bsp ****
+11:26:31 **** Build of project aestest-app-linux-bsp_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_0/src"
 make -C microblaze_0/libsrc/bram_v4_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
@@ -456,5 +456,5 @@ make[1]: Target `libs' not remade because of errors.
 make: *** [microblaze_0/libsrc/xilskey_v2_0/src/make.libs] Error 2
 make: Target `all' not remade because of errors.
 
-22:32:39 Build Finished (took 10s.344ms)
+11:26:42 Build Finished (took 10s.679ms)
 

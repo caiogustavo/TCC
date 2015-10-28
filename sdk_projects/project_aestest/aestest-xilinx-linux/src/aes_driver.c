@@ -17,6 +17,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <sys/mman.h>
+//#include <iio.h>
 #include "aes_driver.h"
 #include "ringbuffer.h"
 
@@ -164,15 +165,16 @@ void aes_init_enc( uint32_t* data )
 	return;
 }
 
-void aes_init_enc_buffer( RingBuffer* rbuffer )
+int aes_init_enc_buffer( RingBuffer* rbuffer )
 {
 	// Insert block
-	RingBuffer_read( rbuffer, (uint8_t*)(aes_ptr+AES_DATA_IN_ENC_OFFSET), 16 );
+	if ( !RingBuffer_read( rbuffer, (uint8_t*)(aes_ptr+AES_DATA_IN_ENC_OFFSET), 16 ) )
+		return 0;
 
 	// Initialize Encryption
 	aes_write_8bits( AES_CONFIG_ENC_OFFSET, 0x01 );
 
-	return;
+	return 1;
 }
 
 uint32_t* aes_read_enc(void)
@@ -188,6 +190,18 @@ uint32_t* aes_read_enc(void)
 	return data;
 }
 
+int aes_read_enc_buffer(RingBuffer* rbuffer)
+{
+	// Read encoded block
+	if ( !RingBuffer_write( rbuffer, (uint8_t*)(aes_ptr+AES_DATA_OUT_ENC_OFFSET), 16) )
+		return 0;
+
+	// Finish Encryption
+	aes_write_8bits( AES_CONFIG_ENC_OFFSET, 0x00 );
+
+	return 1;
+}
+
 void aes_init_dec( uint32_t* data )
 {
 	// Insert key
@@ -198,6 +212,19 @@ void aes_init_dec( uint32_t* data )
 
 	return;
 }
+
+int aes_init_dec_buffer( RingBuffer* rbuffer )
+{
+	// Insert block
+	if ( !RingBuffer_read( rbuffer, (uint8_t*)(aes_ptr+AES_DATA_IN_DEC_OFFSET), 16 ) )
+		return 0;
+
+	// Initialize Encryption
+	aes_write_8bits( AES_CONFIG_DEC_OFFSET, 0x01 );
+
+	return 1;
+}
+
 
 uint32_t* aes_read_dec(void)
 {
@@ -211,3 +238,16 @@ uint32_t* aes_read_dec(void)
 
 	return data;
 }
+
+int aes_read_dec_buffer(RingBuffer* rbuffer)
+{
+	// Read encoded block
+	if ( !RingBuffer_write( rbuffer, (uint8_t*)(aes_ptr+AES_DATA_OUT_DEC_OFFSET), 16) )
+		return 0;
+
+	// Finish Encryption
+	aes_write_8bits( AES_CONFIG_ENC_OFFSET, 0x00 );
+
+	return 1;
+}
+

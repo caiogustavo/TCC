@@ -1,6 +1,6 @@
-22:32:16 **** Build of configuration Debug for project aestest-app-xilkernel ****
+14:38:38 **** Build of configuration Debug for project aestest-app-xilkernel ****
 make all 
 make: Nothing to be done for `all'.
 
-22:32:16 Build Finished (took 234ms)
+14:38:39 Build Finished (took 218ms)
 

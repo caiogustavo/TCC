@@ -148,3 +148,91 @@ org.eclipse.core.runtime.CoreException: Internal error occurred while generating
 19:20:17 INFO  : Applying linker script to all configurations of project aestest-xilinx-linux.
 19:20:17 INFO  : Setting rebuild state to true for all configurations of project aestest-xilinx-linux.
 22:25:47 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:22:05 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:04:36 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+05:27:05 ERROR : Unexpected error while fetching XMD's response: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:154)
+	at java.io.BufferedReader.read(BufferedReader.java:175)
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess$CommandResultsReader.run(XMDJSONProcess.java:332)
+	at java.lang.Thread.run(Thread.java:724)
+05:27:05 ERROR : Zero sized response read from XMD. This indicates a communication error or a programming error.
+19:28:31 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:29:35 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:29:35 WARN  : Unable to obtain port 2357 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:30:38 WARN  : Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:30:38 WARN  : Unable to obtain port 2357 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:30:38 WARN  : Unable to obtain port 2364 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:32:38 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:32:38 WARN  : Unable to obtain port 2357 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:32:38 WARN  : Unable to obtain port 2364 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:32:38 WARN  : Unable to obtain port 2371 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:34:53 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:34:53 WARN  : Unable to obtain port 2357 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:34:53 WARN  : Unable to obtain port 2364 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:34:53 WARN  : Unable to obtain port 2371 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:34:53 WARN  : Unable to obtain port 2378 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:37:12 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:37:12 WARN  : Unable to obtain port 2357 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:37:12 WARN  : Unable to obtain port 2364 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:37:12 WARN  : Unable to obtain port 2371 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:37:12 WARN  : Unable to obtain port 2378 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:37:12 WARN  : Unable to obtain port 2385 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+19:40:22 WARN  : Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:40:22 WARN  : Unable to obtain port 2357 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:40:22 WARN  : Unable to obtain port 2364 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:40:22 WARN  : Unable to obtain port 2371 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:40:22 WARN  : Unable to obtain port 2378 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:40:22 WARN  : Unable to obtain port 2385 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:40:22 WARN  : Unable to obtain port 2392 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:42:06 WARN  : Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:42:06 WARN  : Unable to obtain port 2357 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:42:06 WARN  : Unable to obtain port 2364 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:42:06 WARN  : Unable to obtain port 2371 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:42:06 WARN  : Unable to obtain port 2378 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:42:06 WARN  : Unable to obtain port 2385 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:42:06 WARN  : Unable to obtain port 2392 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+19:42:06 WARN  : Unable to obtain port 2399 for use by XMD, java.net.BindException: Address already in use: JVM_Bind
+03:57:23 ERROR : Unexpected error while fetching XMD's response: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:154)
+	at java.io.BufferedReader.read(BufferedReader.java:175)
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess$CommandResultsReader.run(XMDJSONProcess.java:332)
+	at java.lang.Thread.run(Thread.java:724)
+03:57:23 ERROR : Zero sized response read from XMD. This indicates a communication error or a programming error.
+11:30:55 INFO  : Project aestest-app-linux-bsp_bsp was a BSP project. Please update references.
+11:30:55 ERROR : SDK has detected that project aestest-app-linux-bsp_bsp has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references.
+11:32:10 INFO  : Project aestest-xilinx-linux_bsp_1 was a BSP project. Please update references.
+11:32:10 ERROR : SDK has detected that project aestest-xilinx-linux_bsp_1 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references.
+04:06:20 ERROR : Unexpected error while fetching XMD's response: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:154)
+	at java.io.BufferedReader.read(BufferedReader.java:175)
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess$CommandResultsReader.run(XMDJSONProcess.java:332)
+	at java.lang.Thread.run(Thread.java:724)
+04:06:20 ERROR : Zero sized response read from XMD. This indicates a communication error or a programming error.
+13:38:07 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:33:46 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:45:03 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:55:43 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:17:28 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
