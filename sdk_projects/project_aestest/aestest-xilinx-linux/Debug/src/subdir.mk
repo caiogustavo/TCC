@@ -6,6 +6,7 @@
 C_SRCS += \
 ../src/ad9361_iiostream.c \
 ../src/aes_driver.c \
+../src/crc.c \
 ../src/dh.c \
 ../src/fhss.c \
 ../src/helloworld.c \
@@ -14,6 +15,7 @@ C_SRCS += \
 OBJS += \
 ./src/ad9361_iiostream.o \
 ./src/aes_driver.o \
+./src/crc.o \
 ./src/dh.o \
 ./src/fhss.o \
 ./src/helloworld.o \
@@ -22,6 +24,7 @@ OBJS += \
 C_DEPS += \
 ./src/ad9361_iiostream.d \
 ./src/aes_driver.d \
+./src/crc.d \
 ./src/dh.d \
 ./src/fhss.d \
 ./src/helloworld.d \

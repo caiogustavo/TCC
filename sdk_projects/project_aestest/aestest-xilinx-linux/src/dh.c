@@ -2,7 +2,7 @@
  * dh_key_exchange.c
  *
  *  Created on: 03/10/2015
- *      Author: Janier Arias Garcia
+ *      Author: Caio Gustavo Mesquita Ângelo
  */
 
 

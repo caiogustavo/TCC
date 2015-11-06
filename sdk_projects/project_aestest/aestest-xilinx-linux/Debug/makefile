@@ -35,7 +35,7 @@ all: aestest-xilinx-linux.elf secondary-outputs
 aestest-xilinx-linux.elf: $(OBJS)  $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MBEL Linux gcc linker'
-	microblazeel-xilinx-linux-gnu-gcc -L"C:\Xilinx\SDK\2014.2\gnu\microblaze\linux_toolchain\nt64_le\microblazeel-xilinx-linux-gnu\sys-root\usr\lib\usr_lib" -o "aestest-xilinx-linux.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	microblazeel-xilinx-linux-gnu-gcc -L"C:\Xilinx\SDK\2014.2\gnu\microblaze\linux_toolchain\nt64_le\microblazeel-xilinx-linux-gnu\sys-root\usr\lib\usr_lib" -L"C:\Xilinx\SDK\2014.2\gnu\microblaze\linux_toolchain\nt64_le\microblazeel-xilinx-linux-gnu\sys-root\usr\lib\usr_lib\lib" -o "aestest-xilinx-linux.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

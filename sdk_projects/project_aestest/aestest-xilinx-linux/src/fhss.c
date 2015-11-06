@@ -4,7 +4,7 @@
  *  Created on: 19/10/2015
  *      Author: Caio Gustavo Mesquita Ângelo
  */
-
+/*
 #include <stdio.h>
 #include <stdint.h>
 #include "fhss.h"
@@ -212,4 +212,22 @@ int extract_payload(RingBuffer *buf_rx, RingBuffer *buf_fh, uint8_t *payload)
 	}
 	return size;
 }
+*/
+
+/*
+ * fhss.c
+ *
+ *  Created on: 19/10/2015
+ *      Author: Caio Gustavo Mesquita Ângelo
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+#include <math.h>
+#include "fhss.h"
+#include "crc.h"
+
+#define FAILURE -1
+#define SUCCESS 0
+
 
