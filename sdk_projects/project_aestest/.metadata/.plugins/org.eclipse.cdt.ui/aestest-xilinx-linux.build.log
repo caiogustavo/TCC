@@ -1,15 +1,10 @@
-21:20:35 **** Auto Build of configuration Debug for project aestest-xilinx-linux ****
+18:35:53 **** Auto Build of configuration Debug for project aestest-xilinx-linux ****
 make all 
-'Building file: ../src/fhss.c'
-'Invoking: MBEL Linux gcc compiler'
-microblazeel-xilinx-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/fhss.d" -MT"src/fhss.d" -o "src/fhss.o" "../src/fhss.c"
-'Finished building: ../src/fhss.c'
-' '
 'Building file: ../src/helloworld.c'
 'Invoking: MBEL Linux gcc compiler'
 microblazeel-xilinx-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:382:2: warning: passing argument 2 of 'RingBuffer_write' from incompatible pointer type [enabled by default]
+../src/helloworld.c:425:2: warning: passing argument 2 of 'RingBuffer_write' from incompatible pointer type [enabled by default]
   RingBuffer_write(channel_master_to_slave,init_channel,CHANNEL_SIZE/2);
   ^
 In file included from ../src/aes_driver.h:15:0,
@@ -17,7 +12,7 @@ In file included from ../src/aes_driver.h:15:0,
 ../src/ringbuffer.h:30:5: note: expected 'uint8_t *' but argument is of type 'uint8_t **'
  int RingBuffer_write(RingBuffer *buffer, uint8_t *data, int length);
      ^
-../src/helloworld.c:383:2: warning: passing argument 2 of 'RingBuffer_write' from incompatible pointer type [enabled by default]
+../src/helloworld.c:426:2: warning: passing argument 2 of 'RingBuffer_write' from incompatible pointer type [enabled by default]
   RingBuffer_write(channel_slave_to_master,init_channel,CHANNEL_SIZE/2);
   ^
 In file included from ../src/aes_driver.h:15:0,
@@ -25,103 +20,132 @@ In file included from ../src/aes_driver.h:15:0,
 ../src/ringbuffer.h:30:5: note: expected 'uint8_t *' but argument is of type 'uint8_t **'
  int RingBuffer_write(RingBuffer *buffer, uint8_t *data, int length);
      ^
-../src/helloworld.c:433:2: warning: passing argument 1 of 'pthread_cond_init' from incompatible pointer type [enabled by default]
+../src/helloworld.c:483:2: warning: passing argument 1 of 'pthread_cond_init' from incompatible pointer type [enabled by default]
   pthread_cond_init(&cond_transc, NULL);
   ^
 In file included from ../src/helloworld.c:284:0:
 c:\xilinx\sdk\2014.2\gnu\microblaze\linux_toolchain\nt64_le\microblazeel-xilinx-linux-gnu\sys-root\usr\include\pthread.h:979:12: note: expected 'union pthread_cond_t * __restrict__' but argument is of type 'union pthread_cond_t (*)[2]'
  extern int pthread_cond_init (pthread_cond_t *__restrict __cond,
             ^
-../src/helloworld.c:413:21: warning: variable 'thr_slave_sched_param' set but not used [-Wunused-but-set-variable]
-  struct sched_param thr_slave_sched_param;
-                     ^
-../src/helloworld.c:412:21: warning: variable 'thr_master_sched_param' set but not used [-Wunused-but-set-variable]
-  struct sched_param thr_master_sched_param;
-                     ^
-../src/helloworld.c:411:21: warning: variable 'thr_slave_transc_sched_param' set but not used [-Wunused-but-set-variable]
-  struct sched_param thr_slave_transc_sched_param;
-                     ^
-../src/helloworld.c:410:21: warning: variable 'thr_master_transc_sched_param' set but not used [-Wunused-but-set-variable]
-  struct sched_param thr_master_transc_sched_param;
-                     ^
-../src/helloworld.c: In function 'thr_func_transc':
-../src/helloworld.c:531:6: warning: return makes pointer from integer without a cast [enabled by default]
-      return FAILURE;
-      ^
-../src/helloworld.c:540:5: warning: return makes pointer from integer without a cast [enabled by default]
-     return FAILURE;
-     ^
-../src/helloworld.c:548:6: warning: return makes pointer from integer without a cast [enabled by default]
-      return FAILURE;
-      ^
-../src/helloworld.c:554:5: warning: return makes pointer from integer without a cast [enabled by default]
-     return FAILURE;
-     ^
+../src/helloworld.c:554:2: warning: passing argument 1 of 'pthread_mutex_destroy' from incompatible pointer type [enabled by default]
+  pthread_mutex_destroy(&mutexattr_transc);
+  ^
+In file included from ../src/helloworld.c:284:0:
+c:\xilinx\sdk\2014.2\gnu\microblaze\linux_toolchain\nt64_le\microblazeel-xilinx-linux-gnu\sys-root\usr\include\pthread.h:765:12: note: expected 'union pthread_mutex_t *' but argument is of type 'union pthread_mutexattr_t *'
+ extern int pthread_mutex_destroy (pthread_mutex_t *__mutex)
+            ^
+../src/helloworld.c:555:2: warning: passing argument 1 of 'pthread_mutex_destroy' from incompatible pointer type [enabled by default]
+  pthread_mutex_destroy(&mutexattr_ms);
+  ^
+In file included from ../src/helloworld.c:284:0:
+c:\xilinx\sdk\2014.2\gnu\microblaze\linux_toolchain\nt64_le\microblazeel-xilinx-linux-gnu\sys-root\usr\include\pthread.h:765:12: note: expected 'union pthread_mutex_t *' but argument is of type 'union pthread_mutexattr_t *'
+ extern int pthread_mutex_destroy (pthread_mutex_t *__mutex)
+            ^
+../src/helloworld.c:404:30: warning: unused variable 'attr_slave' [-Wunused-variable]
+  pthread_attr_t attr_master, attr_slave;
+                              ^
+../src/helloworld.c:404:17: warning: unused variable 'attr_master' [-Wunused-variable]
+  pthread_attr_t attr_master, attr_slave;
+                 ^
 ../src/helloworld.c: In function 'thr_func_main':
-../src/helloworld.c:585:3: warning: pointer targets in passing argument 1 of 'generate_frame' differ in signedness [-Wpointer-sign]
-   frame = generate_frame(msg_master,30);
+../src/helloworld.c:655:3: warning: pointer targets in passing argument 3 of 'send_payload' differ in signedness [-Wpointer-sign]
+   send_payload(&bufs,&frame_id_tx,msg_master,30);
    ^
-../src/helloworld.c:339:13: note: expected 'uint8_t *' but argument is of type 'char *'
- frame_data* generate_frame( uint8_t *payload, int length );
-             ^
-../src/helloworld.c:606:3: warning: pointer targets in passing argument 1 of 'generate_frame' differ in signedness [-Wpointer-sign]
-   frame = generate_frame(msg_slave,45);
-   ^
-../src/helloworld.c:339:13: note: expected 'uint8_t *' but argument is of type 'char *'
- frame_data* generate_frame( uint8_t *payload, int length );
-             ^
-../src/helloworld.c:572:7: warning: unused variable 'msg_master2' [-Wunused-variable]
-  char msg_master2[31] = " e decriptografá-la em seguida!";
-       ^
-../src/helloworld.c: In function 'f_timer_transc':
-../src/helloworld.c:656:6: warning: unused variable 'err' [-Wunused-variable]
-  int err;
-      ^
-../src/helloworld.c: In function 'timer_start_transc':
-../src/helloworld.c:721:5: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
-     memset(&sigev, 0, sizeof (struct sigevent));
+../src/helloworld.c:367:5: note: expected 'uint8_t *' but argument is of type 'char *'
+ int send_payload( unit_bufs *bufs, uint8_t *frame_id, uint8_t *payload, int length ); // generate frame, send frame and verify ack. If, after a period, it doesn't receive an ACK, it sends again
      ^
-../src/helloworld.c:721:5: warning: incompatible implicit declaration of built-in function 'memset' [enabled by default]
-../src/helloworld.c:730:9: warning: implicit declaration of function 'strerror' [-Wimplicit-function-declaration]
-         fprintf(stderr, "[%d]: %s\n", __LINE__, strerror(erno));
-         ^
-../src/helloworld.c:730:9: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
-../src/helloworld.c:736:9: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
-         fprintf(stderr, "[%d]: %s\n", __LINE__, strerror(erno));
-         ^
-../src/helloworld.c: In function 'send_frame':
-../src/helloworld.c:803:6: warning: unused variable 'i' [-Wunused-variable]
+../src/helloworld.c:645:14: warning: variable 'payload' set but not used [-Wunused-but-set-variable]
+  dyn_vector *payload;
+              ^
+../src/helloworld.c:642:6: warning: unused variable 'length' [-Wunused-variable]
+  int length;
+      ^
+../src/helloworld.c:639:14: warning: unused variable 'frame' [-Wunused-variable]
+  frame_data *frame;
+              ^
+../src/helloworld.c:638:6: warning: unused variable 'i' [-Wunused-variable]
   int i;
       ^
-../src/helloworld.c: In function 'generate_frame':
-../src/helloworld.c:837:10: warning: unused variable 'size_8' [-Wunused-variable]
-  uint8_t size_8[SIZE_BYTES];
-          ^
-../src/helloworld.c:836:10: warning: unused variable 'crc_result_8' [-Wunused-variable]
-  uint8_t crc_result_8[CRC_BYTES];
-          ^
-../src/helloworld.c:833:11: warning: unused variable 'err' [-Wunused-variable]
-  int i,j, err;
-           ^
-../src/helloworld.c: In function 'extract_payload':
-../src/helloworld.c:937:6: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+../src/helloworld.c:637:7: warning: unused variable 'msg_master2' [-Wunused-variable]
+  char msg_master2[31] = " e decriptografá-la em seguida!";
+       ^
+../src/helloworld.c:636:7: warning: unused variable 'msg_slave' [-Wunused-variable]
+  char msg_slave[48] = " vou conseguir criptografar toda essa mensagem";
+       ^
+../src/helloworld.c: In function 'timer_start_transc':
+../src/helloworld.c:754:5: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+     memset(&sigev, 0, sizeof (struct sigevent));
+     ^
+../src/helloworld.c:754:5: warning: incompatible implicit declaration of built-in function 'memset' [enabled by default]
+../src/helloworld.c:763:9: warning: implicit declaration of function 'strerror' [-Wimplicit-function-declaration]
+         fprintf(stderr, "[%d]: %s\n", __LINE__, strerror(erno));
+         ^
+../src/helloworld.c:763:9: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+../src/helloworld.c:769:9: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+         fprintf(stderr, "[%d]: %s\n", __LINE__, strerror(erno));
+         ^
+../src/helloworld.c: In function 'extract_frame':
+../src/helloworld.c:952:6: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
       if ( err = RingBuffer_read(buf_fh, last_bits, 1) )
       ^
-../src/helloworld.c:955:6: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+../src/helloworld.c:973:6: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
       if ( err = RingBuffer_read(buf_fh, last_bits, 1) )
       ^
-../src/helloworld.c:973:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+../src/helloworld.c:992:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
        if ( err = RingBuffer_read(buf_fh, last_bits, 1) )
        ^
-../src/helloworld.c:994:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+../src/helloworld.c:1015:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
        if ( err = RingBuffer_read(buf_fh, last_bits, 1) )
        ^
-../src/helloworld.c:1010:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+../src/helloworld.c:1027:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
        if ( err = RingBuffer_read(buf_fh, last_bits, 1) )
        ^
-../src/helloworld.c:1030:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+../src/helloworld.c:1046:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
        if ( err = RingBuffer_read(buf_fh, last_bits, 1) )
        ^
+../src/helloworld.c:1068:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       if ( err = RingBuffer_read(buf_fh, last_bits, 1) )
+       ^
+../src/helloworld.c: In function 'send_payload':
+../src/helloworld.c:1137:5: warning: incompatible implicit declaration of built-in function 'memset' [enabled by default]
+     memset(&sigev, 0, sizeof (struct sigevent));
+     ^
+../src/helloworld.c:1124:17: warning: unused variable 'buf_fh' [-Wunused-variable]
+     RingBuffer *buf_fh = bufs->buf_fh;
+                 ^
+../src/helloworld.c:1123:17: warning: unused variable 'buf_rx' [-Wunused-variable]
+     RingBuffer *buf_rx = bufs->buf_rx;
+                 ^
+../src/helloworld.c:1116:9: warning: unused variable 'erno' [-Wunused-variable]
+     int erno = 0;
+         ^
+../src/helloworld.c: In function 'receive_payload':
+../src/helloworld.c:1204:13: warning: unused variable 'tid' [-Wunused-variable]
+     uint8_t tid = bufs->type;
+             ^
+../src/helloworld.c:1203:17: warning: unused variable 'buf_fh' [-Wunused-variable]
+     RingBuffer *buf_fh = bufs->buf_fh;
+                 ^
+../src/helloworld.c:1202:17: warning: unused variable 'buf_rx' [-Wunused-variable]
+     RingBuffer *buf_rx = bufs->buf_rx;
+                 ^
+../src/helloworld.c:1194:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/helloworld.c: In function 'f_timer_ms':
+../src/helloworld.c:1250:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/helloworld.c: In function 'timer_start_ms':
+../src/helloworld.c:1278:5: warning: incompatible implicit declaration of built-in function 'memset' [enabled by default]
+     memset(&sigev, 0, sizeof (struct sigevent));
+     ^
+../src/helloworld.c:1287:9: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+         fprintf(stderr, "[%d]: %s\n", __LINE__, strerror(erno));
+         ^
+../src/helloworld.c:1293:9: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+         fprintf(stderr, "[%d]: %s\n", __LINE__, strerror(erno));
+         ^
 'Finished building: ../src/helloworld.c'
 ' '
 'Building target: aestest-xilinx-linux.elf'
@@ -132,9 +156,9 @@ microblazeel-xilinx-linux-gnu-gcc -L"C:\Xilinx\SDK\2014.2\gnu\microblaze\linux_t
 'Invoking: MBEL Linux Print Size'
 microblazeel-xilinx-linux-gnu-size aestest-xilinx-linux.elf  |tee "aestest-xilinx-linux.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  28949	    632	   9548	  39129	   98d9	aestest-xilinx-linux.elf
+  31568	    664	   9616	  41848	   a378	aestest-xilinx-linux.elf
 'Finished building: aestest-xilinx-linux.elf.size'
 ' '
 
-21:20:37 Build Finished (took 1s.732ms)
+18:35:54 Build Finished (took 1s.418ms)
 
