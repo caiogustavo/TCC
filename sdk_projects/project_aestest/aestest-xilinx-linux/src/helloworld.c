@@ -286,115 +286,14 @@ void encripta(void)
 #include <signal.h>
 #include <math.h>
 
+#include "main.h"
 #include "aes_driver.h"
 #include "ringbuffer.h"
 #include "dh.h"
 #include "fhss.h"
 #include "crc.h"
 
-#define MASTER 0 // These defines must start 0 and increases 1 by 1 (because of cond_transc)
-#define SLAVE  1
-
-#define FAILURE -1
-#define SUCCESS 0
-
-#define CHANNEL_SIZE 8
-#define TRANSC_SIZE 256
-//#define CHANNEL_SAMPLE_RATE 1000
-#define PERIOD_TRANSC_US 1000
-#define PERIOD_MS_US 100
-#define WAIT_ACK_US	10000
-
-#define ACK 0x69
-#define RET 0x5A
-
-
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-int count=0;
-struct thr_main_args{
-	int type;	// MASTER ou SLAVE
-	uint8_t tid; // identificador do slave
-	RingBuffer *tx;
-	RingBuffer *rx;
-};
-
-struct thr_transc_args{
-	RingBuffer *channel_tx;
-	RingBuffer *channel_rx;
-	RingBuffer *tx;
-	RingBuffer *rx;
-	uint8_t tid;
-};
-
-typedef struct _dyn_vector{
-	uint8_t *data; // buffer of symbols of M bits
-	int n; // number of symbols
-} dyn_vector;
-
-typedef struct _frame_data{
-	dyn_vector payload;
-	uint8_t frame_id;
-} frame_data;
-
-typedef struct _retransmit_arg{
-	RingBuffer *buf;
-	frame_data frame;
-} retransmit_arg;
-
-typedef struct _unit_bufs{
-	uint8_t type;
-	RingBuffer *buf_tx;
-	RingBuffer *buf_rx;
-	RingBuffer *buf_fh;
-} unit_bufs;
-
-
-void *thr_func_main(void *arg);
-void *thr_func_transc(void *arg);
-void f_timer_transc(union sigval sigval);
-void timer_start_transc(void);
-int rx_to_buf(RingBuffer* buf_rx, RingBuffer* buf_fh);
-int buf_to_tx(RingBuffer* buf_tx, RingBuffer* buf_fh);
-int send_frame( RingBuffer *buf_tx, dyn_vector *frame );
-dyn_vector* generate_frame( uint8_t* payload, int length, uint8_t frame_id );
-frame_data* extract_frame( unit_bufs *bufs);
-
-void f_timer_retransmit(union sigval arg);
-
-// SEND_PAYLOAD
-//	return 0 if sucessful; Err(negative) if fail.
-int send_payload( unit_bufs *bufs, uint8_t *frame_id, uint8_t *payload, int length ); // generate frame, send frame and verify ack. If, after a period, it doesn't receive an ACK, it sends again
-// Receive_Payload
-// return length of payload in bytes if succesful; Err (negative) if fail.
-dyn_vector* receive_payload( unit_bufs *bufs,  uint8_t *frame_id ); // extract_payload. If it receives, it sends an ACK. If it finds an error or it takes too longe, it asks for retransmission
-void suspend_unit(uint8_t tid);
-void f_timer_ms(union sigval sigval);
-void timer_start_ms(void);
-
-int on;
-pthread_mutex_t mutex_transc, mutex_ms; // master/slave
-pthread_mutexattr_t mutexattr_transc, mutexattr_ms;
-pthread_cond_t cond_transc[2]; // cond_transc[MASTER] e cond_transc[SLAVE]
-pthread_cond_t cond_ms[2]; // so master and slave can stop working sometimes
-
-timer_t timer_transc, timer_ms;
-timer_t timer_wait_for_ack;
-int freq_master = 1;
-int freq_slave = 1;
-uint8_t flag_cond_transc[2] = {1,1};
-uint8_t flag_cond_ms[2] = {1,1};
-uint8_t flag_transc_active = 0;
-uint8_t unit_token = 0;
-
-clock_t clk;
-
-//dyn_vector *ack_frame;
-
-//uint8_t flag_suspend_extract_payload = 0;
-
-
-
+int counter = 0;
 
 int main() {
 	int err; // error code
@@ -404,83 +303,83 @@ int main() {
 	pthread_attr_t attr_master, attr_slave;
 
 	//attr_master.
-
-	RingBuffer *channel_master_to_slave, *channel_slave_to_master;
-	RingBuffer *master_tx, *master_rx;
-	RingBuffer *slave_tx, *slave_rx;
+	thr_transc_arg bufs;
+	//RingBuffer *channel_master_to_slave, *channel_slave_to_master;
+	//RingBuffer *master_tx, *master_rx;
+	//RingBuffer *slave_tx, *slave_rx;
 	uint8_t* init_channel[CHANNEL_SIZE/2+1] = {0};
 
 	//printf("\n\rCeil(12.1) = %d\n\r",(int)(12.1));
 
 
 	// Transceivers (deal with channel)
-	pthread_t thr_master_transc, thr_slave_transc;
-	struct thr_transc_args args_master_transc, args_slave_transc;
+	//pthread_t thr_master_transc, thr_slave_transc;
+	//struct thr_transc_args args_master_transc, args_slave_transc;
 
 	// Channel creation
 
 
-	channel_master_to_slave = RingBuffer_create(CHANNEL_SIZE);
-	channel_slave_to_master = RingBuffer_create(CHANNEL_SIZE);
-	RingBuffer_write(channel_master_to_slave,init_channel,CHANNEL_SIZE/2);
-	RingBuffer_write(channel_slave_to_master,init_channel,CHANNEL_SIZE/2);
-	master_tx = RingBuffer_create(TRANSC_SIZE);
-	master_rx = RingBuffer_create(TRANSC_SIZE);
-	slave_tx = RingBuffer_create(TRANSC_SIZE);
-	slave_rx = RingBuffer_create(TRANSC_SIZE);
+	bufs.channel_master_to_slave = RingBuffer_create(CHANNEL_SIZE);
+	bufs.channel_slave_to_master = RingBuffer_create(CHANNEL_SIZE);
+	RingBuffer_write(bufs.channel_master_to_slave,init_channel,CHANNEL_SIZE/2);
+	RingBuffer_write(bufs.channel_slave_to_master,init_channel,CHANNEL_SIZE/2);
+	bufs.master_tx = RingBuffer_create(TRANSC_SIZE);
+	bufs.master_rx = RingBuffer_create(TRANSC_SIZE);
+	bufs.slave_tx = RingBuffer_create(TRANSC_SIZE);
+	bufs.slave_rx = RingBuffer_create(TRANSC_SIZE);
 
-	args_master_transc.channel_rx = channel_slave_to_master;
-	args_master_transc.channel_tx = channel_master_to_slave;
-	args_master_transc.rx = master_rx;
-	args_master_transc.tx = master_tx;
-	args_master_transc.tid = MASTER;
-	args_slave_transc.channel_rx = channel_master_to_slave;
-	args_slave_transc.channel_tx = channel_slave_to_master;
-	args_slave_transc.rx = slave_rx;
-	args_slave_transc.tx = slave_tx;
-	args_slave_transc.tid = SLAVE;
+	//args_master_transc.channel_rx = channel_slave_to_master;
+	//args_master_transc.channel_tx = channel_master_to_slave;
+	//args_master_transc.rx = master_rx;
+	//args_master_transc.tx = master_tx;
+	//args_master_transc.tid = MASTER;
+	//args_slave_transc.channel_rx = channel_master_to_slave;
+	//args_slave_transc.channel_tx = channel_slave_to_master;
+	//args_slave_transc.rx = slave_rx;
+	//args_slave_transc.tx = slave_tx;
+	//args_slave_transc.tid = SLAVE;
 
 	args_master.type = MASTER;
 	args_master.tid = 1;
-	args_master.tx = master_tx;
-	args_master.rx = master_rx;
+	args_master.tx = bufs.master_tx;
+	args_master.rx = bufs.master_rx;
 	args_slave.type = SLAVE;
 	args_slave.tid = 0x13;
-	args_slave.tx = slave_tx;
-	args_slave.rx = slave_rx;
+	args_slave.tx = bufs.slave_tx;
+	args_slave.rx = bufs.slave_rx;
 
 //	int policy;
-	struct sched_param thr_master_transc_sched_param;
-	struct sched_param thr_slave_transc_sched_param;
+	//struct sched_param thr_master_transc_sched_param;
+	//struct sched_param thr_slave_transc_sched_param;
 	struct sched_param thr_master_sched_param;
 	struct sched_param thr_slave_sched_param;
 
-	thr_master_transc_sched_param.sched_priority = 16;
-	thr_slave_transc_sched_param.sched_priority = 16;
-	thr_master_sched_param.sched_priority = 2;
-	thr_slave_sched_param.sched_priority = 2;
+	//thr_master_transc_sched_param.sched_priority = 16;
+	//thr_slave_transc_sched_param.sched_priority = 16;
+	thr_master_sched_param.sched_priority = MASTER_PRIORITY;
+	thr_slave_sched_param.sched_priority = SLAVE_PRIORITY;
 
 
 	//printf("\n\rMaster_transc:\n\r\tPolicy = %d",policy);
 	//printf("\n\r\tSched_param = %d",thr_sched_param.sched_priority);
 
 	// Threads intialization
-	on = 1;
+	//on = 1;
 	//mutex_channel = PTHREAD_MUTEX_INITIALIZER;
 	//cond_transc[MASTER] = PTHREAD_COND_INITIALIZER;
 	//cond_transc[SLAVE] = PTHREAD_COND_INITIALIZER;
 
 	int prot;
-	pthread_mutexattr_init(&mutexattr_transc);
+	//pthread_mutexattr_init(&mutexattr_transc);
 	pthread_mutexattr_init(&mutexattr_ms);
-	pthread_mutexattr_getprotocol(&mutexattr_transc,&prot);
+	//pthread_mutexattr_getprotocol(&mutexattr_transc,&prot);
 	pthread_mutexattr_getprotocol(&mutexattr_ms,&prot);
-	pthread_mutexattr_setprotocol(&mutexattr_transc,PTHREAD_PRIO_INHERIT);
+	//pthread_mutexattr_setprotocol(&mutexattr_transc,PTHREAD_PRIO_INHERIT);
 	pthread_mutexattr_setprotocol(&mutexattr_ms,PTHREAD_PRIO_INHERIT);
 
-	pthread_mutex_init(&mutex_transc, &mutexattr_transc);
+	//pthread_mutex_init(&mutex_transc, &mutexattr_transc);
 	pthread_mutex_init(&mutex_ms,&mutexattr_ms);
-	pthread_cond_init(&cond_transc, NULL);
+	//pthread_cond_init(&cond_transc, NULL);
 	//pthread_cond_init(&cond_transc[SLAVE], NULL);
 	F_CRC_InicializaTabla();
 
@@ -488,19 +387,19 @@ int main() {
 	//uint8_t ack[1]={0x69};
 	//ack_frame = generate_frame(ack,1);
 
-	if( (err = pthread_create(&thr_master_transc, NULL, thr_func_transc, &args_master_transc)) )
-	{
-		printf("\n\rERROR %d: pthread_create",err);
-		return FAILURE;
-	}
+	//if( (err = pthread_create(&thr_master_transc, NULL, thr_func_transc, &args_master_transc)) )
+	//{
+	//	printf("\n\rERROR %d: pthread_create",err);
+	//	return FAILURE;
+	//}
 
-	if( (err = pthread_create(&thr_slave_transc, NULL, thr_func_transc, &args_slave_transc)) )
-	{
-		printf("\n\rERROR %d: pthread_create",err);
-		return FAILURE;
-	}
+	//if( (err = pthread_create(&thr_slave_transc, NULL, thr_func_transc, &args_slave_transc)) )
+	//{
+	//	printf("\n\rERROR %d: pthread_create",err);
+	//	return FAILURE;
+	//}
 
-	timer_start_transc();//&thr_master_transc);
+	timer_start_transc(&bufs);//&thr_master_transc);
 
 	if( (err = pthread_create(&thr_master, NULL, thr_func_main, &args_master)) )
 	{
@@ -517,14 +416,14 @@ int main() {
 	timer_start_ms();
 
 	int policy_master_transc, policy_slave_transc, policy_master, policy_slave;
-	pthread_getschedparam(thr_master_transc,&policy_master_transc,&thr_master_transc_sched_param);
-	pthread_getschedparam(thr_slave_transc,&policy_slave_transc,&thr_slave_transc_sched_param);
-	pthread_getschedparam(thr_master,&policy_master,&thr_master_sched_param);
-	pthread_getschedparam(thr_slave,&policy_slave,&thr_slave_sched_param);
-	pthread_setschedparam(thr_master_transc,SCHED_RR,&thr_master_transc_sched_param);
-	pthread_setschedparam(thr_slave_transc,SCHED_RR,&thr_slave_transc_sched_param);
-	pthread_setschedparam(thr_master,SCHED_RR,&thr_master_sched_param);
-	pthread_setschedparam(thr_slave,SCHED_RR,&thr_slave_sched_param);
+	//pthread_getschedparam(thr_master_transc,&policy_master_transc,&thr_master_transc_sched_param);
+	//pthread_getschedparam(thr_slave_transc,&policy_slave_transc,&thr_slave_transc_sched_param);
+	//pthread_getschedparam(thr_master,&policy_master,&thr_master_sched_param);
+	//pthread_getschedparam(thr_slave,&policy_slave,&thr_slave_sched_param);
+	//pthread_setschedparam(thr_master_transc,SCHED_RR,&thr_master_transc_sched_param);
+	//pthread_setschedparam(thr_slave_transc,SCHED_RR,&thr_slave_transc_sched_param);
+	pthread_setschedparam(thr_master,MASTER_POLICY,&thr_master_sched_param);
+	pthread_setschedparam(thr_slave,SLAVE_POLICY,&thr_slave_sched_param);
 
 	//printf("\n\rFinalizou criação das threads\n\r");
 
@@ -533,25 +432,28 @@ int main() {
 	pthread_join(thr_master,NULL);
 	pthread_join(thr_slave,NULL);
 
-	on = 0; // Ends transceivers threads
+	//on = 0; // Ends transceivers threads
 
-	pthread_join(thr_master_transc,NULL);
-	pthread_join(thr_slave_transc,NULL);
+	// Stops timer
+    timer_stop_transc();
+
+	//pthread_join(thr_master_transc,NULL);
+	//pthread_join(thr_slave_transc,NULL);
 
 	printf("\n\rAll threads were joined\n\r");
 
-	RingBuffer_destroy(master_tx);
-	RingBuffer_destroy(master_rx);
-	RingBuffer_destroy(slave_tx);
-	RingBuffer_destroy(slave_rx);
-	RingBuffer_destroy(channel_master_to_slave);
-	RingBuffer_destroy(channel_slave_to_master);
+	RingBuffer_destroy(bufs.master_tx);
+	RingBuffer_destroy(bufs.master_rx);
+	RingBuffer_destroy(bufs.slave_tx);
+	RingBuffer_destroy(bufs.slave_rx);
+	RingBuffer_destroy(bufs.channel_master_to_slave);
+	RingBuffer_destroy(bufs.channel_slave_to_master);
 
-	printf("\n\rRingBuffers destroyed\n\r");
+	//printf("\n\rRingBuffers destroyed\n\r");
 
 	//free(ack_frame);
 
-	pthread_mutex_destroy(&mutexattr_transc);
+	//pthread_mutex_destroy(&mutexattr_transc);
 	pthread_mutex_destroy(&mutexattr_ms);
 
 	printf("\n\rFim!\n\r");
@@ -559,7 +461,7 @@ int main() {
 
 	return SUCCESS;
 }
-
+/*
 void *thr_func_transc(void *arg)
 {
 	// Input
@@ -573,6 +475,7 @@ void *thr_func_transc(void *arg)
 	uint8_t data;
 	int err;
 
+
 	while(on)
 	{
 		pthread_mutex_lock(&mutex_transc);
@@ -580,7 +483,7 @@ void *thr_func_transc(void *arg)
 			flag_transc_active = 0;
 			while(!flag_cond_transc[tid])
 				pthread_cond_wait(&cond_transc[tid], &mutex_transc);
-			//printf("\n\r Transceptor %d atualizando canal. ",tid);
+			printf("\n\r Transceptor %d atualizando canal. buf_rx = %d, buf_tx = %d, channel_tx = %d, channel_rx = %d\n\r",tid,rx->ndata,tx->ndata,channel_tx->ndata,channel_rx->ndata);
 			// Update TX channel
 			if( (err = RingBuffer_read(tx, &data, 1)) )
 			{
@@ -605,24 +508,26 @@ void *thr_func_transc(void *arg)
 				//	return FAILURE;
 				data = 0;
 			}
+			//printf("\t Lido mesmo 0x%02x",data);
+			data ^= noise();
 			// Verify freqs
-			//if(freq_master != freq_slave )
-			//	data = 0;
+			if(freq_master != freq_slave )
+				data = 0;
 			while( (err = RingBuffer_write(rx, &data, 1)) )
 			{
 				//printf("\n\rERROR %d: RingBuffer_read",err);
 				//return FAILURE;
 			}
-			//printf("\t Lido 0x%02x\n\r",data);
+			//printf("\t Lido após ruído 0x%02x\n\r",data);
 			//printf("\t e lido '%c' do canal",data);
 			//printf("\n\rchannel->ndata = %d\t%d",channel_tx->ndata,channel_rx->ndata);
 		pthread_mutex_unlock(&mutex_transc);
 		//Sleep(10*period); //substituir essa temporização por uma melhor em linux... timer ou clock_t ou até nanosleep...
 	}
-	printf("\n\r Finalizando transceptor %d",tid);
+	//printf("\n\rFinalizando transceptor %d",tid);
 	pthread_exit(NULL);
 }
-
+*/
 void *thr_func_main(void *arg)
 {
 	// Input data
@@ -637,8 +542,8 @@ void *thr_func_main(void *arg)
 	char msg_master2[31] = " e decriptografá-la em seguida!";
 	int i;
 	frame_data *frame;
-	uint8_t frame_id_tx = 0; // Counter to control acks! It increases everytime a new frame is sent
-	uint8_t frame_id_rx = 0;
+	uint8_t frame_id_master = 0; // Counter to control acks! It increases everytime a new frame is sent
+	uint8_t frame_id_slave = 0;
 	int length;
 	//RingBuffer *buf_fh;
 	//uint8_t *payload;
@@ -652,7 +557,14 @@ void *thr_func_main(void *arg)
 
 	if(data->type == MASTER)
 	{
-		send_payload(&bufs,&frame_id_tx,msg_master,30);
+		send_payload(&bufs,&frame_id_master,msg_master,30);
+		payload = receive_payload(&bufs, &frame_id_slave);
+		printf("\n\rFrame %d recebido por Master\n\r",frame_id_slave-1);
+		for(i=0; i<payload->n; i++)
+			printf("%c",payload->data[i]);
+		free(payload->data);
+		free(payload);
+		send_payload(&bufs,&frame_id_master,msg_master2,30);
 		//frame1 = generate_frame(msg_master,30,frame_id);
 		//printf("\n\rMaster tentando bloquear mutex");
 		//pthread_mutex_lock(&mutex_ms);
@@ -674,10 +586,19 @@ void *thr_func_main(void *arg)
 	}
 	if(data->type == SLAVE)
 	{
-		payload = receive_payload(&bufs, &frame_id_rx);
-		printf("\n\rFrame %d recebido por Slave\n\r",frame_id_rx-1);
-		//for(i=0; i<payload->n; i++)
-		//	printf("%c",payload->data[i]);
+		payload = receive_payload(&bufs, &frame_id_master);
+		printf("\n\rFrame %d recebido por Slave\n\r",frame_id_master-1);
+		for(i=0; i<payload->n; i++)
+			printf("%c",payload->data[i]);
+		free(payload->data);
+		free(payload);
+		send_payload(&bufs,&frame_id_slave,msg_slave,45);
+		payload = receive_payload(&bufs, &frame_id_master);
+		printf("\n\rFrame %d recebido por Slave\n\r",frame_id_master-1);
+		for(i=0; i<payload->n; i++)
+			printf("%c",payload->data[i]);
+		free(payload->data);
+		free(payload);
 		//frame1 = generate_frame(msg_slave,45,frame_id);
 		//printf("\n\rSlave tentando bloquear mutex");
 		//pthread_mutex_lock(&mutex_ms);
@@ -713,14 +634,14 @@ void *thr_func_main(void *arg)
 	//req.tv_nsec = 1000000;
 
 	//printf("\n\rComeçando thread\n\r");
-	/*
-	for(i=0; i<10; i++)
-	{
-		printf("\n\r%d",data->type);
-		//nanosleep(&req,NULL);
-		Sleep(1);
-	}
-	*/
+
+	//for(i=0; i<10; i++)
+	//{
+	//	printf("\n\r%d",data->type);
+	//	//nanosleep(&req,NULL);
+	//	Sleep(1);
+	//}
+
 
 
 	RingBuffer_destroy(bufs.buf_fh);
@@ -728,24 +649,117 @@ void *thr_func_main(void *arg)
 	pthread_exit(NULL);
 }
 
-void f_timer_transc(union sigval sigval)
+void f_timer_transc(union sigval arg)
 {
+	thr_transc_arg *bufs = (thr_transc_arg*)arg.sival_ptr;
+	uint8_t data;
+	int err;
+	int id;
+	counter++;
+	id = counter;
+pthread_mutex_lock(&mutex_ms);
+	//printf("\n\rComeçando f_timer_transc %d",id);
+	//printf("\nClock inicial da atualização: %d",clock());
+	//MASTER UPDATE
+	//printf("\n\r Transceptor MASTER atualizando canal. buf_rx = %d, buf_tx = %d, channel_tx = %d, channel_rx = %d\n\r",bufs->master_rx->ndata,bufs->master_tx->ndata,bufs->channel_master_to_slave->ndata,bufs->channel_slave_to_master->ndata);
+	if( (err = RingBuffer_read(bufs->master_tx, &data, 1)) )
+	{
+		//printf("\n\rERROR %d: RingBuffer_read. Sending zeros",err);
+		//if(err != 2)
+		//	return FAILURE;
+		data = 0;
+	}
+
+	while( (err = RingBuffer_write(bufs->channel_master_to_slave, &data, 1)) )
+	{
+		//printf("\n\rERROR %d: RingBuffer_write",err);
+		//return FAILURE;
+	}
+	//printf("\t Escrito 0x%02x",data);
+	//printf("\n\rAdicionado '%c' ao canal",data);
+	// Update RX channel
+	if( (err = RingBuffer_read(bufs->channel_slave_to_master, &data, 1)) )
+	{
+		//printf("\n\rERROR %d: RingBuffer_read. Reading zeros",err);
+		//if(err != 2)
+		//	return FAILURE;
+		data = 0;
+	}
+	//printf("\t Lido mesmo 0x%02x",data);
+	//data ^= noise();
+	// Verify freqs
+	if(freq_master != freq_slave )
+		data = 0;
+	while( (err = RingBuffer_write(bufs->master_rx, &data, 1)) )
+	{
+		//printf("\n\rERROR %d: RingBuffer_read",err);
+		//return FAILURE;
+	}
+
+	// SLAVE UPDATE
+	//printf("\n\r Transceptor SLAVE atualizando canal. buf_rx = %d, buf_tx = %d, channel_tx = %d, channel_rx = %d\n\r",bufs->slave_rx->ndata,bufs->slave_tx->ndata,bufs->channel_slave_to_master->ndata,bufs->channel_master_to_slave->ndata);
+	if( (err = RingBuffer_read(bufs->slave_tx, &data, 1)) )
+	{
+		//printf("\n\rERROR %d: RingBuffer_read. Sending zeros",err);
+		//if(err != 2)
+		//	return FAILURE;
+		data = 0;
+	}
+
+	while( (err = RingBuffer_write(bufs->channel_slave_to_master, &data, 1)) )
+	{
+		//printf("\n\rERROR %d: RingBuffer_write",err);
+		//return FAILURE;
+	}
+	//printf("\t Escrito 0x%02x",data);
+	//printf("\n\rAdicionado '%c' ao canal",data);
+	// Update RX channel
+	if( (err = RingBuffer_read(bufs->channel_master_to_slave, &data, 1)) )
+	{
+		//printf("\n\rERROR %d: RingBuffer_read. Reading zeros",err);
+		//if(err != 2)
+		//	return FAILURE;
+		data = 0;
+	}
+	//printf("\t Lido mesmo 0x%02x",data);
+	//data ^= noise();
+	// Verify freqs
+	if(freq_master != freq_slave )
+		data = 0;
+	while( (err = RingBuffer_write(bufs->slave_rx, &data, 1)) )
+	{
+		//printf("\n\rERROR %d: RingBuffer_read",err);
+		//return FAILURE;
+	}
+	//printf("\nClock final da atualização: %d\n\r",clock());
+	//printf("\nTerminando f_timer_transc %d\n\r",id);
+pthread_mutex_unlock(&mutex_ms);
 	//printf("\n\rf_timer_transc (Clock = %d)\n\r",clk = clock());
-	flag_transc_active = 1;
-	flag_cond_transc[MASTER] = 1;
-	flag_cond_transc[SLAVE] = 1;
-	pthread_mutex_lock(&mutex_transc);
-		pthread_cond_signal(&cond_transc[MASTER]);
-		pthread_cond_signal(&cond_transc[SLAVE]);
-	pthread_mutex_unlock(&mutex_transc);
+	//flag_transc_active = 1;
+	//flag_cond_transc[MASTER] = 1;
+	//flag_cond_transc[SLAVE] = 1;
+	//pthread_mutex_lock(&mutex_transc);
+	//	pthread_cond_signal(&cond_transc[MASTER]);
+	//	pthread_cond_signal(&cond_transc[SLAVE]);
+	//pthread_mutex_unlock(&mutex_transc);
 }
 
-void timer_start_transc()//pthread_t *thr_ref) // initialize time for channel periodic handling
+void timer_start_transc(thr_transc_arg *bufs)//pthread_t *thr_ref) // initialize time for channel periodic handling
 {
     struct itimerspec itimer;
     struct sigevent sigev;
     int erno = 0;
+
+    pthread_attr_t attr_transc;
+    struct sched_param param_transc;
     //timer_t timer_transc;
+
+    pthread_attr_init(&attr_transc);
+    //pthread_attr_getschedparam(&attr_transc,&param_transc);
+    param_transc.sched_priority = TRANSC_PRIORITY;
+    pthread_attr_setschedparam(&attr_transc,&param_transc);
+    pthread_attr_setschedpolicy(&attr_transc,TRANSC_POLICY);
+
 
     itimer.it_interval.tv_sec=0;
     itimer.it_interval.tv_nsec= PERIOD_TRANSC_US * 1000;
@@ -753,9 +767,9 @@ void timer_start_transc()//pthread_t *thr_ref) // initialize time for channel pe
 
     memset(&sigev, 0, sizeof (struct sigevent));
 
-    sigev.sigev_value.sival_int = 0;
+    sigev.sigev_value.sival_ptr = bufs;
     sigev.sigev_notify = SIGEV_THREAD;
-    sigev.sigev_notify_attributes = NULL;
+    sigev.sigev_notify_attributes = &attr_transc;
     sigev.sigev_notify_function = f_timer_transc;
 
     if (timer_create(CLOCK_MONOTONIC, &sigev, &timer_transc) < 0)
@@ -770,6 +784,20 @@ void timer_start_transc()//pthread_t *thr_ref) // initialize time for channel pe
         exit(erno);
     }
 
+}
+
+void timer_stop_transc()
+{
+	 struct itimerspec itimer;
+	// Stops timer
+    itimer.it_interval.tv_nsec= 0;
+    itimer.it_value=itimer.it_interval;
+
+    if(timer_settime(timer_transc, 0, &itimer, NULL) < 0)
+    {
+        //fprintf(stderr, "[%d]: %s\n", __LINE__, strerror(erno));
+    	return FAILURE;//exit(erno);
+    }
 }
 
 int rx_to_buf(RingBuffer* buf_rx, RingBuffer* buf_fh)
@@ -836,7 +864,7 @@ int send_frame( RingBuffer *buf_tx, dyn_vector *frame )
 
 	if( (err = RingBuffer_write(buf_tx, frame->data, frame->n)) )
 	{
-		//printf("\n\rERROR %d: RingBuffer_write",err);
+		printf("\n\rERROR %d: RingBuffer_write\n\r",err);
 		return FAILURE;
 	}
 
@@ -917,6 +945,7 @@ frame_data* extract_frame( unit_bufs *bufs)
 	uint8_t tid = bufs->type;
 
 	frame = (frame_data*)malloc(sizeof(frame_data));
+	frame->payload = (dyn_vector*)malloc(sizeof(dyn_vector));
 
 	crc crc_result;
 
@@ -927,12 +956,12 @@ frame_data* extract_frame( unit_bufs *bufs)
 	while(step < 7)
 	{
 		//pthread_mutex_lock(&mutex_ms);
-		if(!flag_transc_active)
+		//if(!flag_transc_active)
 			if ( rx_to_buf(buf_rx, buf_fh) ) // Atualiza buf_fh o que der: pressupõe-se que a velocidade de atualização é maior que a taxa de transmissão de dados... isso é importante para não se perderem dados
 			{
 				printf("\n\rFAILED UPDATING BUF_FH");
-				free(frame->payload.data);
-				frame->payload.n = FAILURE;
+				free(frame->payload->data);
+				frame->payload->n = FAILURE;
 				return frame;//FAILURE;
 			}
 		//pthread_mutex_unlock(&mutex_ms);
@@ -943,22 +972,23 @@ frame_data* extract_frame( unit_bufs *bufs)
 		switch(step){
 			case 1: // Etapa 1: Espera pelos bits de sincronização
 				//printf(".");
+				//count=0;
 				while(buf_fh->ndata > 0)
 				{
 					// Vai ler um bit novo, então deve-se guardar os 2 mais recentes
 					last_bits[2] = last_bits[1];
 					last_bits[1] = last_bits[0];
 					// Lê um bit
-					if ( err = RingBuffer_read(buf_fh, last_bits, 1) )
+					if ( (err = RingBuffer_read(buf_fh, last_bits, 1)) )
 					{
 						printf("\n\rERROR %d: FAILED READING BUF_FH",err);
-						frame->payload.n = FAILURE;
+						frame->payload->n = FAILURE;
 						return frame;//FAILURE;
 					}
 					if( last_bits[0]==last_bits[2] && last_bits[0]!=last_bits[1]) // Encontrou uma sequência "010" ou "101"
 					{
 						step++;
-						printf("\n\rAchou início do preâmbulo!");
+						//printf("\n\rAchou início do preâmbulo!");
 						break;
 					}
 					//sched_yield();
@@ -973,10 +1003,10 @@ frame_data* extract_frame( unit_bufs *bufs)
 					if ( err = RingBuffer_read(buf_fh, last_bits, 1) )
 					{
 						printf("\n\rERROR %d: FAILED READING BUF_FH",err);
-						frame->payload.n = FAILURE;
+						frame->payload->n = FAILURE;
 						return frame;//FAILURE;
 					}
-					if( last_bits[0]==last_bits[1]) // Encontrou uma sequência "010" ou "101"
+					if( last_bits[0]==last_bits[1]) // Encontrou uma sequência "11"ou "00"
 					{
 						step++;
 						break;
@@ -986,21 +1016,26 @@ frame_data* extract_frame( unit_bufs *bufs)
 			case 3: // Etapa 3: Recebe o restante do preâmbulo e confere se está correto. 11001100 = 204 em decimal
 				if( buf_fh->ndata > 5)
 				{
+					//printf("\n\rCase 3\n\r");
+					temp = 0;
 					temp = (last_bits[1]<<7) | (last_bits[0]<<6);
+					//printf("\n\rtemp = 0x%02x",temp);
 					for(i=5; i>=0; i--)
 					{
 						if ( err = RingBuffer_read(buf_fh, last_bits, 1) )
 						{
-							printf("\n\rERROR %d: FAILED READING BUF_FH",err);
-							frame->payload.n = FAILURE;
+							printf("\n\rERROR %d: FAILED READING BUF_FH\n\r",err);
+							frame->payload->n = FAILURE;
 							return frame;//FAILURE;
 						}
 						temp = temp | (last_bits[0]<<i);
 					}
+					//printf("\n\rtemp = %d",temp);
 					if( temp!=204 )
 					{
-						printf("\n\rERROR: FAILED GETTING PREAMBLE");
-						frame->payload.n = FAILURE;
+						printf("\n\rERROR: FAILED GETTING PREAMBLE\n\r");
+						frame->payload->n = FAILURE;
+						//printf("\n\rframe->payload.n = %d\n\r",frame->payload.n);
 						return frame;//FAILURE;
 					}
 					step++;
@@ -1009,13 +1044,14 @@ frame_data* extract_frame( unit_bufs *bufs)
 			case 4: // Etapa 4: Lê os campos FRAME_ID e SIZE (tamanho do payload em bytes)
 				if( buf_fh->ndata >= 8+8*SIZE_BYTES )
 				{
+					//printf("\n\rCase 4\n\r");
 					size = 0;
 					for(i=7; i>=0; i--)
 					{
 						if ( err = RingBuffer_read(buf_fh, last_bits, 1) )
 						{
 							printf("\n\rERROR %d: FAILED READING BUF_FH",err);
-							frame->payload.n = FAILURE;
+							frame->payload->n = FAILURE;
 							return frame;//FAILURE;
 						}
 						size = size | (last_bits[0]<<i);
@@ -1027,32 +1063,41 @@ frame_data* extract_frame( unit_bufs *bufs)
 						if ( err = RingBuffer_read(buf_fh, last_bits, 1) )
 						{
 							printf("\n\rERROR %d: FAILED READING BUF_FH",err);
-							frame->payload.n = FAILURE;
+							frame->payload->n = FAILURE;
 							return frame;//FAILURE;
 						}
 						size = size | (last_bits[0]<<i);
 					}
 					step++;
-					frame->payload.data = (uint8_t *)malloc(size*sizeof(uint8_t));
-					frame->payload.n = size;
+					//printf("\n\rSize = %d\n\r",size);
+					//if(size > 30)
+					//{
+					//	printf("\n\rSize muito grande\n\r",err);
+					//	frame->payload.n = FAILURE;
+					//	return frame;//FAILURE;
+					//}
+					frame->payload->data = (uint8_t *)malloc(size*sizeof(uint8_t));
+					frame->payload->n = size;
 				}
 				break;
 			case 5: // Etapa 5: Lê o payload
+				//printf("\n\rCase 5: buf_fh->ndata = ");
 				while( buf_fh->ndata > 7 && count<size)
 				{
+					//printf("\n\rSize = %d\n\r",size);
 					temp = 0;
 					for( i=7; i>=0; i--)
 					{
 						if ( err = RingBuffer_read(buf_fh, last_bits, 1) )
 						{
 							printf("\n\rERROR %d: FAILED READING BUF_FH",err);
-							free(frame->payload.data);
-							frame->payload.n = FAILURE;
+							free(frame->payload->data);
+							frame->payload->n = FAILURE;
 							return frame;//FAILURE;
 						}
 						temp = temp | (last_bits[0]<<i);
 					}
-					frame->payload.data[count]=temp;
+					frame->payload->data[count]=temp;
 					count++;
 				}
 				if( count==size )
@@ -1068,21 +1113,23 @@ frame_data* extract_frame( unit_bufs *bufs)
 						if ( err = RingBuffer_read(buf_fh, last_bits, 1) )
 						{
 							printf("\n\rERROR %d: FAILED READING BUF_FH",err);
-							free(frame->payload.data);
-							frame->payload.n = FAILURE;
+							free(frame->payload->data);
+							frame->payload->n = FAILURE;
 							return frame;//FAILURE;
 						}
 						hash = hash | (last_bits[0]<<i);
 					}
 					//printf("\n\rCRC lido = 0x%08x",hash);
-					crc_result = F_CRC_CalculaCheckSum(frame->payload.data, size);
+					//printf("\n\rSerá que é aqui?\n\r");
+					crc_result = F_CRC_CalculaCheckSum(frame->payload->data, size);
+					//printf("\n\rNão =/\n\r");
 					//printf("\n\rCRC na hora da verificação do frame: %08x",crc_result);
 					if( hash != crc_result)// CRC ou HASH (escolhido CRC 32 bits
 					{
 						printf("\n\rERROR: FRAME CORRUPTED");
 						printf("\n\rSize lido foi: %d\n\r",size);
-						free(frame->payload.data);
-						frame->payload.n = FAILURE;
+						free(frame->payload->data);
+						frame->payload->n = FAILURE;
 						return frame;
 					}
 					step++;
@@ -1099,12 +1146,12 @@ void f_timer_retransmit(union sigval arg)
 {
 	retransmit_arg *arg_i = (retransmit_arg*)arg.sival_ptr;
 
-
+	printf("\n\rJÁ????\n\r");
 	//dyn_vector *frame;
 	//printf("\n\rTimer se esgotou. tentando bloquear mutex");
 	//pthread_mutex_lock(&mutex_ms);
-		//printf("\n\rf_timer_retransmit. Reenviando frame (Clock = %d)\n\r",clk = clock());
-		send_frame( arg_i->buf, generate_frame(arg_i->frame.payload.data, arg_i->frame.payload.n, arg_i->frame.frame_id) );
+		//printf("\n\rf_timer_retransmit. Reenviando frame (Clock = %d)\tbuf_tx->ndata = %d\n\r",clk = clock(),arg_i->buf->ndata);
+		send_frame( arg_i->buf, generate_frame(arg_i->frame.payload->data, arg_i->frame.payload->n, arg_i->frame.frame_id) );
 		//printf("\n\rFrame enviado\n\r");
 	//pthread_mutex_unlock(&mutex_ms);
 }
@@ -1127,11 +1174,12 @@ int send_payload( unit_bufs *bufs, uint8_t *frame_id, uint8_t *payload, int leng
     //f_timer_retransmit_arg = (dyn_vector*)malloc(sizeof(dyn_vector));
     f_timer_retransmit_arg.buf = buf_tx;
     f_timer_retransmit_arg.frame.frame_id = *frame_id;
-    f_timer_retransmit_arg.frame.payload.data = payload;//(uint8_t*)malloc(length*sizeof(uint8_t));
-    f_timer_retransmit_arg.frame.payload.n = length;
+    f_timer_retransmit_arg.frame.payload = (dyn_vector*)malloc(sizeof(dyn_vector));
+    f_timer_retransmit_arg.frame.payload->data = payload;//(uint8_t*)malloc(length*sizeof(uint8_t));
+    f_timer_retransmit_arg.frame.payload->n = length;
 
-    itimer.it_interval.tv_sec=0;
-    itimer.it_interval.tv_nsec= WAIT_ACK_US * 1000;
+    itimer.it_interval.tv_sec=WAIT_ACK_S;
+    itimer.it_interval.tv_nsec= 0;//WAIT_ACK_US * 1000;
     itimer.it_value=itimer.it_interval;
 
     memset(&sigev, 0, sizeof (struct sigevent));
@@ -1164,23 +1212,29 @@ int send_payload( unit_bufs *bufs, uint8_t *frame_id, uint8_t *payload, int leng
 
     while(flag_listen) // Only stops to listen the channel, waiting for ack when it finds it
     {
-    	printf("\n\rComeçando a esperar por ACK\n\r");
+    	printf("\n\rUnidade %d começando a esperar por ACK do Frame %d \n\r",tid,*frame_id);
     	ack_frame = extract_frame(bufs);
-    	printf("\n\rFim de extract_frame. Avaliando se é o ACK pertinente...\n\r");
-    	if( (ack_frame->frame_id == *frame_id) && (ack_frame->payload.data[0] == ACK) )
+    	//printf("\n\rFim de extract_frame. Avaliando se é o ACK pertinente...\n\r");
+    	if( ack_frame->payload->n > 0 )
     	{
-    		flag_listen =0;
-    		// Stops timer
-    	    itimer.it_interval.tv_nsec= 0;
-    	    itimer.it_value=itimer.it_interval;
-    	    if(timer_settime(timer_wait_for_ack, 0, &itimer, NULL) < 0)
-    	    {
-    	        //fprintf(stderr, "[%d]: %s\n", __LINE__, strerror(erno));
-    	    	return FAILURE;//exit(erno);
-    	    }
+    	    //printf("\n\rFim de extract_frame. Avaliando se é o ACK pertinente...\n\r");
+    		if( (ack_frame->frame_id == *frame_id) && (ack_frame->payload->data[0] == ACK) )
+    		{
+        		flag_listen =0;
+    			// Stops timer
+    		    //itimer.it_interval.tv_nsec= 0;
+        		itimer.it_interval.tv_sec= 0;
+    		    itimer.it_value=itimer.it_interval;
+    		    if(timer_settime(timer_wait_for_ack, 0, &itimer, NULL) < 0)
+    		    {
+    		        //fprintf(stderr, "[%d]: %s\n", __LINE__, strerror(erno));
+    		    	return FAILURE;//exit(erno);
+    		    }
+    		}
     	}
     }
-    printf("\n\rEncontrou ACK pertinente. Frame enviado com sucesso");
+
+    printf("\n\rUnidade %d encontrou ACK pertinente. Frame %d enviado com sucesso\n\r",tid,*frame_id);
     (*frame_id)++;
 
     // Time to give chance to other unit to work!
@@ -1195,7 +1249,7 @@ dyn_vector* receive_payload( unit_bufs *bufs, uint8_t *frame_id )
 	frame_data *frame;
 	dyn_vector *payload;
 	uint8_t ack = ACK;
-	int flag_listen = 1;
+	int flag_listen;
 	int flag_wait_correct_frame = 1;
 
     RingBuffer *buf_tx = bufs->buf_tx;
@@ -1205,24 +1259,33 @@ dyn_vector* receive_payload( unit_bufs *bufs, uint8_t *frame_id )
 
 	while(flag_wait_correct_frame)
 	{
+		flag_listen = 1;
     	while(flag_listen) // Only stops to listen the channel, waiting for ack when it finds it
     	{
-    		printf("\n\rComeçando a procurar pelo frame principal\n\r");
+    		//free(frame);
+    		printf("\n\rUnidade %d começando a procurar pelo Frame %d\n\r",tid,*frame_id);
     		frame = extract_frame(bufs);
     		//suspend_unit(tid);
-    		if( frame->payload.n > 0 )
-    			flag_listen =0;
+    		//printf("\n\rLogo após extract_frame\n\r");
+    		if( frame->payload->n > 0 )//{printf("\n\rFrame->payload.n = %d\n\r",frame->payload.n);
+    			flag_listen =0;//}
+    		else
+    		{
+    			free(frame->payload);
+    			free(frame);
+    		}
     	}
-    	payload = &(frame->payload);
 
-    	//printf("\n\rRecebeu payload de frame %d: ",frame->frame_id);
-    	//for(i=0; i<payload->n; i++)
-    	//	printf("%c",payload->data[i]);
+    	payload = frame->payload;
+
+    	printf("\n\rRecebeu payload de frame %d: ",frame->frame_id);
+    	for(i=0; i<payload->n; i++)
+    		printf("%c",payload->data[i]);
     	send_frame( buf_tx, generate_frame(&ack, 1, frame->frame_id) );
 
     	//suspend_unit(tid);
 
-    	printf("\n\rFoi mandado ACK do frame %d",frame->frame_id);
+    	//printf("\n\rFoi mandado ACK do frame %d\n\r",frame->frame_id);
     	if(frame->frame_id == *frame_id)
     	{
     		(*frame_id)++;
@@ -1296,6 +1359,43 @@ void timer_start_ms(void)//pthread_t *thr_ref) // initialize time for channel pe
 
 }
 
+void timer_stop_ms()
+{
+	 struct itimerspec itimer;
+	// Stops timer
+    itimer.it_interval.tv_nsec= 0;
+    itimer.it_value=itimer.it_interval;
+
+    if(timer_settime(timer_ms, 0, &itimer, NULL) < 0)
+    {
+        //fprintf(stderr, "[%d]: %s\n", __LINE__, strerror(erno));
+    	return FAILURE;//exit(erno);
+    }
+}
+
+uint8_t noise(void)
+{
+	uint8_t noise = 0;
+	int i;
+	int aleat;
+	//double aleat;
+	//printf("\n\rEntrou no noise\n\r");
+	srand( clock() );
+	for(i=0; i<M; i++)
+	{
+		aleat = rand();
+		//printf("\n\rrand() = %d ou %f\t BIT_ERROR_RATE*RAND_MAX = %f",aleat,(float)aleat,((float)BIT_ERROR_RATE_100/100)*((float)RAND_MAX));
+		//aleat = (double)((uint32_t)rand());
+		//printf("\n\rERRO NO CANAL. rand() = %d\trand()/RAND_MAX = %f\tBIT_ERROR_RATE = %f",aleat,aleat/RAND_MAX,BIT_ERROR_RATE);
+		if( (float)aleat < ((float)BIT_ERROR_RATE_100/100)*((float)RAND_MAX) )
+		{
+			//printf("\n\rERRO NO CANAL. rand() = %d\trand()/RAND_MAX = %f\tBIT_ERROR_RATE = %f",aleat,aleat/RAND_MAX,BIT_ERROR_RATE);
+			printf("\n\rERRO NO CANAL!\n\r");
+			noise ^= 1<<i;
+		}
+	}
+	return noise;
+}
 
 
 

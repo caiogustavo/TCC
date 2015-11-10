@@ -2,27 +2,27 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
-		<item value="260" key="DIALOG_Y_ORIGIN"/>
-		<item value="720" key="DIALOG_X_ORIGIN"/>
+		<item value="251" key="DIALOG_Y_ORIGIN"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
+		<item value="1209" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="bits[" key="selection"/>
+		<item value="%d" key="selection"/>
 		<list key="findhistory">
-			<item value="bits["/>
-			<item value="bit["/>
-			<item value="bit"/>
-			<item value="buffer_push"/>
-			<item value="iio_buffer"/>
-			<item value="buffer"/>
-			<item value="c"/>
-			<item value="bo_e"/>
+			<item value="%d"/>
+			<item value="%02x"/>
+			<item value="%0"/>
+			<item value="printf"/>
+			<item value=": RingBuffer"/>
+			<item value="suspend_unit"/>
+			<item value="Unidade"/>
+			<item value="timer_start_ms"/>
 		</list>
 		<list key="replacehistory">
 		</list>

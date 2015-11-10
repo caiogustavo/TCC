@@ -12,11 +12,7 @@
 #include "ringbuffer.h"
 
 
-#define M	4
-#define SIZE_BYTES 1 // Pode ser entre 1 e 4 por ser int. Se quiser maior tem que mudar o tipo da variável em extract_payload
-#define HASH_BYTES 4 // Pode ser entre 1 e 4 por ser int. Se quiser maior tem que mudar o tipo da variável em extract_payload
-#define PRE_BYTES 2
-#define CRC_BYTES 4
+
 
 /*typedef struct _frame_data{
 	uint8_t *data; // buffer of symbols of M bits
